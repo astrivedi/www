@@ -1,0 +1,813 @@
+<html>
+  <head>
+    <title>Ashutosh Trivedi: Courses/CSCI 2270&mdash;Spring 2019</title>
+    <link href="../main.css" rel="stylesheet" type="text/css" />
+    <script src="../float-panel.js"></script>
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript"
+	    src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Recitation (15%)',     15],
+      ['Assignment (40%)',      40],
+      ['Lecture Quizzes (10%)',  10],
+      ['Midterm Exams (20%)', 20],
+      ['Final Project (15%)', 15],
+      ]);
+      
+        var options = {
+          title: 'Grading Scheme'
+        };
+
+        var chart = new
+        google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Automata Theory',     34],
+      ['Computability Theory',      33],
+      ['Complexity Theory',  33],
+      ]);
+      
+        var options = {
+          title: 'Theory of Computation: Subtopics'
+        };
+
+        var chart = new
+        google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  </head>
+<body id="mainp"> 
+
+<div id="content">
+  <div class="nav">
+    <ul>
+      <li class="home"><a href="../index.html">Home</a></li>
+      <li class="pubs"><a href="../pubs.html">Publications</a></li>
+      <li class="teaching"><a href="../teaching.html">Teaching</a></li>
+      <li class="service"><a  href="../ser.html">Service</a></li>
+      <li class="research"><a href="../bio.html">Bio</a></li>
+    </ul>
+  </div>
+   <div id="backtop">&#9650;</div>
+
+   <h1>
+     CSCI 2270-100: Data Structures
+   </h1>
+   <hr>
+   <h3> Logistics </h3> 
+   <ul>
+     <li> <b>Instructor</b>: 
+       <a href="http://www.ashutoshtrivedi.com"> Ashutosh Trivedi</a> (ashutosh \dot trivedi \at colorado \dot edu)
+     <li> <b> Teaching Assistants (Recitations) </b>: 
+       <ul>
+	 <li> Bhimani, Prashil Vipul (prashil \dot bhimani \at colorado \dot edu) 
+	 <li> Lee, Yu-Ju (yuju \dot lee \at colorado \dot edu)
+	 <li> Gayam, Prathyusha (prathyusha \dot gayam \at colorado \dot edu)
+	 <li> Chatterjee, Avimita (amivita \dot chatterjee \at colorado \dot edu)
+       </ul>
+       <li> <b> Course description </b>:
+	 <ul>
+	   <li> Lectures 3 times a week (MWF)
+	   <li> Weekly 75-minute recitation sections with course TAs
+	   <li> Problem sets assigned weekly, due the following week
+	   <li> Online lecture quizzes at the end of every week
+	   <li> Two midterm exams
+	   <li> One final project
+	   <li> This will be a challenging course, please plan accordingly
+	 </ul>
+       <li> <b> Pre-requisites</b>:
+	 <ul>
+	   <li>  CSCI 1300 or CSCI 1310 or CSCI 1320 or ECEN 1030 or ECEN 1310
+	   and APPM 1345 or APPM 1350 or MATH 1300 or MATH 1310 (all minimum
+	   grade C-).
+	 </ul>
+	 
+       <li> <b>Class Meeting Times</b>:
+	 Monday-Wednesday-Friday (10:00am&mdash;11:50am)
+       <li> <b> Office hours</b>:
+	 <ul>
+	   <li>
+	     Ashutosh Trivedi (Monday 12:30pm&mdash;2:00pm and Friday 12:30am&mdash;1:30pm).
+	   <li>
+	     TAs (TBA).
+	 </ul>
+       <li> <b> Venue </b>:
+	 <ul>
+	   <li> Class meeting location: VAC 1B20
+	   <li> Office Hour location: ECCE 1B11
+	 </ul>
+   </ul>
+    <hr>
+    <h3> Relevant Textbooks </h3>
+    <ul>
+      <li> 
+	Course materials, such as lecture notes, assignments, and quizzes will be
+	made available in electronic form on the Moodle site for the course.
+	Your identikey is needed for signing in.
+      <li>
+	The textbook for this course is an ebook (Hoenigman,
+	R. 2015. <a href="https://www.amazon.com/Visualizing-Data-Structures-Rhonda-Hoenigman-ebook/dp/B015D3X3ZC">Visualizing
+	  Data Structures</a>. Lulu Press.), which will be distributed on the
+	course Moodle site.
+    </ul>
+    <hr>
+    <h3> Course Outcomes </h3>
+    In this course, students will:
+    <ul>
+      <li>
+	Document code including precondition/postcondition contracts for
+	functions and invariants for classes.
+      <li>
+	Create and recognize appropriate test data for simple problems,
+	including testing boundary conditions and creating/running test cases.
+      <li>
+	Design and test new classes using the principle of information hiding
+	for the following data structures: array-based collections (including
+	dynamic arrays), list-based collections (singly-linked lists,
+	doubly-linked lists, circular-linked lists), stacks, queues, binary search
+	trees, hash tables, graphs, and at least one balanced search tree.
+      <li>
+	Identify features and applications of common data structures,
+	including records/structs, lists, stacks, queues, trees, graphs, and maps.
+      <li>
+	Implement algorithms for standard operations on common data structures
+	and discuss the complexity of the operations.
+      <li>
+	Comment on the features of different traversal methods for trees and
+	graphs, including pre-, post-, and in-order traversal of trees.
+      <li>
+	Describe the implementation of hash tables, including algorithms for
+	collision avoidance and resolution.
+      <li>
+	Describe the principles of recursion and iteration, and implement
+	recursive and iterative solutions for a problem.
+      <li>
+	Formulate and implement solutions to problems using fundamental graph
+	algorithms, including depth-first and breadth-first search and a
+	shortest-path algorithm.
+      <li>
+	Explain the features of at least one tree balancing algorithm and
+	how tree balancing affects the efficiency of various binary search tree
+	operations.
+      <li>
+	Correctly use and manipulate pointer variables to change variables
+	and build dynamic data structures.
+      <li>
+	Explain the differences between dynamic and static data structure
+	implementations, and justify the use of static and dynamic
+	implementations in different applications.
+      <li>
+	Practice explaining design choices and algorithm features in
+	small-group settings.
+    </ul>
+    <hr>
+    <h3> Grading </h3>
+    <table> <tr>
+	<td> 
+	  <center> 
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+	  </center>
+	</td> 
+</td> <td width=20%> </td>
+<td>
+</tr>
+</table>
+
+<h3> Tentative Course Calendar </h3>
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#667cab> 
+    <td> <font color=white> # </font>  </td> 
+    <td width=15%> <font color=white> Date  </font> </td> 
+    <td width=60%> <font color="white">Description</font></td>	 
+    <td> <font color="white"> Chapter</font></td>	 
+  </tr>
+  <tr>
+    <td> 1 </td>
+    <td> Week 1 &mdash; January 14 </td>
+    <td> Introduction to CSCI 2270 &mdash; Data Structures
+    </td>
+    <td> N/A </td>	 
+  </tr>
+</table> 
+<!--<h3> Part One: Automata Theory </h3>-->
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#d0d0d0>
+    <td> 2 </td>
+    <Td> Week 1 &mdash; January 16 </td>
+    <td>  C++ Review, Arrays, Structs, File I/O
+    </td>
+    <td> VDS Chapter 1 and <a href="http://www.cplusplus.com/files/tutorial.pdf">C++</a>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 3 </td>
+    <td> Week 1 &mdash; January 18  </td>
+    <td> C++ Review, Arrays, Structs, File I/O
+    </td>
+    <td> VDS Chapter 1 and <a href="http://www.cplusplus.com/files/tutorial.pdf">C++</a>   </td>	 
+  </tr>
+
+  <tr bgcolor=#ffd0d0>
+    <td> &mdash; </td>
+    <td> Week 2 &mdash; January 21  </td>
+    <td> No Class &mdash; Martin Luther King Jr. Day 2019.
+    </td>
+    <td> </td>	 
+  </tr>
+
+    
+  <tr bgcolor=#d0d0d0>
+    <td> 4 </td>
+    <td> Week 2 &mdash; January 23 </td>
+    <td> Algorithms and pseudocode, Pointers, Dynamic memory
+    </td>
+    <td> VDS Chapters 2 and 3 </td>	 
+  </tr>
+
+  <tr>
+    <td> 5 </td>
+    <td> Week 2 &mdash; January 25  </td>
+    <td> Algorithms and pseudocode, Pointers, Dynamic memory
+    </td>
+    <td> VDS Chapters 2 and 3 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 6 </td>
+    <td> Week 3 &mdash; January 28 </td>
+    <td> C++ Classes and Objects introduction, Linked Lists
+    </td>
+    <td> VDS Chapter 5 </td>	 
+  </tr>
+
+  <tr>
+    <td> 7 </td>
+    <td> Week 3 &mdash; January 30  </td>
+    <td> C++ Classes and Objects introduction, Linked Lists
+    </td>
+    <td> VDS Chapter 5  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 8 </td>
+    <td> Week 3 &mdash; February 1 </td>
+    <td> C++ Classes and Objects introduction, Linked Lists
+    </td>
+    <td> VDS Chapter 5 </td>	 
+  </tr>
+
+  <tr>
+    <td> 9 </td>
+    <td> Week 4 &mdash; February 4 </td>
+    <td> Stacks and Queues
+    </td>
+    <td> VDS Chapters 6 and 7 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 10 </td>
+    <td> Week 4 &mdash; February 6 </td>
+    <td> Stacks and Queues
+    </td>
+    <td> VDS Chapters 6 and 7 </td>	 
+  </tr>
+
+  <tr>
+    <td> 11 </td>
+    <td> Week 4 &mdash; February 8  </td>
+    <td> Stacks and Queues
+    </td>
+    <td> VDS Chapters 6 and 7 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 12 </td>
+    <td> Week 5 &mdash; February 11 </td>
+    <td> Trees, Binary Trees
+    </td>
+    <td> VDS Chapter 8 </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 13 </td>
+    <td> Week 5 &mdash; February 13 </td>
+    <td> Trees, Binary Trees
+    </td>
+    <td> VDS Chapter 8 
+    </td>	 
+  </tr>
+  <tr bgcolor=#d0d0d0>
+    <td> 14 </td>
+    <td> Week 5 &mdash; February 15 </td>
+    <td> Trees, Binary Trees
+    </td>
+    <td> VDS Chapter 8 </td>	 
+  </tr>
+
+  <tr>
+    <td> 15 </td>
+    <td> Week 6 &mdash; February 18 </td>
+    <td> Binary Search Trees and Revision
+    </td>
+    <td>  Chapter 9 and Revision </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 16 </td>
+    <td> Week 6 &mdash; February 20</td>
+    <td> Binary Search Trees and Revision
+    </td>
+    <td> Chapter 9 and Revision  </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 17 </td>
+    <td> Week 6 &mdash; February 22 </td>
+    <td> Midterm 1 Exam.    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 18 </td>
+    <td> Week 7 &mdash; February 25 </td>
+    <td> Tree Traversal Algorithms and Tree Balancing
+    </td>
+    <td> Chapter 10 and 11 </td>	 
+  </tr>
+
+  <tr>
+    <td> 19 </td>
+    <td> Week 7 &mdash; February 27 </td>
+    <td> Tree Traversal Algorithms and Tree Balancing
+    </td>
+    <td> Chapter 10 and 11 </td>	 
+  </tr>
+  <tr bgcolor=#d0d0d0>
+    <td> 20 </td>
+    <td> Week 7 &mdash; March 1 </td>
+    <td> Tree Traversal Algorithms and Tree Balancing
+    </td>
+    <td> Chapter 10 and 11 </td>	 
+  </tr>
+
+  <tr>
+    <td> 21 </td>
+    <td> Week 8 &mdash; March 4  </td>
+    <td> Hash Tables
+    </td>
+    <td> Chapter 13 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 22 </td>
+    <td> Week 8 &mdash; March 6 </td>
+    <td> Hash Tables
+    </td>
+    <td>  Chapter 13 </td>	 
+  </tr>
+  <tr>
+    <td> 23 </td>
+    <td> Week 8 &mdash; March 8  </td>
+    <td> Hash Tables
+    </td>
+    <td> Chapter 13 </td>	 
+  </tr>
+  <tr bgcolor=#d0d0d0>
+    <td> 24 </td>
+    <td> Week 9 &mdash; March 11 </td>
+    <td> Heaps 
+    <td> </td>	 
+  </tr>
+  <tr>
+    <td> 25 </td>
+    <td> Week 9 &mdash; March 13  </td>
+    <td> Heaps
+    </td>
+    <td>  </td>	 
+  </tr>
+  <tr bgcolor=#d0d0d0>
+    <td> 26 </td>
+    <td> Week 9 &mdash; March 15 </td>
+    <td> Heaps    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr>
+    <td> 27 </td>
+    <td> Week 10 &mdash; March 18  </td>
+    <td> Graphs, breadth-first search, depth-first search
+    </td>
+    <td> Chapter 12 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 28 </td>
+    <td> Week 10 &mdash; March 20  </td>
+    <td>Graphs, breadth-first search, depth-first search
+    </td>
+    <td>Chapter 12</td>	 
+  </tr>
+
+  <tr>
+    <td> 29 </td>
+    <td> Week 10 &mdash; March 22  </td>
+    <td> Graphs, breadth-first search, depth-first search
+    </td>
+    <td> Chapter 12 </td>	 
+  </tr>
+  
+  <tr bgcolor=#ffd0d0>
+    <td> 30 </td>
+    <td> Week 11 &mdash; March 25-31  </td>
+    <td> No Class &mdash; Spring Break
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 31 </td>
+    <td> Week 12 &mdash; April 1 </td>
+    <td> Graphs, Adjacency Matrix, Adjacency List    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 32 </td>
+    <td> Week 12 &mdash; April 3 </td>
+    <td> Graphs, Adjacency Matrix, Adjacency List    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 33 </td>
+    <td> Week 12 &mdash; April 5 </td>
+    <td> Graphs, Adjacency Matrix, Adjacency List    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr>
+    <td> 34 </td>
+    <td> Week 13 &mdash; April 8  </td>
+    <td> Revision     </td>
+    <td>  </td>	 
+  </tr>
+
+
+  <tr bgcolor=#d0d0d0>
+    <td> 35 </td>
+    <td> Week 13 &mdash; April 10</td>
+    <td> Revision     </td>
+    <td>  </td>	 
+  </tr>
+ <tr bgcolor=#ffffe0> 
+    <td> 36 </td>
+    <td> Week 13 &mdash; April 12 </td>
+    <td> Midterm 2 Exam.
+         </td>
+    <td> </td>	 
+  </tr>
+  <tr bgcolor=#d0d0d0>
+    <td> 37 </td>
+    <td> Week 14 &mdash; April 15 </td>
+    <td> Project Discussion and Special topics 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 38 </td>
+    <td> Week 14 &mdash; April 17 </td>
+    <td> Special topics    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 39 </td>
+    <td> Week 14 &mdash; April 19 </td>
+    <td> Special topics
+    </td>
+    <td> </td>	 
+  </tr>
+<tr> 
+    <td> 40 </td>
+    <td> Week 15 &mdash; April 22 </td>
+    <td> Special topics
+    </td>
+    <td>  </td>	 
+  </tr>
+  <tr bgcolor=#d0d0d0>
+    <td> 41 </td>
+    <td> Week 15 &mdash; April 24 </td>
+    <td> Special topics
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 42 </td>
+    <td> Week 15 &mdash; April 26 </td>
+    <td> Special topics 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 43 </td>
+    <td> Week 16 &mdash; April 29 </td>
+    <td> Special topics
+    </td>
+    <td> </td>	 
+  </tr>
+  <tr>
+    <td> 44 </td>
+    <td> Week 16 &mdash; May 1 </td>
+    <td> Special topics
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 45 </td>
+    <td> Week 16 &mdash; May 3 </td>
+    <td> Special topics
+    </td>
+    <td> </td>	 
+  </tr>
+
+  
+</table>
+
+
+<h3> Notes </h3>
+<ol>
+  <li> 
+    <b> Accommodation Statement. </b> 
+    If you qualify for accommodations because of a disability, please submit to me a
+    letter from Disability Services in a timely manner (for exam accommodations
+    provide your letter at least one week prior to the exam) so that your needs can
+    be addressed. Disability Services determines accommodations based on documented
+    disabilities. Contact Disability Services at 303-492-8671 or by e-mail at dsinfo
+    [AT] colorado.edu.
+    If you have a temporary medical condition or injury, see Temporary Injuries
+    under Quick Links at the Disability Services website and discuss your needs with
+    me.  
+  <li>
+    <b> Religious Observances. </b>
+    Campus policy regarding religious observances requires that faculty make every
+    effort to deal reasonably and fairly with all students who, because of religious
+    obligations, have conflicts with scheduled exams, assignments or required
+    attendance. In this class, you should notify your instructor of any conflict at
+    least two weeks in advance. See full details 
+    <a href="http://www.colorado.edu/policies/fac_relig.html"> here  </a>.
+  <li>
+    <b> Classroom Behavior. </b> 
+    Students and faculty each have responsibility for maintaining an appropriate
+    learning environment. Those who fail to adhere to such behavioral standards may
+    be subject to discipline. Professional courtesy and sensitivity are especially
+    important with respect to individuals and topics dealing with differences of
+    race, color, culture, religion, creed, politics, veteran's status, sexual
+    orientation, gender, gender identity and gender expression, age, disability, and
+    nationalities. Class rosters are provided to the instructor with the student's
+    legal name. I will gladly honor your request to address you by an alternate name
+    or gender pronoun. Please advise me of this preference early in the semester so
+    that I may make appropriate changes to my records. For more information, see the
+    policies
+    on <a href="http://www.colorado.edu/policies/student-classroom-and-course-related-behavior">
+      classroom behavior </a>  and
+    the <a href="http://www.colorado.edu/osccr/sites/default/files/attached-files/studentconductcode_16-17-a.pdf">
+      student code</a>.
+
+    It is my expectation that each of you will be respectful to your fellow
+    classmates and instructors at all times.
+    In order to create a professional atmosphere within the classroom,
+    you are expected to:
+    <ul>
+      <li> Arrive to class on time.
+      <li> Turn off your cell phone (talk and text).
+      <li>  Bring your laptop to class&mdash;if you have one&mdash; to participate in classroom
+	activities. Please restrict
+	laptop use to these activities only, no email, Facebook, Youtube, etc.
+      <li> Put away newspapers and magazines.
+      <li> Refrain from having disruptive conversations during class.
+      <li> Remain for the whole class; if you must leave early, do so without
+    disrupting others.
+      <li> Display professional courtesy and respect in all interactions related to
+    this class
+    Compliance with these expectations will assist all of us in creating a
+    learning community and a high
+    quality educational experience.
+    Though many of the above stated policies address academic climate within the
+    classroom, these policies
+    should also be upheld outside of the classroom. As a member of the CU
+    community you are expected to
+    consistently demonstrate integrity and honor through your everyday
+    actions. Faculty, TAs, and staff
+    members are very willing to assist with your academic and personal
+    needs. However, multiple
+    professional obligations make it necessary for us to schedule our
+    availability. Suggestions specific to
+    interactions with faculty and staff include:
+	<ul>
+      <li> Respect posted office hours. Plan your weekly schedule to align with
+    scheduled office hours.
+    <li> Avoid disrupting ongoing meetings within faculty and staff offices. Please
+    wait until the meeting
+    concludes before seeking assistance. Respect faculty and staff policies
+    regarding use of email and
+    note that staff and faculty are not expected to respond to email outside of
+    business hours. Send
+    email messages to faculty and staff using a professional format. Tips for a
+    professional email
+    include:
+    <li> Always fill in the subject line with a topic that indicates the reason for
+    your email to your reader.
+    <li> Respectfully address the individual to whom you are sending the email
+    (e.g., Dear Professor
+    Smith).
+    <li> Avoid email or text message abbreviations.
+    <li> Be brief and polite.
+    <li> Add a signature block with appropriate contact information.
+    <li> Reply to email messages with the previously sent message. This will allow
+    your reader to quickly
+      recall the questions and previous conversation.
+      </ul>
+</ul>
+     
+    
+  <li> 
+    <b>Discrimination and Harassment.</b>
+    The University of Colorado Boulder (CU Boulder) is committed to maintaining a
+    positive learning, working, and living environment. CU Boulder will not tolerate
+    acts of sexual misconduct, discrimination, harassment or related retaliation
+    against or by any employee or student. CU's Sexual Misconduct Policy prohibits
+    sexual assault, sexual exploitation, sexual harassment, intimate partner abuse
+    (dating or domestic violence), stalking or related retaliation. CU Boulder's
+    Discrimination and Harassment Policy prohibits discrimination, harassment or
+    related retaliation based on race, color, national origin, sex, pregnancy, age,
+    disability, creed, religion, sexual orientation, gender identity, gender
+    expression, veteran status, political affiliation or political
+    philosophy. Individuals who believe they have been subject to misconduct under
+    either policy should contact the Office of Institutional Equity and Compliance
+    (OIEC) at 303-492-2127. Information about the OIEC, the above referenced
+    policies, and the campus resources available to assist individuals regarding
+    sexual misconduct, discrimination, harassment or related retaliation can be
+    found at
+    the <a href="http://www.colorado.edu/institutionalequity/"> OIEC website</a>. 
+
+
+  <li>
+    <b> Submitting Work Late. </b>
+    Late work is not accepted in CSCI 2270. In the event of a documented
+    personal, family, or medical emergency, consult your TA about receiving a
+    penalty free extension.
+    If you know you will be missing a weekly recitation, go to a recitation with
+    the same TA being held at a different time.
+    Recitation assignments are due by the end of recitation. Your lowest
+    recitation grade will be dropped.
+  <li> <b> Attendance.</b>
+    Attendance at all class meetings and recitations is required. You are
+    responsible for knowing the material
+    presented during class and recitation, even if you were not in attendance
+    when the material was
+    presented.
+  <!-- <li> <b> Other Information. </b> -->
+  <!--   Written work must be neat and readable, with adequate spacing and -->
+  <!--   margins. Your name, the date, and your section number must be at the top -->
+  <!--   right of the first page. Code files should have your name, date, -->
+  <!--   and homework number included as comments at the top of the file. -->
+  <!--   A limited amount of printing may be required in this class. You need to -->
+  <!--   ensure that your printing account -->
+  <!--   has sufficient funds for this. Your initial allocation may deplete quickly, -->
+  <!--   depending on your other printing -->
+  <!--   activities. If this causes problems, please come see me. -->
+
+  <li> 
+    <b> Honor Code. </b>
+    All students enrolled in a University of Colorado Boulder course are responsible
+    for knowing and adhering to
+    the <a href="http://www.colorado.edu/policies/academic-integrity-policy">academic
+      integrity policy </a> of the 
+    institution. Violations of the policy may include: plagiarism, cheating,
+    fabrication, lying, bribery, threat, unauthorized access, clicker fraud,
+    resubmission, and aiding academic dishonesty. All incidents of academic
+    misconduct will be reported to the Honor Code Council (honor@colorado.edu;
+    303-735-2273). Students who are found responsible for violating the academic
+    integrity policy will be subject to nonacademic sanctions from the Honor Code
+    Council as well as academic sanctions from the faculty member. Additional
+    information regarding the academic integrity policy can be found at
+    <a href="http://honorcode.colorado.edu/">honorcode.colorado.edu</a>.
+
+
+  <li> <b> Collaboration Policy. </b>
+    The Computer Science Department at the University of Colorado at Boulder
+    encourages collaboration among students. Students are most successful when
+    they are working with other students to understand new concepts. The
+    ultimate goal is that you fully understand the code you develop and be able
+    to collaborate with others in a mutually beneficial way. 
+    To support students in collaboration, the Department has created a
+    Collaboration Policy that makes explicit when their collaborative behavior
+    is within the bounds of collaboration and when it is actually
+    academic dishonesty, and therefore a violation of the University of Colorado
+    at Boulder's Honor Code.
+    Unless otherwise specified, you may make reasonable use of outside resources
+    (the Internet, other books, people), but then you must give credit by citing
+    your sources in the comments inside your code.
+    Reasonable use of outside resources does NOT include downloading complete,
+    or almost complete, solutions to an assignment, or acquiring a complete, or
+    almost complete, solution from any source,
+    whether you cite the source of the solution or not. This is considered
+    plagiarism and violates the University's Honor Code policy.
+    Examples of citing sources include:
+    <ul>
+      <li> // Modified version from https://github.com/Phhere/MOSS-PHP
+      <li> // Adapted from Program #7.2 in book "Accelerated C++" by B. Stroustrup
+      <li> // Worked with Joe Smith from class to come up with algorithm for sorting
+      <li> // Received suggestions from StackExchange website (see http://...)
+    </ul>
+    A good rule of thumb: <i> If it did not come from your brain, then you need to
+      attribute where you got it.</i>
+    <b>Collaboration Exceptions:</b>
+    Certain homework, quizzes, or exams may be required to be completed without
+    outside resources. In this
+    class, this includes the midterm and final exams. Use of outside resources
+    in these cases violates the
+    collaboration policy.
+    <br>
+    Examples of violating the Collaboration Policy
+    <ul>
+      <li>  Sharing a file with someone else.
+      <li> Submitting a file that someone else shared with you.
+      <li> Stealing a copy of someone else's work and submitting as your own (even
+	with modification).
+      <li> Copying or using outside resources to solve a component of a larger
+	problem and not citing your
+	sources.
+      <li> Copying or using an entire solution that you did not generate, regardless
+	of whether you cited your
+	sources.
+      <li> Downloading a solution from the Internet and modifying it to make it look
+	like your own work.
+    </ul>
+    <br>
+    Examples of collaborating correctly:
+    <ul>
+      <li>  Asking another student for a helpful suggestion.
+      <li> Reviewing another student's code for issues/bugs/errors.
+      <li> Working together on the whiteboard (or paper) to figure out how to
+	approach and solve the
+	problem. In this case you must include that person's name in your
+	collaboration list at the top of your submission.
+    </ul>
+    One way to know you are collaborating well is if everyone fully understands
+    the solution that is developed. If you do not understand what is in the work
+    you are submitting, you need to spend the time to learn the material before
+    you submit your assignment. This collaboration policy requires that you be
+    able to create the code (or solve the problem) on your own before you submit
+    your assignment. If any member of the instructional team believes that you
+    are submitting someone  else's work, you might be called upon to explain
+    your solution in a one-on-one meeting with the instructor to receive credit
+    for the work.
+    Any discovered incidents of violation of this collaboration policy will be
+    treated as violations of the University's Academic Integrity Policy and will
+    lead to an automatic academic sanction in the course and a report to both
+    the College of Engineering and Applied Science and the Honor Code
+    Council. Students who are found to be in violation of the Academic Integrity
+    Policy can be subject to non-academic sanctions as well, including but not
+    limited to university probation, suspension, or expulsion.
+    <br>
+    
+    Other information on the Honor Code can be found at
+    www.colorado.edu/policies/honor.html and
+    www.colorado.edu/academics/honorcode.
+    Collaboration boundaries are hard to define crisply and may differ from
+    class to class. If you are in any
+    doubt about where they lie for a particular course, it is your
+    responsibility to ask the course instructor.
+    
+</ol>
+
+</div>
+</body>
+</html>

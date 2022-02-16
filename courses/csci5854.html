@@ -1,0 +1,670 @@
+<!Doctype html>
+<head>
+  <meta charset="UTF-8" />
+    <title>Ashutosh Trivedi: University of Colorado Boulder</title>
+  <link href="../main.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <script src="float-panel.js"></script>
+
+  <title>Ashutosh Trivedi: Courses/CSCI 5844&mdash;Spring 2018</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <script src="float-panel.js"></script>
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript"
+	    src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Assignments',     50],
+      ['Class Project',      25],
+      ['In-class Quizzes',  25]
+      ]);
+      
+        var options = {
+          title: 'Grading '
+        };
+
+        var chart = new
+        google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Discrete Dynamical System',     30],
+      ['Continuous Dynamical Systems',      30],
+      ['Hybrid Dynamical Systems',  30],
+      ['Applications',  10],
+      ]);
+      
+        var options = {
+          title: 'Cyber-Physical Systems: Subtopics'
+        };
+
+        var chart = new
+        google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+</head>
+<body id="mainp"> 
+
+<div id="content">
+  <div class="nav">
+    <ul>
+      <li class="home"><a href="../index.html">Home</a></li>
+      <li class="pubs"><a href="../pubs.html">Publications</a></li>
+      <li class="teaching"><a href="../teaching.html">Teaching</a></li>
+      <li class="service"><a  href="../ser.html">Service</a></li>
+      <li class="research"><a href="../bio.html">Bio</a></li>
+    </ul>
+  </div>
+   <div id="backtop">&#9650;</div>
+    <h1>
+     CSCI 5854: Foundations of Cyber-Physical Systems  
+   </h1>
+    <!-- <hr> -->
+    <!--   <img width=100cm align="middle" src="csci5854/cps.png"> -->
+
+    <!-- <div align="right"> -->
+    <!--   *Image inspired by Lee and Seshia (http://leeseshia.org/). -->
+    <!-- </div> -->
+    <h3> Logistics </h3> 
+    <ul>
+
+      <li> <b>Instructor</b>: 
+	<a href="http://www.ashutoshtrivedi.com"> Ashutosh Trivedi</a> (ashutosh.trivedi@colorado.edu)
+      <li> <b> Course description</b>: <br>
+	  Cyber-physical systems are characterized by a tight integration (a feedback loop) between the discrete control (the "cyber") 
+	  and the analog environment (the "physical"). This course provides an introduction to the state-of-the-art in model-based design 
+	  and verification of safety-critical cyber-physical systems (CPS).
+	  This course has the following four parts:
+	<ol> 
+	  <li> <b> Discrete Dynamical Systems. </b>
+	    <i> mathematical <b> modeling </b>, <b> requirement specification
+	    formalisms</b>,  and <b> verification techniques  </b> to reason
+	      with purely discrete systems.
+	    </i>
+	    
+	  <li> <b> Continuous Dynamical Systems.</b> 
+	    <i> mathematical <b>modeling</b> (via Ordinary Differential Equations) and  
+	      <b>analysis techniques</b> (Reachability and Stability) for purely
+	      continuous systems.</i>
+	    
+	  <li> <b> Hybrid Dynamical Systems.</b> 
+	    <i> 
+		mathematical <b> modeling </b> (Hybrid and Timed Automata), <b> requirement
+		specification formalisms</b> (MTL), and <b> verification
+		techniques </b> to reason with systems that integrate both discrete
+	      and continuous behaviors.</i> 
+	  <li>	<b> Applications.</b>
+	    We conclude the course by
+	    exploring various case-studies highlighting applications of the ideas
+	    presented in the course in designing and  verifying cyber-physical
+	    systems from various domains such as automotive systems, medical
+	    devices, air-traffic management, and robotics.
+	</ol>
+<!--
+	  <center> 
+	    <div id="piechart2" style="width: 930px; height: 500px;"></div>
+	  </center>
+-->
+      <li> <b> Requisites</b>: 
+	<ul> 
+	  <li> Undergraduate level calculus and some exposure to CS theory.
+	  <li> Background in Embedded Systems or Control Theory.
+	</ul>
+      <li> <b> Class Meeting Times</b>:
+	<ul>
+	  <li> Monday (4:00pm&mdash;5:15pm) and
+	  <li> Wednesday  (4:00pm&mdash;5:15pm)
+	    </ul>
+      <li> <b> Office hours</b>: after the class or by appointment. 
+      <li> <b> Venue </b>: 
+	<ul>
+	  <li> Class meeting location: ECCS 1B14 
+	  <li> Office Hour location: ECCS 121 D
+	</ul>
+    </ul>
+
+    <hr>
+    <h3> Relevant Textbooks </h3>
+    <ul>
+      <li> 
+	<b>Required Text</b> :
+	<ul>
+	  <li> 
+	    [Alur] <a href="https://www.cis.upenn.edu/~alur/pcps.html"> Principles
+	  of Cyber-Physical Systems </a> by Rajeev Alur.
+	</ul>
+	<br> 
+      <li>
+	<b> Other supplemental materials </b>:
+	<ul>	  
+	  <li> [LeeSeshia] <a href="http://leeseshia.org/">Introduction to Embedded
+	      Systems</a> by Edward A. Lee and Sanjit A. Seshia.
+	  <li> [Meiss] <a href="http://epubs.siam.org/doi/book/10.1137/1.9781611974645">
+	      Differential Dynamical Systems </a> by James D. Meiss.
+	  <li> [AstromMurray] <a href="http://www.cds.caltech.edu/~murray/amwiki/index.php/Main_Page"> Feedback Systems: An Introduction for Scientists
+	      and Engineers</a> by Karl Astrom and Richard Murray.
+	  <li> Surveys, Papers and Lecture Notes from various authors.
+	</ul>
+    </ul>
+    <br> 
+    
+    <hr> 
+    <h3> Assignments </h3> 
+    <ul> <li> All assignments will be posted
+    on <a href="https://canvas.colorado.edu/courses/11376">the canvas</a>. 
+    </ul>
+
+    <hr>
+    <h3> Grading </h3>
+    The overall grade will be based on a cumulative score computed by adding
+    together the grades from:
+    <ul>
+      <li> Weekly assignments (50%) 
+	<ul>
+	  <li> Weekly reading exercises
+	  <li> Biweekly system modeling or verification assignments 
+	  <li> Some assignment may involve the use of 
+	    tools such as Matlab Simulink(tm)/Stateflow(tm) and other open
+	    source tools.
+	</ul>
+      <li> In-class quizzes (25%) 
+	<ul>
+	  <li> We will have two in-class quizzes and will be announced two-weeks in advance.
+	</ul>
+      <li> The final project (25%)
+	<ul>
+	  <li> The final project will be due at the end of the class.
+	  <li> The project may involve
+	    <ul>
+	      <li> modeling and designing a non-trivial CPS
+		using ideas introduced in the class, 
+	      <li> Reading papers on an advanced topic relevant to the class, or 
+	      <li> Working with a verification tool and evaluating it on a set
+		of benchmarks.
+		</ul>
+	</ul>
+    </ul>
+    <table> <tr>
+<!--
+	<td> 
+	  <center> 
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+	  </center>
+	</td> 
+-->
+</td> <td width=20%> </td>
+<td>
+</tr>
+</table>
+<hr>
+
+    <h3> Topics Covered </h3>
+
+    <ol> 
+      <li> Mathematical Models of Systems and Their Properties 
+	<ul> 
+	  <li> Synchronous Discrete Models: (Extended) Finite State Machines (FSMs)
+	  <li> Asynchronous Models: Network of FSMs and Synchronization
+	  <li> Continuous Time Models: Ordinary Differential Equations
+	  <li> Hybrid Models: Timed Automata, Multi-mode Systems, and Hybrid
+	    Automata
+	  <li> Probabilistic Models: Markov Decision Processes and Probabilistic
+	  Timed Automata (*)
+	</ul>
+      <li> Requirement Specification Formalisms
+	<ul>
+	  <li> Specification Types: Safety, Liveness, Reactivity, Stability
+	  <li> omega-automata and temporal logics (LTL and MTL)
+	</ul>
+      <li> Verification Techniques 
+	<ul> 
+	  <li> Model Checking 
+	  <li> Deductive Verification: Lyapunov and Barrier Certificates
+	  <li> Simulation-Based Verification: RRTs and S-Taliro.
+	</ul>
+      <li> Verification Tools
+	<ul>
+	  <li> <a href="https://nuxmv.fbk.eu/">NuXMV</a> model checker for
+	  discrete systems
+	  <li> <a href="http://www.uppaal.org/">UPPAAL</a> model checker for
+	    timed systems
+	  <li> <a href="http://www.prismmodelchecker.org/">PRISM</a> model checker for
+	    probabilistic systems (*)
+	  <li> <a href="https://sites.google.com/a/asu.edu/s-taliro/s-taliro">S-TaLiRo</a>:
+	    temporal logic falsification tool
+	  <li> <a href="https://flowstar.org/"> Flow-star </a>: a verification
+	  tool for hybrid systems
+	</ul>
+      <li>
+	Applications (*)
+	<ul>
+	  <li> Real-Time Scheduling 
+	  <li> Medical Devices (Artificial Pacemaker and Artificial Pancreas)
+	  <li> Robot Motion and Path Planning
+	  <li> Automotive Systems
+	</ul>
+    </ol>
+    
+    Topics marked with (*) will be explored via student projects and presentations.
+    <hr>
+
+<h3> Schedule and Lecture Notes </h3>
+The schedule of lectures shown below is subject to change. 
+We will post lecture notes or provide pointers to the texbook. 
+We will strive to post all material well in advance. 
+Please take a look through them, and come prepared for class.
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#667cab> 
+    <td> <font color=white> # </font>  </td> 
+    <td width=15%> <font color=white> Date  </font> </td> 
+    <td width=60%> <font color="white">Description</font></td>	 
+    <td> <font color="white"> Chapter</font></td>	 
+  </tr>
+  <tr>
+    <td> 1 </td>
+    <td> Week 1 &mdash;January 17 </td>
+    <td> Cyber-Physical Systems: Introduction
+    </td>
+    <td> <a href="https://www.cis.upenn.edu/~alur/pcps.html">Alur</a> (Chapter 1) </td>	 
+  </tr>
+</table> 
+
+<h3> Part One: Discrete Dynamical Systems </h3>
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#d0d0d0>
+    <td> 2 </td>
+    <Td> Week 2 &mdash; January 22 </td>
+    <td> Transition Systems and Extended Finite state machines (An informal introduction)
+      <!-- <b>[<a href=""> Slides </a>]</b> -->
+    </td>
+    <td> <a href="https://www.cis.upenn.edu/~alur/pcps.html">Alur</a> (Chapter 2) </td>	 
+  </tr>
+
+  <tr>
+    <td> 3 </td>
+    <td> Week 2 &mdash; January 24  </td>
+    <td> Nondeterministic models. 
+    </td>
+    <td> <a href="https://www.cis.upenn.edu/~alur/pcps.html">Alur</a> (Chapter 2) </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 4 </td>
+    <td> Week 3 &mdash; January 29 </td>
+    <td> Composition, Events and Communication between models. 
+    </td>
+    <td> class notes </td>	 
+  </tr>
+
+  <tr>
+    <td> 5 </td>
+    <td> Week 3 &mdash; January 31  </td>
+    <td> Safety Verification: Overview of Model Checking 
+     <!-- <b>[<a href="">Slides </a>]</b> -->
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 6 </td>
+    <td> Week 4 &mdash; February 5 </td>
+    <td> Demo of NuXMV. Introduction to SAT/SMT solvers 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr>
+    <td> 7 </td>
+    <td> Week 4 &mdash; February 7  </td>
+    <td> Bounded model checking for reachability 
+<!--
+      <b>[<a href="csci3434/lec06.pdf">Slides </a>]</b> --> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 8 </td>
+    <td> Week 5 &mdash; February 12 </td>
+    <td>   Beyond Safety: Liveness
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr>
+    <td> 9 </td>
+    <td> Week 5 &mdash; February 14 </td>
+    <td> Temporal Logic and omega automata  
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 10 </td>
+    <td> Week 6 &mdash; February 19 </td>
+    <td> Model-Checking Temporal Logic 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> </td>	 
+  </tr>
+
+
+  <tr bgcolor=#ffffe0>
+    <td> 11 </td>
+    <td> Week 6 &mdash; February 21  </td>
+    <td> In-Class Quiz I 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  </td>	 
+  </tr>
+</table> 
+<hr>
+
+<h3> Part Two: Continuous Dynamical Systems </h3>
+
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 12 </td>
+    <td> Week 7 &mdash; February 26 </td>
+    <td> Continuous systems. Ordinary Differential Equations
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr>
+    <td> 13 </td>
+    <td> Week 7 &mdash; February 28 </td>
+    <td> Basic theory of ODEs. Existence and Uniqueness
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 14 </td>
+    <td> Week 8 &mdash; March 5 </td>
+    <td> Simulation of ODEs in Simulink(tm)
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr>
+    <td> 15 </td>
+    <td> Week 8 &mdash; March 7 </td>
+    <td> Linear ODEs and introduction to feedback control
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 16 </td>
+    <td> Week 9 &mdash; March 12 </td>
+    <td> Linear systems: reachability and stability
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 17 </td>
+    <td> Week 9 &mdash; March 14 </td>
+    <td> 
+      Eigenvalues, pole placement, introduction to PID control
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 18 </td>
+    <td> Week 10 &mdash; March 19 </td>
+    <td> Stability Analysis: Lyapunov Functions and Barrier Certificates
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 19 </td>
+    <td> Week 10 &mdash; March 21  </td>
+    <td> In-class Quiz II
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#ffd0d0>
+    <td> 21 </td>
+    <td> Week 11 &mdash; March 26-30  </td>
+    <td> No Class &mdash; Spring Break
+    </td>
+    <td> </td>	 
+  </tr>
+</table> 
+<hr>
+
+<h3> Part Three: Hybrid Dynamical Systems </h3>
+
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+
+  
+  <tr bgcolor=#d0d0d0>
+    <td> 20 </td>
+    <td> Week 12 &mdash; April 2 </td>
+    <td>
+      Hybrid Systems: Basic introduction and examples
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+
+  <tr>
+    <td> 22 </td>
+    <td> Week 12 &mdash; April 4 </td>
+    <td> Hybrid automata: Theoretical Results
+          </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 23 </td>
+    <td> Week 13 &mdash; April 9 </td>
+    <td>Hybrid Automata: Simulations using Simulink/Stateflow
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 24 </td>
+    <td> Week 13 &mdash; April 11 </td>
+    <td> Hybrid Automata: Metric Temporal Logic, Robustness, and Falsification
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 25 </td>
+    <td> Week 14 &mdash; April 16 </td>
+    <td> 
+Hybrid Automata: Bounded Model Checking, Flowpipe construction, Flowstar tool demo
+
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr>
+    <td> 26 </td>
+    <td> Week 14 &mdash; April 18  </td>
+    <td> 
+      Timed Automata: Theory and tool demo
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+
+    <td> 28 </td>
+    <td> Week 15 &mdash; April 23 </td>
+    <td> Probabilistic Modeling: Verification and PRISM tool demo
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+  <td>  </td>	 
+</tr>
+
+</table> 
+<hr>
+
+<h3> Part Four: Applications </h3>
+
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+
+  
+<tr  bgcolor=#ffffe0>
+    <td> 29 </td>
+    <td> Week 15 &mdash; April 25 </td>
+    <td> Applications I (TBA)
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+
+  <tr bgcolor=#ffffe0>
+    <td> 30 </td>
+    <td> Week 16 &mdash; April 30  </td>
+    <td> Applications II (TBA)
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 31 </td>
+    <td> Week 16 &mdash; May 2 </td>
+    <td> Applications III (TBA)
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> </td>	 
+  </tr>
+</table>
+
+<hr>
+
+<h3> Notes </h3>
+<ol>
+  <li> 
+    <b> Accommodation Statement. </b> 
+    If you qualify for accommodations because of a disability, please submit to me a
+    letter from Disability Services in a timely manner (for exam accommodations
+    provide your letter at least one week prior to the exam) so that your needs can
+    be addressed. Disability Services determines accommodations based on documented
+    disabilities. Contact Disability Services at 303-492-8671 or by e-mail at dsinfo
+    [AT] colorado.edu.
+    If you have a temporary medical condition or injury, see Temporary Injuries
+    under Quick Links at the Disability Services website and discuss your needs with
+    me.  
+  <li>
+    <b> Religious Observances. </b>
+    Campus policy regarding religious observances requires that faculty make every
+    effort to deal reasonably and fairly with all students who, because of religious
+    obligations, have conflicts with scheduled exams, assignments or required
+    attendance. In this class, you should notify your instructor of any conflict at
+    least two weeks in advance. See full details 
+    <a href="http://www.colorado.edu/policies/fac_relig.html"> here  </a>.
+  <li>
+    <b> Classroom Behavior. </b> 
+    Students and faculty each have responsibility for maintaining an appropriate
+    learning environment. Those who fail to adhere to such behavioral standards may
+    be subject to discipline. Professional courtesy and sensitivity are especially
+    important with respect to individuals and topics dealing with differences of
+    race, color, culture, religion, creed, politics, veteran's status, sexual
+    orientation, gender, gender identity and gender expression, age, disability, and
+    nationalities. Class rosters are provided to the instructor with the student's
+    legal name. I will gladly honor your request to address you by an alternate name
+    or gender pronoun. Please advise me of this preference early in the semester so
+    that I may make appropriate changes to my records. For more information, see the
+    policies
+    on <a href="http://www.colorado.edu/policies/student-classroom-and-course-related-behavior">
+      classroom behavior </a>  and
+    the <a href="http://www.colorado.edu/osccr/sites/default/files/attached-files/studentconductcode_16-17-a.pdf">
+      student code</a>. 
+
+  <li> 
+    <b>Discrimination and Harassment.</b>
+    The University of Colorado Boulder (CU Boulder) is committed to maintaining a
+    positive learning, working, and living environment. CU Boulder will not tolerate
+    acts of sexual misconduct, discrimination, harassment or related retaliation
+    against or by any employee or student. CU's Sexual Misconduct Policy prohibits
+    sexual assault, sexual exploitation, sexual harassment, intimate partner abuse
+    (dating or domestic violence), stalking or related retaliation. CU Boulder's
+    Discrimination and Harassment Policy prohibits discrimination, harassment or
+    related retaliation based on race, color, national origin, sex, pregnancy, age,
+    disability, creed, religion, sexual orientation, gender identity, gender
+    expression, veteran status, political affiliation or political
+    philosophy. Individuals who believe they have been subject to misconduct under
+    either policy should contact the Office of Institutional Equity and Compliance
+    (OIEC) at 303-492-2127. Information about the OIEC, the above referenced
+    policies, and the campus resources available to assist individuals regarding
+    sexual misconduct, discrimination, harassment or related retaliation can be
+    found at
+    the <a href="http://www.colorado.edu/institutionalequity/"> OIEC website</a>. 
+
+  <li> 
+    <b> Honor Code. </b>
+    All students enrolled in a University of Colorado Boulder course are responsible
+    for knowing and adhering to
+    the <a href="http://www.colorado.edu/policies/academic-integrity-policy">academic
+      integrity policy </a> of the 
+    institution. Violations of the policy may include: plagiarism, cheating,
+    fabrication, lying, bribery, threat, unauthorized access, clicker fraud,
+    resubmission, and aiding academic dishonesty. All incidents of academic
+    misconduct will be reported to the Honor Code Council (honor@colorado.edu;
+    303-735-2273). Students who are found responsible for violating the academic
+    integrity policy will be subject to nonacademic sanctions from the Honor Code
+    Council as well as academic sanctions from the faculty member. Additional
+    information regarding the academic integrity policy can be found at
+    <a href="http://honorcode.colorado.edu/">honorcode.colorado.edu</a>.
+
+
+  <li> The web-page of a previous offering of the course is
+  available <a href="http://www.cs.colorado.edu/~srirams/courses/fcps-spring17/index.html">
+  here </a> and <a href="http://www.cs.colorado.edu/~srirams/courses/csci7000-fall14/index.html"> here </a>. 
+    </ol>
+
+</div>
+</body>
+</html>

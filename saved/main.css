@@ -1,0 +1,334 @@
+#mainp {
+    background:#304b64; /*34495e;*/
+    margin:0;
+    font-size: 90%;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+body {
+    margin:1cm;
+    font-family: 'Open Sans', sans-serif;;
+}
+
+#content {
+    background: white;
+    width: 70%;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+    margin: 0 auto;
+    color: #565a5c;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color:#667cab;
+    text-decoration:none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover
+{
+    color: #565A5C;
+    text-decoration: underline;
+ }
+
+
+.image-cropper {
+    width: 228px;
+    height: 228px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0.9;
+    border-radius: 90%;
+ }
+.image-cropper2 {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    margin: .5em 10px .5em 0;
+        opacity: 0.9;
+ }
+.image {
+    width: 100%;
+    height: 100%;    
+}
+
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+
+
+#backtop {
+    position: fixed;
+    left:auto;right: 20px;top:auto;bottom: 20px;
+    outline: none;
+    overflow:hidden;
+    color:#cdcdcd;
+    text-align:center;
+    background-color:#304b64; 
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:25px;
+    border-radius:2px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+    z-index:999999;
+    
+    opacity:1;
+    display:none;
+}
+
+
+/* The following Hamburger menu is authored by Erik Terwan https://erikterwan.com */
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323; 
+
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+
+#menu
+{
+  position: absolute;
+  width: 96px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+    display: inline;
+    padding: 10px 0;
+    font-size: 22px;
+    float: right;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+    transform: scale(1.0, 1.0);
+}
+
+
+
+/* Old-style  bar */
+nav {
+    background-color: #304b64;
+    color:#565a5c;
+    position: fixed;
+}
+
+.nav ul {
+    background-color: #304b64;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li.icon {
+    display: none;
+}
+.nav li {
+    background-color: #304b64; 
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    background: #304b64; 
+    border-bottom: 1px solid #888;
+    
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    background: #304b64;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav a:hover {
+    color: #a0a0a0;
+    background-color: #304b64;
+    border-bottom:5px solid #a0a0a0;
+    padding-bottom:0px;
+ }
+
+.nav a.active {
+    color: #565a5c;
+    cursor: default;
+    text-decoration:underline;
+}
+
+@media screen and (min-width: 600px) {
+    .nav li {
+	width: 150px;
+	border-bottom: none;
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.4em;
+    	display: inline-block;
+	margin-right: -4px;
+        }
+
+.info {
+  margin-right: 280px;
+  padding: 20px;
+}
+
+.follow-button {
+    background-image: url(http://minimalmonkey.com/lab/css3-animations/twitter-bird-sprite-small.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    padding: 7px 0 7px 40px;
+}
+
+.follow-button:hover {-webkit-animation: fly 0.2s steps(4) 0 10;
+		      -moz-animation: fly 0.2s steps(4) 0 10;
+		      animation: fly 0.2s steps(4) 0 10;
+		      right: 0;
+}
+
+@-webkit-keyframes fly {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -140px;
+  }
+}
+
+@-moz-keyframes fly {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -140px;
+  }
+}
+
+@keyframes fly {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -140px;
+  }
+}
+
+
+
+li{
+  margin: 1px 0;
+}
+
+
+

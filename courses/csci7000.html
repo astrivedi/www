@@ -1,0 +1,606 @@
+<!Doctype html>
+<head>
+  <meta charset="UTF-8" />
+    <title>Ashutosh Trivedi: University of Colorado Boulder</title>
+  <link href="../main.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <script src="float-panel.js"></script>
+
+  <title>Ashutosh Trivedi: Courses/CSCI 7000&mdash;Fall 2019</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Ultra' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+    <script src="float-panel.js"></script>
+
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+      }
+      });
+    </script>
+    
+
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript"
+	    src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Assignments',     50],
+      ['Class Project',      25],
+      ['In-class Quizzes',  25]
+      ]);
+      
+        var options = {
+          title: 'Grading '
+        };
+
+        var chart = new
+        google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+      
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Discrete Dynamical System',     30],
+      ['Continuous Dynamical Systems',      30],
+      ['Hybrid Dynamical Systems',  30],
+      ['Applications',  10],
+      ]);
+      
+        var options = {
+          title: 'Cyber-Physical Systems: Subtopics'
+        };
+
+        var chart = new
+        google.visualization.PieChart(document.getElementById('piechart2'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+</head>
+<body id="mainp"> 
+
+<div id="content">
+  <div class="nav">
+    <ul>
+      <li class="home"><a href="../index.html">Home</a></li>
+      <li class="pubs"><a href="../pubs.html">Publications</a></li>
+      <li class="teaching"><a href="../teaching.html">Teaching</a></li>
+      <li class="service"><a  href="../ser.html">Service</a></li>
+      <li class="research"><a href="../bio.html">Bio</a></li>
+    </ul>
+  </div>
+   <div id="backtop">&#9650;</div>
+    <h1>
+     CSCI 7000: Automata for Verification, Synthesis, and Learning  
+   </h1>
+    <hr>
+<!--    <div class="image-crop">
+      <img width=400cm align="middle" src="csci5854/cps.png">
+    </div>
+
+-->
+    <h3> Logistics </h3> 
+    <ul>
+
+      <li> <b>Instructor</b>: 
+	<a href="http://www.ashutoshtrivedi.com"> Ashutosh Trivedi</a> (ashutosh.trivedi@colorado.edu)
+      <li> <b> Course description</b>: <br>
+        In the course we cover aspects of automata theory that are relevant to model
+	checking, synthesis, and learning. We begin with a review of automata on
+	finite words and then move to automata on infinite words with B&uuml;chi
+	acceptance condition. After establishing their correspondence to
+	omega-regular languages, we study other types of automata that accept
+	the same class of languages, but unlike B&uuml;chi acceptance condition, can
+	do so even without nondeterminism. We next study games played on
+	automata and their application in defining simulation relations and in
+	synthesizing reactive systems. We will also present recent results on
+	LTL model-checking and synthesis for Markov decision processes and their
+	connections with reinforcement learning.   
+<!--
+	  <center> 
+	    <div id="piechart2" style="width: 930px; height: 500px;"></div>
+	  </center>
+-->
+      <li> <b> Requisites</b>: 
+	<ul> 
+	  <li> Theory of Computation (UG level)
+	</ul>
+      <li> <b> Class Meeting Times</b>:
+	<ul>
+	  <li> Tuesday (11:00am&mdash;12:15pm) and
+	  <li> Thursday  (11:00am&mdash;12:15pm)
+	    </ul>
+      <li> <b> Office hours</b>: Thursday (12:30pm&mdash;1:30am) or after the class or by appointment. 
+      <li> <b> Venue </b>: 
+	<ul>
+	  <li> Class meeting location: ECEE 265
+	  <li> Office Hour location: ECAE 113
+	</ul>
+    </ul>
+    <hr>
+    <h3> Relevant Textbooks </h3>
+    <ul>
+      <li>
+	We will use the following textbooks for various reading assignments:
+	<ul>
+	  <li> [AVS] Automata for Verification and Synthesis: Lecture notes from a previous offering of this course by Fabio Somenzi,
+	    
+	  <li>
+	    [GTW] Erich Gradel, Wolfgang Thomas, Thomas Wilke (Eds.)
+	    Automata, Logics, and Infinite Games: A Guide to Current Research
+	  <li> [KN] Bakhadyr Khoussainov, Anil Nerode
+	    <a href="https://www.springer.com/us/book/9780817642075">Automata Theory and its Applications</a>
+	</ul>
+      <li> 
+	Course materials, such as lecture notes, assignments, and quizzes will be
+	made available in electronic form on the Moodle site for the course.
+	Your identikey is needed for signing in.
+    </ul>
+    <hr>
+    <h3> Assignments </h3> 
+    <ul> <li> All assignments will be posted
+    on <a href="https://moodle.cs.colorado.edu/course/view.php?id=1260">Moodle</a>. 
+    </ul>
+
+    <hr>
+    <h3> Grading </h3>
+    The overall grade will be based on a cumulative score computed by adding
+    together the grades from:
+    <ul>
+      <li> Assignments (50%) 
+	<ul>
+	  <li> Weekly reading exercises
+	  <li> Biweekly assignments 
+	</ul>
+      <li> In-class quizzes (25%) 
+	<ul>
+	  <li> We will have two in-class quizzes and will be announced two-weeks in advance.
+	</ul>
+      <li> The final project (25%)
+    </ul>
+    <table> <tr>
+<!--
+	<td> 
+	  <center> 
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+	  </center>
+	</td> 
+-->
+</td> <td width=20%> </td>
+<td>
+</tr>
+</table>
+<hr>
+
+    <h3> Topics Covered </h3>
+
+    <ol> 
+      <li> Regular Languages on Finite Words  
+      <li> Omega-Regular Languages and B&uuml;chi Automata
+      <li> Different Acceptance Conditions for Omega-Automata
+      <li> Linear Temporal Logic
+      <li> McNaughton’s Theorem
+      <li> Parity Automata of Minimum Index
+      <li> The Topology of $\Sigma^\omega$
+      <li> Games
+      <li> Simulation Relations
+      <li> Alternation
+      <li> Synthesis of Reactive Games
+      <li> Tree Automata
+      <li> Probabilistic Model Checking
+      <li> Reinforcement Learning with Omega-Rewards
+    </ol>
+
+    <hr>
+
+<h3> Schedule and Lecture Notes </h3>
+The schedule of lectures shown below is subject to change. 
+We will post lecture notes or provide pointers to the texbook. 
+We will strive to post all material well in advance. 
+Please take a look through them, and come prepared for class.
+
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#667cab> 
+    <td> <font color=white> # </font>  </td> 
+    <td width=25%> <font color=white> Date  </font> </td> 
+    <td width=60%> <font color="white">Description</font></td>	 
+    <td> <font color="white"> Chapter</font></td>	 
+  </tr>
+  <tr>
+    <td> 1 </td>
+    <td> Week 1 &mdash; August 27 </td>
+    <td> Introduction to the course. Automata on finite words and Regular Expressions.
+    </td>
+    <td> AVS: Chapter 1 </td>	 
+  </tr>
+
+</table> 
+
+<h3> Part One: Verification </h3>
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#d0d0d0>
+    <td> 2 </td>
+    <Td> Week 1 &mdash; August 29 </td>
+    <td> 
+      Automata on finite words: Closure Properties and Pumping Lemma.
+    </td>
+    <td> AVS Chapter 1 </td>	 
+  </tr>
+
+  <tr>
+    <td> 3 </td>
+    <td> Week 2 &mdash; September 3 </td>
+    <td> Omega Regular Expressions and B&uuml;chi Automata
+    </td>
+    <td> AVS Chapter 2 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 4 </td>
+    <td> Week 2 &mdash; September 5 </td>
+    <td> Deterministic an Generalized B&uuml;chi Automata, and Closure Properties.
+    </td>
+    <td> AVS Chapter 2</td>	 
+  </tr>
+
+  <tr>
+    <td> 5 </td>
+    <td> Week 3 &mdash; September 10 </td>
+    <td> Monadic second-order theory of one successor (S1S) and B&uuml;chi Automata.
+     <!-- <b>[<a href="">Slides </a>]</b> -->
+    </td>
+    <td> AVS Chapter 2.6</td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 6 </td>
+    <td> Week 3 &mdash; September 12< /td>
+    <td> Omega Automata and Various Acceptance Conditions
+    </td>
+    <td> AVS Chapter 3 </td>	 
+  </tr>
+
+  <tr>
+    <td> 7 </td>
+    <td> Week 4 &mdash; September 17  </td>
+    <td> Linear Temporal Logic 
+<!--
+      <b>[<a href="csci3434/lec06.pdf">Slides </a>]</b> --> 
+    </td>
+    <td> AVS Chapter 4  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 8 </td>
+    <td> Week 4 &mdash; September 19 </td>
+    <td> Linear Temporal Logic and Nondeterminsitic B&uuml;chi Automata.
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  AVS Chapter 4</td>	 
+  </tr>
+
+  <tr>
+    <td> 9 </td>
+    <td> Week 5 &mdash; September 24 </td>
+    <td> McNaughton’s Theorem
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> AVS Chapter 5 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 10 </td>
+    <td> Week 5 &mdash; September 26 </td>
+    <td> McNaughton’s Theorem (Contd.)
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>AVS Chapter 5 </td>	 
+  </tr>
+
+
+  <tr>
+    <td> 11 </td>
+    <td> Week 6 &mdash; October 1 </td>
+    <td> Parity Automata of Minimum Index
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> AVS Chapter 6 </td>	 
+  </tr>
+  <tr bgcolor=#d0d0d0>
+    <td> 12 </td>
+    <td> Week 6 &mdash; October 3 </td>
+    <td> Topology of $\Sigma^\omega$ 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> AVS Chapter 7 </td>	 
+  </tr>
+
+  <tr>
+    <td> 13 </td>
+    <td> Week 7 &mdash; October 8 </td>
+    <td> Wrap-up (Automata for Verification).
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 14 </td>
+    <td> Week 7 &mdash; October 10 </td>
+    <td> In-class Quiz 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> </td>	 
+  </tr>
+</table>
+<hr>
+<h3> Part Two: Synthesis </h3>
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr>
+    <td> 15 </td>
+    <td> Week 8 &mdash; October 15 </td>
+    <td> Graph Games
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> AVS Chapter 8.1 to 8.6  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 16 </td>
+    <td> Week 8 &mdash; October 17 </td>
+    <td> Algorithms for Parity Games 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> AVS Chapter 8.7  </td>	 
+  </tr>
+
+  <tr>
+    <td> 17 </td>
+    <td> Week 9 &mdash; October 22 </td>
+    <td> 
+      Alternation
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> AVS Chapter 11 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 18 </td>
+    <td> Week 9 &mdash; October 24 </td>
+    <td> Alternation
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> AVS Chapter 11 </td>	 
+  </tr>
+
+  <tr>
+    <td> 19 </td>
+    <td> Week 10 &mdash; October 29 </td>
+    <td> Reactive Synthesis
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> AVS Chapter 12</td>	 
+  </tr>
+  
+    <tr bgcolor=#d0d0d0>
+    <td> 20 </td>
+    <td> Week 10 &mdash; October 31 </td>
+    <td> Reactive Synthesis (Contd.)
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> AVS Chapter 12 </td>	 
+  </tr>
+  
+  <tr>
+    <td> 21 </td>
+    <td> Week 11 &mdash; November 5 </td>
+    <td>
+      Tree Automata 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  AVS Chapter 13 </td>	 
+  </tr>
+
+</table> 
+<hr>
+
+<h3> Part Three: Learning </h3>
+
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+
+
+  <tr>
+    <td> 22 </td>
+    <td> Week 12 &mdash; November 7 </td>
+    <td> Markov Decision Processes and Optimal Control
+          </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 23 </td>
+    <td> Week 13 &mdash; November 12 </td>
+    <td>Probabilistic Model Checking
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 24 </td>
+    <td> Week 13 &mdash; November 14 </td>
+    <td>  Probabilistic Model Checking (Limit Deterministic B&uuml;chi Automata)
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 25 </td>
+    <td> Week 14 &mdash; November 19 </td>
+    <td> 
+      Reinforcement Learning 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 26 </td>
+    <td> Week 14 &mdash; November 21  </td>
+    <td> 
+      In-Class Quiz II
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+
+  <tr bgcolor=#ffd0d0>
+    <td>  </td>
+    <td> Week 10 &mdash; November 25&mdash;November29  </td>
+    <td> No Class &mdash; Fall Break
+    </td>
+    <td> </td>	 
+  </tr>
+  
+  <tr bgcolor=#d0d0d0>
+    <td> 27 </td>
+    <td> Week 11 &mdash; December 3 </td>
+    <td>
+      Reinforcement Learning and Omega-Regular Rewards
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+
+  <tr>
+    <td> 28 </td>
+    <td> Week 12 &mdash; December 5 </td>
+    <td> Learning Automata from Examples
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 29 </td>
+    <td> Week 13 &mdash; December 10 </td>
+    <td>Generative Adversarial Network Games
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>   </td>	 
+  </tr>
+
+  <tr>
+    <td> 30 </td>
+    <td> Week 13 &mdash; December 12 </td>
+    <td> Wrap-up / Project Presentations.
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+</table>
+
+<hr>
+
+<h3> Notes </h3>
+<ol>
+  <li> 
+    <b> Accommodation Statement. </b> 
+    If you qualify for accommodations because of a disability, please submit to me a
+    letter from Disability Services in a timely manner (for exam accommodations
+    provide your letter at least one week prior to the exam) so that your needs can
+    be addressed. Disability Services determines accommodations based on documented
+    disabilities. Contact Disability Services at 303-492-8671 or by e-mail at dsinfo
+    [AT] colorado.edu.
+    If you have a temporary medical condition or injury, see Temporary Injuries
+    under Quick Links at the Disability Services website and discuss your needs with
+    me.  
+  <li>
+    <b> Religious Observances. </b>
+    Campus policy regarding religious observances requires that faculty make every
+    effort to deal reasonably and fairly with all students who, because of religious
+    obligations, have conflicts with scheduled exams, assignments or required
+    attendance. In this class, you should notify your instructor of any conflict at
+    least two weeks in advance. See full details 
+    <a href="http://www.colorado.edu/policies/fac_relig.html"> here  </a>.
+  <li>
+    <b> Classroom Behavior. </b> 
+    Students and faculty each have responsibility for maintaining an appropriate
+    learning environment. Those who fail to adhere to such behavioral standards may
+    be subject to discipline. Professional courtesy and sensitivity are especially
+    important with respect to individuals and topics dealing with differences of
+    race, color, culture, religion, creed, politics, veteran's status, sexual
+    orientation, gender, gender identity and gender expression, age, disability, and
+    nationalities. Class rosters are provided to the instructor with the student's
+    legal name. I will gladly honor your request to address you by an alternate name
+    or gender pronoun. Please advise me of this preference early in the semester so
+    that I may make appropriate changes to my records. For more information, see the
+    policies
+    on <a href="http://www.colorado.edu/policies/student-classroom-and-course-related-behavior">
+      classroom behavior </a>  and
+    the <a href="http://www.colorado.edu/osccr/sites/default/files/attached-files/studentconductcode_16-17-a.pdf">
+      student code</a>. 
+
+  <li> 
+    <b>Discrimination and Harassment.</b>
+    The University of Colorado Boulder (CU Boulder) is committed to maintaining a
+    positive learning, working, and living environment. CU Boulder will not tolerate
+    acts of sexual misconduct, discrimination, harassment or related retaliation
+    against or by any employee or student. CU's Sexual Misconduct Policy prohibits
+    sexual assault, sexual exploitation, sexual harassment, intimate partner abuse
+    (dating or domestic violence), stalking or related retaliation. CU Boulder's
+    Discrimination and Harassment Policy prohibits discrimination, harassment or
+    related retaliation based on race, color, national origin, sex, pregnancy, age,
+    disability, creed, religion, sexual orientation, gender identity, gender
+    expression, veteran status, political affiliation or political
+    philosophy. Individuals who believe they have been subject to misconduct under
+    either policy should contact the Office of Institutional Equity and Compliance
+    (OIEC) at 303-492-2127. Information about the OIEC, the above referenced
+    policies, and the campus resources available to assist individuals regarding
+    sexual misconduct, discrimination, harassment or related retaliation can be
+    found at
+    the <a href="http://www.colorado.edu/institutionalequity/"> OIEC website</a>. 
+
+  <li> 
+    <b> Honor Code. </b>
+    All students enrolled in a University of Colorado Boulder course are responsible
+    for knowing and adhering to
+    the <a href="http://www.colorado.edu/policies/academic-integrity-policy">academic
+      integrity policy </a> of the 
+    institution. Violations of the policy may include: plagiarism, cheating,
+    fabrication, lying, bribery, threat, unauthorized access, clicker fraud,
+    resubmission, and aiding academic dishonesty. All incidents of academic
+    misconduct will be reported to the Honor Code Council (honor@colorado.edu;
+    303-735-2273). Students who are found responsible for violating the academic
+    integrity policy will be subject to nonacademic sanctions from the Honor Code
+    Council as well as academic sanctions from the faculty member. Additional
+    information regarding the academic integrity policy can be found at
+    <a href="http://honorcode.colorado.edu/">honorcode.colorado.edu</a>.
+
+</div>
+</body>
+</html>

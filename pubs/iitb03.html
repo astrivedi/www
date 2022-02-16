@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> 
+Trivedi: Techniques in Symbolic Model Checking. </title>
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ <link href="../main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<hr>
+<h2>
+Techiques in Symbolic Model Checking.
+</h2><hr>
+
+<i>
+<a href="http://www.cse.iitb.ac.in/~trivedi/">Ashutosh Trivedi </a>
+</i>
+<br><br>
+
+Model checking is a highly automatic verification technique for finite state concurrent systems. 
+In this approach for verification, temporal specifications are exhaustively verified over the 
+state-space of the concurrent system. 
+The number of states grows exponentially with the concurrency of the system and that makes 
+explicit state-space enumeration based techniques inefficient.
+This phenomenon is called state space explosion. 
+One of the possible ways to overcome this limitation is to avoid explicit enumeration of the 
+state space. 
+These approaches, commonly known as Symbolic Model Checking, use Boolean formulas to represent 
+set of states and transition relations. 
+Traditionally, symbolic model checking has become identified with Binary Decision Diagrams (BDD), 
+a canonical form of representing Boolean formulas. 
+But recently, some other representations like Conjunctive Normal Form (CNF) using satisfiability 
+solving (SAT) and polynomial algebra have been demonstrated to be quite powerful in practice. 
+In this thesis, we propose an approach to symbolic model checking where model checking is performed 
+by decomposing a finite state system into components. 
+We first review the decomposition process by Chakraborty and Soni, and enhance it by guiding the process 
+of decomposition. 
+We observed that computing the components of the system is an expensive operation. 
+Therefore our approach computes a new component only if the information in existing component is not 
+sufficient to prove (falsify) the safety property. 
+We call this approach Lazy decomposition. 
+The ideas are evaluated on publicly available benchmarks from ISCAS-89 benchmark using BDD and SAT 
+based implementations. 
+We report the experimental results and compare it with earlier schemes.
+
+<br>
+<br>
+
+<i> 
+MTech Thesis, Indian Institute of Technology Bombay. 2003.
+</i>
+<hr>
+<a href="trivedi-symbolic-model-checking03.pdf">PDF</a> &copy 2003 <a href="http://www.cse.iitb.ac.in/~trivedi/">Ashutosh Trivedi</a>.
+
+</body>
+</html>

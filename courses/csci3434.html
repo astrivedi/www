@@ -1,0 +1,554 @@
+<html>
+  <head>
+    <title>Ashutosh Trivedi: Courses/CSCI 3434&mdash;Fall 2016</title>
+    <link href="../main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript"
+	    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <script src="../float-panel.js"></script>
+  </head>
+<body id="mainp"> 
+
+<div id="content">
+  <div class="nav">
+    <ul>
+      <li class="home"><a href="../index.html">Home</a></li>
+      <li class="pubs"><a href="../pubs.html">Publications</a></li>
+      <li class="teaching"><a href="../teaching.html">Teaching</a></li>
+      <li class="service"><a  href="../ser.html">Service</a></li>
+      <li class="research"><a href="../bio.html">Bio</a></li>
+    </ul>
+  </div>
+   <div id="backtop">&#9650;</div>
+    <h1>
+      CSCI 3434: Theory of Computation
+    </h1>
+
+    <hr>
+    <h3> Logistics </h3> 
+    <ul>
+      <li> <b>Instructor</b>: 
+	<a href="http://www.ashutoshtrivedi.com"> Ashutosh Trivedi</a> (ashutosh \dot trivedi \at colorado \dot edu)
+      <li> <b> Grading Assistant </b>: 
+	Krithika Balan  (krithika \dot balan \at colorado \dot edu)
+      <li> <b> Course description</b>: 
+	<ul> 
+	  <li> Introduces the foundations of formal language theory, computability, and complexity. 
+	  <li> Shows relationship between automata and various classes of languages. 
+	  <li> Addresses the issue of which problems can be solved by computational means, and studies complexity 
+	    of solutions. 
+	</ul>
+      <li> <b> Requisites</b>: Requires prerequisite courses of Discrete Structures (CSCI 2824) and CSCI 3104 (Algorithms). All minimum grade C-. 
+      <li> <b> Class Meeting Times</b>: Tuesday (2:00pm&mdash;3:15pm) and  Thursday (2:00pm&mdash;3:15pm) 
+      <li> <b> Office hours</b>: 
+	<ul> 
+	  <li> Ashutosh Trivedi (Monday 10:00am&mdash;11:00am), ECCS 121C. 
+	  <li> Krithika Balan (TBA) 
+	</ul>
+      <li> <b> Venue </b>: 
+	<ul>
+	  <li> Class meeting location: ECCR 155 
+	  <li> Office location: ECCS 121C
+	</ul>
+    </ul>
+
+    <hr>
+    <h3> Relevant Textbooks </h3>
+    <ul>
+      <li> 
+	<b>Required Text</b> : 
+	<a href="http://books.google.co.in/books?id=-RuDtQAACAAJ">Introduction to the
+	  Theory of Computation</a>, Michael Sipser, 2002.  (2nd or 3rd edition).
+	<br> 
+
+	Since we will not be covering deterministic context free languages in this
+	class, the second edition of the book is sufficient for this class.
+
+
+      <li>
+	<b> Other supplemental materials </b>: Online notes and readings distributed by instructor. 
+    </ul>
+
+    <hr> 
+    <h3> Assignments </h3> 
+    <ul> <li> All assignments will be posted on moodle. Your identikey is needed for signing in.
+    </ul>
+    <hr>
+
+    <h3> Course Objectives </h3> 
+    The objective of this course is provide an introduction to the <b> theory of computation </b> covering the following three branches of theoretical computer science: 
+    <ol>
+      <li> Automata Theory 
+	<ul>
+	  <li> Formalization of the notion of problems via <b> formal languages </b> 
+	  <li> Formalization of the notion of computation  using "abstract computing devices" called <b> automata </b>
+	  <li> Understanding a hierarchy of classes of problems or formal languages (regular, context-free, context-sensitive, decidable, and undecidable) 
+	  <li> Understanding a  hierarchy of classes of automata (finite automata, pushdown automata, and Turing machines)
+	  <li> Understanding applications to pattern matching, parsing, and programming languages
+	</ul>
+      <li> Computability Theory 
+	<ul>
+	  <li> Understanding Church-Turing thesis (Turing machines as a notion of "general-purpose computers")
+	  <li> Understanding the concept of <b> reduction </b>, i.e., solving a problem using a solution (abstract device) for a  different problem
+	  <li> Understanding the concept of <b> undecidability </b>, i.e., when a problem can not be solved using computers
+	</ul>
+      <li> Complexity Theory 
+	<ul>
+	  <li> <b> Complexity classes </b>: how to classify decidable problems based
+	    on their time and space requirements
+	  <li> Complexity classes P and NP 
+	  <li> When a problem is called <b> intractable </b> (NP-completeness) 
+	  <li> Using reductions to prove problems intractable 
+	</ul>
+    </ol>
+
+    <h3> Topics Covered </h3>
+
+
+    <ol> 
+      <li> Regular Languages (3-4 weeks)
+	<ul> 
+	  <li> Regular expressions 
+	  <li> Deterministic finite-state machines
+	  <li> Nondeterministic finite-state machines
+	  <li> Regular grammars
+	  <li> Languages that aren't regular: pumping lemma 
+	  <li> Closure properties 
+	</ul>
+      <li> Context-Free Languages (2-3 weeks)
+	<ul>
+	  <li> Context-free grammars
+	  <li> Push-down automata
+	  <li> CYK parsing algorithm
+	  <li> Languages that aren't context-free: pumping lemma for CFLs 
+	  <li> Deterministic Context-free languages 
+	  <li> Closure Properties
+	</ul>
+	<!-- <br> 
+	     <b> [Mid-semester Exams] </b>
+	     -->
+      <li> Computability Theory (3-4 weeks)
+	<ul> 
+	  <li> Turing machines
+	  <li> Recursive vs. Recursively-Enumerable Sets 
+	  <li> Decidability and the Halting Problem
+	  <li> Reductions  
+	</ul>
+      <li>
+	Complexity Theory (2-3 weeks)
+	<ul>
+	  <li> Time and space complexity
+	  <li> P and NP
+	  <li> NP-Completeness 
+	  <li> Other complexity classes
+	</ul>
+      <li> Special Topics: TBA (1 week)
+    </ol>
+    <hr>
+    <h3> Grading </h3>
+    <table> <tr>
+	<td> 
+	  <center> 
+	    <img width=50% src="csci3434/chart.jpg"/> 
+	  </center>
+	</td> 
+</td> <td width=20%> </td>
+<td>
+</tr>
+</table>
+<hr>
+
+<h3> Schedule and Lecture Notes </h3>
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#667cab> 
+    <td> <font color=white> # </font>  </td> 
+    <td width=15%> <font color=white> Date  </font> </td> 
+    <td width=60%> <font color="white">Description</font></td>	 
+    <td> <font color="white"> Chapter</font></td>	 
+  </tr>
+  <tr>
+    <td> 1 </td>
+    <td> August 23  </td>
+    <td> Introduction to the theory of computation
+      <b>[<a href="csci3434/lec01.pdf">Slides </a>]</b> 
+    </td>
+    <td> 0 </td>	 
+  </tr>
+</table> 
+
+<h3> Part One: Automata Theory </h3>
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#d0d0d0>
+    <td> 2 </td>
+    <Td> Week 1 &mdash; August 25 </td>
+    <td>  Regular languages and finite automata
+      <b>[<a href="csci3434/lec02.pdf"> Slides </a>]</b> 
+    </td>
+    <td> 1.1, 1.2 </td>	 
+  </tr>
+
+  <tr>
+    <td> 3 </td>
+    <td> Week 2 &mdash; August 30  </td>
+    <td> Subset construction and  regular expressions
+      <b>[<a href="csci3434/lec03.pdf"> Slides </a>]</b> 
+    </td>
+    <td> 1.2, 1.3 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 4 </td>
+    <td> Week 2 &mdash; September 1 </td>
+    <td> Equivalence of regular expressions and finite automata
+      <b>[<a href="csci3434/lec04.pdf"> Slides </a>]</b> 
+    </td>
+    <td> 1.3 </td>	 
+  </tr>
+
+  <tr>
+    <td> 5 </td>
+    <td> Week 3 &mdash; September 6  </td>
+    <td> Closure Properties of regular languages
+      <b>[<a href="csci3434/lec05.pdf">Slides </a>]</b> 
+    </td>
+    <td> 1.4 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 6 </td>
+    <td> Week 3 &mdash; September 8 </td>
+    <td> Equivalence and Minimization of Automata  
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr>
+    <td> 7 </td>
+    <td> Week 4 &mdash; September 13  </td>
+    <td> Non-Regular languages: Pumping Lemma
+      <b>[<a href="csci3434/lec06.pdf">Slides </a>]</b>  
+    </td>
+    <td> 1.4  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 8 </td>
+    <td> Week 4 &mdash; September 15 </td>
+    <td> Context-Free Languages: Grammars and Derivations   
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 2.1 </td>	 
+  </tr>
+
+  <tr>
+    <td> 9 </td>
+    <td> Week 5 &mdash; September 20  </td>
+    <td> Pushdown Automata 
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> 2.2 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 10 </td>
+    <td> Week 5 &mdash; September 22 </td>
+    <td> Non-Context-Free Languages 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 2.3 </td>	 
+  </tr>
+
+  <tr>
+    <td> 11 </td>
+    <td> Week 6 &mdash; September 27  </td>
+    <td> Closure properties of CFLs
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 12 </td>
+    <td> Week 6 &mdash; September 29 </td>
+    <td> Wrap-up of CFLs
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 2.1 &mdash; 2.3 </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 13 </td>
+    <td> Week 7 &mdash; October 4 </td>
+    <td> In-Class Quiz I
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> 1 and 2 </td>	 
+  </tr>
+</table> 
+<hr>
+
+<h3> Part Two: Computability Theory </h3>
+
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#d0d0d0>
+    <td> 14 </td>
+    <td> Week 7 &mdash; October 6 </td>
+    <td> Turing machines
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 3.1 </td>	 
+  </tr>
+
+  <tr>
+    <td> 15 </td>
+    <td> Week 8 &mdash; October 11  </td>
+    <td> Variants of Turing machines
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  3.2 and 3.3 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 16 </td>
+    <td> Week 8 &mdash; October 13 </td>
+    <td> Decidability: Decidable Languages  
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 4.1  </td>	 
+  </tr>
+
+  <tr>
+    <td> 17 </td>
+    <td> Week 9 &mdash; October 18 </td>
+    <td> Halting Problem: Diagonalization and Reductions
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> 4.2  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 18 </td>
+    <td> Week 9 &mdash; October 20 </td>
+    <td> Reductions: More undecidable problems
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 5.1, 5.2 </td>	 
+  </tr>
+
+  <tr>
+    <td> 19 </td>
+    <td> Week 10 &mdash; October 25  </td>
+    <td> Logics and Decidability 
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> 6.2 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 20 </td>
+    <td> Week 10 &mdash; October 27 </td>
+    <td> Wrap-up: Turing machines and decidability 
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td>  3-4-5-6 </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 21 </td>
+    <td> Week 11 &mdash; November 1 </td>
+    <td> In-class Quiz II 
+      <b>[<a href="">  </a>]</b> 
+    </td>
+    <td> 3-4-5-6  </td>	 
+  </tr>
+</table> 
+<hr>
+
+<h3> Part Three: Complexity Theory </h3>
+
+<table border=0 width=100% cellspacing=0 cellpadding=10>
+  <tr bgcolor=#d0d0d0>
+    <td> 22 </td>
+    <td> Week 11 &mdash; November 3 </td>
+    <td> Complexity
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 7.1 and 7.2  </td>	 
+  </tr>
+
+  <tr>
+    <td> 23 </td>
+    <td> Week 12 &mdash; November 8 </td>
+    <td> NP, co-NP, polynomial-time reductions and NP-completeness 
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> 7.3 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 24 </td>
+    <td> Week 12 &mdash; November 10 </td>
+    <td> NP-complete problems and reductions
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 7.4  </td>	 
+  </tr>
+
+  <tr>
+    <td> 25 </td>
+    <td> Week 13 &mdash; November 15  </td>
+    <td> Wrap-up: NP-completeness 
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 26 </td>
+    <td> Week 13 &mdash; November 17 </td>
+    <td> Space Complexity Classes: Savitch's theorem
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 8  </td>	 
+  </tr>
+
+  <tr bgcolor=#ffd0d0>
+    <td> 25 </td>
+    <td> Week 14 &mdash; November 22  </td>
+    <td> No Class &mdash; Fall Break
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#ffd0d0>
+    <td> 26 </td>
+    <td> Week 14 &mdash; November 24</td>
+    <td> No Class &mdash; Fall Break
+    </td>
+    <td> </td>	 
+  </tr>
+
+  <tr bgcolor=#ffffe0>
+    <td> 27 </td>
+    <td> Week 15 &mdash; November 29 </td>
+    <td> In-class Quiz III: NP-completeness 
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td> 7 </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 28 </td>
+    <td> Week 15 &mdash; December 1 </td>
+    <td> co-NL and NL problems
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 8.4-8.6 </td>	 
+  </tr>
+
+
+  <tr>
+    <td> 29 </td>
+    <td> Week 16 &mdash; December 6  </td>
+    <td> PSPACE and PSPACE-complete problems
+      <b><!--[<a href=""> Slides </a>]--></b>
+    </td>
+    <td>  </td>	 
+  </tr>
+
+  <tr bgcolor=#d0d0d0>
+    <td> 30 </td>
+    <td> Week 16 &mdash; December 8 </td>
+    <td> Special Topics
+      <b><!--[<a href=""> Slides </a>]--></b> 
+    </td>
+    <td> 1.3 </td>	 
+  </tr>
+</table>
+
+<hr>
+
+<h3> Notes </h3>
+<ol>
+  <li> 
+    <b> Accommodation Statement. </b> 
+    If you qualify for accommodations because of a disability, please submit to me a
+    letter from Disability Services in a timely manner (for exam accommodations
+    provide your letter at least one week prior to the exam) so that your needs can
+    be addressed. Disability Services determines accommodations based on documented
+    disabilities. Contact Disability Services at 303-492-8671 or by e-mail at dsinfo
+    [AT] colorado.edu.
+    If you have a temporary medical condition or injury, see Temporary Injuries
+    under Quick Links at the Disability Services website and discuss your needs with
+    me.  
+  <li>
+    <b> Religious Observances. </b>
+    Campus policy regarding religious observances requires that faculty make every
+    effort to deal reasonably and fairly with all students who, because of religious
+    obligations, have conflicts with scheduled exams, assignments or required
+    attendance. In this class, you should notify your instructor of any conflict at
+    least two weeks in advance. See full details 
+    <a href="http://www.colorado.edu/policies/fac_relig.html"> here  </a>.
+  <li>
+    <b> Classroom Behavior. </b> 
+    Students and faculty each have responsibility for maintaining an appropriate
+    learning environment. Those who fail to adhere to such behavioral standards may
+    be subject to discipline. Professional courtesy and sensitivity are especially
+    important with respect to individuals and topics dealing with differences of
+    race, color, culture, religion, creed, politics, veteran's status, sexual
+    orientation, gender, gender identity and gender expression, age, disability, and
+    nationalities. Class rosters are provided to the instructor with the student's
+    legal name. I will gladly honor your request to address you by an alternate name
+    or gender pronoun. Please advise me of this preference early in the semester so
+    that I may make appropriate changes to my records. For more information, see the
+    policies
+    on <a href="http://www.colorado.edu/policies/student-classroom-and-course-related-behavior">
+      classroom behavior </a>  and
+    the <a href="http://www.colorado.edu/osccr/sites/default/files/attached-files/studentconductcode_16-17-a.pdf">
+      student code</a>. 
+
+  <li> 
+    <b>Discrimination and Harassment.</b>
+    The University of Colorado Boulder (CU Boulder) is committed to maintaining a
+    positive learning, working, and living environment. CU Boulder will not tolerate
+    acts of sexual misconduct, discrimination, harassment or related retaliation
+    against or by any employee or student. CU's Sexual Misconduct Policy prohibits
+    sexual assault, sexual exploitation, sexual harassment, intimate partner abuse
+    (dating or domestic violence), stalking or related retaliation. CU Boulder's
+    Discrimination and Harassment Policy prohibits discrimination, harassment or
+    related retaliation based on race, color, national origin, sex, pregnancy, age,
+    disability, creed, religion, sexual orientation, gender identity, gender
+    expression, veteran status, political affiliation or political
+    philosophy. Individuals who believe they have been subject to misconduct under
+    either policy should contact the Office of Institutional Equity and Compliance
+    (OIEC) at 303-492-2127. Information about the OIEC, the above referenced
+    policies, and the campus resources available to assist individuals regarding
+    sexual misconduct, discrimination, harassment or related retaliation can be
+    found at
+    the <a href="http://www.colorado.edu/institutionalequity/"> OIEC website</a>. 
+
+  <li> 
+    <b> Honor Code. </b>
+    All students enrolled in a University of Colorado Boulder course are responsible
+    for knowing and adhering to
+    the <a href="http://www.colorado.edu/policies/academic-integrity-policy">academic
+      integrity policy </a> of the 
+    institution. Violations of the policy may include: plagiarism, cheating,
+    fabrication, lying, bribery, threat, unauthorized access, clicker fraud,
+    resubmission, and aiding academic dishonesty. All incidents of academic
+    misconduct will be reported to the Honor Code Council (honor@colorado.edu;
+    303-735-2273). Students who are found responsible for violating the academic
+    integrity policy will be subject to nonacademic sanctions from the Honor Code
+    Council as well as academic sanctions from the faculty member. Additional
+    information regarding the academic integrity policy can be found at
+    <a href="http://honorcode.colorado.edu/">honorcode.colorado.edu</a>.
+
+
+  <li> The web-page of a previous offering of the course is available <a href="http://www.cs.colorado.edu/~srirams/courses/toc-fall15/index.html"> here </a>. 
+    </ol>
+
+</div>
+</body>
+</html>
