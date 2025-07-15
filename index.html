@@ -122,6 +122,11 @@
   <p><strong>I am actively recruiting PhD students</strong> who are curious, rigorous, and excited about combining logic, learning, and impact. If you are interested in building principled, human-aligned AI systems, I encourage you to get in touch by email.</p>
 </div>
 
+<div class="content background-yellow padding margin-bottom">
+  <h3>News</h3>
+  <div id="news-container">Loading news...</div>
+</div>
+		
 
 <!--
 	  
@@ -158,5 +163,16 @@
 	</footer>
       </div>
     </div>
+<script>
+  fetch('news.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('news-container').innerHTML = data;
+    })
+    .catch(error => {
+      document.getElementById('news-container').innerHTML = 'News could not be loaded.';
+      console.error('Error loading news:', error);
+    });
+</script>	    
   </body>
 </html>
