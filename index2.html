@@ -15,6 +15,8 @@
     .card { background: white; box-shadow: 0 1px 4px rgba(0,0,0,0.1); padding: 1rem; margin: 1rem 0; border-left: 4px solid #005293; }
     h2, h3 { color: #005293; }
     .profile-img { float: right; margin-left: 2rem; border-radius: 50%; width: 180px; height: auto; }
+    ul.list-style-icon-angle-double { list-style-type: none; padding-left: 1rem; }
+    ul.list-style-icon-angle-double li::before { content: "\00BB\0020"; color: #005293; }
   </style>
 </head>
 <body class="headings-bold background-color-white">
@@ -75,7 +77,13 @@
 
       <div class="card">
         <h3>About My Research</h3>
-        <p>My research focuses on the intersection of formal methods, reinforcement learning, and explainability in AI. I work on rigorous methods to ensure safety, fairness, and accountability in data-driven systems that make critical decisions in domains like autonomous systems, healthcare, and finance.</p>
+        <p>My research focuses on enabling <em>rigorous system engineering</em> of data-driven systems to improve safety, privacy, fairness, and accountability. These systems—often found in critical settings like self-driving cars, medical devices, and criminal justice—learn from data and evolve, making traditional software guarantees insufficient. I aim to redefine the role of formal methods in this changing landscape by bridging them with inductive and adaptive techniques from AI and machine learning.</p>
+        <p>Areas of recent interest include:</p>
+        <ul class="list-style-icon-angle-double">
+          <li>Reinforcement learning under logical constraints</li>
+          <li>Fairness-aware configuration of ML libraries</li>
+          <li>Legal compliance and correctness in socio-technical systems like tax software</li>
+        </ul>
       </div>
 
       <div class="card">
@@ -84,6 +92,7 @@
           <li><strong>Explainable Formal Methods with LLMs and SMT Solvers</strong> – Combining logic and learning for step-by-step proof explanations.</li>
           <li><strong>RL for Mean-Payoff and Omega-Regular Objectives</strong> – Algorithms for complex temporal objectives using average-reward RL.</li>
           <li><strong>Fairness Debugging in ML</strong> – Tools for identifying and fixing fairness bugs in machine learning pipelines.</li>
+          <li><strong>Security in Cyber-Physical Systems</strong> – Verification-aware synthesis of secure control policies for systems with both software and physical dynamics.</li>
         </ul>
       </div>
 
