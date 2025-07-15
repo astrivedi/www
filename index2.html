@@ -1,132 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashutosh Trivedi | Research & Mentorship</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashutosh Trivedi | CU Boulder</title>
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/ucb-styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,800&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background-color: #005293;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #e0e0e0;
-      padding: 0.5rem 1rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #005293;
-      font-weight: 500;
-    }
-    .container {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    h2 {
-      color: #005293;
-    }
-    .news ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    .news li {
-      margin-bottom: 0.5rem;
-    }
-    .project {
-      background: white;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-left: 5px solid #005293;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #e0e0e0;
-      margin-top: 4rem;
-    }
+    body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #fff; color: #222; }
+    .highlight-box { background: #f6f6f6; padding: 1.5rem; border-left: 5px solid #cfb87c; margin: 2rem 0; }
+    .card { background: white; box-shadow: 0 1px 4px rgba(0,0,0,0.1); padding: 1rem; margin: 1rem 0; border-left: 4px solid #005293; }
+    h2, h3 { color: #005293; }
+    .profile-img { float: right; margin-left: 2rem; border-radius: 50%; width: 180px; height: auto; }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Ashutosh Trivedi</h1>
-    <p>Associate Professor, Department of Computer Science<br>University of Colorado Boulder</p>
-  </header>
+<body class="headings-bold background-color-white">
+<div class="page">
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#students">Students</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <div class="container">
-    <section id="about">
-      <h2>About</h2>
-      <p>I am an Associate Professor at the University of Colorado Boulder. My research focuses on formal methods, reinforcement learning, AI safety, and explainable systems. I aim to bridge the gap between theory and the evolving demands of data-driven AI systems.</p>
-    </section>
-
-    <section id="research">
-      <h2>Selected Projects</h2>
-      <div class="project">
-        <h3>Explainable Formal Methods with LLMs and SMT Solvers</h3>
-        <p>Developing proof-decomposing and explanation-generating tools that combine large language models and SMT solvers to ensure trustworthiness in AI decisions.</p>
-      </div>
-      <div class="project">
-        <h3>Reinforcement Learning for Mean-Payoff and Omega-Regular Objectives</h3>
-        <p>Novel algorithms that reduce complex objectives in stochastic control to average-reward RL, improving learnability and interpretability.</p>
-      </div>
-      <div class="project">
-        <h3>Fairness Verification and Debugging in ML</h3>
-        <p>Design patterns and automated tools for identifying and correcting fairness violations in ML pipelines.</p>
-      </div>
-    </section>
-
-    <section id="students">
-      <h2>PhD Students</h2>
-      <ul>
-        <li><strong>David Baines</strong> (Fall 2022–Now): Reinforcement Learning for Financial Planning</li>
-        <li><strong>Alireza Nadali</strong> (Fall 2022–Now, with Majid Zamani): Transfer Learning for Control</li>
-        <li><strong>Amin Falah</strong> (Spring 2023–Now): Continuous-Time MDPs</li>
-        <li><strong>Lekai Chen</strong> (Fall 2023–Now, with Alvaro Velasquez): LLMs and RL</li>
-      </ul>
-    </section>
-
-    <section id="news">
-      <h2>News</h2>
-      <div class="news">
-        <ul>
-          <li><strong>July 2025:</strong> Presented invited talk on hyperproperties and compliance at University of Warwick.</li>
-          <li><strong>June 2025:</strong> Received DARPA Disruptive Idea Award.</li>
-          <li><strong>May 2025:</strong> Submitted position paper to NeurIPS on explainable formal methods with LLMs.</li>
-          <li><strong>March 2025:</strong> Paper accepted at CAV 2025 (Distinguished Paper Award).</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: Ashutosh.Trivedi@colorado.edu<br>
-         Office: Department of Computer Science, CU Boulder</p>
-    </section>
+  <!-- CU Boulder bar -->
+  <div class="background-black brand-bar brand-bar-black">
+    <div class="container">
+      <script src="https://cdn.colorado.edu/static/brand-assets/live/js/brand-bar.js" id="ucb-brand-bar-embed" data-color="black"></script>
+    </div>
   </div>
 
-  <footer>
-    <p>&copy; 2025 Ashutosh Trivedi | Built with accessibility and CU Boulder web standards in mind.</p>
+  <!-- Header -->
+  <header class="ucb light" role="banner">
+    <div class="container">
+      <a href="/">Department of Computer Science</a>
+      <div class="affiliation">
+        <a href="https://www.colorado.edu/engineering">College of Engineering and Applied Science</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <div class="background-color-gray-dark">
+    <div class="container">
+      <nav role="navigation" class="ucb-navbar ucb-navbar-dark text-minify">
+        <label for="show-main-menu" class="show-menu">
+          <i class="fa fa-bars"></i>
+          <span class="element-invisible">Menu</span>
+        </label>
+        <input type="checkbox" id="show-main-menu" role="button">
+        <ul>
+          <li><a href="index.html" class="active"><i class="fa fa-home"></i><span class="display-inline invisible-md invisible-lg">Home</span></a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="students.html">Students</a></li>
+          <li><a href="pubs.html">Publications</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="bio.html">Bio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Introduction -->
+  <div class="background-white padding-large-top padding-large-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="IMG_8007.jpeg" alt="Ashutosh Trivedi" class="profile-img">
+          <h2>Ashutosh Trivedi</h2>
+          <p>Associate Professor of <a href="http://www.cs.colorado.edu">Computer Science</a> at the University of Colorado Boulder</p>
+          <p>Email: ashutosh.trivedi@colorado.edu | <a href="https://twitter.com/astrivedi/">Twitter</a> | <a href="https://scholar.google.com/citations?user=9WDXyy4AAAAJ">Google Scholar</a></p>
+          <div class="highlight-box">
+            <p><strong>Interested in joining as a PhD student?</strong> I'm actively recruiting students in formal methods, reinforcement learning, and trustworthy AI. <a href="students.html">Learn more</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>About My Research</h3>
+        <p>My research focuses on the intersection of formal methods, reinforcement learning, and explainability in AI. I work on rigorous methods to ensure safety, fairness, and accountability in data-driven systems that make critical decisions in domains like autonomous systems, healthcare, and finance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Selected Projects</h3>
+        <ul>
+          <li><strong>Explainable Formal Methods with LLMs and SMT Solvers</strong> – Combining logic and learning for step-by-step proof explanations.</li>
+          <li><strong>RL for Mean-Payoff and Omega-Regular Objectives</strong> – Algorithms for complex temporal objectives using average-reward RL.</li>
+          <li><strong>Fairness Debugging in ML</strong> – Tools for identifying and fixing fairness bugs in machine learning pipelines.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Recent News</h3>
+        <div id="news-feed">Loading news...</div>
+        <script>
+          $(function () {
+            $('#news-feed').load('news.html');
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="background-black padding-top padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <p>&copy; 2025 Ashutosh Trivedi. Hosted via GitHub Pages. Built with CU Boulder web standards.</p>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <script src="https://cdn.colorado.edu/static/brand-assets/live/js/footer.js" id="ucb-footer-embed" data-color="white"></script>
+        </div>
+      </div>
+    </div>
   </footer>
+
+</div>
 </body>
 </html>
