@@ -11,7 +11,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
   <style>
     body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #fff; color: #222; }
-    .highlight-box { background: #fef3c7; padding: 1.5rem; border-left: 5px solid #d97706; margin: 1rem 0; border-radius: 10px; }
+    .highlight-box { background: #F1EBD9; padding: 1.5rem; border-left: 5px solid #CFB87C; margin: 1rem 0; border-radius: 10px; }
     .profile-img { float: right; margin-left: 2rem; border-radius: 50%; width: 180px; height: auto; }
     ul.list-style-icon-angle-double { list-style-type: none; padding-left: 1rem; }
     ul.list-style-icon-angle-double li::before { content: "\00BB\0020"; color: #005293; }
@@ -19,21 +19,36 @@
     .background-muted-blue .container { background-color: #e0f2fe; padding: 1.5rem; border-radius: 12px; }
     .background-muted-gray .container { background-color: #f3f4f6; padding: 1.5rem; border-radius: 12px; }
     .background-white .container { background-color: #ffffff; padding: 1.5rem; border-radius: 12px; }
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
     .project-box {
-      background-color: #ffffff;
       border: 1px solid #d1d5db;
       border-radius: 12px;
       padding: 1rem 1.25rem;
-      margin: 0.75rem 0;
+      width: calc(50% - 0.5rem);
       cursor: pointer;
       transition: background 0.3s ease;
+      box-sizing: border-box;
+      color: #000;
     }
+    .project-box:nth-of-type(1) { background-color: #E1F5FE; }
+    .project-box:nth-of-type(2) { background-color: #DCEDC8; }
+    .project-box:nth-of-type(3) { background-color: #01579B; color: #fff; }
+    .project-box:nth-of-type(4) { background-color: #AE5A39; color: #fff; }
     .project-box:hover {
-      background-color: #f9fafb;
+      opacity: 0.95;
     }
     .project-details {
       display: none;
       margin-top: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      .project-box {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -67,7 +82,8 @@
         </label>
         <input type="checkbox" id="show-main-menu" role="button">
         <ul>
-          <li><a href="index.html" class="active"><i class="fa fa-home"></i><span class="display-inline invisible-md invisible-lg">Home</span></a></li>
+          <li><a href="index.html" class="active"> <i class="fa fa-home"></i>
+		  <span class="display-inline invisible-md invisible-lg">Home</span></a></li> 
           <li><a href="projects.html">Projects</a></li>
           <li><a href="students.html">Students</a></li>
           <li><a href="pubs.html">Publications</a></li>
@@ -79,18 +95,32 @@
   </div>
 
   <!-- Introduction -->
+  <!-- Introduction -->
   <div class="content background-white">
     <div class="container">
-      <img src="IMG_8007.jpeg" alt="Ashutosh Trivedi" class="profile-img">
+      <img src="astnew.jpg" alt="Ashutosh Trivedi" class="profile-img">
       <h2>Ashutosh Trivedi</h2>
-      <p>Associate Professor of <a href="http://www.cs.colorado.edu">Computer Science</a> at the University of Colorado Boulder</p>
-      <p>Email: ashutosh.trivedi@colorado.edu | <a href="https://twitter.com/astrivedi/">Twitter</a> | <a href="https://scholar.google.com/citations?user=9WDXyy4AAAAJ">Google Scholar</a></p>
-      <div class="highlight-box">
-        <p><strong>Interested in joining as a PhD student?</strong> I'm actively recruiting students in formal methods, reinforcement learning, and trustworthy AI. <a href="students.html">Learn more</a>.</p>
-      </div>
+      <p>Associate Professor of Computer Science<br>
+      Email: <a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p>
+      <p>
+        <strong> Web: </strong>
+        <a href="index.html">Home</a>,
+        <a href="https://twitter.com/astrivedi/">Twitter</a>,
+        <a href="https://scholar.google.com/citations?user=9WDXyy4AAAAJ">Google Scholar</a>,
+        <a href="https://dblp.org/pid/06/5756.html">DBLP</a>,
+        <a href="https://www.webofscience.com/wos/author/record/AAE-1234-5678">ResearchID</a>,
+        <a href="https://orcid.org/0000-0001-5678-1234">ORCID</a>,
+        <a href="https://www.researchgate.net/profile/Ashutosh_Trivedi">ResearchGate</a>
+      </p>
+      <p>
+        <strong> Research Interests: </strong> Safety in AI · Reinforcement Learning · Formal Methods · Software Fairness · Software Accountability<br>
+        <strong>Group: </strong> <a href="https://cup.lip6.fr/">Programming Languages and Verification (CUPLV)</a>
+      </p>
+      <p> <strong>Email:</strong> ashutosh.trivedi@colorado.edu | <a href="https://twitter.com/astrivedi/">Twitter</a> | <a href="https://scholar.google.com/citations?user=9WDXyy4AAAAJ">Google Scholar</a></p>
     </div>
   </div>
 
+  <!-- Research Overview -->
   <div class="content background-muted-gray">
     <div class="container">
       <h3>About My Research</h3>
@@ -101,84 +131,88 @@
         <li>Fairness-aware configuration of ML libraries</li>
         <li>Legal compliance and correctness in socio-technical systems like tax software</li>
       </ul>
+      <div class="highlight-box">
+        <p><strong>Interested in joining as a PhD student?</strong> I'm actively recruiting students in formal methods, reinforcement learning, and trustworthy AI. <a href="students.html">Learn more</a>.</p>
+      </div>
     </div>
   </div>
 
-  <!-- Selected Projects Section -->
-<div class="content background-white">
-  <div class="container">
-    <h3>Selected Projects</h3>
+ <!-- Selected Projects Section -->
+  <div class="content background-white">
+    <div class="container">
+      <h3>Selected Projects</h3>
+      <div class="projects-grid">
+        <div class="project-box" onclick="toggleDetails(this)">
+          Formal Methods for Reinforcement Learning
+          <div class="project-details">
+            Your work here highlights the intersection of logic, automata theory, and reinforcement learning, contributing both foundational and algorithmic results.
+            <br><br>
+            <strong>Selected Publications:</strong>
+            <ul>
+              <li>Recursive Reinforcement Learning, NeurIPS 2022</li>
+              <li>Regular Reinforcement Learning, CAV 2024</li>
+              <li>Policy Synthesis and Reinforcement Learning for Discounted LTL, CAV 2023</li>
+              <li>Omega-Regular Objectives in Model-Free Reinforcement Learning, TACAS 2019</li>
+              <li>Mungojerrie: Linear-Time Objectives in Model-Free Reinforcement Learning, TACAS 2023</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="project-box" onclick="toggleDetails(this)">
-      Formal Methods for Reinforcement Learning
-      <div class="project-details">
-        Your work here highlights the intersection of logic, automata theory, and reinforcement learning, contributing both foundational and algorithmic results.
-        <br><br>
-        <strong>Selected Publications:</strong>
-        <ul>
-          <li>Recursive Reinforcement Learning, NeurIPS 2022</li>
-          <li>Regular Reinforcement Learning, CAV 2024</li>
-          <li>Policy Synthesis and Reinforcement Learning for Discounted LTL, CAV 2023</li>
-          <li>Omega-Regular Objectives in Model-Free Reinforcement Learning, TACAS 2019</li>
-          <li>Mungojerrie: Linear-Time Objectives in Model-Free Reinforcement Learning, TACAS 2023</li>
-        </ul>
+        <div class="project-box" onclick="toggleDetails(this)">
+          Trustworthy Reasoning with LLMs
+          <div class="project-details">
+            This theme demonstrates your recent pivot into neurosymbolic AI and explainability, combining LLMs with formal verification and language-based reasoning.
+            <br><br>
+            <strong>Selected Publications:</strong>
+            <ul>
+              <li>Explaining Puzzle Solutions in Natural Language: An Exploratory Study on 6x6 Sudoku, CoRR 2025</li>
+              <li>Integrating Explanations in Learning LTL Specifications from Demonstrations, CoRR 2024</li>
+              <li>LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning, CoRR 2024</li>
+              <li>Technical Challenges in Maintaining Tax Prep Software with Large Language Models, CoRR 2025</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-box" onclick="toggleDetails(this)">
+          AI, Software, and Accountability: Fairness, Legal-Compliance, & Ethics
+          <div class="project-details">
+            This theme positions your work at the interface of technology and society, with contributions to fairness testing, causal analysis, and compliance verification.
+            <br><br>
+            <strong>Selected Publications:</strong>
+            <ul>
+              <li>Fairness Testing Through Extreme Value Theory, ICSE 2025</li>
+              <li>Causal Graph Fuzzing for Fair ML Software Development, ICSE Companion 2024</li>
+              <li>Metamorphic Testing and Debugging of Tax Preparation Software, ICSE (SEIS) 2023</li>
+              <li>Information-Theoretic Testing and Debugging of Fairness Defects in Deep Neural Networks, ICSE 2023</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-box" onclick="toggleDetails(this)">
+          Safe and Secure Cyber-Physical Systems
+          <div class="project-details">
+            This theme reflects your long-standing expertise in formal verification and safety analysis for CPS, especially through certificates and system-level guarantees.
+            <br><br>
+            <strong>Selected Publications:</strong>
+            <ul>
+              <li>Verification of Hyperproperties for Dynamical Systems via Barrier Certificates, IEEE TAC 2024</li>
+              <li>Closure Certificates, HSCC 2024</li>
+              <li>Transfer Learning for Barrier Certificates, CDC 2023</li>
+              <li>Secure-by-construction synthesis of cyber-physical systems, Annual Review of Control 2022</li>
+            </ul>
+          </div>
+        </div>
       </div>
+      <script>
+        function toggleDetails(el) {
+          const detail = el.querySelector('.project-details');
+          detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+        }
+      </script>
     </div>
-
-    <div class="project-box" onclick="toggleDetails(this)">
-      Trustworthy Reasoning with LLMs
-      <div class="project-details">
-        This theme demonstrates your recent pivot into neurosymbolic AI and explainability, combining LLMs with formal verification and language-based reasoning.
-        <br><br>
-        <strong>Selected Publications:</strong>
-        <ul>
-          <li>Explaining Puzzle Solutions in Natural Language: An Exploratory Study on 6x6 Sudoku, CoRR 2025</li>
-          <li>Integrating Explanations in Learning LTL Specifications from Demonstrations, CoRR 2024</li>
-          <li>LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning, CoRR 2024</li>
-          <li>Technical Challenges in Maintaining Tax Prep Software with Large Language Models, CoRR 2025</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="project-box" onclick="toggleDetails(this)">
-      AI, Software, and Accountability: Fairness, Legal-Compliance, & Ethics
-      <div class="project-details">
-        This theme positions your work at the interface of technology and society, with contributions to fairness testing, causal analysis, and compliance verification.
-        <br><br>
-        <strong>Selected Publications:</strong>
-        <ul>
-          <li>Fairness Testing Through Extreme Value Theory, ICSE 2025</li>
-          <li>Causal Graph Fuzzing for Fair ML Software Development, ICSE Companion 2024</li>
-          <li>Metamorphic Testing and Debugging of Tax Preparation Software, ICSE (SEIS) 2023</li>
-          <li>Information-Theoretic Testing and Debugging of Fairness Defects in Deep Neural Networks, ICSE 2023</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="project-box" onclick="toggleDetails(this)">
-      Safe and Secure Cyber-Physical Systems
-      <div class="project-details">
-        This theme reflects your long-standing expertise in formal verification and safety analysis for CPS, especially through certificates and system-level guarantees.
-        <br><br>
-        <strong>Selected Publications:</strong>
-        <ul>
-          <li>Verification of Hyperproperties for Dynamical Systems via Barrier Certificates, IEEE TAC 2024</li>
-          <li>Closure Certificates, HSCC 2024</li>
-          <li>Transfer Learning for Barrier Certificates, CDC 2023</li>
-          <li>Secure-by-construction synthesis of cyber-physical systems, Annual Review of Control 2022</li>
-        </ul>
-      </div>
-    </div>
-
-    <script>
-      function toggleDetails(el) {
-        const detail = el.querySelector('.project-details');
-        detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
-      }
-    </script>
   </div>
-</div>
 
+  <!-- News -->
   <div class="content background-muted-blue">
     <div class="container">
       <h3>Recent News</h3>
