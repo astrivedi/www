@@ -12,11 +12,14 @@
   <style>
     body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #fff; color: #222; }
     .highlight-box { background: #f6f6f6; padding: 1.5rem; border-left: 5px solid #cfb87c; margin: 2rem 0; }
-    .card { background: white; box-shadow: 0 1px 4px rgba(0,0,0,0.1); padding: 1rem; margin: 1rem 0; border-left: 4px solid #005293; }
-    h2, h3 { color: #005293; }
     .profile-img { float: right; margin-left: 2rem; border-radius: 50%; width: 180px; height: auto; }
     ul.list-style-icon-angle-double { list-style-type: none; padding-left: 1rem; }
     ul.list-style-icon-angle-double li::before { content: "\00BB\0020"; color: #005293; }
+    .content { padding: 2rem; margin-bottom: 2rem; }
+    .background-cool-gray-light { background-color: #f2f2f2; }
+    .background-white { background-color: #ffffff; }
+    .background-sky-blue-light { background-color: #e6f2f8; }
+    .background-gold-light { background-color: #fff8e1; }
   </style>
 </head>
 <body class="headings-bold background-color-white">
@@ -61,50 +64,52 @@
   </div>
 
   <!-- Introduction -->
-  <div class="background-white padding-large-top padding-large-bottom">
+  <div class="content background-white">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <img src="IMG_8007.jpeg" alt="Ashutosh Trivedi" class="profile-img">
-          <h2>Ashutosh Trivedi</h2>
-          <p>Associate Professor of <a href="http://www.cs.colorado.edu">Computer Science</a> at the University of Colorado Boulder</p>
-          <p>Email: ashutosh.trivedi@colorado.edu | <a href="https://twitter.com/astrivedi/">Twitter</a> | <a href="https://scholar.google.com/citations?user=9WDXyy4AAAAJ">Google Scholar</a></p>
-          <div class="highlight-box">
-            <p><strong>Interested in joining as a PhD student?</strong> I'm actively recruiting students in formal methods, reinforcement learning, and trustworthy AI. <a href="students.html">Learn more</a>.</p>
-          </div>
-        </div>
+      <img src="IMG_8007.jpeg" alt="Ashutosh Trivedi" class="profile-img">
+      <h2>Ashutosh Trivedi</h2>
+      <p>Associate Professor of <a href="http://www.cs.colorado.edu">Computer Science</a> at the University of Colorado Boulder</p>
+      <p>Email: ashutosh.trivedi@colorado.edu | <a href="https://twitter.com/astrivedi/">Twitter</a> | <a href="https://scholar.google.com/citations?user=9WDXyy4AAAAJ">Google Scholar</a></p>
+      <div class="highlight-box background-gold-light">
+        <p><strong>Interested in joining as a PhD student?</strong> I'm actively recruiting students in formal methods, reinforcement learning, and trustworthy AI. <a href="students.html">Learn more</a>.</p>
       </div>
+    </div>
+  </div>
 
-      <div class="card">
-        <h3>About My Research</h3>
-        <p>My research focuses on enabling <em>rigorous system engineering</em> of data-driven systems to improve safety, privacy, fairness, and accountability. These systems—often found in critical settings like self-driving cars, medical devices, and criminal justice—learn from data and evolve, making traditional software guarantees insufficient. I aim to redefine the role of formal methods in this changing landscape by bridging them with inductive and adaptive techniques from AI and machine learning.</p>
-        <p>Areas of recent interest include:</p>
-        <ul class="list-style-icon-angle-double">
-          <li>Reinforcement learning under logical constraints</li>
-          <li>Fairness-aware configuration of ML libraries</li>
-          <li>Legal compliance and correctness in socio-technical systems like tax software</li>
-        </ul>
-      </div>
+  <div class="content background-cool-gray-light">
+    <div class="container">
+      <h3>About My Research</h3>
+      <p>My research focuses on enabling <em>rigorous system engineering</em> of data-driven systems to improve safety, privacy, fairness, and accountability. These systems—often found in critical settings like self-driving cars, medical devices, and criminal justice—learn from data and evolve, making traditional software guarantees insufficient. I aim to redefine the role of formal methods in this changing landscape by bridging them with inductive and adaptive techniques from AI and machine learning.</p>
+      <p>Areas of recent interest include:</p>
+      <ul class="list-style-icon-angle-double">
+        <li>Reinforcement learning under logical constraints</li>
+        <li>Fairness-aware configuration of ML libraries</li>
+        <li>Legal compliance and correctness in socio-technical systems like tax software</li>
+      </ul>
+    </div>
+  </div>
 
-      <div class="card">
-        <h3>Selected Projects</h3>
-        <ul>
-          <li><strong>Explainable Formal Methods with LLMs and SMT Solvers</strong> – Combining logic and learning for step-by-step proof explanations.</li>
-          <li><strong>RL for Mean-Payoff and Omega-Regular Objectives</strong> – Algorithms for complex temporal objectives using average-reward RL.</li>
-          <li><strong>Fairness Debugging in ML</strong> – Tools for identifying and fixing fairness bugs in machine learning pipelines.</li>
-          <li><strong>Security in Cyber-Physical Systems</strong> – Verification-aware synthesis of secure control policies for systems with both software and physical dynamics.</li>
-        </ul>
-      </div>
+  <div class="content background-white">
+    <div class="container">
+      <h3>Selected Projects</h3>
+      <ul>
+        <li><strong>Explainable Formal Methods with LLMs and SMT Solvers</strong> – Combining logic and learning for step-by-step proof explanations.</li>
+        <li><strong>RL for Mean-Payoff and Omega-Regular Objectives</strong> – Algorithms for complex temporal objectives using average-reward RL.</li>
+        <li><strong>Fairness Debugging in ML</strong> – Tools for identifying and fixing fairness bugs in machine learning pipelines.</li>
+        <li><strong>Security in Cyber-Physical Systems</strong> – Verification-aware synthesis of secure control policies for systems with both software and physical dynamics.</li>
+      </ul>
+    </div>
+  </div>
 
-      <div class="card">
-        <h3>Recent News</h3>
-        <div id="news-feed">Loading news...</div>
-        <script>
-          $(function () {
-            $('#news-feed').load('news.html');
-          });
-        </script>
-      </div>
+  <div class="content background-sky-blue-light">
+    <div class="container">
+      <h3>Recent News</h3>
+      <div id="news-feed">Loading news...</div>
+      <script>
+        $(function () {
+          $('#news-feed').load('news.html');
+        });
+      </script>
     </div>
   </div>
 
