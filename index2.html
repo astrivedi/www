@@ -11,15 +11,30 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
   <style>
     body { font-family: 'Roboto', sans-serif; margin: 0; background-color: #fff; color: #222; }
-    .highlight-box { background: #f6f6f6; padding: 1.5rem; border-left: 5px solid #cfb87c; margin: 2rem 0; }
+    .highlight-box { background: #fef3c7; padding: 1.5rem; border-left: 5px solid #d97706; margin: 2rem 0; border-radius: 10px; }
     .profile-img { float: right; margin-left: 2rem; border-radius: 50%; width: 180px; height: auto; }
     ul.list-style-icon-angle-double { list-style-type: none; padding-left: 1rem; }
     ul.list-style-icon-angle-double li::before { content: "\00BB\0020"; color: #005293; }
     .content { padding: 2rem 0; margin-bottom: 2rem; }
-    .background-cool-gray-light .container { background-color: #f2f2f2; padding: 2rem; }
-    .background-white .container { background-color: #ffffff; padding: 2rem; }
-    .background-sky-blue-light .container { background-color: #e6f2f8; padding: 2rem; }
-    .background-gold-light { background-color: #fff8e1; }
+    .background-muted-blue .container { background-color: #e0f2fe; padding: 2rem; border-radius: 12px; }
+    .background-muted-gray .container { background-color: #f3f4f6; padding: 2rem; border-radius: 12px; }
+    .background-white .container { background-color: #ffffff; padding: 2rem; border-radius: 12px; }
+    .project-box {
+      background-color: #ffffff;
+      border: 1px solid #d1d5db;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .project-box:hover {
+      background-color: #f9fafb;
+    }
+    .project-details {
+      display: none;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body class="headings-bold background-color-white">
@@ -70,13 +85,13 @@
       <h2>Ashutosh Trivedi</h2>
       <p>Associate Professor of <a href="http://www.cs.colorado.edu">Computer Science</a> at the University of Colorado Boulder</p>
       <p>Email: ashutosh.trivedi@colorado.edu | <a href="https://twitter.com/astrivedi/">Twitter</a> | <a href="https://scholar.google.com/citations?user=9WDXyy4AAAAJ">Google Scholar</a></p>
-      <div class="highlight-box background-gold-light">
+      <div class="highlight-box">
         <p><strong>Interested in joining as a PhD student?</strong> I'm actively recruiting students in formal methods, reinforcement learning, and trustworthy AI. <a href="students.html">Learn more</a>.</p>
       </div>
     </div>
   </div>
 
-  <div class="content background-cool-gray-light">
+  <div class="content background-muted-gray">
     <div class="container">
       <h3>About My Research</h3>
       <p>My research focuses on enabling <em>rigorous system engineering</em> of data-driven systems to improve safety, privacy, fairness, and accountability. These systems—often found in critical settings like self-driving cars, medical devices, and criminal justice—learn from data and evolve, making traditional software guarantees insufficient. I aim to redefine the role of formal methods in this changing landscape by bridging them with inductive and adaptive techniques from AI and machine learning.</p>
@@ -92,16 +107,37 @@
   <div class="content background-white">
     <div class="container">
       <h3>Selected Projects</h3>
-      <ul>
-        <li><strong>Explainable Formal Methods with LLMs and SMT Solvers</strong> – Combining logic and learning for step-by-step proof explanations.</li>
-        <li><strong>RL for Mean-Payoff and Omega-Regular Objectives</strong> – Algorithms for complex temporal objectives using average-reward RL.</li>
-        <li><strong>Fairness Debugging in ML</strong> – Tools for identifying and fixing fairness bugs in machine learning pipelines.</li>
-        <li><strong>Security in Cyber-Physical Systems</strong> – Verification-aware synthesis of secure control policies for systems with both software and physical dynamics.</li>
-      </ul>
+
+      <div class="project-box" onclick="toggleDetails(this)">
+        Explainable Formal Methods with LLMs and SMT Solvers
+        <div class="project-details">Combining logic and learning for step-by-step proof explanations that enhance trust in automated decision-making.</div>
+      </div>
+
+      <div class="project-box" onclick="toggleDetails(this)">
+        RL for Mean-Payoff and Omega-Regular Objectives
+        <div class="project-details">Developing scalable reinforcement learning algorithms that solve complex objectives while guaranteeing optimality.</div>
+      </div>
+
+      <div class="project-box" onclick="toggleDetails(this)">
+        Fairness Debugging in ML
+        <div class="project-details">Creating tools for diagnosing and correcting discriminatory behavior in model configurations and data pipelines.</div>
+      </div>
+
+      <div class="project-box" onclick="toggleDetails(this)">
+        Security in Cyber-Physical Systems
+        <div class="project-details">Synthesizing secure-by-construction control policies with formal verification for CPS environments.</div>
+      </div>
+
+      <script>
+        function toggleDetails(el) {
+          const detail = el.querySelector('.project-details');
+          detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+        }
+      </script>
     </div>
   </div>
 
-  <div class="content background-sky-blue-light">
+  <div class="content background-muted-blue">
     <div class="container">
       <h3>Recent News</h3>
       <div id="news-feed">Loading news...</div>
