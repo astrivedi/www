@@ -104,38 +104,80 @@
     </div>
   </div>
 
-  <div class="content background-white">
-    <div class="container">
-      <h3>Selected Projects</h3>
+  <!-- Selected Projects Section -->
+<div class="content background-white">
+  <div class="container">
+    <h3>Selected Projects</h3>
 
-      <div class="project-box" onclick="toggleDetails(this)">
-        Explainable Formal Methods with LLMs and SMT Solvers
-        <div class="project-details">Combining logic and learning for step-by-step proof explanations that enhance trust in automated decision-making.</div>
+    <div class="project-box" onclick="toggleDetails(this)">
+      Formal Methods for Reinforcement Learning
+      <div class="project-details">
+        Your work here highlights the intersection of logic, automata theory, and reinforcement learning, contributing both foundational and algorithmic results.
+        <br><br>
+        <strong>Selected Publications:</strong>
+        <ul>
+          <li>Recursive Reinforcement Learning, NeurIPS 2022</li>
+          <li>Regular Reinforcement Learning, CAV 2024</li>
+          <li>Policy Synthesis and Reinforcement Learning for Discounted LTL, CAV 2023</li>
+          <li>Omega-Regular Objectives in Model-Free Reinforcement Learning, TACAS 2019</li>
+          <li>Mungojerrie: Linear-Time Objectives in Model-Free Reinforcement Learning, TACAS 2023</li>
+        </ul>
       </div>
-
-      <div class="project-box" onclick="toggleDetails(this)">
-        RL for Mean-Payoff and Omega-Regular Objectives
-        <div class="project-details">Developing scalable reinforcement learning algorithms that solve complex objectives while guaranteeing optimality.</div>
-      </div>
-
-      <div class="project-box" onclick="toggleDetails(this)">
-        Fairness Debugging in ML
-        <div class="project-details">Creating tools for diagnosing and correcting discriminatory behavior in model configurations and data pipelines.</div>
-      </div>
-
-      <div class="project-box" onclick="toggleDetails(this)">
-        Security in Cyber-Physical Systems
-        <div class="project-details">Synthesizing secure-by-construction control policies with formal verification for CPS environments.</div>
-      </div>
-
-      <script>
-        function toggleDetails(el) {
-          const detail = el.querySelector('.project-details');
-          detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
-        }
-      </script>
     </div>
+
+    <div class="project-box" onclick="toggleDetails(this)">
+      Trustworthy Reasoning with LLMs
+      <div class="project-details">
+        This theme demonstrates your recent pivot into neurosymbolic AI and explainability, combining LLMs with formal verification and language-based reasoning.
+        <br><br>
+        <strong>Selected Publications:</strong>
+        <ul>
+          <li>Explaining Puzzle Solutions in Natural Language: An Exploratory Study on 6x6 Sudoku, CoRR 2025</li>
+          <li>Integrating Explanations in Learning LTL Specifications from Demonstrations, CoRR 2024</li>
+          <li>LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning, CoRR 2024</li>
+          <li>Technical Challenges in Maintaining Tax Prep Software with Large Language Models, CoRR 2025</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-box" onclick="toggleDetails(this)">
+      AI, Software, and Accountability: Fairness, Legal-Compliance, & Ethics
+      <div class="project-details">
+        This theme positions your work at the interface of technology and society, with contributions to fairness testing, causal analysis, and compliance verification.
+        <br><br>
+        <strong>Selected Publications:</strong>
+        <ul>
+          <li>Fairness Testing Through Extreme Value Theory, ICSE 2025</li>
+          <li>Causal Graph Fuzzing for Fair ML Software Development, ICSE Companion 2024</li>
+          <li>Metamorphic Testing and Debugging of Tax Preparation Software, ICSE (SEIS) 2023</li>
+          <li>Information-Theoretic Testing and Debugging of Fairness Defects in Deep Neural Networks, ICSE 2023</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-box" onclick="toggleDetails(this)">
+      Safe and Secure Cyber-Physical Systems
+      <div class="project-details">
+        This theme reflects your long-standing expertise in formal verification and safety analysis for CPS, especially through certificates and system-level guarantees.
+        <br><br>
+        <strong>Selected Publications:</strong>
+        <ul>
+          <li>Verification of Hyperproperties for Dynamical Systems via Barrier Certificates, IEEE TAC 2024</li>
+          <li>Closure Certificates, HSCC 2024</li>
+          <li>Transfer Learning for Barrier Certificates, CDC 2023</li>
+          <li>Secure-by-construction synthesis of cyber-physical systems, Annual Review of Control 2022</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function toggleDetails(el) {
+        const detail = el.querySelector('.project-details');
+        detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+      }
+    </script>
   </div>
+</div>
 
   <div class="content background-muted-blue">
     <div class="container">
