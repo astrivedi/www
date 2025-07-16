@@ -62,56 +62,205 @@
           </div>
         </div>
       </header>
-<section class="content background-green-light padding margin-bottom">
+<div class="background-white padding-large-top padding-large-bottom">  
   <div class="container">
-      <div class="content background-gold-light padding margin-bottom ">	  
-    <div style="background-color: #DCEDC8; padding: 2rem; border-radius: 8px; max-width: 900px; margin: auto;">
-      <h2 class="pancy">Trustworthy Reasoning and Intelligence</h2>
+<div class="padding margin-bottom content background-gray-700">
+    <h2>Trustworthy Reasoning and Intelligence Group</h2>
+  </div>
+    <div class="content background-gray-light padding margin-bottom ">
+    <p class="text-muted"><em>Our research group investigates the theoretical foundations and practical applications of trustworthy artificial intelligence. We develop mathematically rigorous methods to ensure that learning-enabled and autonomous systems operate safely, fairly, and accountably. 
+      Our work spans <strong> formal verification</strong>, <strong>explainability</strong>, and the integration of <strong>logic-based reasoning</strong> with data-driven approaches.</em></p>
+  </div>
+ <style>
+  .theme-box {
+    flex: 1 1 calc(50% - 1rem);
+    padding: 1.5rem;
+    border-radius: 8px;
+    min-width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-      <p class="text-muted">
-        <em>Our research group explores the foundations and applications of trustworthy AI, formal methods, and learning-enabled systems...</em>
-      </p>
+  .theme-box:hover {
+    opacity: 0.95;
+  }
 
-      <h4>Research Themes</h4>
-      <ul class="dashed">
-        <li><strong>Formal Methods for Reinforcement Learning (RL)</strong> – Bridging logic, automata, and RL to synthesize policies with guarantees</li>
-        <li><strong>Trustworthy Reasoning with LLMs</strong> – Integrating symbolic reasoning and LLMs for verifiable explanation and decision-making</li>
-        <li><strong>AI, Software, and Accountability</strong> – Studying fairness, compliance, and legal aspects of data-driven software</li>
-        <li><strong>Secure and Safe CPS</strong> – Designing verifiably correct controllers for safety-critical cyber-physical systems</li>
-      </ul>
+  .theme-box-content {
+    display: none;
+    margin-top: 1rem;
+  }
 
-      <h4>Group Members</h4>
-      <ul class="dashed">
-        <li><strong>David Baines</strong> (since Fall 2022) – Reinforcement Learning for Finance</li>
-        <li><strong>Alireza Nadali</strong> (since Fall 2022) – Transfer Learning for Control</li>
-        <li><strong>Amin Falah</strong> (since Spring 2023) – Reinforcement Learning for Continuous-Time MDPs</li>
-        <li><strong>Lekai Chen</strong> (co-advised with Alvaro Velasquez, since Fall 2023) – Large Language Models and Formal Languages</li>
-      </ul>
+  .theme-box.open .theme-box-content {
+    display: block;
+  }
 
-      <h4>Graduated Students</h4>
-      <ol class="dashed">
-  	<li><strong>Saeid Tizpaz-Niari</strong> (PhD 2020, <em>Differential Performance Debugging and its Application to Side-Channel Analysis</em>) – Faculty at University of Illinois Chicago.</li>
-  	<li><strong>Devendra Bhave</strong> (PhD 2020, <em>Perfect Subclasses of Real-Time Recursive Systems</em>) – Principal Software Engineer at MathWorks Inc.</li>
-  	<li><strong>Tianhan Lu</strong> (PhD 2023, <em>Selectively-Amortized Resource Bounding</em>) – Research Scientist at Meta, Inc.</li>
-  	<li><strong>Taylor Dohmen</strong> (PhD 2024, <em>Regular Transformations in Sequential Optimization & Reinforcement Learning</em>) – AI Research Scientist at 3M.</li>
-  	<li><strong>John Komp</strong> (PhD 2024, <em>From Text to Life: Optimized Pacemaker Therapy Through Formal Methods and Safe Reinforcement Learning</em>).</li>
-  	<li><strong>Vishnu Murali</strong> (PhD 2024, <em>Inductive Functional Proofs Beyond Barrier Certificates</em>) – Postdoctoral Researcher at CU Boulder.</li>
-  	<li><strong>Mateo Perez</strong> (PhD 2025, <em>Formal Languages and Automata for Reinforcement Learning</em>) – CEO and Founder of Jazzberry.</li>
-  	<li><strong>Shadi Tasdigi-Kalat</strong> (PhD 2025, <em>Eliciting Decision Proxies in Multi-Agent Games</em>) – Postdoctoral Researcher at CU Boulder.</li>
-	</ol>
+  .background-green-light { background-color: #E1F5FE; }
+  .background-red-light   { background-color: #FFEBEE; }
+  .background-yellow      { background-color: #FFF9C4; }
+  .background-blue-light  { background-color: #DCEDC8; }
+</style>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const boxes = document.querySelectorAll(".theme-box");
+    boxes.forEach(box => {
+      box.addEventListener("click", function () {
+        this.classList.toggle("open");
+      });
+    });
+  });
+</script>
+
+<div class="content padding margin-bottom">
+  <h4>Research Themes</h4>
+  <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+    
+    <div class="theme-box background-green-light">
+      <strong>Formal Methods for Reinforcement Learning</strong>
+      <div class="theme-box-content">
+        <p>We investigate the foundational and algorithmic integration of formal methods with reinforcement learning to enable reliable and structured decision-making in complex environments. Our research spans:</p>
+        <ul>
+          <li>Translating logical specifications into learnable reward structures,</li>
+          <li>Symbolic and automata-theoretic representations such as reward machines and regular-language-based state abstractions,</li>
+          <li>Reinforcement learning for recursive and branching MDPs,</li>
+          <li>Continuous-time and continuous-space RL grounded in physical models,</li>
+          <li>Novel frameworks like asymmetrically-discounted and past-discounted objectives.</li>
+        </ul>
+        <p>By unifying techniques from logic, automata, control theory, and learning, we aim to build safe, interpretable, and specification-aware RL systems.</p>
+      </div>
+    </div>
+
+    <div class="theme-box background-red-light">
+      <strong>Trustworthy Reasoning with LLMs</strong>
+      <div class="theme-box-content">
+        <p>We develop methods for enabling large language models (LLMs) to reason in trustworthy, auditable, and verifiable ways. Our work integrates LLMs with symbolic tools—such as formal logic, automata, and SMT solvers—to produce explanations and decisions that are explainable, auditable, and backed by formal reasoning.</p>
+        <p>We design modular, multi-agent architectures that separate planning, reasoning, and explanation, allowing LLMs to:</p>
+        <ul>
+          <li>Generate formal proofs and structured reasoning steps,</li>
+          <li>Translate formal artifacts into human-understandable explanations,</li>
+          <li>Critique and verify outputs for logical consistency and regulatory compliance.</li>
+        </ul>
+        <p>This enables applications in explainable formal methods, legally accountable AI, and safe decision-making in high-stakes domains.</p>
+      </div>
+    </div>
+
+    <div class="theme-box background-yellow">
+      <strong>AI, Software, and Accountability</strong>
+      <div class="theme-box-content">
+        <p>We study the interplay between algorithmic decision-making, software systems, and legal and ethical accountability. Our research develops formal and data-driven methods for:</p>
+        <ul>
+          <li>Detecting and mitigating algorithmic unfairness,</li>
+          <li>Ensuring regulatory and legal compliance,</li>
+          <li>Auditing, certifying, and explaining software behavior in high-stakes contexts.</li>
+        </ul>
+        <p>We focus on domains such as tax preparation software, juvenile justice, and public services, where fairness, transparency, and legal compliance are critical.</p>
+      </div>
+    </div>
+
+    <div class="theme-box background-blue-light">
+      <strong>Secure and Safe CPS</strong>
+      <div class="theme-box-content">
+        <p>We design provably correct and resilient controllers for safety-critical cyber-physical systems (CPS). Our research combines control theory, formal verification, and symbolic reasoning to ensure both safety and security in dynamic, uncertain environments.</p>
+        <p>We develop tools and techniques for:</p>
+        <ul>
+          <li>Synthesizing trustworthy controllers using control barrier functions, Lyapunov methods, and temporal logic,</li>
+          <li>Ensuring security and robustness against adversarial or uncertain inputs,</li>
+          <li>Integrating reinforcement learning with formal guarantees for continuous and hybrid systems.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<h3>Current Group Members</h3>
+<div class="content background-gray-light padding margin-bottom">
+
+  <h4>Postdoctoral Associates</h4>
+  <ul class="dashed">
+    <li><strong>Shadi Tasdighi-Kalat</strong></li>
+    <li><strong>John Komp</strong></li>
+  </ul>
+
+  <h4>PhD Students</h4>
+  <ul class="dashed">
+    <li><strong>David Baines</strong> (since Fall 2022) – Reinforcement Learning for Finance</li>
+    <li><strong>Alireza Nadali</strong> (since Fall 2022) – Transfer Learning for Control</li>
+    <li><strong>Amin Falah</strong> (since Spring 2023) – Reinforcement Learning for Continuous-Time MDPs</li>
+    <li><strong>Lekai Chen</strong> (co-advised with Alvaro Velasquez, since Fall 2023) – Large Language Models and Formal Languages</li>
+  </ul>
+
+  <h4>Undergraduate / Master's Students</h4>
+  <ul class="dashed">
+    <li><strong>Miles Zheng</strong></li>
+  </ul>
+</div>
+
+<h3>Past Members</h3>
+<div class="padding background-color-gold-light">
+
+  <h4>PhD Alumni</h4>
+  <ol class="dashed">
+    <li><strong>Saeid Tizpaz-Niari</strong> (PhD 2020, <em>Differential Performance Debugging and its Application to Side-Channel Analysis</em>) – Faculty at University of Illinois Chicago</li>
+    <li><strong>Devendra Bhave</strong> (PhD 2020, <em>Perfect Subclasses of Real-Time Recursive Systems</em>) – Principal Software Engineer at MathWorks Inc.</li>
+    <li><strong>Tianhan Lu</strong> (PhD 2023, <em>Selectively-Amortized Resource Bounding</em>) – Research Scientist at Meta, Inc.</li>
+    <li><strong>Taylor Dohmen</strong> (PhD 2024, <em>Regular Transformations in Sequential Optimization & Reinforcement Learning</em>) – AI Research Scientist at 3M</li>
+    <li><strong>John Komp</strong> (PhD 2024, <em>From Text to Life: Optimized Pacemaker Therapy Through Formal Methods and Safe Reinforcement Learning</em>)</li>
+    <li><strong>Vishnu Murali</strong> (PhD 2024, <em>Inductive Functional Proofs Beyond Barrier Certificates</em>) – Postdoctoral Researcher at CU Boulder</li>
+    <li><strong>Mateo Perez</strong> (PhD 2025, <em>Formal Languages and Automata for Reinforcement Learning</em>) – CEO and Founder of Jazzberry</li>
+    <li><strong>Shadi Tasdighi-Kalat</strong> (PhD 2025, <em>Eliciting Decision Proxies in Multi-Agent Games</em>) – Postdoctoral Researcher at CU Boulder</li>
+  </ol>
+
+  <h4>Postdoctoral Associates (Past)</h4>
+  <ul class="dashed">
+    <!-- Add entries here if applicable -->
+  </ul>
+
+  <h4>MS/BS Thesis Advisees (CU Boulder)</h4>
+  <ul class="dashed">
+    <li><strong>Saksham Srivastava</strong> – “LLMs and Program Synthesis”</li>
+    <li><strong>Jordan Perr-Sauer</strong> (MS, Summer–Fall 2022) – “Verification of Neural Networks”</li>
+    <li><strong>Zachary Mckevitt</strong> (BS, Fall 2020–Spring 2022, co-advised with Tamara Lehman) – “RNNs for Automatic Transient Execution Attack Detection”</li>
+    <li><strong>Vishnu Murali</strong> (MS, 2019–2020) – “Optimal Repair for Omega-Regular Properties” (switched to PhD)</li>
+  </ul>
+
+  <h4>MS/BS Research Advisees (CU Boulder)</h4>
+  <ul class="dashed">
+    <li><strong>Aaptha Boggaram</strong> – “Artificial Cardiac Pacemakers and AI”</li>
+    <li><strong>Varsha Dewangan</strong> – “Technical Challenges in Maintaining Tax Prep Software with LLMs”</li>
+    <li><strong>Ali Almutawa, Jr.</strong> (BS, Summer 2022, co-advised with Fabio Somenzi)</li>
+    <li><strong>Adam Adl</strong> (BS, Summer 2022, co-advised with Fabio Somenzi)</li>
+    <li><strong>Ian Mckibben</strong> (BS, Summer 2021, co-advised with Fabio Somenzi)</li>
+    <li><strong>Emily Millican</strong> (BS, Spring 2020) – Now Embedded Software Engineer at Ball Aerospace</li>
+    <li><strong>John Paul Martin</strong> (MS, 2018–2020, co-advised with Evan Chang)</li>
+    <li><strong>Juraj Culak</strong> (MS, 2017–2019)</li>
+    <li><strong>Mateo Perez</strong> (BS, Summer 2018–Spring 2020, co-advised with Fabio Somenzi) – Now PhD graduate in our group</li>
+    <li><strong>Shemal Somil Lalaji</strong> (MS, Fall 2019) – Independent Study Project; now at Visa</li>
+    <li><strong>Capstone Team “Love Bugs”</strong> (ECEE, Self-Driving Car Project, co-advised with Fabio Somenzi):  
+      Mohammed Al Hasani, George Matthew Helmick, Rodolfo Gonzalez Hill V, Myungshin Im, Michael Shea Oliver, and Mateo Perez
+    </li>
+    <li><strong>Aniruddha Phatak</strong> (MS/PhD, 2019–2020, co-advised with Pavol Cerny)</li>
+    <li><strong>Aniket Lata</strong> (MS, 2015–2016, co-advised with Evan Chang) – Now at Qualcomm</li>
+    <li><strong>Ram Das Diwakaran</strong> (MS, 2016–2017, co-advised with Sriram Sankaranarayanan) – Now at Generac</li>
+  </ul>
+</div>
+
+<div class="padding background-color-blue-light">
       <h4>Resources</h4>
       <ul class="dashed">
         <li><a href="https://github.com/cuplv" target="_blank">CUPLV GitHub Organization</a> – Open-source tools and benchmarks developed by our group.</li>
         <li><a href="https://arxiv.org/search/cs?searchtype=author&query=Trivedi%2C+Ashutosh" target="_blank">arXiv Preprints</a> – Recent and past preprints of our research papers.</li>
         <li>Course materials (slides, notes, and assignments) for selected graduate and undergraduate courses are available upon request.</li>
       </ul>
+  </div>
 
-      <p>If you are interested in joining the group as a PhD student, please read my research interests and send a concise email outlining your background and fit.</p>
-    </div>
+<div class="padding background-color-amber">
+    <p>If you are interested in joining the group as a PhD student, please read my research interests and send a concise email outlining your background and fit.</p>
+     </div>
+     
   </div>
 </section>
-
+</div>
 	  
 	<footer class="background-black padding-top padding-bottom">
           <div class="container">
