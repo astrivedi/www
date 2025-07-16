@@ -132,8 +132,20 @@
 </div>
 </section>
 </div>
-<div id="myfooter"></div>
-</div>
+  <footer class="background-black padding-top padding-bottom">
+          <div class="container">
+            <div class="row">
+	      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+		This HTML template is a resource provided by <a href="https://www.colorado.edu/strategicrelations">Strategic Relations and Communications</a>.
+	      </div>
+	      <div class="col-log-4 col-md-4 col-sm-6 col-xs-12 offset-lg-4 offset-md-4">
+		<script type="text/javascript"
+			src="https://cdn.colorado.edu/static/brand-assets/live/js/footer.js"
+			id="ucb-footer-embed" data-color="white"></script>
+	      </div>
+            </div>
+          </div>
+	</footer>
 </div>
 
 <script>
@@ -145,11 +157,6 @@
     .catch(error => {
       document.getElementById('news-container').innerHTML = 'News could not be loaded.';
       console.error('Error loading news:', error);
-    });
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("myfooter").innerHTML = data;
     });
 </script>	    
   </body>
