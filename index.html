@@ -26,46 +26,8 @@
   
   <body class="headings-bold background-color-white">
     <div class="page">
-
-      <!-- CU Boulder bar -->
-      <div class="background-black brand-bar brand-bar-black">
-        <div class="container">
-          <script type="text/javascript" src="https://cdn.colorado.edu/static/brand-assets/live/js/brand-bar.js" id="ucb-brand-bar-embed" data-color="black"></script>
-        </div>
-      </div>
-
-      <!-- CS/CEAS  header -->
-      <header class="ucb light" role="banner">
-	<div class="container">
-	  <a href="/">Department of Computer Science</a>
-	  <div class="affiliation">
-	    <a href="https://www.colorado.edu/engineering">College of Engineering and Applied Science</a>
-	  </div>
-	</div>
-      </header>
-
-      <!-- navigation bar -->
-      <div class="background-color-gray-dark">
-        <div class="container">
-          <nav role="navigation" class="ucb-navbar ucb-navbar-dark text-minify">
-            <label for="show-main-menu" class="show-menu">
-	      <i class="fa fa-bars" aria-hidden="true"></i>
-	      <span class="element-invisible">Menu</span>
-	    </label>
-	    <input type="checkbox" id="show-main-menu" role="button">
-            <ul>
-              <li><a href="index.html" class="active"> <i class="fa fa-home"></i>
-		  <span class="display-inline invisible-md invisible-lg">Home</span></a></li>
-              <li><a href="group.html">Research Group</a></li>
-	      <li><a href="pubs.html">Publications</a></li>
-              <li><a href="teaching.html">Teaching</a></li>
-              <li><a href="ser.html">Service</a></li>
-              <li><a href="bio.html">Bio</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-
+	<div id="header"></div>		    
+      
       <!-- intro bar -->
       <div class="background-white padding-large-top padding-large-bottom">
         <div class="container">
@@ -128,22 +90,10 @@
 </div>
 </section>
 </div>
-	<footer class="background-black padding-top padding-bottom">
-          <div class="container">
-            <div class="row">
-	      <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-		This HTML template is a resource provided by <a href="https://www.colorado.edu/strategicrelations">Strategic Relations and Communications</a>.
-	      </div>
-	      <div class="col-log-4 col-md-4 col-sm-6 col-xs-12 offset-lg-4 offset-md-4">
-		<script type="text/javascript"
-			src="https://cdn.colorado.edu/static/brand-assets/live/js/footer.js"
-			id="ucb-footer-embed" data-color="white"></script>
-	      </div>
-            </div>
-          </div>
-	</footer>
-      </div>
-    </div>
+<div id="footer"></div>
+</div>
+</div>
+
 <script>
   fetch('news.html')
     .then(response => response.text())
@@ -153,6 +103,17 @@
     .catch(error => {
       document.getElementById('news-container').innerHTML = 'News could not be loaded.';
       console.error('Error loading news:', error);
+    });
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
     });
 </script>	    
   </body>
