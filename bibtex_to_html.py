@@ -22,22 +22,47 @@ for key, entry in bib_data.entries.items():
         'link': link
     })
 
-# Generate HTML
-html_output = []
+# HTML & CSS header
+html_output = ['''<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Publications</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      max-width: 800px;
+    }
+    .publication-list h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.3em;
+      margin-top: 2em;
+    }
+    .publication-list ol {
+      list-style-type: decimal;
+      padding-left: 1.5em;
+    }
+    .publication-list li {
+      margin-bottom: 1em;
+      line-height: 1.5;
+    }
+    a {
+      color: #01579B;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="publication-list">
+''']
+
+# Generate publication list grouped by year
 for year in sorted(publications_by_year.keys(), reverse=True):
-    html_output.append(f"""
-<div class="accordion-item">
-  <h3 class="accordion-header">
-    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapse{year}" aria-expanded="false" aria-controls="collapse{year}">
-      {year}
-    </button>
-  </h3>
-  <div id="collapse{year}" class="accordion-collapse collapse" aria-labelledby="heading{year}"
-       data-bs-parent="#accordionExample">
-    <div class="accordion-body">
-      <ul class="list-style-icon-angle-double">
-""")
+    html_output.append(f'<h2>{year}</h2>\n<ol>')
     for pub in publications_by_year[year]:
         authors = html.escape(pub['authors'])
         title = html.escape(pub['title'])
@@ -47,7 +72,10 @@ for year in sorted(publications_by_year.keys(), reverse=True):
             html_output.append(f'<li><a href="{link}" target="_blank">{title}</a><br>{authors}<br>{venue}</li>')
         else:
             html_output.append(f'<li>{title}<br>{authors}<br>{venue}</li>')
-    html_output.append("</ul></div></div></div>")
+    html_output.append('</ol>')
+
+# Close HTML tags
+html_output.append('</div>\n</body>\n</html>')
 
 # Write to file
 with open("publications_generated.html", "w") as f:
