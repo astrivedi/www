@@ -19,3 +19,9 @@ links:
   dblp: https://dblp.org/pid/06/5756.html
   github: https://github.com/cuplv
   email: mailto:ashutosh.trivedi@colorado.edu
+
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+

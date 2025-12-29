@@ -1,0 +1,29 @@
+<div class="paper-card">
+  <div class="paper-title">
+    <a href="{{ p.url }}"><strong>{{ p.title }}</strong></a>
+  </div>
+{% if p.award %}
+<div class="paper-award">🏆 {{ p.award }}</div>
+{% endif %}
+
+  <div class="paper-meta">
+    {% if p.authors %}{{ p.authors | join: ", " }}<br/>{% endif %}
+    {% if p.venue %}<em>{{ p.venue }}</em>{% endif %}
+    {% if p.year %} ({{ p.year }}){% endif %}
+  </div>
+
+  <div class="paper-links">
+    {% if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
+    {% if p.bibtex %} · <a href="{{ p.bibtex }}" download>BibTeX</a>{% endif %}
+    {% if p.slides %} · <a href="{{ p.slides }}">Slides</a>{% endif %}
+    {% if p.video %} · <a href="{{ p.video }}">Video</a>{% endif %}
+  </div>
+
+  {% if p.tags %}
+    <div class="paper-tags">
+      {% for t in p.tags %}
+        <a class="tag" href="/tags/{{ t | downcase | uri_escape }}/">{{ t }}</a>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

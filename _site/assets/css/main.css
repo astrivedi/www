@@ -247,3 +247,71 @@ p{margin:0 0 12px}
   line-height:1.45;
   margin-top:2px;
 }
+.paper-card {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.paper-title {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.paper-title a {
+  color: #111;
+  text-decoration: none;
+}
+
+.paper-title a:hover {
+  text-decoration: underline;
+}
+
+.paper-meta {
+  margin-top: 0.2rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.paper-links {
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.paper-links a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+.paper-tags {
+  margin-top: 0.4rem;
+}
+
+.paper-tags .tag {
+  display: inline-block;
+  margin-right: 0.4rem;
+  margin-top: 0.2rem;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  background: #f3f3f3;
+  color: #444;
+  text-decoration: none;
+}
+
+.paper-tags .tag:hover {
+  background: #e6e6e6;
+}
+.paper-award {
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #7a4a00;
+  background: #fff4db;
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+}

@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<article class="paper-page">
+  <header>
+    <h1>{{ page.title }}</h1>
+{% if page.award %}
+<p class="paper-award">🏆 {{ page.award }}</p>
+{% endif %}
+
+
+    {% if page.authors %}
+      <p><strong>Authors:</strong> {{ page.authors | join: ", " }}</p>
+    {% endif %}
+
+    <p>
+      {% if page.venue %}<strong>{{ page.venue }}</strong>{% endif %}
+      {% if page.year %} ({{ page.year }}){% endif %}
+    </p>
+
+    {% if page.tags %}
+      <p class="paper-tags">
+        {% for t in page.tags %}
+          <a class="tag" href="/tags/{{ t | downcase | uri_escape }}/">{{ t }}</a>
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    <p class="paper-links">
+      {% if page.pdf %}<a href="{{ page.pdf }}">PDF</a>{% endif %}
+      {% if page.bibtex %} · <a href="{{ page.bibtex }}" download>BibTeX</a>{% endif %}
+      {% if page.slides %} · <a href="{{ page.slides }}">Slides</a>{% endif %}
+      {% if page.video %} · <a href="{{ page.video }}">Video</a>{% endif %}
+      {% if page.arxiv %} · <a href="{{ page.arxiv }}">arXiv</a>{% endif %}
+      {% if page.doi %} · <a href="{{ page.doi }}">DOI</a>{% endif %}
+      {% if page.code %} · <a href="{{ page.code }}">Code</a>{% endif %}
+    </p>
+  </header>
+
+  {% if page.abstract %}
+  <section>
+  <h2>Abstract</h2>
+  {{ page.abstract | markdownify }}
+</section>
+
+  {% endif %}
+
+  <section>
+    {{ content }}
+  </section>
+</article>
