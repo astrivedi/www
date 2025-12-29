@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Group
 subtitle: Trustworthy reasoning and intelligence at CU Boulder (CUPLV).
 permalink: /group/
