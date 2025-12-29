@@ -1,32 +1,43 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>{{ page.title | default: site.title }}</title>
-  <meta name="description" content="{{ site.description }}"/>
-  <link rel="stylesheet" href="/assets/css/main.css"/>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ashutosh Trivedi",
-  "url": "https://ashutoshtrivedi.com",
-  "image": "https://ashutoshtrivedi.com/assets/img/portrait.jpg",
-  "jobTitle": "Associate Professor of Computer Science",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "University of Colorado Boulder",
-    "url": "https://www.colorado.edu"
-  },
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "University of Warwick"
-  },
-  "sameAs": [
-    "https://scholar.google.com/citations?user=9WDXyy4AAAAJ",
-    "https://dblp.org/pid/???.html",
-    "https://orcid.org/0000-0001-9346-0126"
-  ]
-}
-</script>
 
+  <title>
+    {% if page.title %}
+      {{ page.title }} · {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta name="description"
+        content="{{ page.description | default: site.description }}"/>
+
+  <link rel="stylesheet" href="/assets/css/main.css"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ashutosh Trivedi",
+    "url": "https://ashutoshtrivedi.com",
+    "image": "https://ashutoshtrivedi.com/assets/img/portrait.jpg",
+    "jobTitle": "Associate Professor of Computer Science",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "University of Colorado Boulder",
+      "url": "https://www.colorado.edu"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Warwick"
+      }
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=9WDXyy4AAAAJ",
+      "https://orcid.org/0000-0001-9346-0126"
+    ]
+  }
+  </script>
 </head>
