@@ -1,0 +1,21 @@
+title: Ashutosh Trivedi
+email: ashutosh.trivedi@colorado.edu
+description: > 
+  My research develops formal methods for reinforcement learning and trustworthy AI, 
+  with a focus on verification and accountability in high-stakes decision-making systems.
+url: "https://ashutoshtrivedi.com"
+baseurl: ""
+
+# Optional: for GitHub Pages (project vs user site)
+# If this is a USER/ORG site repo like <user>.github.io, keep baseurl empty.
+
+markdown: kramdown
+permalink: pretty
+
+# Social / links
+links:
+  cv: /assets/AshutoshTrivedi_CV.pdf
+  scholar: https://scholar.google.com/citations?user=9WDXyy4AAAAJ
+  dblp: https://dblp.org
+  github: https://github.com
+  email: mailto:ashutosh.trivedi@colorado.edu
