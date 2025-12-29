@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Publications
 subtitle: Selected + full list (auto-generated next).
 permalink: /publications/
