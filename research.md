@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Research
 subtitle: Themes, projects, and ongoing directions.
 permalink: /research/
