@@ -1,0 +1,28 @@
+- year: 2025
+  entries:
+    - title: "Objective Improvement Algorithm for Controller Synthesis in Uncertain Environments"
+      authors: "A. Trivedi et al."
+      venue: "CDC"
+      type: conference
+      links:
+        pdf: ""
+        arxiv: ""
+        doi: ""
+
+    - title: "Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations"
+      authors: "A. Trivedi et al."
+      venue: "ASE"
+      type: conference
+      links:
+        pdf: ""
+        arxiv: ""
+
+- year: 2024
+  entries:
+    - title: "Regular Reinforcement Learning"
+      authors: "A. Trivedi, F. Somenzi"
+      venue: "CAV"
+      awards: "Distinguished Paper Award"
+      type: conference
+      links:
+        pdf: "https://arxiv.org/pdf/xxxx.pdf"
