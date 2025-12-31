@@ -17,7 +17,7 @@ bibtex: /assets/papers/2022-icse-fairaware.bib
 slides:
 video:
 arxiv: https://arxiv.org/abs/2202.06196
-doi: 10.1145/3510003.3510202
+doi: https://doi.org/10.1145/3510003.3510202
 code:
 
 abstract: |

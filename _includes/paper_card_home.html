@@ -1,11 +1,19 @@
 {% assign p = include.p %}
 
 <div class="card">
-<h3 class="pubTitle">
-  <a href="{{ p.url | relative_url }}">
-    {{ p.title }}
-  </a>
-</h3>
+
+  <h3 class="pubTitle">
+    <a href="{{ p.url | relative_url }}">
+      {{ p.title }}
+    </a>
+  </h3>
+
+  {% if p.award %}
+    <div class="paper-award">
+      🏆 {{ p.award }}
+    </div>
+  {% endif %}
+
   {% if p.tags %}
   <div class="badges">
     {% for t in p.tags %}
@@ -36,4 +44,5 @@
       <a class="link" href="{{ details_link }}">Details</a>
     {% endif %}
   </div>
+
 </div>

@@ -8,7 +8,7 @@ authors:
   - "Fabio Somenzi"
   - "Ashutosh Trivedi"
   - "Dominik Wojtczak"
-venue: "TACAS 2019"
+venue: "TACAS"
 year: 2019
 date: 2019-04-04
 tags: [formalrl, theory, top, trustuworthyAI]
@@ -19,7 +19,7 @@ bibtex: /assets/papers/2019-tacas-omega-rl.bib
 slides:
 video:
 arxiv: https://arxiv.org/abs/1810.00950
-doi: 10.1007/978-3-030-17462-0_27
+doi: https://doi.org/10.1007/978-3-030-17462-0_27
 code:
 
 abstract: |

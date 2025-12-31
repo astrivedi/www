@@ -5,8 +5,7 @@ authors:
   - "Alireza Nadali"
   - "Ashutosh Trivedi"
   - "Majid Zamani"
-venue: "International Conference on Neuro-symbolic Systems, 28-30 May 2025,
-                  University of Pennsylvania, Philadelphia, Pennsylvania, {USA}"
+venue: "NeuS"
 year: 2025
 date: "12 Sep 2025"
 tags: [cps,top,award]

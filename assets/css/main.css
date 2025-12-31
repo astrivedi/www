@@ -315,3 +315,20 @@ p{margin:0 0 12px}
   padding: 0.1rem 0.4rem;
   border-radius: 3px;
 }
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  margin-right: 0.3em;
+  font-size: 0.75rem;
+  border-radius: 0.4em;
+  background: #eee;
+  color: #333;
+}
+
+/* Award badge */
+.badge-award {
+  background: linear-gradient(135deg, #f6c343, #e0a800);
+  color: #1a1a1a;
+  font-weight: 600;
+  border: 1px solid #d39e00;
+}

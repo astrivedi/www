@@ -16,7 +16,7 @@ bibtex: /assets/papers/2024-hscc-closure-certificates.bib
 slides:
 video:
 arxiv: https://arxiv.org/pdf/2305.17519.pdf
-doi: 10.1145/3641513.3650120
+doi: https://doi.org/10.1145/3641513.3650120
 code:
 
 abstract: |
