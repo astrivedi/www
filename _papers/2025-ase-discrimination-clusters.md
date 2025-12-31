@@ -11,7 +11,7 @@ authors:
 venue: "ASE 2025"
 year: 2025
 date: 2025-08-01
-tags: [accountableSE, trustworthyAI, ai, top]
+tags: [accountableSE, trustworthyAI, ai]
 selected: true
 
 pdf: /assets/papers/2025-ase-discrimination-clusters.pdf

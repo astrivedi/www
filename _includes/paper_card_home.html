@@ -1,0 +1,39 @@
+{% assign p = include.p %}
+
+<div class="card">
+<h3 class="pubTitle">
+  <a href="{{ p.url | relative_url }}">
+    {{ p.title }}
+  </a>
+</h3>
+  {% if p.tags %}
+  <div class="badges">
+    {% for t in p.tags %}
+      {% unless t == "top" %}
+        <span class="badge">{{ t }}</span>
+      {% endunless %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if p.blurb %}
+  <div class="pubBlurb">
+    {{ p.blurb }}
+  </div>
+  {% endif %}
+
+  <div class="meta">
+    {{ p.venue }}{% if p.year %} · {{ p.year }}{% endif %}
+  </div>
+
+  <div class="actions">
+    {% if p.pdf %}<a class="link" href="{{ p.pdf }}">PDF</a>{% endif %}
+    {% if p.slides %}<a class="link" href="{{ p.slides }}">Slides</a>{% endif %}
+    {% if p.video %}<a class="link" href="{{ p.video }}">Video</a>{% endif %}
+
+    {% assign details_link = p.details | default: p.arxiv | default: p.doi %}
+    {% if details_link %}
+      <a class="link" href="{{ details_link }}">Details</a>
+    {% endif %}
+  </div>
+</div>

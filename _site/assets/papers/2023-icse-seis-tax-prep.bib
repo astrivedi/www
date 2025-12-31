@@ -1,0 +1,15 @@
+@inproceedings{10.1109/ICSE-SEIS58686.2023.00019,
+author = {Tizpaz-Niari, Saeid and Monjezi, Verya and Wagner, Morgan and Darian, Shiva and Reed, Krystia and Trivedi, Ashutosh},
+title = {Metamorphic Testing and Debugging of Tax Preparation Software},
+year = {2023},
+isbn = {9798350322613},
+publisher = {IEEE Press},
+url = {https://doi.org/10.1109/ICSE-SEIS58686.2023.00019},
+doi = {10.1109/ICSE-SEIS58686.2023.00019},
+abstract = {This paper presents a data-driven debugging framework to improve the trustworthiness of US tax preparation software systems. Given the legal implications of bugs in such software on its users, ensuring compliance and trustworthiness of tax preparation software is of paramount importance. The key barriers in developing debugging aids for tax preparation systems are the unavailability of explicit specifications and the difficulty of obtaining oracles. We posit that, since the US tax law adheres to the legal doctrine of precedent, the specifications about the outcome of tax preparation software for an individual taxpayer must be viewed in comparison with individuals that are deemed similar. Consequently, these specifications are naturally available as properties on the software requiring similar inputs provide similar outputs. Inspired by the metamorphic testing paradigm, we dub these relations metamorphic relations as they relate to structurally modified inputs.In collaboration with legal and tax experts, we explicated metamorphic relations for a set of challenging properties from various US Internal Revenue Services (IRS) publications including Form 1040 (U.S. Individual Income Tax Return), Publication 596 (Earned Income Tax Credit), Schedule 8812 (Qualifying Children and Other Dependents), and Form 8863 (Education Credits). While we focus on an open-source tax preparation software for our case study, the proposed framework can be readily extended to other commercial software. We develop a randomized test-case generation strategy to systematically validate the correctness of tax preparation software guided by metamorphic relations. We further aid this test-case generation by visually explaining the behavior of software on suspicious instances using easy-to-interpret decision-tree models. Our tool uncovered several accountability bugs with varying severity ranging from nonrobust behavior in corner-cases (unreliable behavior when tax returns are close to zero) to missing eligibility conditions in the updated versions of software.},
+booktitle = {Proceedings of the 45th International Conference on Software Engineering: Software Engineering in Society},
+pages = {138–149},
+numpages = {12},
+location = {Melbourne, Australia},
+series = {ICSE-SEIS '23}
+}

@@ -1,0 +1,16 @@
+{% assign limit_n = include.limit | default: 6 %}
+{% assign count = 0 %}
+
+<h2>Selected publications</h2>
+<div class="cardgrid-3">
+  {% assign papers = site.papers | sort: "date" | reverse %}
+  {% for p in papers %}
+    {% if p.tags contains "top" %}
+      {% include paper_card_home.html p=p %}
+      {% assign count = count | plus: 1 %}
+      {% if count >= limit_n %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
