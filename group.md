@@ -7,11 +7,7 @@ permalink: /group/
 
 ## What we do
 <p>
-My research group investigates the theoretical foundations and practical applications of trustworthy artificial intelligence, with an emphasis on mathematical rigor, clarity of reasoning, and relevance to real-world systems such as cyber-physical systems and legal- and social-critical software.
-</p>
-
-<p>
-We are part of the Programming Languages and Verification (CUPLV) group at CU Boulder.
+My research group investigates the theoretical foundations and practical applications of trustworthy artificial intelligence, with an emphasis on mathematical rigor, clarity of reasoning, and relevance to real-world systems such as cyber-physical systems and legal- and social-critical software. We are part of the <a href="https://plv.colorado.edu">Programming Languages and Verification (CUPLV)</a> group at CU Boulder.
 </p>
 
 <div class="sectionline"></div>
