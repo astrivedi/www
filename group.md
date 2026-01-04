@@ -7,10 +7,7 @@ permalink: /group/
 
 ## What we do
 <p>
-My research group investigates the theoretical foundations and practical applications of
-trustworthy artificial intelligence. We emphasize mathematical rigor, clarity of reasoning,
-and relevance to real-world systems, including cyber-physical systems and legal- and
-social-critical software.
+My research group investigates the theoretical foundations and practical applications of trustworthy artificial intelligence, with an emphasis on mathematical rigor, clarity of reasoning, and relevance to real-world systems such as cyber-physical systems and legal- and social-critical software.
 </p>
 
 <p>
