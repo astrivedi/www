@@ -70,22 +70,6 @@ title: Home
     </div>
   </div>
 </div>
-
-{% include selected_pubs_grid.html limit=9 %}
-
-<h2>Join the group</h2>
-<div class="card ctaRow">
-  <div>
-    <h3>PhD students & postdocs</h3>
-    <div class="meta">
-      I’m recruiting PhD students and occasional postdocs interested in formal methods,
-      reinforcement learning, cyber-physical systems, and AI accountability. Strong
-      theoretical foundations and curiosity about real-world impact are especially welcome.
-    </div>
-  </div>
-  <a class="pill" href="/group/">Current openings →</a>
-</div>
-
 <h2>Recent news</h2>
 <div class="card">
   {% assign items = site.data.news | slice: 0, 5 %}
@@ -103,3 +87,20 @@ title: Home
 <p class="small" style="margin-top:10px;">
   <a class="link" href="/news/">All news →</a>
 </p>
+
+{% include selected_pubs_grid.html limit=9 %}
+
+<h2>Join the group</h2>
+<div class="card ctaRow">
+  <div>
+    <h3>PhD students & postdocs</h3>
+    <div class="meta">
+      I’m recruiting PhD students and occasional postdocs interested in formal methods,
+      reinforcement learning, cyber-physical systems, and AI accountability. Strong
+      theoretical foundations and curiosity about real-world impact are especially welcome.
+    </div>
+  </div>
+  <a class="pill" href="/group/">Current openings →</a>
+</div>
+
+
