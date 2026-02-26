@@ -100,7 +100,7 @@ title: Home
       theoretical foundations and curiosity about real-world impact are especially welcome.
     </div>
   </div>
-  <a class="pill" href="/group/">Current openings →</a>
+  <!-- <a class="pill" href="/group/">Current openings →</a> -->
 </div>
 
 
