@@ -86,15 +86,3 @@ title: Home
 </p>
 
 {% include selected_pubs_grid.html limit=9 %}
-
-<h2>Join the group</h2>
-<div class="card ctaRow">
-  <div>
-    <h3>PhD students & postdocs</h3>
-    <div class="meta">
-      I am recruiting PhD students and occasional postdocs interested in formal methods,
-      reinforcement learning, cyber-physical systems, and trustworthy AI.
-    </div>
-  </div>
-  <!-- <a class="pill" href="/group/">Current openings →</a> -->
-</div>
