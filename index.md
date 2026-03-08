@@ -12,7 +12,7 @@ title: Home
     </p>
 
     <p class="heroDesc">
-      {{ site.description }}
+      I work on formal methods for reinforcement learning, trustworthy AI, and safety-critical software and cyber-physical systems.
     </p>
 
     <div class="pills pills-hero">
@@ -38,38 +38,35 @@ title: Home
   <div class="card">
     <h3>Formal Methods for Reinforcement Learning</h3>
     <div class="meta">
-      Foundations and algorithms for verifying, synthesizing, and reasoning about
-      reinforcement-learning systems, including temporal objectives, recursion,
-      and symbolic representations.
+      Verification, synthesis, and symbolic reasoning for reinforcement-learning systems,
+      including temporal objectives, recursion, and structured representations.
     </div>
   </div>
 
   <div class="card">
-    <h3>Trustworthy Reasoning with Learning and LLMs</h3>
+    <h3>Trustworthy Reasoning with LLMs</h3>
     <div class="meta">
-      Combining formal verification, symbolic reasoning, and learning to produce
-      explanations and guarantees that are checkable, not just plausible.
+      Formal and symbolic methods for producing explanations and guarantees with rigorous foundations.
     </div>
   </div>
 
   <div class="card">
     <h3>AI, Software, and Accountability</h3>
     <div class="meta">
-      Methods for auditing, testing, and debugging high-stakes software systems,
-      with applications to fairness, legal compliance, and socio-technical
-      decision-making.
+      Auditing, testing, and debugging methods for high-stakes software, with applications
+      to fairness, legal compliance, and socio-technical decision-making.
     </div>
   </div>
 
   <div class="card">
     <h3>Secure & Safe Cyber-Physical Systems</h3>
     <div class="meta">
-      Rigorous methods for security, privacy, and safety of cyber-physical and
-      learning-enabled systems, with applications to medical devices and
-      critical infrastructure.
+      Security, privacy, and safety methods for cyber-physical and learning-enabled
+      systems, with applications to medical devices and critical infrastructure.
     </div>
   </div>
 </div>
+
 <h2>Recent news</h2>
 <div class="card">
   {% assign items = site.data.news | slice: 0, 5 %}
@@ -95,12 +92,9 @@ title: Home
   <div>
     <h3>PhD students & postdocs</h3>
     <div class="meta">
-      I’m recruiting PhD students and occasional postdocs interested in formal methods,
-      reinforcement learning, cyber-physical systems, and AI accountability. Strong
-      theoretical foundations and curiosity about real-world impact are especially welcome.
+      I am recruiting PhD students and occasional postdocs interested in formal methods,
+      reinforcement learning, cyber-physical systems, and trustworthy AI.
     </div>
   </div>
   <!-- <a class="pill" href="/group/">Current openings →</a> -->
 </div>
-
-
