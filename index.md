@@ -32,7 +32,7 @@ title: Home
 </div>
 
 <div class="blankline"></div>
-
+<h2>Research</h2>
 <div class="cardgrid-2">
   <div class="card">
     <h3>Formal Methods for Reinforcement Learning</h3>
