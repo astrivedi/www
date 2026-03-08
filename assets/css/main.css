@@ -123,9 +123,9 @@ p{margin:0 0 12px}
   object-position: 100% 10%;
   border-radius:0px;
 
-  /* left-only fade with an irregular curve */
+  /* right-only fade with an irregular curve */
   -webkit-mask-image: linear-gradient(
-    to right,
+    to left,
     transparent 0%,
     rgba(0,0,0,0.22) 7%,
     rgba(0,0,0,0.45) 13%,
@@ -133,7 +133,7 @@ p{margin:0 0 12px}
     black 40%
   );
   mask-image: linear-gradient(
-    to right,
+    to left,
     transparent 0%,
     rgba(0,0,0,0.22) 7%,
     rgba(0,0,0,0.45) 13%,
