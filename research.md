@@ -4,42 +4,41 @@ title: Research
 subtitle: Themes, projects, and ongoing directions.
 permalink: /research/
 ---
+
 <h1>Research</h1>
 <p>
-My research develops mathematically rigorous foundations for trustworthy artificial
-intelligence. I study how learning-enabled and autonomous systems can be designed to
-operate safely, fairly, and accountably, even in complex, uncertain, and high-stakes
-settings. My work spans formal verification, reinforcement learning, explainability,
-and the integration of logic-based reasoning with data-driven methods.
+My research focuses on formal methods for reinforcement learning, trustworthy AI, and
+high-stakes software and cyber-physical systems. I study how learning-enabled and
+autonomous systems can be designed to operate safely, fairly, and accountably in
+complex and uncertain environments.
 </p>
 
 <p>
-A unifying theme of my research is that intelligent systems should not only perform well,
-but also admit principled reasoning about their behavior. To this end, I develop
-specification-aware learning algorithms, symbolic abstractions, and hybrid reasoning
-frameworks that enable verification, explanation, and accountability.
+A central goal of my work is to develop intelligent systems whose behavior can be
+specified, verified, and explained. To this end, I combine formal verification,
+reinforcement learning, symbolic reasoning, and program analysis.
 </p>
 
 <div class="sectionline"></div>
 
 <h2>Formal Methods for Reinforcement Learning</h2>
 <p class="small">
-Foundations for reasoning about learning agents beyond finite-state, episodic settings.
+Foundations and algorithms for reasoning about learning agents beyond finite-state,
+episodic settings.
 </p>
 <p>
-I investigate the foundational and algorithmic integration of formal methods with
-reinforcement learning, aiming to enable reliable and structured decision-making in
-complex environments. My work addresses settings where classical RL abstractions are
-insufficient, such as temporal objectives, recursion, and symbolic or continuous state
-spaces.
+I study the integration of formal methods with reinforcement learning to support
+reliable and structured decision-making in complex environments. My work addresses
+settings where classical RL abstractions are insufficient, including temporal
+objectives, recursion, symbolic models, and continuous state spaces.
 </p>
 
 <ul class="small">
-  <li>Translating logical specifications into learnable reward structures</li>
-  <li>Symbolic and automata-theoretic abstractions (reward machines, regular languages)</li>
+  <li>Logical and automata-based specifications for reinforcement learning</li>
+  <li>Reward machines, regular languages, and symbolic abstractions</li>
   <li>Reinforcement learning for recursive and branching MDPs</li>
   <li>Continuous-time and continuous-space RL grounded in physical models</li>
-  <li>Asymmetrically-discounted and past-discounted objectives</li>
+  <li>Asymmetric and history-dependent discounting models</li>
 </ul>
 
 <div class="sectionline"></div>
@@ -49,17 +48,14 @@ spaces.
 Combining learning with symbolic reasoning to produce explanations and guarantees.
 </p>
 <p>
-I develop methods for enabling large language models (LLMs) to reason in ways that are
-trustworthy, auditable, and verifiable. Rather than treating LLMs as monolithic predictors,
-my work integrates them with symbolic tools such as formal logic, automata, and SMT solvers,
-to produce explanations and decisions grounded in formal reasoning.
+I develop methods that combine large language models with symbolic tools such as logic,
+automata, and SMT solvers. The goal is to produce systems that reason in ways that are
+auditable and grounded, rather than relying only on plausible text generation.
 </p>
 
 <p>
-I design modular and multi-agent architectures that separate planning, reasoning, and
-explanation, allowing LLMs to generate structured proofs, translate formal artifacts into
-human-understandable explanations, and critique outputs for logical consistency and
-regulatory compliance.
+This work includes structured reasoning architectures, proof-guided explanation, and
+frameworks in which formal methods and learning complement one another.
 </p>
 
 <div class="sectionline"></div>
@@ -69,10 +65,10 @@ regulatory compliance.
 Auditing and debugging AI-driven software in legal- and social-critical domains.
 </p>
 <p>
-I study the interplay between algorithmic decision-making, software systems, and legal
-and ethical accountability. My research develops formal and data-driven techniques for
-auditing, testing, and explaining software behavior in domains where correctness has
-legal or societal consequences.
+I study how algorithmic decision-making systems can be tested, audited, and explained
+when correctness has legal or societal consequences. My work develops formal and
+data-driven techniques for identifying failures, unfairness, and inconsistencies in
+software behavior.
 </p>
 
 <ul class="small">
@@ -82,45 +78,24 @@ legal or societal consequences.
 </ul>
 
 <p>
-Application domains include tax preparation software, juvenile justice, and public
-services, where transparency and accountability are critical.
-</p>
-<p class="small">
-Selected papers:
-<a class="link" href="#">Parfait-ML</a>,
-<a class="link" href="#">Metamorphic Testing of Tax Software</a>
+Application domains include tax preparation software, juvenile justice, and other
+public-facing systems where transparency and accountability matter.
 </p>
 
 <div class="sectionline"></div>
 
-<h2>Secure & Safe Cyber-Physical Systems (CPS)</h2>
+<h2>Secure & Safe Cyber-Physical Systems</h2>
 <p class="small">
 Formal guarantees for safety, security, and control under uncertainty.
 </p>
 <p>
-I design provably correct and resilient controllers for safety-critical cyber-physical
-systems. My work combines control theory, formal verification, and symbolic reasoning to
-ensure safety and security in dynamic and uncertain environments.
+I develop methods for the analysis and design of safety-critical cyber-physical
+systems. This work combines control theory, formal verification, and symbolic methods
+to reason about safety, security, privacy, and resilience in dynamic environments.
 </p>
 
 <ul class="small">
-  <li>Control barrier functions and Lyapunov-based methods</li>
+  <li>Barrier certificates and Lyapunov-based methods</li>
   <li>Temporal-logic-based synthesis and verification</li>
   <li>Learning-enabled control with formal guarantees</li>
 </ul>
-
-<p class="small">
-Selected papers:
-<a class="link" href="#">Closure Certificates</a>,
-<a class="link" href="#">Neural Control Barrier Certificates</a>
-</p>
-
-<div class="sectionline"></div>
-
-<h2>Methods & Themes</h2>
-<p>
-Across these areas, my research draws on formal verification (model checking, SMT, SOS),
-reinforcement learning, automata theory, and program analysis. A recurring theme is the
-design of intelligent systems whose learning behavior can be reasoned about, explained,
-and held accountable.
-</p>
