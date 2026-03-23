@@ -4,12 +4,6 @@ title: Home
 ---
 
 <div class="heroTop">
-  <img
-    src="{{ site.baseurl }}/ast-bw.jpeg"
-    alt="Ashutosh Trivedi"
-    class="portrait"
-  />
-    <div class="spacer"></div>
   <div>
     <h1>{{ site.title }}</h1>
 
@@ -28,7 +22,12 @@ title: Home
       <a class="pill" href="{{ site.links.email }}">Email</a>
     </div>
   </div>
-
+      <div class="spacer"></div>
+<img
+    src="{{ site.baseurl }}/ast-bw.jpeg"
+    alt="Ashutosh Trivedi"
+    class="portrait"
+  />
 </div>
 
 <div class="blankline"></div>
