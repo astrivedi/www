@@ -5,7 +5,7 @@ title: Home
 
 <div class="heroTop">
   <img
-    src="{{ site.baseurl }}/assets/img/trivediashutosh.avif"
+    src="{{ site.baseurl }}/ast-bw.jpeg"
     alt="Ashutosh Trivedi"
     class="portrait"
   />
