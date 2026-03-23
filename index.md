@@ -24,7 +24,7 @@ title: Home
   </div>
       <div class="spacer"></div>
 <img
-    src="{{ site.baseurl }}/assets/img/ast-bw.png"
+    src="{{ site.baseurl }}/ast-bw.jpeg"
     alt="Ashutosh Trivedi"
     class="portrait"
   />
