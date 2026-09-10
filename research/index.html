@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Ashutosh Trivedi</title>
+<meta name="description" content="Ashutosh Trivedi’s research on formal methods for reinforcement learning, verified learning and control, trustworthy AI, and auditable software.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/research/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Research | Ashutosh Trivedi">
+<meta property="og:description" content="Ashutosh Trivedi’s research on formal methods for reinforcement learning, verified learning and control, trustworthy AI, and auditable software.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/research/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/research/#page","url":"https://ashutoshtrivedi.com/research/","name":"Research | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/assets/img/portrait.jpeg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/" aria-current="page">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><div class="research-page">
+<h1>Research</h1>
+<p class="research-vision"><strong>How can we build learning-enabled systems whose behavior can be specified, verified, and trusted?</strong></p>
+<p>My research brings together formal methods, reinforcement learning, and software analysis. I develop mathematical foundations, algorithms, and tools for reasoning about intelligent systems operating under uncertainty, particularly when their decisions have safety, legal, or societal consequences.</p>
+<p>My work is organized around three connected goals: extending the foundations of sequential decision-making, providing formal guarantees for learning-enabled systems, and making consequential AI-driven software auditable and explainable.</p>
+<p class="research-summary"><strong>Foundations · Guarantees · Accountability</strong></p>
+
+<section class="research-program" aria-labelledby="formal-foundations">
+<span id="formal-methods" aria-hidden="true"></span><span id="reinforcement-learning" aria-hidden="true"></span>
+<h2 id="formal-foundations">Formal Foundations of Reinforcement Learning</h2>
+<p>Classical reinforcement learning often assumes finite-state environments, simple reward objectives, and episodic interaction. I develop foundations and algorithms for settings in which agents must satisfy richer temporal requirements, operate in structured or recursive environments, or interact with continuous-time physical systems.</p>
+<ul class="research-directions">
+<li>Reinforcement learning with temporal and omega-regular objectives</li>
+<li>Regular languages, automata, and reward machines</li>
+<li>Recursive and branching decision processes</li>
+<li>Continuous-time and physically grounded reinforcement learning</li>
+<li>History-dependent and nonstandard discounting models</li>
+</ul>
+<p class="representative-label"><strong>Representative work:</strong></p><ul class="representative-work" role="list"><li><a href="/papers/2024-cav-regular-rl/">Regular Reinforcement Learning</a> <span class="research-citation">— <span class="research-venue">CAV, 2024</span> · CAV Distinguished Paper Award</span></li><li><a href="/papers/2022-neurips-rrl/">Recursive Reinforcement Learning</a> <span class="research-citation">— <span class="research-venue">NeurIPS, 2022</span></span></li><li><a href="/papers/2019-tacas-omega-rl/">Omega-Regular Objectives in Model-Free Reinforcement Learning</a> <span class="research-citation">— <span class="research-venue">TACAS, 2019</span></span></li><li><a href="/papers/2025-ijcai-continuous-time-rewards/">Continuous-Time Reward Machines</a> <span class="research-citation">— <span class="research-venue">IJCAI, 2025</span></span></li></ul>
+</section>
+
+<section class="research-program" aria-labelledby="verified-learning-control">
+<span id="medical-and-cyber-physical-systems" aria-hidden="true"></span>
+<h2 id="verified-learning-control">Verified Learning and Control</h2>
+<p>Learning-enabled controllers must operate safely even when their environments are uncertain and their learned models are imperfect. I develop certificates, abstractions, and runtime mechanisms that connect formal verification with learning and control.</p>
+<ul class="research-directions">
+<li>Barrier, Lyapunov, and closure certificates</li>
+<li>Formal abstractions and simulation relations</li>
+<li>Safe transfer between learned controllers</li>
+<li>Runtime monitoring and shielding for reinforcement learning</li>
+<li>Safety-critical applications, including medical devices and cardiac control</li>
+</ul>
+<p>Safe reinforcement learning for cardiac pacing, including the use of cardiac digital twins to evaluate pacing strategies, is an active research direction.</p>
+<p class="representative-label"><strong>Representative work:</strong></p><ul class="representative-work" role="list"><li><a href="/papers/2025-neus-stochastic-neural-simulation/">Stochastic Neural Simulation Relations for Control Transfer</a> <span class="research-citation">— <span class="research-venue">NeuS, 2025</span> · DARPA Disruptive Idea Award</span></li><li><a href="/papers/2024-hscc-closure-certificates/">Closure Certificates</a> <span class="research-citation">— <span class="research-venue">HSCC 2024</span></span></li></ul>
+</section>
+
+<section class="research-program" aria-labelledby="auditable-ai-software">
+<span id="trustworthy-ai" aria-hidden="true"></span>
+<h2 id="auditable-ai-software">Auditable AI and Software</h2>
+<p>When software affects legal, financial, medical, or social outcomes, failures must be detectable and decisions must be open to scrutiny. I develop formal and data-driven methods for testing, explaining, and improving AI-driven software when complete specifications are unavailable.</p>
+<p>This program also studies how learning and large language models can be combined with logic, automata, program analysis, and symbolic solvers to produce reasoning that is structured and auditable rather than merely plausible.</p>
+<ul class="research-directions">
+<li>Fairness testing and discrimination discovery</li>
+<li>Metamorphic and relational testing</li>
+<li>Neurosymbolic reasoning and proof-guided explanation</li>
+<li>Regulatory and legal accountability</li>
+<li>Explanation of sequential and combinatorial reasoning</li>
+</ul>
+<p class="representative-label"><strong>Representative work:</strong></p><ul class="representative-work" role="list"><li><a href="/papers/2025-icse-fairness-evt/">Fairness Testing through Extreme Value Theory</a> <span class="research-citation">— <span class="research-venue">ICSE, 2025</span></span></li><li><a href="/papers/2025-ase-discrimination-clusters/">Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations</a> <span class="research-citation">— <span class="research-venue">ASE 2025</span></span></li><li><a href="/papers/2023-icse-seis-tax-prep/">Metamorphic Testing and Debugging of Tax Preparation Software</a> <span class="research-citation">— <span class="research-venue">ICSE-SEIS 2023</span></span></li><li><a href="/papers/2025-arxiv-hitori/">Explaining Hitori Puzzles: Neurosymbolic Proof Staging for Sequential Decisions</a> <span class="research-citation">— <span class="research-venue">arXiv, 2025</span></span></li><li><a href="/papers/2025-acl-explaining-puzzles/">Explaining Puzzle Solutions in Natural Language: An Exploratory Study on 6x6 Sudoku</a> <span class="research-citation">— <span class="research-venue">Findings of ACL, 2025</span></span></li></ul>
+</section>
+
+<section class="research-contributions" aria-labelledby="selected-contributions">
+<h2 id="selected-contributions">Selected Contributions</h2>
+<ol class="contribution-list" role="list">
+<li><h3><a href="/papers/2024-cav-regular-rl/">Regular Reinforcement Learning</a></h3>
+<p>A symbolic framework for reinforcement learning that represents sets of states with regular languages and transitions with rational transductions.</p>
+<p class="research-citation"><span class="research-venue">CAV, 2024</span> · CAV Distinguished Paper Award</p></li>
+<li><h3><a href="/papers/2022-neurips-rrl/">Recursive Reinforcement Learning</a></h3>
+<p>Foundations for learning in recursive decision processes whose executions can have an unbounded call structure.</p>
+<p class="research-citation"><span class="research-venue">NeurIPS, 2022</span></p></li>
+<li><h3><a href="/papers/2024-hscc-closure-certificates/">Certificates for Learning-Enabled Control</a></h3>
+<p>Certificate-based methods for reasoning about continuous and stochastic dynamical systems.</p>
+<p class="research-citation"><a href="/papers/2024-hscc-closure-certificates/">Closure Certificates</a> (HSCC 2024) · <a href="/papers/2025-neus-stochastic-neural-simulation/">Stochastic Neural Simulation Relations for Control Transfer</a> (NeuS, 2025)</p></li>
+<li><h3><a href="/papers/2023-icse-seis-tax-prep/">Testing Consequential Software</a></h3>
+<p>Methods for detecting systematic failures and discrimination when a complete behavioral specification is unavailable.</p>
+<p class="research-citation"><a href="/papers/2023-icse-seis-tax-prep/">Tax preparation software</a> (ICSE-SEIS 2023) · <a href="/papers/2025-icse-fairness-evt/">Fairness Testing through Extreme Value Theory</a> (ICSE, 2025)</p></li>
+</ol>
+</section>
+<p class="research-all"><a href="/publications/">View all publications <span aria-hidden="true">→</span></a></p>
+</div>
+</main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

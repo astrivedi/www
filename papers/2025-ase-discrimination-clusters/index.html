@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations | Ashutosh Trivedi</title>
+<meta name="description" content="Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations. Ranit Akash, Ashish Kumar, Verya Monjezi, Ashutosh Trivedi, Gang Tan, Saeid Tizpaz-Niari. ASE 2025.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/2025-ase-discrimination-clusters/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations | Ashutosh Trivedi">
+<meta property="og:description" content="Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations. Ranit Akash, Ashish Kumar, Verya Monjezi, Ashutosh Trivedi, Gang Tan, Saeid Tizpaz-Niari. ASE 2025.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/2025-ase-discrimination-clusters/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/2025-ase-discrimination-clusters/#page","url":"https://ashutoshtrivedi.com/papers/2025-ase-discrimination-clusters/","name":"Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/assets/img/portrait.jpeg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations"><meta name="citation_author" content="Ranit Akash"><meta name="citation_author" content="Ashish Kumar"><meta name="citation_author" content="Verya Monjezi"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_author" content="Gang Tan"><meta name="citation_author" content="Saeid Tizpaz-Niari"><meta name="citation_publication_date" content="2025"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/2025-ase-discrimination-clusters.pdf"><meta name="citation_conference_title" content="ASE 2025"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations","author":[{"@type":"Person","name":"Ranit Akash"},{"@type":"Person","name":"Ashish Kumar"},{"@type":"Person","name":"Verya Monjezi"},{"@type":"Person","name":"Ashutosh Trivedi"},{"@type":"Person","name":"Gang Tan"},{"@type":"Person","name":"Saeid Tizpaz-Niari"}],"datePublished":"2025","url":"https://ashutoshtrivedi.com/papers/2025-ase-discrimination-clusters/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations</h1><p>Ranit Akash, Ashish Kumar, Verya Monjezi, Ashutosh Trivedi, Gang Tan, Saeid Tizpaz-Niari.</p><p><em>ASE 2025</em></p><p class="resources"><a href="/assets/papers/2025-ase-discrimination-clusters.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="/assets/papers/2025-ase-discrimination-clusters.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="/assets/papers/2025-ase-discrimination-clusters.pptx">Slides</a></p><h2>Abstract</h2><p>Fairness in algorithmic decision-making is often framed in terms of individual fairness, which requires that similar individuals receive similar outcomes. A system violates individual fairness if there exists a pair of inputs differing only in protected attributes (such as race or gender) that lead to significantly different outcomes, one favorable and the other unfavorable. While this notion highlights isolated instances of unfairness, it fails to capture broader patterns of clustered discrimination that may affect entire subgroups.</p>
+
+<p>We introduce and motivate the concept of discrimination clustering, a generalization of individual fairness violations. Rather than detecting single counterfactual disparities, we seek to uncover regions of the input space where small perturbations in protected features lead to k-significantly distinct clusters of outcomes. That is, for a given input, we identify a local neighborhood, differing only in protected attributes, whose members’ outputs separate into many distinct clusters. These clusters reveal arbitrariness in treatment based solely on protected attributes, exposing patterns of algorithmic bias that elude pairwise fairness checks.</p>
+
+<p>We present HYFAIR, a hybrid technique that combines formal symbolic analysis (via SMT and MILP solvers) to certify individual fairness with randomized search to discover discriminatory clusters. This combination enables both formal guarantees when no counterexamples exist and the detection of severe violations that are computationally challenging for symbolic methods alone. Given a set of inputs exhibiting high k-discrimination, we further introduce a novel explanation method that generates interpretable, decision-tree-style artifacts.</p>
+
+<p>Our experiments show that HYFAIR outperforms state-of-the-art fairness verification and local explanation methods. It reveals that some benchmarks exhibit substantial discrimination clustering, while others show limited or no disparities with respect to protected attributes. It also provides intuitive explanations that support understanding and mitigation of unfairness.</p>
+</main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>
