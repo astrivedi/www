@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ashutoshtrivedi.com/sitemap.xml
