@@ -18,7 +18,7 @@ end
 def page(path, title, description, body, extra = '')
   url = ORIGIN + path
   full_title = path == '/' ? 'Ashutosh Trivedi | Computer Science · CU Boulder' : "#{title} | Ashutosh Trivedi"
-  person = {'@context'=>'https://schema.org','@type'=>'ProfilePage','@id'=>url+'#page','url'=>url,'name'=>full_title,'mainEntity'=>{'@type'=>'Person','@id'=>ORIGIN+'/#person','name'=>'Ashutosh Trivedi','url'=>ORIGIN+'/','image'=>ORIGIN+'/assets/img/portrait-new.jpeg','jobTitle'=>'Associate Professor of Computer Science','affiliation'=>{'@type'=>'CollegeOrUniversity','name'=>'University of Colorado Boulder','url'=>'https://www.colorado.edu/'},'email'=>'mailto:ashutosh.trivedi@colorado.edu','sameAs'=>[LINKS['scholar'],LINKS['dblp']],'knowsAbout'=>['Formal Methods','Reinforcement Learning','Trustworthy AI','Medical and Cyber-Physical Systems']}}
+  person = {'@context'=>'https://schema.org','@type'=>'ProfilePage','@id'=>url+'#page','url'=>url,'name'=>full_title,'mainEntity'=>{'@type'=>'Person','@id'=>ORIGIN+'/#person','name'=>'Ashutosh Trivedi','url'=>ORIGIN+'/','image'=>ORIGIN+'/assets/img/ashutosh.jpeg','jobTitle'=>'Associate Professor of Computer Science','affiliation'=>{'@type'=>'CollegeOrUniversity','name'=>'University of Colorado Boulder','url'=>'https://www.colorado.edu/'},'email'=>'mailto:ashutosh.trivedi@colorado.edu','sameAs'=>[LINKS['scholar'],LINKS['dblp']],'knowsAbout'=>['Formal Methods','Reinforcement Learning','Trustworthy AI','Medical and Cyber-Physical Systems']}}
   nav = NAV.map{|name,href| "<a href=\"#{href}\"#{path == href ? ' aria-current="page"' : ''}>#{esc(name)}</a>"}.join("\n")
   html = <<~HTML
   <!doctype html>
@@ -54,7 +54,7 @@ end
 
 FileUtils.mkdir_p(File.join(OUT,'assets/img'))
 FileUtils.cp(File.join(ROOT, 'site.css'), File.join(OUT, 'assets/site.css'))
-FileUtils.cp(File.join(SRC,'assets/img/portrait-new.jpg'), File.join(OUT,'assets/img/portrait-new.jpeg'))
+FileUtils.cp(File.join(SRC,'assets/img/ashutosh.jpeg'), File.join(OUT,'assets/img/ashutosh.jpeg'))
 FileUtils.cp(File.join(SRC,'assets/AshutoshTrivedi_CV.pdf'), File.join(OUT,'assets/AshutoshTrivedi_CV.pdf'))
 FileUtils.cp_r(File.join(SRC,'assets/papers'),File.join(OUT,'assets'))
 
@@ -100,7 +100,7 @@ home = <<~HTML
 <p>I work on formal methods for reinforcement learning, trustworthy AI, and safety-critical software and cyber-physical systems.</p>
 <p>My research combines verification, learning, and symbolic reasoning to make intelligent systems safer, fairer, and easier to explain.</p>
 <p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a></p></div>
-<img src="/assets/img/portrait-new.jpeg" width="170" height="170" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
+<img src="/assets/img/ashutosh.jpeg" width="220" height="220" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 </section>
 <section aria-labelledby="news"><h2 id="news">News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(4))}<p class="more"><a href="/news/">All news</a></p></section>
 <section aria-labelledby="research"><h2 id="research">Research</h2><ul class="research-index"><li><a href="/research/#formal-methods">Formal Methods</a></li><li><a href="/research/#reinforcement-learning">Reinforcement Learning</a></li><li><a href="/research/#trustworthy-ai">Trustworthy AI</a></li><li><a href="/research/#medical-and-cyber-physical-systems">Medical and Cyber-Physical Systems</a></li></ul></section>
