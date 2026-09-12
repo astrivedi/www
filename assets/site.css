@@ -17,7 +17,7 @@ p{margin:0 0 14px}
 ul,ol{padding-left:23px}
 li{margin:5px 0}
 .intro{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:34px;align-items:start}
-.intro img{width:220px;height:220px;object-fit:cover;border-radius:50%;filter:grayscale(100%);margin-top:5px}
+.intro img{width:220px;height:220px;object-fit:cover;object-position:35% 50%;border-radius:50%;filter:grayscale(100%);margin-top:14px}
 @media (hover:hover){.intro img:hover{filter:grayscale(0)}}
 .affiliation{line-height:1.55;margin-bottom:22px}
 .profile-links,.resources,.more{font-family:system-ui,sans-serif;font-size:.875rem}
