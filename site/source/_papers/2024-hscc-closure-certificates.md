@@ -1,24 +1,29 @@
 ---
-layout: paper
-title: "Closure Certificates"
-authors:
-  - "Vishnu Murali"
-  - "Ashutosh Trivedi"
-  - "Majid Zamani"
-venue: "HSCC 2024"
-year: 2024
-date: 2024-05-14
-tags: [top, cps, theory]
-selected: true
-
-pdf: /assets/papers/2024-hscc-closure-certificates.pdf
-bibtex: /assets/papers/2024-hscc-closure-certificates.bib
-slides:
-video:
-arxiv: https://arxiv.org/pdf/2305.17519.pdf
-doi: https://doi.org/10.1145/3641513.3650120
-code:
-
-abstract: |
-  We introduce *closure certificates* as a generalization of barrier certificates that reason about the **transitive closure of transition relations** to enable automated verification of dynamical systems against a broad class of specifications including *ω-regular properties*. Traditional barrier certificates reason only over single transitions, which makes refuting recurrence properties conservative or ineffective. Closure certificates instead operate over pairs of states to capture transition invariants and use sum-of-squares (SOS) and SMT-based characterizations to search for suitable certificates. We show that closure certificates can prove safety even when barrier certificates of the same template do not exist, and subsume existing barrier-certificate-based verification approaches. Case studies illustrate the utility of closure certificates for verifying safety, persistence (finite visits), and LTL properties for continuous and hybrid dynamical systems. :contentReference[oaicite:1]{index=1}
+{
+  "layout": "paper",
+  "title": "Closure Certificates",
+  "authors": [
+    "Vishnu Murali",
+    "Ashutosh Trivedi",
+    "Majid Zamani"
+  ],
+  "venue": "HSCC 2024",
+  "year": 2024,
+  "date": "2024-05-14",
+  "tags": [
+    "top",
+    "cps",
+    "theory"
+  ],
+  "selected": true,
+  "pdf": "/assets/papers/2024-hscc-closure-certificates.pdf",
+  "bibtex": "/assets/papers/2024-hscc-closure-certificates.bib",
+  "slides": null,
+  "video": null,
+  "arxiv": "https://arxiv.org/abs/2305.17519",
+  "doi": "https://doi.org/10.1145/3641513.3650120",
+  "code": null,
+  "abstract": "A barrier certificate, defined over the states of a dynamical system, is a real-valued function whose zero level set characterizes an inductively verifiable state invariant separating reachable states from unsafe ones. When combined with powerful decision procedures such as sum-of-squares programming (SOS) or satisfiability-modulo-theory solvers (SMT) barrier certificates enable an automated deductive verification approach to safety. The barrier certificate approach has been extended to refute omega-regular specifications by separating consecutive transitions of omega-automata in the hope of denying all accepting runs. Unsurprisingly, such tactics are bound to be conservative as refutation of recurrence properties requires reasoning about the well-foundedness of the transitive closure of the transition relation. This paper introduces the notion of closure certificates as a natural extension of barrier certificates from state invariants to transition invariants. We provide SOS and SMT based characterization for automating the search of closure certificates and demonstrate their effectiveness via a paradigmatic case study.",
+  "abstract_source": "https://arxiv.org/abs/2305.17519"
+}
 ---

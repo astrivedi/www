@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5 | Ashutosh Trivedi</title>
+<meta name="description" content="SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5. Zack McKevitt, Ashutosh Trivedi, Tamara Silbergleit Lehman. PACT 2023 : 265-278.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-conf-ieeepact-mckevitttl23/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5 | Ashutosh Trivedi">
+<meta property="og:description" content="SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5. Zack McKevitt, Ashutosh Trivedi, Tamara Silbergleit Lehman. PACT 2023 : 265-278.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-conf-ieeepact-mckevitttl23/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-conf-ieeepact-mckevitttl23/#page","url":"https://ashutoshtrivedi.com/papers/dblp-conf-ieeepact-mckevitttl23/","name":"SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5 | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5"><meta name="citation_author" content="Zack McKevitt"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_author" content="Tamara Silbergleit Lehman"><meta name="citation_publication_date" content="2023"><meta name="citation_conference_title" content="PACT 2023 : 265-278"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/dblp-conf-ieeepact-mckevitttl23.pdf"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5","author":[{"@type":"Person","name":"Zack McKevitt"},{"@type":"Person","name":"Ashutosh Trivedi"},{"@type":"Person","name":"Tamara Silbergleit Lehman"}],"datePublished":"2023","url":"https://ashutoshtrivedi.com/papers/dblp-conf-ieeepact-mckevitttl23/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5</h1><p>Zack McKevitt, Ashutosh Trivedi, Tamara Silbergleit Lehman.</p><p><em>PACT 2023 : 265-278</em></p><p class="resources"><a href="/assets/papers/dblp-conf-ieeepact-mckevitttl23.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="https://doi.org/10.1109/pact58117.2023.00030">Publisher</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-conf-ieeepact-mckevitttl23.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/conf/IEEEpact/McKevittTL23">DBLP</a></p><h2>Abstract</h2><p>Speculative execution attacks leverage a processor’s speculative execution optimization to leak secret information. Previous attempts to generalize transient execution attacks often analyze specific gadgets in software or look solely at microarchitectural state artifacts to explain the fundamental logic behind these attacks. In this work, we present SpecCheck, a systematic security verification for detecting potential transient data leakage. SpecCheck is based on a description of a generic transient execution attack in the form of a register based Finite State Machine (FSM). SpecCheck’s key insight is the fact that transient execution attacks involve both the software and the hardware to succeed and the only way to verify if a design is capable of mitigating such attacks is by considering both at verification time. The FSM is easily incorporated into commonly used processor simulators. As a proof of concept, we implement SpecCheck’s FSM in the gem5 simulator to check for suspicious program flows during an arbitrary program’s simulation and lay the groundwork for a robust and systematic hardware security verification tool. We show that SpecCheck is able to identify known transient execution gadgets in two of the main Spectre variants, variant 1 (PHT) and 2 (BTB), with a 100% true positives and an average of 14% false positive rate for malicious sequences of code and an average of 19% vulnerable windows identified for the SPEC benchmark suite.</p>
+<p class="resources"><a href="/assets/papers/dblp-conf-ieeepact-mckevitttl23.pdf">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

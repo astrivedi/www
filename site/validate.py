@@ -53,7 +53,15 @@ for route in ('','research','publications','students','teaching','talks','cv'):
     assert (ROOT/route/'index.html').is_file()
 ET.parse(ROOT/'sitemap.xml')
 assert (ROOT/'robots.txt').read_text().startswith('User-agent: *')
-assert {p.parent.name for p in (ROOT/'papers').glob('*/index.html')} == {p.stem for p in (ROOT/'site/source/_papers').glob('*.md')}
+imported = json.loads((ROOT/'site/source/_data/dblp-publications.json').read_text())
+expected_papers = {p.stem for p in (ROOT/'site/source/_papers').glob('*.md')} | {p['slug'] for p in imported}
+assert {p.parent.name for p in (ROOT/'papers').glob('*/index.html')} == expected_papers
+for p in imported:
+    assert p['bibtex'] and (ROOT/p['bibtex'].lstrip('/')).is_file()
+    if p.get('pdf', '').startswith('/'):
+        assert (ROOT/p['pdf'].lstrip('/')).read_bytes().startswith(b'%PDF-'), p['slug']
+    if p.get('abstract'):
+        assert p.get('abstract_source'), p['slug']
 if errors: raise SystemExit('\n'.join(errors))
 print(f'PASS: {len(docs)} pages; internal links and anchors; metadata; JSON-LD; one H1 per page; no executable JavaScript; sitemap; nonempty linked assets.')
 print(f'Homepage: {(ROOT/"index.html").stat().st_size:,} bytes; CSS: {(ROOT/"assets/site.css").stat().st_size:,} bytes.')

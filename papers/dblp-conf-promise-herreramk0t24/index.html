@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Predicting Fairness of ML Software Configurations | Ashutosh Trivedi</title>
+<meta name="description" content="Predicting Fairness of ML Software Configurations. Salvador Robles Herrera, Verya Monjezi, Vladik Kreinovich, Ashutosh Trivedi, Saeid Tizpaz-Niari. PROMISE 2024 : 56-65.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-conf-promise-herreramk0t24/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Predicting Fairness of ML Software Configurations | Ashutosh Trivedi">
+<meta property="og:description" content="Predicting Fairness of ML Software Configurations. Salvador Robles Herrera, Verya Monjezi, Vladik Kreinovich, Ashutosh Trivedi, Saeid Tizpaz-Niari. PROMISE 2024 : 56-65.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-conf-promise-herreramk0t24/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-conf-promise-herreramk0t24/#page","url":"https://ashutoshtrivedi.com/papers/dblp-conf-promise-herreramk0t24/","name":"Predicting Fairness of ML Software Configurations | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="Predicting Fairness of ML Software Configurations"><meta name="citation_author" content="Salvador Robles Herrera"><meta name="citation_author" content="Verya Monjezi"><meta name="citation_author" content="Vladik Kreinovich"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_author" content="Saeid Tizpaz-Niari"><meta name="citation_publication_date" content="2024"><meta name="citation_conference_title" content="PROMISE 2024 : 56-65"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/dblp-conf-promise-herreramk0t24.pdf"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Predicting Fairness of ML Software Configurations","author":[{"@type":"Person","name":"Salvador Robles Herrera"},{"@type":"Person","name":"Verya Monjezi"},{"@type":"Person","name":"Vladik Kreinovich"},{"@type":"Person","name":"Ashutosh Trivedi"},{"@type":"Person","name":"Saeid Tizpaz-Niari"}],"datePublished":"2024","url":"https://ashutoshtrivedi.com/papers/dblp-conf-promise-herreramk0t24/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>Predicting Fairness of ML Software Configurations</h1><p>Salvador Robles Herrera, Verya Monjezi, Vladik Kreinovich, Ashutosh Trivedi, Saeid Tizpaz-Niari.</p><p><em>PROMISE 2024 : 56-65</em></p><p class="resources"><a href="/assets/papers/dblp-conf-promise-herreramk0t24.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="https://arxiv.org/abs/2404.19100">arXiv</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-conf-promise-herreramk0t24.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/conf/promise/HerreraMK0T24">DBLP</a></p><h2>Abstract</h2><p>This paper investigates the relationships between hyperparameters of machine learning and fairness. Data-driven solutions are increasingly used in critical socio-technical applications where ensuring fairness is important. Rather than explicitly encoding decision logic via control and data structures, the ML developers provide input data, perform some pre-processing, choose ML algorithms, and tune hyperparameters (HPs) to infer a program that encodes the decision logic. Prior works report that the selection of HPs can significantly influence fairness. However, tuning HPs to find an ideal trade-off between accuracy, precision, and fairness has remained an expensive and tedious task. Can we predict fairness of HP configuration for a given dataset? Are the predictions robust to distribution shifts? We focus on group fairness notions and investigate the HP space of 5 training algorithms. We first find that tree regressors and XGBoots significantly outperformed deep neural networks and support vector machines in accurately predicting the fairness of HPs. When predicting the fairness of ML hyperparameters under temporal distribution shift, the tree regressors outperforms the other algorithms with reasonable accuracy. However, the precision depends on the ML training algorithm, dataset, and protected attributes. For example, the tree regressor model was robust for training data shift from 2014 to 2018 on logistic regression and discriminant analysis HPs with sex as the protected attribute; but not for race and other training algorithms. Our method provides a sound framework to efficiently perform fine-tuning of ML training algorithms and understand the relationships between HPs and fairness.</p>
+<p class="resources"><a href="https://arxiv.org/abs/2404.19100">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

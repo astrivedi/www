@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Octatope Abstract Domain for Verification of Neural Networks | Ashutosh Trivedi</title>
+<meta name="description" content="The Octatope Abstract Domain for Verification of Neural Networks. Stanley Bak, Taylor Dohmen, K. Subramani, Ashutosh Trivedi, Alvaro Velasquez, Piotr Wojciechowski. FM 2023 : 454-472.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-conf-fm-bakdstvw23/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Octatope Abstract Domain for Verification of Neural Networks | Ashutosh Trivedi">
+<meta property="og:description" content="The Octatope Abstract Domain for Verification of Neural Networks. Stanley Bak, Taylor Dohmen, K. Subramani, Ashutosh Trivedi, Alvaro Velasquez, Piotr Wojciechowski. FM 2023 : 454-472.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-conf-fm-bakdstvw23/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-conf-fm-bakdstvw23/#page","url":"https://ashutoshtrivedi.com/papers/dblp-conf-fm-bakdstvw23/","name":"The Octatope Abstract Domain for Verification of Neural Networks | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="The Octatope Abstract Domain for Verification of Neural Networks"><meta name="citation_author" content="Stanley Bak"><meta name="citation_author" content="Taylor Dohmen"><meta name="citation_author" content="K. Subramani"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_author" content="Alvaro Velasquez"><meta name="citation_author" content="Piotr Wojciechowski"><meta name="citation_publication_date" content="2023"><meta name="citation_conference_title" content="FM 2023 : 454-472"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"The Octatope Abstract Domain for Verification of Neural Networks","author":[{"@type":"Person","name":"Stanley Bak"},{"@type":"Person","name":"Taylor Dohmen"},{"@type":"Person","name":"K. Subramani"},{"@type":"Person","name":"Ashutosh Trivedi"},{"@type":"Person","name":"Alvaro Velasquez"},{"@type":"Person","name":"Piotr Wojciechowski"}],"datePublished":"2023","url":"https://ashutoshtrivedi.com/papers/dblp-conf-fm-bakdstvw23/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>The Octatope Abstract Domain for Verification of Neural Networks</h1><p>Stanley Bak, Taylor Dohmen, K. Subramani, Ashutosh Trivedi, Alvaro Velasquez, Piotr Wojciechowski.</p><p><em>FM 2023 : 454-472</em></p><p class="resources"><a href="https://doi.org/10.1007/978-3-031-27481-7_26">Publisher</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-conf-fm-bakdstvw23.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/conf/fm/BakDSTVW23">DBLP</a></p><h2>Abstract</h2><p>Efficient verification algorithms for neural networks often depend on various abstract domains such as intervals , zonotopes , and linear star sets . The choice of the abstract domain presents an expressiveness vs. scalability trade-off: simpler domains are less precise but yield faster algorithms. This paper investigates the octatope abstract domain in the context of neural net verification. Octatopes are affine transformations of n -dimensional octagons—sets of unit-two-variable-per-inequality (utvpi) constraints. Octatopes generalize the idea of zonotopes which can be viewed as an affine transformation of a box. On the other hand, octatopes can be considered as a restriction of linear star set, which are affine transformations of arbitrary H -Polytopes. This distinction places octatopes firmly between zonotopes and star sets in their expressive power, but what about the efficiency of decision procedures? An important analysis problem for neural networks is the exact range computation problem that asks to compute the exact set of possible outputs given a set of possible inputs. For this, three computational procedures are needed: 1) optimization of a linear cost function; 2) affine mapping; and 3) over-approximating the intersection with a half-space. While zonotopes allow an efficient solution for these approaches, star sets solves these procedures via linear programming. We show that these operations are faster for octatopes than the more expressive linear star sets. For octatopes, we reduce these problems to min-cost flow problems, which can be solved in strongly polynomial time using the Out-of-Kilter algorithm. Evaluating exact range computation on several ACAS Xu neural network benchmarks, we find that octatopes show promise as a practical abstract domain for neural network verification.</p>
+<p class="resources"><a href="https://link.springer.com/chapter/10.1007/978-3-031-27481-7_26">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

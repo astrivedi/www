@@ -1,4 +1,5 @@
 require 'yaml'
+require 'date'
 require 'json'
 require 'cgi'
 require 'fileutils'
@@ -88,7 +89,7 @@ def venue(p)
   v.include?(p['year'].to_s) ? v : "#{v}, #{p['year']}"
 end
 def entry(p)
-  title_url = p['imported'] ? p['dblp'] : "/papers/#{p['slug']}/"
+  title_url = "/papers/#{p['slug']}/"
   "<li class=\"publication\" id=\"#{p['slug']}\"><article><h3><a href=\"#{esc(title_url)}\">#{esc(p['title'])}</a></h3><p>#{p['authors'].map{|a| a == 'Ashutosh Trivedi' ? '<strong>Ashutosh Trivedi</strong>' : esc(a)}.join(', ')}.</p><p><em>#{esc(venue(p))}</em>#{p['award'] ? '<br><span class="award">'+esc(p['award'])+'</span>' : ''}</p><p class=\"resources\">#{resources(p)}</p></article></li>"
 end
 NEWS = YAML.load_file(File.join(SRC,'_data/news.yml')).reject { |item| item['draft'] }
@@ -219,14 +220,25 @@ pubs='<h1>Publications</h1><p>Papers and preprints, with bibliographic records f
 pubs+='<nav class="year-nav" aria-label="Publication years">'+years.map{|y|"<a href=\"#year-#{y}\">#{y}</a>"}.join+'</nav>'
 years.each{|y|pubs+="<section aria-labelledby=\"year-#{y}\"><h2 id=\"year-#{y}\">#{y}</h2><ol class=\"publications\">"+all_publications.select{|p|p['year']==y}.map{|p|entry(p)}.join+'</ol></section>'}
 page('/publications/','Publications','Publications by Ashutosh Trivedi and collaborators, with authors, venues, paper PDFs, arXiv, and BibTeX citations.',pubs)
-PAPERS.each do |p|
+all_publications.each do |p|
   pdf_url = p['pdf'].to_s.strip
-  pdf_url = ORIGIN + '/' + pdf_url.sub(/^\//,'') unless pdf_url.start_with?('https://','http://')
-  extra='<meta name="citation_title" content="'+esc(p['title'])+'">'+p['authors'].map{|a|'<meta name="citation_author" content="'+esc(a)+'">'}.join+'<meta name="citation_publication_date" content="'+p['year'].to_s+'"><meta name="citation_pdf_url" content="'+esc(pdf_url)+'"><meta name="citation_conference_title" content="'+esc(venue(p))+'">'
+  pdf_url = ORIGIN + '/' + pdf_url.sub(/^\//,'') unless pdf_url.empty? || pdf_url.start_with?('https://','http://')
+  extra='<meta name="citation_title" content="'+esc(p['title'])+'">'+p['authors'].map{|a|'<meta name="citation_author" content="'+esc(a)+'">'}.join+'<meta name="citation_publication_date" content="'+p['year'].to_s+'">'
+  unless venue(p).match?(/preprint|arXiv/i)
+    citation_venue = p['dblp'].to_s.include?('/journals/') && !p['dblp'].include?('/corr/') ? 'citation_journal_title' : 'citation_conference_title'
+    extra += '<meta name="'+citation_venue+'" content="'+esc(venue(p))+'">'
+  end
+  extra += '<meta name="citation_pdf_url" content="'+esc(pdf_url)+'">' unless pdf_url.empty?
   extra+='<script type="application/ld+json">'+JSON.generate({'@context'=>'https://schema.org','@type'=>'ScholarlyArticle','headline'=>p['title'],'author'=>p['authors'].map{|a|{'@type'=>'Person','name'=>a}},'datePublished'=>p['year'].to_s,'url'=>ORIGIN+'/papers/'+p['slug']+'/'}).gsub('<','\\u003c')+'</script>'
   body='<p class="back"><a href="/publications/">Publications</a></p><h1>'+esc(p['title'])+'</h1><p>'+esc(p['authors'].join(', '))+'.</p><p><em>'+esc(venue(p))+'</em></p>'
   body+='<p>'+esc(p['award'])+'</p>' if p['award']
-  body+='<p class="resources">'+resources(p)+'</p><h2>'+ (p['summary'] ? 'Summary' : 'Abstract') +'</h2>'+md(p['abstract'])
+  body+='<p class="resources">'+resources(p)+'</p>'
+  if p['abstract'].to_s.strip.empty?
+    body+='<p>The abstract is not available here yet. Please see the linked publication record.</p>'
+  else
+    body+='<h2>'+ (p['summary'] ? 'Summary' : 'Abstract') +'</h2>'+md(p['abstract'])
+    body+='<p class="resources"><a href="'+esc(p['abstract_source'])+'">Abstract source</a></p>' if p['abstract_source']
+  end
   page('/papers/'+p['slug']+'/',p['title'],p['title']+'. '+p['authors'].join(', ')+'. '+venue(p)+'.',body,extra)
 end
 students=source_body('group.md')

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data-Driven Debugging for Functional Side Channels | Ashutosh Trivedi</title>
+<meta name="description" content="Data-Driven Debugging for Functional Side Channels. Saeid Tizpaz-Niari, Pavol Cerný, Ashutosh Trivedi. NDSS 2020.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-conf-ndss-tizpaz-niaric020/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data-Driven Debugging for Functional Side Channels | Ashutosh Trivedi">
+<meta property="og:description" content="Data-Driven Debugging for Functional Side Channels. Saeid Tizpaz-Niari, Pavol Cerný, Ashutosh Trivedi. NDSS 2020.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-conf-ndss-tizpaz-niaric020/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-conf-ndss-tizpaz-niaric020/#page","url":"https://ashutoshtrivedi.com/papers/dblp-conf-ndss-tizpaz-niaric020/","name":"Data-Driven Debugging for Functional Side Channels | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="Data-Driven Debugging for Functional Side Channels"><meta name="citation_author" content="Saeid Tizpaz-Niari"><meta name="citation_author" content="Pavol Cerný"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_publication_date" content="2020"><meta name="citation_conference_title" content="NDSS 2020"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/dblp-conf-ndss-tizpaz-niaric020.pdf"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Data-Driven Debugging for Functional Side Channels","author":[{"@type":"Person","name":"Saeid Tizpaz-Niari"},{"@type":"Person","name":"Pavol Cerný"},{"@type":"Person","name":"Ashutosh Trivedi"}],"datePublished":"2020","url":"https://ashutoshtrivedi.com/papers/dblp-conf-ndss-tizpaz-niaric020/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>Data-Driven Debugging for Functional Side Channels</h1><p>Saeid Tizpaz-Niari, Pavol Cerný, Ashutosh Trivedi.</p><p><em>NDSS 2020</em></p><p class="resources"><a href="/assets/papers/dblp-conf-ndss-tizpaz-niaric020.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="https://arxiv.org/abs/1808.10502">arXiv</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-conf-ndss-tizpaz-niaric020.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/conf/ndss/Tizpaz-NiariC020">DBLP</a></p><h2>Abstract</h2><p>Information leaks through side channels are a pervasive problem, even in security-critical applications. Functional side channels arise when an attacker knows that a secret value of a server stays fixed for a certain time. Then, the attacker can observe the server executions on a sequence of different public inputs, each paired with the same secret input. Thus for each secret, the attacker observes a function from public inputs to execution time, for instance, and she can compare these functions for different secrets. First, we introduce a notion of noninterference for functional side channels. We focus on the case of noisy observations, where we demonstrate with examples that there is a practical functional side channel in programs that would be deemed information-leak-free or be underestimated using the standard definition. Second, we develop a framework and techniques for debugging programs for functional side channels. We extend evolutionary fuzzing techniques to generate inputs that exploit functional dependencies of response times on public inputs. We adapt existing results and algorithms in functional data analysis to model the functions and discover the existence of side channels. We use a functional extension of standard decision tree learning to pinpoint the code fragments causing a side channel if there is one. We empirically evaluate the performance of our tool FUCHSIA on a series of micro-benchmarks and realistic Java programs. On the set of benchmarks, we show that FUCHSIA outperforms the state-of-the-art techniques in detecting side channel classes. On the realistic programs, we show the scalability of FUCHSIA in analyzing functional side channels in Java programs with thousands of methods. Also, we show the usefulness of FUCHSIA in finding side channels including a zero-day vulnerability in OpenJDK and another vulnerability in Jetty that was since fixed by the developers.</p>
+<p class="resources"><a href="https://arxiv.org/abs/1808.10502">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>
