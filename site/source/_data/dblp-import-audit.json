@@ -1,0 +1,304 @@
+{
+  "source": "https://dblp.org/pid/06/5756.html",
+  "retrieved": "2026-09-13",
+  "records_reviewed": 201,
+  "added": 132,
+  "excluded": [
+    {
+      "key": "journals/corr/abs-2605-12251",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2605-12471",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/acl/MaiyaAP0S25",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/cdc/DellErbaST25",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/icse/Monjezi0KT25",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/ijcai/FalahG025",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/kbse/AkashKMTTT25",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/neus/NadaliTZ25",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/vmcai/2025-1",
+      "reason": "edited proceedings"
+    },
+    {
+      "key": "conf/vmcai/2025-2",
+      "reason": "edited proceedings"
+    },
+    {
+      "key": "data/11/MehrabadiPSSTV25",
+      "reason": "dataset/artifact"
+    },
+    {
+      "key": "journals/corr/abs-2501-11597",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2505-15693",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2505-15993",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2508-14294",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2512-23769",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/cav/DohmenPST24",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/hybrid/MuraliTZ24",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2404-19100",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2405-13735",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "conf/icse/TizpazNiariMWDRT23",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "data/10/MehrabadiPSSTV23",
+      "reason": "dataset/artifact"
+    },
+    {
+      "key": "journals/corr/abs-2302-14176",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2303-09528",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2305-17115",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2305-17519",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2308-07469",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2310-12248",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2312-08602",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2312-09938",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "conf/icse/Tizpaz-NiariKT022",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "conf/nips/HahnPSS0W22",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2202-06196",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2202-06677",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2205-03243",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2205-04998",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2206-11430",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-2207-13416",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "data/10/HahnPSSTW21",
+      "reason": "dataset/artifact"
+    },
+    {
+      "key": "journals/corr/abs-2106-02951",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2106-06777",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2108-08263",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2003-00712",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-2006-01991",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "conf/tacas/HahnPSSTW19",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-1905-11125",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-1906-08957",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-1907-10159",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-1808-10502",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-1810-00950",
+      "reason": "already represented on site"
+    },
+    {
+      "key": "journals/corr/abs-1810-10443",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/Tizpaz-NiariCCS17",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/KrishnaKSTT17",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-1711-04076",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/KargahiT16",
+      "reason": "edited proceedings"
+    },
+    {
+      "key": "journals/corr/ForejtKNT16",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/DaveKT16",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/AkshayBKMT16",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/GuhaJKT16",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/ScheweTV15",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/GuhaKMT15",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/JohnSCTA15",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/GuptaDPST15",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/BrihayeGKMMT14",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/FiliotKT14",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/BhaveJKST14",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-1302-0745",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/KrishnaMT13",
+      "reason": "preprint of listed published paper"
+    },
+    {
+      "key": "journals/corr/abs-0907-3414",
+      "reason": "preprint of listed published paper"
+    }
+  ],
+  "status_updates": [
+    {
+      "title": "On the Robustness of Fairness Practices: A Causal Framework for Systematic Evaluation",
+      "dblp_venue": "Preprint (arXiv), 2026",
+      "site_venue": "ICSE, 2026",
+      "source": "Publication status supplied by Ashutosh Trivedi in the website editing conversation."
+    },
+    {
+      "title": "An LLM Agentic Approach for Legal-Critical Software: A Case Study for Tax Prep Software",
+      "dblp_venue": "Preprint (arXiv), 2025",
+      "site_venue": "ICSE, 2026",
+      "source": "Publication status supplied by Ashutosh Trivedi in the website editing conversation."
+    },
+    {
+      "title": "BarrierBench : Evaluating Large Language Models for Safety Verification in Dynamical Systems",
+      "dblp_venue": "Preprint (arXiv), 2025",
+      "site_venue": "L4DC, 2026",
+      "source": "Publication status supplied by Ashutosh Trivedi in the website editing conversation."
+    }
+  ]
+}
