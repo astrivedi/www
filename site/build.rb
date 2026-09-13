@@ -102,7 +102,7 @@ home = <<~HTML
 <div><h1 id="name">Ashutosh Trivedi</h1><p class="affiliation">Associate Professor of Computer Science<br>University of Colorado Boulder</p>
 <p>I work on formal methods for reinforcement learning, trustworthy AI, and safety-critical software and cyber-physical systems.</p>
 <p>My research combines verification, learning, and symbolic reasoning to make intelligent systems safer, fairer, and easier to explain.</p>
-<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a></p></div>
+<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="https://www.mathgenealogy.org/id.php?id=136067">Mathematics Genealogy</a></p></div>
 <img src="/images/ashutosh-trivedi.jpg" width="220" height="220" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 </section>
 <section aria-labelledby="news"><h2 id="news">News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(8))}<p class="more"><a href="/news/">All news</a></p></section>
