@@ -1,0 +1,2163 @@
+[
+  {
+    "slug": "dblp-journals-jair-kazemipsstv26",
+    "title": "Average Reward Reinforcement Learning for Omega-Regular and Mean-Payoff Objectives",
+    "authors": [
+      "Milad Kazemi",
+      "Mateo Perez",
+      "Fabio Somenzi",
+      "Sadegh Soudjani",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "J. Artif. Intell. Res. 85 (2026)",
+    "year": 2026,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/jair/KazemiPSSTV26",
+    "bibtex": "/assets/papers/dblp-journals-jair-kazemipsstv26.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-sttt-kalatst26",
+    "title": "Active discount factor elicitation via reward modification",
+    "authors": [
+      "Shadi Tasdighi Kalat",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Int. J. Softw. Tools Technol. Transf. 28 ( 1 ) : 55-70 (2026)",
+    "year": 2026,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/sttt/KalatST26",
+    "bibtex": "/assets/papers/dblp-journals-sttt-kalatst26.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2601-03621",
+    "title": "On the Robustness of Fairness Practices: A Causal Framework for Systematic Evaluation",
+    "authors": [
+      "Verya Monjezi",
+      "Ashish Kumar",
+      "Ashutosh Trivedi",
+      "Gang Tan",
+      "Saeid Tizpaz-Niari"
+    ],
+    "venue": "ICSE, 2026",
+    "year": 2026,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2601-03621",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2601-03621.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2601.03621"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2602-02686",
+    "title": "Monotonicity as an Architectural Bias for Robust Language Models",
+    "authors": [
+      "Patrick Cooper",
+      "Alireza Nadali",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "Preprint (arXiv), 2026",
+    "year": 2026,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2602-02686",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2602-02686.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2602.02686"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2605-00752",
+    "title": "HyperCertificates: Verification of Discrete-time Dynamical Systems against HyperLTL Specifications",
+    "authors": [
+      "Vishnu Murali",
+      "Amin Falah",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "Preprint (arXiv), 2026",
+    "year": 2026,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2605-00752",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2605-00752.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2605.00752"
+  },
+  {
+    "slug": "dblp-conf-qestformats-nadalitz25",
+    "title": "On Choice of Loss Functions for Neural Control Barrier Certificates",
+    "authors": [
+      "Alireza Nadali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "QEST+FORMATS 2025 : 468-486",
+    "year": 2025,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/qestformats/NadaliTZ25",
+    "bibtex": "/assets/papers/dblp-conf-qestformats-nadalitz25.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2504-18693",
+    "title": "Technical Challenges in Maintaining Tax Prep Software with Large Language Models",
+    "authors": [
+      "Sina Gogani-Khiabani",
+      "Varsha Dewangan",
+      "Nina Olson",
+      "Ashutosh Trivedi",
+      "Saeid Tizpaz-Niari"
+    ],
+    "venue": "Preprint (arXiv), 2025",
+    "year": 2025,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2504-18693",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2504-18693.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2504.18693"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2508-14093",
+    "title": "Physics-Informed Reward Machines",
+    "authors": [
+      "Daniel Ajeleye",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "Preprint (arXiv), 2025",
+    "year": 2025,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2508-14093",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2508-14093.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2508.14093"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2509-13471",
+    "title": "An LLM Agentic Approach for Legal-Critical Software: A Case Study for Tax Prep Software",
+    "authors": [
+      "Sina Gogani-Khiabani",
+      "Ashutosh Trivedi",
+      "Diptikalyan Saha",
+      "Saeid Tizpaz-Niari"
+    ],
+    "venue": "ICSE, 2026",
+    "year": 2026,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2509-13471",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2509-13471.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2509.13471"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2511-09363",
+    "title": "BarrierBench : Evaluating Large Language Models for Safety Verification in Dynamical Systems",
+    "authors": [
+      "Ali Taheri",
+      "Alireza Taban",
+      "Sadegh Soudjani",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "L4DC, 2026",
+    "year": 2026,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2511-09363",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2511-09363.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2511.09363"
+  },
+  {
+    "slug": "dblp-journals-aamas-velasquezabta24",
+    "title": "Controller synthesis for linear temporal logic and steady-state specifications",
+    "authors": [
+      "Alvaro Velasquez",
+      "Ismail Alkhouri",
+      "Andre Beckus",
+      "Ashutosh Trivedi",
+      "George K. Atia"
+    ],
+    "venue": "Auton. Agents Multi Agent Syst. 38 ( 1 ) : 17 (2024)",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/aamas/VelasquezABTA24",
+    "bibtex": "/assets/papers/dblp-journals-aamas-velasquezabta24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-csysl-oumermtz24",
+    "title": "Safety Verification of Discrete-Time Systems via Interpolation-Inspired Barrier Certificates",
+    "authors": [
+      "Mohammed Adib Oumer",
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "IEEE Control. Syst. Lett. 8 : 3183-3188 (2024)",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/csysl/OumerMTZ24",
+    "bibtex": "/assets/papers/dblp-journals-csysl-oumermtz24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-fmsd-bakdstvw24",
+    "title": "The hexatope and octatope abstract domains for neural network verification",
+    "authors": [
+      "Stanley Bak",
+      "Taylor Dohmen",
+      "K. Subramani",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez",
+      "Piotr Wojciechowski"
+    ],
+    "venue": "Formal Methods Syst. Des. 64 ( 1 ) : 178-199 (2024)",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/fmsd/BakDSTVW24",
+    "bibtex": "/assets/papers/dblp-journals-fmsd-bakdstvw24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-tac-anandmtz24",
+    "title": "Verification of Hyperproperties for Dynamical Systems via Barrier Certificates",
+    "authors": [
+      "Mahathi Anand",
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "IEEE Trans. Autom. Control. 69 ( 10 ) : 6920-6934 (2024)",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/tac/AnandMTZ24",
+    "bibtex": "/assets/papers/dblp-journals-tac-anandmtz24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aaai-hahnpss0w24",
+    "title": "Omega-Regular Decision Processes",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "AAAI 2024 : 21125-21133",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aaai/HahnPSS0W24",
+    "bibtex": "/assets/papers/dblp-conf-aaai-hahnpss0w24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aaai-kazemipss0v24",
+    "title": "Assume-Guarantee Reinforcement Learning",
+    "authors": [
+      "Milad Kazemi",
+      "Mateo Perez",
+      "Fabio Somenzi",
+      "Sadegh Soudjani",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "AAAI 2024 : 21223-21231",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aaai/KazemiPSS0V24",
+    "bibtex": "/assets/papers/dblp-conf-aaai-kazemipss0v24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aaai-nadalim0024",
+    "title": "Neural Closure Certificates",
+    "authors": [
+      "Alireza Nadali",
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "AAAI 2024 : 21446-21453",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aaai/NadaliM0024",
+    "bibtex": "/assets/papers/dblp-conf-aaai-nadalim0024.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aaai-perezs024",
+    "title": "A PAC Learning Algorithm for LTL and Omega-Regular Objectives in MDPs",
+    "authors": [
+      "Mateo Perez",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "AAAI 2024 : 21510-21517",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aaai/PerezS024",
+    "bibtex": "/assets/papers/dblp-conf-aaai-perezs024.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-adhs-nadali0024",
+    "title": "Transfer of Safety Controllers Through Learning Deep Inverse Dynamics Model",
+    "authors": [
+      "Alireza Nadali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "ADHS 2024 : 129-134",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/adhs/Nadali0024",
+    "bibtex": "/assets/papers/dblp-conf-adhs-nadali0024.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-amcc-muralitz24",
+    "title": "Falsification via Barrier Certificates",
+    "authors": [
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "ACC 2024 : 4657-4662",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/amcc/MuraliTZ24",
+    "bibtex": "/assets/papers/dblp-conf-amcc-muralitz24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-cdc-murali0024",
+    "title": "Barrier Certificates for Weighted Automata-based Specifications",
+    "authors": [
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "CDC 2024 : 5191-5196",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cdc/Murali0024",
+    "bibtex": "/assets/papers/dblp-conf-cdc-murali0024.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-ecai-hahnpss0w24",
+    "title": "Multi-Agent Reinforcement Learning for Alternating-Time Logic",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "ECAI 2024 : 1680-1687",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/ecai/HahnPSS0W24",
+    "bibtex": "/assets/papers/dblp-conf-ecai-hahnpss0w24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-icse-monjezikt0t24",
+    "title": "Causal Graph Fuzzing for Fair ML Sofware Development",
+    "authors": [
+      "Verya Monjezi",
+      "Ashish Kumar",
+      "Gang Tan",
+      "Ashutosh Trivedi",
+      "Saeid Tizpaz-Niari"
+    ],
+    "venue": "ICSE Companion 2024 : 402-403",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/icse/MonjeziKT0T24",
+    "bibtex": "/assets/papers/dblp-conf-icse-monjezikt0t24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-promise-herreramk0t24",
+    "title": "Predicting Fairness of ML Software Configurations",
+    "authors": [
+      "Salvador Robles Herrera",
+      "Verya Monjezi",
+      "Vladik Kreinovich",
+      "Ashutosh Trivedi",
+      "Saeid Tizpaz-Niari"
+    ],
+    "venue": "PROMISE 2024 : 56-65",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/promise/HerreraMK0T24",
+    "bibtex": "/assets/papers/dblp-conf-promise-herreramk0t24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-qestformats-kalatst24",
+    "title": "What is Your Discount Factor?",
+    "authors": [
+      "Shadi Tasdighi Kalat",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "QEST+FORMATS 2024 : 322-336",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/qestformats/KalatST24",
+    "bibtex": "/assets/papers/dblp-conf-qestformats-kalatst24.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2401-12379",
+    "title": "Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis",
+    "authors": [
+      "Richard Roberson",
+      "Gowtham Kaki",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2024",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2401-12379",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2401-12379.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2401.12379"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2404-02872",
+    "title": "Integrating Explanations in Learning LTL Specifications from Demonstrations",
+    "authors": [
+      "Ashutosh Gupta",
+      "John Komp",
+      "Abhay Singh Rajput",
+      "Shankaranarayanan Krishna",
+      "Ashutosh Trivedi",
+      "Namrita Varshney"
+    ],
+    "venue": "Preprint (arXiv), 2024",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2404-02872",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2404-02872.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2404.02872"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2408-02999",
+    "title": "LLMs as Probabilistic Minimally Adequate Teachers for DFA Learning",
+    "authors": [
+      "Lekai Chen",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "Preprint (arXiv), 2024",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2408-02999",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2408-02999.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2408.02999"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2409-11671",
+    "title": "Anticipating Oblivious Opponents in Stochastic Games",
+    "authors": [
+      "Shadi Tasdighi Kalat",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2024",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2409-11671",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2409-11671.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2409.11671"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2409-16140",
+    "title": "Metamorphic Debugging for Accountable Software",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Shiva Darian",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2024",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2409-16140",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2409-16140.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2409.16140"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2411-01750",
+    "title": "Show, Don't Tell: Learning Reward Machines from Demonstrations for Reinforcement Learning-Based Cardiac Pacemaker Synthesis",
+    "authors": [
+      "John Komp",
+      "Dananjay Srinivas",
+      "Maria Leonor Pacheco",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2024",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2411-01750",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2411-01750.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2411.01750"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2412-01783",
+    "title": "Transfer Learning for Control Systems via Neural Simulation Relations",
+    "authors": [
+      "Alireza Nadali",
+      "Bingzhuo Zhong",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "Preprint (arXiv), 2024",
+    "year": 2024,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2412-01783",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2412-01783.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2412.01783"
+  },
+  {
+    "slug": "dblp-journals-fac-hahnpsstw23",
+    "title": "Multi-objective ω-Regular Reinforcement Learning",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "Formal Aspects Comput. 35 ( 2 ) : 12:1-12:24 (2023)",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/fac/HahnPSSTW23",
+    "bibtex": "/assets/papers/dblp-journals-fac-hahnpsstw23.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-ieeepact-mckevitttl23",
+    "title": "SpecCheck: A Tool for Systematic Identification of Vulnerable Transient Execution in gem5",
+    "authors": [
+      "Zack McKevitt",
+      "Ashutosh Trivedi",
+      "Tamara Silbergleit Lehman"
+    ],
+    "venue": "PACT 2023 : 265-278",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/IEEEpact/McKevittTL23",
+    "bibtex": "/assets/papers/dblp-conf-ieeepact-mckevitttl23.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aaai-dolegkk023",
+    "title": "Correct-by-Construction Reinforcement Learning of Cardiac Pacemakers from Duration Calculus Requirements",
+    "authors": [
+      "Kalyani Dole",
+      "Ashutosh Gupta",
+      "John Komp",
+      "Shankaranarayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "AAAI 2023 : 14792-14800",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aaai/DoleGKK023",
+    "bibtex": "/assets/papers/dblp-conf-aaai-dolegkk023.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aips-falahg023",
+    "title": "Reinforcement Learning for Omega-Regular Specifications on Continuous-Time MDP",
+    "authors": [
+      "Amin Falah",
+      "Shibashis Guha",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "ICAPS 2023 : 578-586",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aips/FalahG023",
+    "bibtex": "/assets/papers/dblp-conf-aips-falahg023.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atal-dohmen023",
+    "title": "Reinforcement Learning with Depreciating Assets",
+    "authors": [
+      "Taylor Dohmen",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "AAMAS 2023 : 2628-2630",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atal/Dohmen023",
+    "bibtex": "/assets/papers/dblp-conf-atal-dohmen023.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atal-afzalggs0v23",
+    "title": "LTL-Based Non-Markovian Inverse Reinforcement Learning",
+    "authors": [
+      "Mohammad Afzal",
+      "Sankalp Gambhir",
+      "Ashutosh Gupta",
+      "S. Krishna",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "AAMAS 2023 : 2857-2859",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atal/AfzalGGS0V23",
+    "bibtex": "/assets/papers/dblp-conf-atal-afzalggs0v23.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-cav-alurbjpst23",
+    "title": "Policy Synthesis and Reinforcement Learning for Discounted LTL",
+    "authors": [
+      "Rajeev Alur",
+      "Osbert Bastani",
+      "Kishor Jothimurugan",
+      "Mateo Perez",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "CAV (1) 2023 : 415-435",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cav/AlurBJPST23",
+    "bibtex": "/assets/papers/dblp-conf-cav-alurbjpst23.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-cdc-nadali0023",
+    "title": "Transfer Learning for Barrier Certificates",
+    "authors": [
+      "Alireza Nadali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "CDC 2023 : 8000-8005",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cdc/Nadali0023",
+    "bibtex": "/assets/papers/dblp-conf-cdc-nadali0023.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-ecai-hahnpss0w23",
+    "title": "Omega-Regular Reward Machines",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "ECAI 2023 : 972-979",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/ecai/HahnPSS0W23",
+    "bibtex": "/assets/papers/dblp-conf-ecai-hahnpss0w23.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fm-bakdstvw23",
+    "title": "The Octatope Abstract Domain for Verification of Neural Networks",
+    "authors": [
+      "Stanley Bak",
+      "Taylor Dohmen",
+      "K. Subramani",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez",
+      "Piotr Wojciechowski"
+    ],
+    "venue": "FM 2023 : 454-472",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fm/BakDSTVW23",
+    "bibtex": "/assets/papers/dblp-conf-fm-bakdstvw23.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-tacas-hahnpsstw23",
+    "title": "Mungojerrie: Linear-Time Objectives in Model-Free Reinforcement Learning",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "TACAS (1) 2023 : 527-545",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/tacas/HahnPSSTW23",
+    "bibtex": "/assets/papers/dblp-conf-tacas-hahnpsstw23.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2304-04199",
+    "title": "Information-Theoretic Testing and Debugging of Fairness Defects in Deep Neural Networks",
+    "authors": [
+      "Verya Monjezi",
+      "Ashutosh Trivedi",
+      "Gang Tan",
+      "Saeid Tizpaz-Niari"
+    ],
+    "venue": "Preprint (arXiv), 2023",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2304-04199",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2304-04199.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2304.04199"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2311-07695",
+    "title": "Co-Buchi Barrier Certificates for Discrete-time Dynamical Systems",
+    "authors": [
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "Preprint (arXiv), 2023",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2311-07695",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2311-07695.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2311.07695"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2311-11979",
+    "title": "On the Potential and Limitations of Few-Shot In-Context Learning to Generate Metamorphic Specifications for Tax Preparation Software",
+    "authors": [
+      "Dananjay Srinivas",
+      "Rohan Das",
+      "Saeid Tizpaz-Niari",
+      "Ashutosh Trivedi",
+      "Maria Leonor Pacheco"
+    ],
+    "venue": "Preprint (arXiv), 2023",
+    "year": 2023,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2311-11979",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2311-11979.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2311.11979"
+  },
+  {
+    "slug": "dblp-journals-arc-liutyz22",
+    "title": "Secure-by-construction synthesis of cyber-physical systems",
+    "authors": [
+      "Siyuan Liu",
+      "Ashutosh Trivedi",
+      "Xiang Yin",
+      "Majid Zamani"
+    ],
+    "venue": "Annu. Rev. Control. 53 : 30-50 (2022)",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/arc/LiuTYZ22",
+    "bibtex": "/assets/papers/dblp-journals-arc-liutyz22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-csysl-muralitz22",
+    "title": "A Scenario Approach for Synthesizing k-Inductive Barrier Certificates",
+    "authors": [
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "IEEE Control. Syst. Lett. 6 : 3247-3252 (2022)",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/csysl/MuraliTZ22",
+    "bibtex": "/assets/papers/dblp-journals-csysl-muralitz22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aips-dohmentab0v22",
+    "title": "Inferring Probabilistic Reward Machines from Non-Markovian Reward Signals for Reinforcement Learning",
+    "authors": [
+      "Taylor Dohmen",
+      "Noah Topper",
+      "George K. Atia",
+      "Andre Beckus",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "ICAPS 2022 : 574-582",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aips/DohmenTAB0V22",
+    "bibtex": "/assets/papers/dblp-conf-aips-dohmentab0v22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-aips-toppera0v22",
+    "title": "Active Grammatical Inference for Non-Markovian Planning",
+    "authors": [
+      "Noah Topper",
+      "George K. Atia",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "ICAPS 2022 : 647-651",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aips/TopperA0V22",
+    "bibtex": "/assets/papers/dblp-conf-aips-toppera0v22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atal-kazemipss0v22",
+    "title": "Translating Omega-Regular Specifications to Average Objectives for Model-Free Reinforcement Learning",
+    "authors": [
+      "Milad Kazemi",
+      "Mateo Perez",
+      "Fabio Somenzi",
+      "Sadegh Soudjani",
+      "Ashutosh Trivedi",
+      "Alvaro Velasquez"
+    ],
+    "venue": "AAMAS 2022 : 732-741",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atal/KazemiPSS0V22",
+    "bibtex": "/assets/papers/dblp-conf-atal-kazemipss0v22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atal-velasquezab0a22",
+    "title": "Controller Synthesis for Omega-Regular and Steady-State Specifications",
+    "authors": [
+      "Alvaro Velasquez",
+      "Ismail Alkhouri",
+      "Andre Beckus",
+      "Ashutosh Trivedi",
+      "George K. Atia"
+    ],
+    "venue": "AAMAS 2022 : 1310-1318",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atal/VelasquezAB0A22",
+    "bibtex": "/assets/papers/dblp-conf-atal-velasquezab0a22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atva-hahnpsstw22",
+    "title": "An Impossibility Result in Automata-Theoretic Reinforcement Learning",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "ATVA 2022 : 42-57",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atva/HahnPSSTW22",
+    "bibtex": "/assets/papers/dblp-conf-atva-hahnpsstw22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atva-hahnpsstw22a",
+    "title": "Alternating Good-for-MDPs Automata",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "ATVA 2022 : 303-319",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atva/HahnPSSTW22a",
+    "bibtex": "/assets/papers/dblp-conf-atva-hahnpsstw22a.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atva-davekmt22",
+    "title": "Optimal Repair for Omega-Regular Properties",
+    "authors": [
+      "Vrunda Dave",
+      "Shankara Narayanan Krishna",
+      "Vishnu Murali",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "ATVA 2022 : 354-370",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atva/DaveKMT22",
+    "bibtex": "/assets/papers/dblp-conf-atva-davekmt22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fmics-hahnpsstw22",
+    "title": "Reinforcement Learning with Guarantees that Hold for Ever",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "FMICS 2022 : 3-7",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fmics/HahnPSSTW22",
+    "bibtex": "/assets/papers/dblp-conf-fmics-hahnpsstw22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-hybrid-anandm0z22",
+    "title": "k-Inductive Barrier Certificates for Stochastic Systems",
+    "authors": [
+      "Mahathi Anand",
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "HSCC 2022 : 12:1-12:11",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/hybrid/AnandM0Z22",
+    "bibtex": "/assets/papers/dblp-conf-hybrid-anandm0z22.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2208-03485",
+    "title": "Compositional Reinforcement Learning for Discrete-Time Stochastic Control Systems",
+    "authors": [
+      "Abolfazl Lavaei",
+      "Mateo Perez",
+      "Milad Kazemi",
+      "Fabio Somenzi",
+      "Sadegh Soudjani",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "Preprint (arXiv), 2022",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2208-03485",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2208-03485.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2208.03485"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2209-05448",
+    "title": "Composing Copyless Streaming String Transducers",
+    "authors": [
+      "Rajeev Alur",
+      "Taylor Dohmen",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2022",
+    "year": 2022,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2209-05448",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2209-05448.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2209.05448"
+  },
+  {
+    "slug": "dblp-journals-sttt-tizpaz-niaricst21",
+    "title": "Quantitative estimation of side-channel leaks with neural networks",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Pavol Cerný",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Int. J. Softw. Tools Technol. Transf. 23 ( 4 ) : 641-654 (2021)",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/sttt/Tizpaz-NiariCST21",
+    "bibtex": "/assets/papers/dblp-journals-sttt-tizpaz-niaricst21.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-cav-hahnpsstw20",
+    "title": "Model-Free Reinforcement Learning for Branching Markov Decision Processes",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "CAV (2) 2021 : 651-673",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cav/HahnPSSTW20",
+    "bibtex": "/assets/papers/dblp-conf-cav-hahnpsstw20.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-cdc-anandm0z21",
+    "title": "Safety Verification of Dynamical Systems via k-Inductive Barrier Certificates",
+    "authors": [
+      "Mahathi Anand",
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "CDC 2021 : 1314-1320",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cdc/AnandM0Z21",
+    "bibtex": "/assets/papers/dblp-conf-cdc-anandm0z21.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-cpsweek-anandm0z21",
+    "title": "Formal verification of hyperproperties for control systems",
+    "authors": [
+      "Mahathi Anand",
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "CAADCPS@CPSIoTWeek 2021 : 29-30",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cpsweek/AnandM0Z21",
+    "bibtex": "/assets/papers/dblp-conf-cpsweek-anandm0z21.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fct-davedkt21",
+    "title": "Regular Model Checking with Regular Relations",
+    "authors": [
+      "Vrunda Dave",
+      "Taylor Dohmen",
+      "Shankara Narayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FCT 2021 : 190-203",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fct/DaveDKT21",
+    "bibtex": "/assets/papers/dblp-conf-fct-davedkt21.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fm-hahnpsstw21",
+    "title": "Model-Free Reinforcement Learning for Lexicographic Omega-Regular Objectives",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "FM 2021 : 142-159",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fm/HahnPSSTW21",
+    "bibtex": "/assets/papers/dblp-conf-fm-hahnpsstw21.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-rtss-dolegkkt21",
+    "title": "Event-Triggered and Time-Triggered Duration Calculus for Model-Free Reinforcement Learning",
+    "authors": [
+      "Kalyani Dole",
+      "Ashutosh Gupta",
+      "John Komp",
+      "Shankaranarayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "RTSS 2021 : 240-252",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/rtss/DoleGKKT21",
+    "bibtex": "/assets/papers/dblp-conf-rtss-dolegkkt21.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-sas-luct21",
+    "title": "Selectively-Amortized Resource Bounding",
+    "authors": [
+      "Tianhan Lu",
+      "Bor-Yuh Evan Chang",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "SAS 2021 : 286-307",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/sas/LuCT21",
+    "bibtex": "/assets/papers/dblp-conf-sas-luct21.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2102-06985",
+    "title": "Discounting the Past in Stochastic Games",
+    "authors": [
+      "Taylor Dohmen",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2021",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2102-06985",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2102-06985.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2102.06985"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2105-05493",
+    "title": "Formal Verification of Control Systems against Hyperproperties via Barrier Certificates",
+    "authors": [
+      "Mahathi Anand",
+      "Vishnu Murali",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "Preprint (arXiv), 2021",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2105-05493",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2105-05493.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2105.05493"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2106-09161",
+    "title": "Mungojerrie: Reinforcement Learning of Linear-Time Objectives",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "Preprint (arXiv), 2021",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2106-09161",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2106-09161.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2106.09161"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2107-04633",
+    "title": "Learning Probabilistic Reward Machines from Non-Markovian Stochastic Reward Processes",
+    "authors": [
+      "Alvaro Velasquez",
+      "Andre Beckus",
+      "Taylor Dohmen",
+      "Ashutosh Trivedi",
+      "Noah Topper",
+      "George K. Atia"
+    ],
+    "venue": "Preprint (arXiv), 2021",
+    "year": 2021,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2107-04633",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2107-04633.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2107.04633"
+  },
+  {
+    "slug": "dblp-conf-atva-hahnpss0w20",
+    "title": "Faithful and Effective Reward Schemes for Model-Free Reinforcement Learning of Omega-Regular Objectives",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "ATVA 2020 : 108-124",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atva/HahnPSS0W20",
+    "bibtex": "/assets/papers/dblp-conf-atva-hahnpss0w20.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-concur-filiotmr0020",
+    "title": "Weighted Transducers for Robustness Verification",
+    "authors": [
+      "Emmanuel Filiot",
+      "Nicolas Mazzocchi",
+      "Jean-François Raskin",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "CONCUR 2020 : 17:1-17:21",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/concur/FiliotMR0020",
+    "bibtex": "/assets/papers/dblp-conf-concur-filiotmr0020.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-concur-hahnpss0w20",
+    "title": "Model-Free Reinforcement Learning for Stochastic Parity Games",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "CONCUR 2020 : 21:1-21:16",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/concur/HahnPSS0W20",
+    "bibtex": "/assets/papers/dblp-conf-concur-hahnpss0w20.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-iccps-lavaeiss0z20",
+    "title": "Formal Controller Synthesis for Continuous-Space MDPs via Model-Free Reinforcement Learning",
+    "authors": [
+      "Abolfazl Lavaei",
+      "Fabio Somenzi",
+      "Sadegh Soudjani",
+      "Ashutosh Trivedi",
+      "Majid Zamani"
+    ],
+    "venue": "ICCPS 2020 : 98-107",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/iccps/LavaeiSS0Z20",
+    "bibtex": "/assets/papers/dblp-conf-iccps-lavaeiss0z20.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-issta-tizpaz-niaric020",
+    "title": "Detecting and understanding real-world differential performance bugs in machine learning libraries",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Pavol Cerný",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "ISSTA 2020 : 189-199",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/issta/Tizpaz-NiariC020",
+    "bibtex": "/assets/papers/dblp-conf-issta-tizpaz-niaric020.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-ndss-tizpaz-niaric020",
+    "title": "Data-Driven Debugging for Functional Side Channels",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Pavol Cerný",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "NDSS 2020",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/ndss/Tizpaz-NiariC020",
+    "bibtex": "/assets/papers/dblp-conf-ndss-tizpaz-niaric020.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-tacas-hahnpss0w20",
+    "title": "Good-for-MDPs Automata for Probabilistic Analysis and Reinforcement Learning",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "TACAS (1) 2020 : 306-323",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/tacas/HahnPSS0W20",
+    "bibtex": "/assets/papers/dblp-conf-tacas-hahnpss0w20.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-2001-05977",
+    "title": "Reward Shaping for Reinforcement Learning with Omega-Regular Objectives",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "Preprint (arXiv), 2020",
+    "year": 2020,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-2001-05977",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-2001-05977.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/2001.05977"
+  },
+  {
+    "slug": "dblp-conf-cav-somenzi019",
+    "title": "Reinforcement Learning and Formal Requirements",
+    "authors": [
+      "Fabio Somenzi",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "NSV@CAV 2019 : 26-41",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cav/Somenzi019",
+    "bibtex": "/assets/papers/dblp-conf-cav-somenzi019.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-cav-tizpaz-niaric019",
+    "title": "Quantitative Mitigation of Timing Side Channels",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Pavol Cerný",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "CAV (1) 2019 : 140-160",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/cav/Tizpaz-NiariC019",
+    "bibtex": "/assets/papers/dblp-conf-cav-tizpaz-niaric019.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-dlt-bhavekpt19",
+    "title": "On Timed Scope-Bounded Context-Sensitive Languages",
+    "authors": [
+      "Devendra Bhave",
+      "Shankara Narayanan Krishna",
+      "Ramchandra Phawade",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "DLT 2019 : 168-181",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/dlt/BhaveKPT19",
+    "bibtex": "/assets/papers/dblp-conf-dlt-bhavekpt19.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-formats-guha019",
+    "title": "Expected Reachability-Price Games",
+    "authors": [
+      "Shibashis Guha",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FORMATS 2019 : 282-300",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/formats/Guha019",
+    "bibtex": "/assets/papers/dblp-conf-formats-guha019.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-rv-tizpaz-niaric0019",
+    "title": "Efficient Detection and Quantification of Timing Leaks with Neural Networks",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Pavol Cerný",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "RV 2019 : 329-348",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/rv/Tizpaz-NiariC0019",
+    "bibtex": "/assets/papers/dblp-conf-rv-tizpaz-niaric0019.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-snr-hahnpss0w19",
+    "title": "Limit reachability for model-free reinforcement learning of ω-regular objectives",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Sven Schewe",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "SNR 2019 : 16-18",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/snr/HahnPSS0W19",
+    "bibtex": "/assets/papers/dblp-conf-snr-hahnpss0w19.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-vmcai-lucc019",
+    "title": "Type-Directed Bounding of Collections in Reactive Programs",
+    "authors": [
+      "Tianhan Lu",
+      "Pavol Cerný",
+      "Bor-Yuh Evan Chang",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "VMCAI 2019 : 275-296",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/vmcai/LuCC019",
+    "bibtex": "/assets/papers/dblp-conf-vmcai-lucc019.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-1909-05081",
+    "title": "Good-for-MDPs Automata",
+    "authors": [
+      "Ernst Moritz Hahn",
+      "Mateo Perez",
+      "Fabio Somenzi",
+      "Ashutosh Trivedi",
+      "Sven Schewe",
+      "Dominik Wojtczak"
+    ],
+    "venue": "Preprint (arXiv), 2019",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-1909-05081",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-1909-05081.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/1909.05081"
+  },
+  {
+    "slug": "dblp-journals-corr-abs-1910-09072",
+    "title": "MSO-Definable Regular Model Checking",
+    "authors": [
+      "Vrunda Dave",
+      "Taylor Dohmen",
+      "Shankara Narayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2019",
+    "year": 2019,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-1910-09072",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-1910-09072.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/1910.09072"
+  },
+  {
+    "slug": "dblp-conf-aaai-tizpaz-niaricct18",
+    "title": "Differential Performance Debugging With Discriminant Regression Trees",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Pavol Cerný",
+      "Bor-Yuh Evan Chang",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "AAAI 2018 : 2468-2475",
+    "year": 2018,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/aaai/Tizpaz-NiariCCT18",
+    "bibtex": "/assets/papers/dblp-conf-aaai-tizpaz-niaricct18.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-hybrid-somenzitt18",
+    "title": "Global Almost-Sure Reachability in Stochastic Constant-Rate Multi-Mode Systems",
+    "authors": [
+      "Fabio Somenzi",
+      "Behrouz Touri",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "HSCC 2018 : 11-20",
+    "year": 2018,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/hybrid/SomenziTT18",
+    "bibtex": "/assets/papers/dblp-conf-hybrid-somenzitt18.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-tecs-alurfmt17",
+    "title": "Schedulability of Bounded-Rate Multimode Systems",
+    "authors": [
+      "Rajeev Alur",
+      "Vojtech Forejt",
+      "Salar Moarref",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "ACM Trans. Embed. Comput. Syst. 16 ( 3 ) : 85:1-85:27 (2017)",
+    "year": 2017,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/tecs/AlurFMT17",
+    "bibtex": "/assets/papers/dblp-journals-tecs-alurfmt17.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atva-krishnakstt17",
+    "title": "The Reach-Avoid Problem for Constant-Rate Multi-mode Systems",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Aviral Kumar",
+      "Fabio Somenzi",
+      "Behrouz Touri",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "ATVA 2017 : 463-479",
+    "year": 2017,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atva/KrishnaKSTT17",
+    "bibtex": "/assets/papers/dblp-conf-atva-krishnakstt17.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-iccps-diwakaranst17",
+    "title": "Analyzing neighborhoods of falsifying traces in cyber-physical systems",
+    "authors": [
+      "Ram Das Diwakaran",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "ICCPS 2017 : 109-119",
+    "year": 2017,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/iccps/DiwakaranST17",
+    "bibtex": "/assets/papers/dblp-conf-iccps-diwakaranst17.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-tacas-tizpaz-niariccs17",
+    "title": "Discriminating Traces with Time",
+    "authors": [
+      "Saeid Tizpaz-Niari",
+      "Pavol Cerný",
+      "Bor-Yuh Evan Chang",
+      "Sriram Sankaranarayanan",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "TACAS (2) 2017 : 21-37",
+    "year": 2017,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/tacas/Tizpaz-NiariCCS17",
+    "bibtex": "/assets/papers/dblp-conf-tacas-tizpaz-niariccs17.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-tcs-forejtknt16",
+    "title": "Expected reachability-time games",
+    "authors": [
+      "Vojtech Forejt",
+      "Marta Kwiatkowska",
+      "Gethin Norman",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Theor. Comput. Sci. 631 : 139-160 (2016)",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/tcs/ForejtKNT16",
+    "bibtex": "/assets/papers/dblp-journals-tcs-forejtknt16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-dlt-bhavedkpt16",
+    "title": "A Perfect Class of Context-Sensitive Timed Languages",
+    "authors": [
+      "Devendra Bhave",
+      "Vrunda Dave",
+      "Shankara Narayanan Krishna",
+      "Ramchandra Phawade",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "DLT 2016 : 38-50",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/dlt/BhaveDKPT16",
+    "bibtex": "/assets/papers/dblp-conf-dlt-bhavedkpt16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fsttcs-davekt16",
+    "title": "FO-Definable Transformations of Infinite Strings",
+    "authors": [
+      "Vrunda Dave",
+      "Shankara Narayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FSTTCS 2016 : 12:1-12:14",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fsttcs/DaveKT16",
+    "bibtex": "/assets/papers/dblp-conf-fsttcs-davekt16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fsttcs-guhajkt16",
+    "title": "Mean-Payoff Games on Timed Automata",
+    "authors": [
+      "Shibashis Guha",
+      "Marcin Jurdzinski",
+      "Shankara Narayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FSTTCS 2016 : 44:1-44:14",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fsttcs/GuhaJKT16",
+    "bibtex": "/assets/papers/dblp-conf-fsttcs-guhajkt16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-lata-bhavedkpt16",
+    "title": "A Logical Characterization for Dense-Time Visibly Pushdown Automata",
+    "authors": [
+      "Devendra Bhave",
+      "Vrunda Dave",
+      "Shankara Narayanan Krishna",
+      "Ramchandra Phawade",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "LATA 2016 : 89-101",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/lata/BhaveDKPT16",
+    "bibtex": "/assets/papers/dblp-conf-lata-bhavedkpt16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-mfcs-akshaybkmt16",
+    "title": "Stochastic Timed Games Revisited",
+    "authors": [
+      "S. Akshay",
+      "Patricia Bouyer",
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "MFCS 2016 : 8:1-8:14",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/mfcs/AkshayBKMT16",
+    "bibtex": "/assets/papers/dblp-conf-mfcs-akshaybkmt16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-sefm-guptastdp16",
+    "title": "Incentive Stackelberg Mean-Payoff Games",
+    "authors": [
+      "Anshul Gupta",
+      "Sven Schewe",
+      "Ashutosh Trivedi",
+      "Sai Krishna Deepak Maram",
+      "Bharath Kumar Padarthi"
+    ],
+    "venue": "SEFM 2016 : 304-320",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/sefm/GuptaSTDP16",
+    "bibtex": "/assets/papers/dblp-conf-sefm-guptastdp16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-bhavekt16",
+    "title": "On Nonlinear Prices in Timed Automata",
+    "authors": [
+      "Devendra Bhave",
+      "Shankara Narayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "V2CPS@IFM 2016 : 65-78",
+    "year": 2016,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/BhaveKT16",
+    "bibtex": "/assets/papers/dblp-journals-corr-bhavekt16.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-dac-krishnanrt15",
+    "title": "Compositional modeling and analysis of automotive feature product lines",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Ganesh Khandu Narwane",
+      "S. Ramesh",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "DAC 2015 : 57:1-57:6",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/dac/KrishnaNRT15",
+    "bibtex": "/assets/papers/dblp-conf-dac-krishnanrt15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fmcad-johnscta15",
+    "title": "Skolem Functions for Factored Formulas",
+    "authors": [
+      "Ajith K. John",
+      "Shetal Shah",
+      "Supratik Chakraborty",
+      "Ashutosh Trivedi",
+      "S. Akshay"
+    ],
+    "venue": "FMCAD 2015 : 73-80",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fmcad/JohnSCTA15",
+    "bibtex": "/assets/papers/dblp-conf-fmcad-johnscta15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fsttcs-guhakmt15",
+    "title": "Revisiting Robustness in Priced Timed Games",
+    "authors": [
+      "Shibashis Guha",
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FSTTCS 2015 : 261-277",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fsttcs/GuhaKMT15",
+    "bibtex": "/assets/papers/dblp-conf-fsttcs-guhakmt15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-hybrid-krishnamt15",
+    "title": "What's decidable about recursive hybrid automata?",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "HSCC 2015 : 31-40",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/hybrid/KrishnaMT15",
+    "bibtex": "/assets/papers/dblp-conf-hybrid-krishnamt15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-hybrid-bhavejkst15",
+    "title": "Bounded-rate multi-mode systems based motion planning",
+    "authors": [
+      "Devendra Bhave",
+      "Sagar Jha",
+      "Shankara Narayanan Krishna",
+      "Sven Schewe",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "HSCC 2015 : 41-50",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/hybrid/BhaveJKST15",
+    "bibtex": "/assets/papers/dblp-conf-hybrid-bhavejkst15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-icalp-schewetv15",
+    "title": "Symmetric Strategy Improvement",
+    "authors": [
+      "Sven Schewe",
+      "Ashutosh Trivedi",
+      "Thomas Varghese"
+    ],
+    "venue": "ICALP (2) 2015 : 388-400",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/icalp/ScheweTV15",
+    "bibtex": "/assets/papers/dblp-conf-icalp-schewetv15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-lata-krishnamt15",
+    "title": "Time-Bounded Reachability Problem for Recursive Timed Automata is Undecidable",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "LATA 2015 : 237-248",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/lata/KrishnaMT15",
+    "bibtex": "/assets/papers/dblp-conf-lata-krishnamt15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-tamc-daskmtw15",
+    "title": "On Pure Nash Equilibria in Stochastic Games",
+    "authors": [
+      "Ankush Das",
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "TAMC 2015 : 359-371",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/tamc/DasKMTW15",
+    "bibtex": "/assets/papers/dblp-conf-tamc-daskmtw15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-time-krishnamt15",
+    "title": "Reachability Games on Recursive Hybrid Automata",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "TIME 2015 : 150-159",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/time/KrishnaMT15",
+    "bibtex": "/assets/papers/dblp-conf-time-krishnamt15.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-krishnat15",
+    "title": "Hybrid Automata for Formal Modeling and Verification of Cyber-Physical Systems",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2015",
+    "year": 2015,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/KrishnaT15",
+    "bibtex": "/assets/papers/dblp-journals-corr-krishnat15.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/1503.04928"
+  },
+  {
+    "slug": "dblp-conf-concur-brihayegkmmt14",
+    "title": "Adding Negative Prices to Priced Timed Games",
+    "authors": [
+      "Thomas Brihaye",
+      "Gilles Geeraerts",
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Benjamin Monmege",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "CONCUR 2014 : 560-575",
+    "year": 2014,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/concur/BrihayeGKMMT14",
+    "bibtex": "/assets/papers/dblp-conf-concur-brihayegkmmt14.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-formats-krishnamt14",
+    "title": "Weak Singular Hybrid Automata",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Umang Mathur",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FORMATS 2014 : 161-175",
+    "year": 2014,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/formats/KrishnaMT14",
+    "bibtex": "/assets/papers/dblp-conf-formats-krishnamt14.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fsttcs-filiotkt14",
+    "title": "First-order Definable String Transformations",
+    "authors": [
+      "Emmanuel Filiot",
+      "Shankara Narayanan Krishna",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FSTTCS 2014 : 147-159",
+    "year": 2014,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fsttcs/FiliotKT14",
+    "bibtex": "/assets/papers/dblp-conf-fsttcs-filiotkt14.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-krishnamt14a",
+    "title": "Improved Undecidability Results for Reachability Games on Recursive Timed Automata",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "GandALF 2014 : 245-259",
+    "year": 2014,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/KrishnaMT14a",
+    "bibtex": "/assets/papers/dblp-journals-corr-krishnamt14a.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-krishnamt14",
+    "title": "On The Reachability Problem for Recursive Hybrid Automata with One and Two Players",
+    "authors": [
+      "Shankara Narayanan Krishna",
+      "Lakshmi Manasa",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2014",
+    "year": 2014,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/KrishnaMT14",
+    "bibtex": "/assets/papers/dblp-journals-corr-krishnamt14.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/1406.7289"
+  },
+  {
+    "slug": "dblp-conf-hybrid-alurfmt13",
+    "title": "Safe schedulability of bounded-rate multi-mode systems",
+    "authors": [
+      "Rajeev Alur",
+      "Vojtech Forejt",
+      "Salar Moarref",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "HSCC 2013 : 243-252",
+    "year": 2013,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/hybrid/AlurFMT13",
+    "bibtex": "/assets/papers/dblp-conf-hybrid-alurfmt13.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-lics-alurdt13",
+    "title": "From Monadic Second-Order Definable String Transformations to Transducers",
+    "authors": [
+      "Rajeev Alur",
+      "Antoine Durand-Gasselin",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "LICS 2013 : 458-467",
+    "year": 2013,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/lics/AlurDT13",
+    "bibtex": "/assets/papers/dblp-conf-lics-alurdt13.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-concur-chenfkstu12",
+    "title": "Playing Stochastic Games Precisely",
+    "authors": [
+      "Taolue Chen",
+      "Vojtech Forejt",
+      "Marta Z. Kwiatkowska",
+      "Aistis Simaitis",
+      "Ashutosh Trivedi",
+      "Michael Ummels"
+    ],
+    "venue": "CONCUR 2012 : 348-363",
+    "year": 2012,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/concur/ChenFKSTU12",
+    "bibtex": "/assets/papers/dblp-conf-concur-chenfkstu12.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-hybrid-alurtw12",
+    "title": "Optimal scheduling for constant-rate multi-mode systems",
+    "authors": [
+      "Rajeev Alur",
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "HSCC 2012 : 75-84",
+    "year": 2012,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/hybrid/AlurTW12",
+    "bibtex": "/assets/papers/dblp-conf-hybrid-alurtw12.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-lics-alurft12",
+    "title": "Regular Transformations of Infinite Strings",
+    "authors": [
+      "Rajeev Alur",
+      "Emmanuel Filiot",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "LICS 2012 : 65-74",
+    "year": 2012,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/lics/AlurFT12",
+    "bibtex": "/assets/papers/dblp-conf-lics-alurft12.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-emsoft-alurt11",
+    "title": "Relating average and discounted costs for quantitative analysis of timed systems",
+    "authors": [
+      "Rajeev Alur",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "EMSOFT 2011 : 165-174",
+    "year": 2011,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/emsoft/AlurT11",
+    "bibtex": "/assets/papers/dblp-conf-emsoft-alurt11.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-atva-trivediw10",
+    "title": "Recursive Timed Automata",
+    "authors": [
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "ATVA 2010 : 306-324",
+    "year": 2010,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/atva/TrivediW10",
+    "bibtex": "/assets/papers/dblp-conf-atva-trivediw10.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-formats-forejtknt10",
+    "title": "Expected Reachability-Time Games",
+    "authors": [
+      "Vojtech Forejt",
+      "Marta Z. Kwiatkowska",
+      "Gethin Norman",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FORMATS 2010 : 122-136",
+    "year": 2010,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/formats/ForejtKNT10",
+    "bibtex": "/assets/papers/dblp-conf-formats-forejtknt10.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-qest-trivediw10",
+    "title": "Timed Branching Processes",
+    "authors": [
+      "Ashutosh Trivedi",
+      "Dominik Wojtczak"
+    ],
+    "venue": "QEST 2010 : 219-228",
+    "year": 2010,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/qest/TrivediW10",
+    "bibtex": "/assets/papers/dblp-conf-qest-trivediw10.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-1001-1933",
+    "title": "Quantitative Games on Probabilistic Timed Automata",
+    "authors": [
+      "Marta Z. Kwiatkowska",
+      "Gethin Norman",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2010",
+    "year": 2010,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-1001-1933",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-1001-1933.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/1001.1933"
+  },
+  {
+    "slug": "dblp-conf-concur-jurdzinskiknt09",
+    "title": "Concavely-Priced Probabilistic Timed Automata",
+    "authors": [
+      "Marcin Jurdzinski",
+      "Marta Z. Kwiatkowska",
+      "Gethin Norman",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "CONCUR 2009 : 415-430",
+    "year": 2009,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/concur/JurdzinskiKNT09",
+    "bibtex": "/assets/papers/dblp-conf-concur-jurdzinskiknt09.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-journals-corr-abs-0910-2891",
+    "title": "Average-Time Games on Timed Automata",
+    "authors": [
+      "Marcin Jurdzinski",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "Preprint (arXiv), 2009",
+    "year": 2009,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/journals/corr/abs-0910-2891",
+    "bibtex": "/assets/papers/dblp-journals-corr-abs-0910-2891.bib",
+    "imported": true,
+    "arxiv": "https://arxiv.org/abs/0910.2891"
+  },
+  {
+    "slug": "dblp-conf-formats-jurdzinskit08",
+    "title": "Concavely-Priced Timed Automata",
+    "authors": [
+      "Marcin Jurdzinski",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FORMATS 2008 : 48-62",
+    "year": 2008,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/formats/JurdzinskiT08",
+    "bibtex": "/assets/papers/dblp-conf-formats-jurdzinskit08.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-fsttcs-jurdzinskit08",
+    "title": "Average-Time Games",
+    "authors": [
+      "Marcin Jurdzinski",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "FSTTCS 2008 : 340-351",
+    "year": 2008,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/fsttcs/JurdzinskiT08",
+    "bibtex": "/assets/papers/dblp-conf-fsttcs-jurdzinskit08.bib",
+    "imported": true
+  },
+  {
+    "slug": "dblp-conf-icalp-jurdzinskit07",
+    "title": "Reachability-Time Games on Timed Automata",
+    "authors": [
+      "Marcin Jurdzinski",
+      "Ashutosh Trivedi"
+    ],
+    "venue": "ICALP 2007 : 838-849",
+    "year": 2007,
+    "tags": [],
+    "dblp": "https://dblp.org/rec/conf/icalp/JurdzinskiT07",
+    "bibtex": "/assets/papers/dblp-conf-icalp-jurdzinskit07.bib",
+    "imported": true
+  }
+]

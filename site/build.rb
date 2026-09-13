@@ -70,13 +70,13 @@ PAPERS.each do |p|
   end
 end
 def resources(p)
-  %w[pdf arxiv doi code bibtex slides video].map do |key|
+  %w[pdf arxiv doi code bibtex slides video dblp].map do |key|
     href = p[key].to_s.strip
     next if href.empty?
     href = '/'+href unless href.start_with?('/','https://','http://')
     href = href.sub('/22025-neus','/2025-neus')
     next if href.start_with?('/') && (!File.file?(OUT+href) || File.zero?(OUT+href))
-    label = {'pdf'=>'Paper (PDF)','arxiv'=>(href.include?('arxiv.org') ? 'arXiv' : 'Proceedings'),'doi'=>'Publisher','code'=>'Code','bibtex'=>'BibTeX','slides'=>'Slides','video'=>'Video'}[key]
+    label = {'pdf'=>'Paper (PDF)','arxiv'=>(href.include?('arxiv.org') ? 'arXiv' : 'Proceedings'),'doi'=>'Publisher','code'=>'Code','bibtex'=>'BibTeX','slides'=>'Slides','video'=>'Video','dblp'=>'DBLP'}[key]
     "<a href=\"#{esc(href)}\">#{label}</a>"
   end.compact.join(' <span aria-hidden="true">·</span> ')
 end
@@ -88,7 +88,8 @@ def venue(p)
   v.include?(p['year'].to_s) ? v : "#{v}, #{p['year']}"
 end
 def entry(p)
-  "<li class=\"publication\" id=\"#{p['slug']}\"><article><h3><a href=\"/papers/#{p['slug']}/\">#{esc(p['title'])}</a></h3><p>#{p['authors'].map{|a| a == 'Ashutosh Trivedi' ? '<strong>Ashutosh Trivedi</strong>' : esc(a)}.join(', ')}.</p><p><em>#{esc(venue(p))}</em>#{p['award'] ? '<br><span class="award">'+esc(p['award'])+'</span>' : ''}</p><p class=\"resources\">#{resources(p)}</p></article></li>"
+  title_url = p['imported'] ? p['dblp'] : "/papers/#{p['slug']}/"
+  "<li class=\"publication\" id=\"#{p['slug']}\"><article><h3><a href=\"#{esc(title_url)}\">#{esc(p['title'])}</a></h3><p>#{p['authors'].map{|a| a == 'Ashutosh Trivedi' ? '<strong>Ashutosh Trivedi</strong>' : esc(a)}.join(', ')}.</p><p><em>#{esc(venue(p))}</em>#{p['award'] ? '<br><span class="award">'+esc(p['award'])+'</span>' : ''}</p><p class=\"resources\">#{resources(p)}</p></article></li>"
 end
 NEWS = YAML.load_file(File.join(SRC,'_data/news.yml')).reject { |item| item['draft'] }
 def news_rows(items)
@@ -212,10 +213,11 @@ research = <<~HTML
 </div>
 HTML
 page('/research/','Research','Ashutosh Trivedi’s research on formal methods for reinforcement learning, verified learning and control, trustworthy AI, and auditable software.',research)
-years=PAPERS.map{|p|p['year']}.uniq
-pubs='<h1>Publications</h1><p>Papers with full bibliographic entries and available manuscripts. See also <a href="'+LINKS['scholar']+'">Google Scholar</a>, <a href="'+LINKS['dblp']+'">DBLP</a>, and my <a href="/cv/">CV</a>.</p>'
+all_publications = (PAPERS + JSON.parse(File.read(File.join(SRC, '_data/dblp-publications.json')))).sort_by { |p| [-p['year'], p['title']] }
+years=all_publications.map{|p|p['year']}.uniq
+pubs='<h1>Publications</h1><p>Papers and preprints, with bibliographic records from DBLP and links to available manuscripts. Preprints are labeled; matching preprint and published records are listed once. See also <a href="'+LINKS['scholar']+'">Google Scholar</a>, <a href="'+LINKS['dblp']+'">DBLP</a>, and my <a href="/cv/">CV</a>.</p>'
 pubs+='<nav class="year-nav" aria-label="Publication years">'+years.map{|y|"<a href=\"#year-#{y}\">#{y}</a>"}.join+'</nav>'
-years.each{|y|pubs+="<section aria-labelledby=\"year-#{y}\"><h2 id=\"year-#{y}\">#{y}</h2><ol class=\"publications\">"+PAPERS.select{|p|p['year']==y}.map{|p|entry(p)}.join+'</ol></section>'}
+years.each{|y|pubs+="<section aria-labelledby=\"year-#{y}\"><h2 id=\"year-#{y}\">#{y}</h2><ol class=\"publications\">"+all_publications.select{|p|p['year']==y}.map{|p|entry(p)}.join+'</ol></section>'}
 page('/publications/','Publications','Publications by Ashutosh Trivedi and collaborators, with authors, venues, paper PDFs, arXiv, and BibTeX citations.',pubs)
 PAPERS.each do |p|
   pdf_url = p['pdf'].to_s.strip
