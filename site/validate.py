@@ -53,7 +53,7 @@ for route in ('','research','publications','students','teaching','talks','cv'):
     assert (ROOT/route/'index.html').is_file()
 ET.parse(ROOT/'sitemap.xml')
 assert (ROOT/'robots.txt').read_text().startswith('User-agent: *')
-assert len(list((ROOT/'papers').glob('*/index.html')))==12
+assert {p.parent.name for p in (ROOT/'papers').glob('*/index.html')} == {p.stem for p in (ROOT/'site/source/_papers').glob('*.md')}
 if errors: raise SystemExit('\n'.join(errors))
 print(f'PASS: {len(docs)} pages; internal links and anchors; metadata; JSON-LD; one H1 per page; no executable JavaScript; sitemap; nonempty linked assets.')
 print(f'Homepage: {(ROOT/"index.html").stat().st_size:,} bytes; CSS: {(ROOT/"assets/site.css").stat().st_size:,} bytes.')

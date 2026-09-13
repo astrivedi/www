@@ -90,11 +90,11 @@ end
 def entry(p)
   "<li class=\"publication\" id=\"#{p['slug']}\"><article><h3><a href=\"/papers/#{p['slug']}/\">#{esc(p['title'])}</a></h3><p>#{p['authors'].map{|a| a == 'Ashutosh Trivedi' ? '<strong>Ashutosh Trivedi</strong>' : esc(a)}.join(', ')}.</p><p><em>#{esc(venue(p))}</em>#{p['award'] ? '<br><span class="award">'+esc(p['award'])+'</span>' : ''}</p><p class=\"resources\">#{resources(p)}</p></article></li>"
 end
-NEWS = YAML.load_file(File.join(SRC,'_data/news.yml'))
+NEWS = YAML.load_file(File.join(SRC,'_data/news.yml')).reject { |item| item['draft'] }
 def news_rows(items)
   '<ul class="news">'+items.map{|n| '<li><time datetime="'+(n['datetime'] || Date.strptime(n['date'],'%b %Y').strftime('%Y-%m'))+'">'+esc(n['date'])+'</time><div>'+n['text']+'</div></li>'}.join+'</ul>'
 end
-selected = ['2024-cav-regular-rl','2025-neus-stochastic-neural-simulation','2022-neurips-rrl']
+selected = ['2026-concur-asymmetric-discounting','2026-ijcai-social-welfare','2025-cdc-objective-improvement','2026-arxiv-kv-fold','2024-cav-regular-rl','2025-neus-stochastic-neural-simulation','2022-neurips-rrl']
 home = <<~HTML
 <section class="intro" aria-labelledby="name">
 <div><h1 id="name">Ashutosh Trivedi</h1><p class="affiliation">Associate Professor of Computer Science<br>University of Colorado Boulder</p>
@@ -103,7 +103,7 @@ home = <<~HTML
 <p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a></p></div>
 <img src="/images/ashutosh-trivedi.jpg" width="220" height="220" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 </section>
-<section aria-labelledby="news"><h2 id="news">News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(4))}<p class="more"><a href="/news/">All news</a></p></section>
+<section aria-labelledby="news"><h2 id="news">News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(8))}<p class="more"><a href="/news/">All news</a></p></section>
 <section aria-labelledby="research"><h2 id="research">Research</h2><ul class="research-index"><li><a href="/research/#formal-methods">Formal Methods</a></li><li><a href="/research/#reinforcement-learning">Reinforcement Learning</a></li><li><a href="/research/#trustworthy-ai">Trustworthy AI</a></li><li><a href="/research/#medical-and-cyber-physical-systems">Medical and Cyber-Physical Systems</a></li></ul></section>
 <section aria-labelledby="selected"><h2 id="selected">Selected Publications</h2><ol class="publications">#{selected.map{|slug| entry(PAPERS.find{|p| p['slug']==slug})}.join}</ol><p class="more"><a href="/publications/">All publications</a></p></section>
 <section aria-labelledby="students"><h2 id="students">Students</h2><p>I work with students and postdoctoral researchers in the <a href="https://plv.colorado.edu/">Programming Languages and Verification (CUPLV)</a> group.</p><p><a href="/students/">Current students, collaborators, and alumni</a></p></section>
@@ -218,11 +218,13 @@ pubs+='<nav class="year-nav" aria-label="Publication years">'+years.map{|y|"<a h
 years.each{|y|pubs+="<section aria-labelledby=\"year-#{y}\"><h2 id=\"year-#{y}\">#{y}</h2><ol class=\"publications\">"+PAPERS.select{|p|p['year']==y}.map{|p|entry(p)}.join+'</ol></section>'}
 page('/publications/','Publications','Publications by Ashutosh Trivedi and collaborators, with authors, venues, paper PDFs, arXiv, and BibTeX citations.',pubs)
 PAPERS.each do |p|
-  extra='<meta name="citation_title" content="'+esc(p['title'])+'">'+p['authors'].map{|a|'<meta name="citation_author" content="'+esc(a)+'">'}.join+'<meta name="citation_publication_date" content="'+p['year'].to_s+'"><meta name="citation_pdf_url" content="'+ORIGIN+'/'+p['pdf'].strip.sub(/^\//,'')+'"><meta name="citation_conference_title" content="'+esc(venue(p))+'">'
+  pdf_url = p['pdf'].to_s.strip
+  pdf_url = ORIGIN + '/' + pdf_url.sub(/^\//,'') unless pdf_url.start_with?('https://','http://')
+  extra='<meta name="citation_title" content="'+esc(p['title'])+'">'+p['authors'].map{|a|'<meta name="citation_author" content="'+esc(a)+'">'}.join+'<meta name="citation_publication_date" content="'+p['year'].to_s+'"><meta name="citation_pdf_url" content="'+esc(pdf_url)+'"><meta name="citation_conference_title" content="'+esc(venue(p))+'">'
   extra+='<script type="application/ld+json">'+JSON.generate({'@context'=>'https://schema.org','@type'=>'ScholarlyArticle','headline'=>p['title'],'author'=>p['authors'].map{|a|{'@type'=>'Person','name'=>a}},'datePublished'=>p['year'].to_s,'url'=>ORIGIN+'/papers/'+p['slug']+'/'}).gsub('<','\\u003c')+'</script>'
   body='<p class="back"><a href="/publications/">Publications</a></p><h1>'+esc(p['title'])+'</h1><p>'+esc(p['authors'].join(', '))+'.</p><p><em>'+esc(venue(p))+'</em></p>'
   body+='<p>'+esc(p['award'])+'</p>' if p['award']
-  body+='<p class="resources">'+resources(p)+'</p><h2>Abstract</h2>'+md(p['abstract'])
+  body+='<p class="resources">'+resources(p)+'</p><h2>'+ (p['summary'] ? 'Summary' : 'Abstract') +'</h2>'+md(p['abstract'])
   page('/papers/'+p['slug']+'/',p['title'],p['title']+'. '+p['authors'].join(', ')+'. '+venue(p)+'.',body,extra)
 end
 students=source_body('group.md')

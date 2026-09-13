@@ -2,13 +2,26 @@
   featured: true
   text: 'Received the <strong>2026 Outstanding Faculty Research Advisor/Mentor Award</strong> from CU Boulder’s College of Engineering and Applied Science.'
 
+- date: "Aug 2026"
+  featured: true
+  text: "<a href=\"/papers/2026-concur-asymmetric-discounting/\">Asymmetrically Discounted Stochastic Games</a> appeared at CONCUR 2026."
+
 - date: "Jun 2026"
+  draft: true
   featured: true
   text: 'Launched the three-course <a href="https://www.coursera.org/specializations/foundations-reinforcement-learning">Foundations of Reinforcement Learning Specialization</a> through CU Boulder and Coursera, covering classical RL, deep RL, and reward programming.'
 
 - date: "Jun 2026"
   featured: true
   text: 'Our paper <a href="https://arxiv.org/abs/2511.09363">BarrierBench: Evaluating Large Language Models for Safety Verification in Dynamical Systems</a> appeared at L4DC 2026. It introduces a benchmark of 100 dynamical systems and an LLM-agentic framework for barrier-certificate synthesis.'
+
+- date: "May 2026"
+  featured: true
+  text: "<a href=\"/papers/2026-ijcai-social-welfare/\">Social Welfare under Heterogeneous Time Preferences</a> is to appear in IJCAI–ECAI 2026."
+
+- date: "May 2026"
+  featured: true
+  text: "<a href=\"/papers/2026-arxiv-kv-fold/\">KV-Fold: One-Step KV-Cache Recurrence for Long-Context Inference</a> is available as an unpublished preprint."
 
 - date: "Apr 2026"
   featured: true
@@ -20,6 +33,10 @@
 - date: "Early 2026"
   datetime: "2026"
   text: 'Selected for a 2026 CEAS Innovation &amp; Entrepreneurship Faculty/Postdoc Team Fellowship, together with Shadi Tasdighi-Kalat.'
+
+- date: "Dec 2025"
+  featured: true
+  text: "<a href=\"/papers/2025-cdc-objective-improvement/\">Objective Improvement Algorithm for Controller Synthesis in Uncertain Environments</a> appeared at CDC 2025."
 
 - date: "Aug 2025"
   text: "Taught CSCI 5444, Introduction to the Theory of Computation, in Fall 2025."
