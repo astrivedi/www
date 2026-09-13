@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Composing Copyless Streaming String Transducers | Ashutosh Trivedi</title>
+<meta name="description" content="Composing Copyless Streaming String Transducers. Rajeev Alur, Taylor Dohmen, Ashutosh Trivedi. Preprint (arXiv), 2022.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2209-05448/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Composing Copyless Streaming String Transducers | Ashutosh Trivedi">
+<meta property="og:description" content="Composing Copyless Streaming String Transducers. Rajeev Alur, Taylor Dohmen, Ashutosh Trivedi. Preprint (arXiv), 2022.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2209-05448/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2209-05448/#page","url":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2209-05448/","name":"Composing Copyless Streaming String Transducers | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="Composing Copyless Streaming String Transducers"><meta name="citation_author" content="Rajeev Alur"><meta name="citation_author" content="Taylor Dohmen"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_publication_date" content="2022"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/dblp-journals-corr-abs-2209-05448.pdf"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Composing Copyless Streaming String Transducers","author":[{"@type":"Person","name":"Rajeev Alur"},{"@type":"Person","name":"Taylor Dohmen"},{"@type":"Person","name":"Ashutosh Trivedi"}],"datePublished":"2022","url":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2209-05448/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>Composing Copyless Streaming String Transducers</h1><p>Rajeev Alur, Taylor Dohmen, Ashutosh Trivedi.</p><p><em>Preprint (arXiv), 2022</em></p><p class="resources"><a href="/assets/papers/dblp-journals-corr-abs-2209-05448.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="https://arxiv.org/abs/2209.05448">arXiv</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-journals-corr-abs-2209-05448.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/journals/corr/abs-2209-05448">DBLP</a></p><h2>Abstract</h2><p>Streaming string transducers (SSTs) implement string-to-string transformations by reading each input word in a single left-to-right pass while maintaining fragments of potential outputs in a finite set of string variables. These variables get updated on transitions of the transducer, where they can be assigned new values described by concatenations of variables and output symbols. An SST is called copyless if every update is such that no variable occurs more than once amongst all of the assigned expressions. The transformations realized by copyless SSTs coincide with Courcelle’s monadic second-order logic graph transducers (MSOTs) when restricted to string graphs. Copyless SSTs with nondeterminism are known to be equivalent to nondeterministic MSOTs as well. MSOTs, both deterministic and nondeterministic, are closed under composition. Given the equivalence of MSOTs and copyless SSTs, it is easy to see that copyless SSTs are also closed under composition. The original proof of this fact, however, was based on a direct construction to produce a composite copyless SST from two given copyless SSTs. A counterexample discovered by Joost Englefriet showed that this construction may produce copyful transducers. We revisit the original composition constructions for both deterministic and nondeterministic SSTs and show that, although they can introduce copyful updates, the resulting copyful behavior they exhibit is superficial. To characterize this mild copyful behavior, we define a subclass of copyful SSTs, called diamond-free SSTs, in which two copies of a common variable are never combined in any subsequent assignment. In order to recover a modified version of the original construction, we provide a method for producing an equivalent copyless SST from any diamond-free copyful SST.</p>
+<p class="resources"><a href="https://arxiv.org/abs/2209.05448">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

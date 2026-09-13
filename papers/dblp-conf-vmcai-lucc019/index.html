@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Type-Directed Bounding of Collections in Reactive Programs | Ashutosh Trivedi</title>
+<meta name="description" content="Type-Directed Bounding of Collections in Reactive Programs. Tianhan Lu, Pavol Cerný, Bor-Yuh Evan Chang, Ashutosh Trivedi. VMCAI 2019 : 275-296.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-conf-vmcai-lucc019/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Type-Directed Bounding of Collections in Reactive Programs | Ashutosh Trivedi">
+<meta property="og:description" content="Type-Directed Bounding of Collections in Reactive Programs. Tianhan Lu, Pavol Cerný, Bor-Yuh Evan Chang, Ashutosh Trivedi. VMCAI 2019 : 275-296.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-conf-vmcai-lucc019/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-conf-vmcai-lucc019/#page","url":"https://ashutoshtrivedi.com/papers/dblp-conf-vmcai-lucc019/","name":"Type-Directed Bounding of Collections in Reactive Programs | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="Type-Directed Bounding of Collections in Reactive Programs"><meta name="citation_author" content="Tianhan Lu"><meta name="citation_author" content="Pavol Cerný"><meta name="citation_author" content="Bor-Yuh Evan Chang"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_publication_date" content="2019"><meta name="citation_conference_title" content="VMCAI 2019 : 275-296"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/dblp-conf-vmcai-lucc019.pdf"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Type-Directed Bounding of Collections in Reactive Programs","author":[{"@type":"Person","name":"Tianhan Lu"},{"@type":"Person","name":"Pavol Cerný"},{"@type":"Person","name":"Bor-Yuh Evan Chang"},{"@type":"Person","name":"Ashutosh Trivedi"}],"datePublished":"2019","url":"https://ashutoshtrivedi.com/papers/dblp-conf-vmcai-lucc019/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>Type-Directed Bounding of Collections in Reactive Programs</h1><p>Tianhan Lu, Pavol Cerný, Bor-Yuh Evan Chang, Ashutosh Trivedi.</p><p><em>VMCAI 2019 : 275-296</em></p><p class="resources"><a href="/assets/papers/dblp-conf-vmcai-lucc019.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="https://arxiv.org/abs/1810.10443">arXiv</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-conf-vmcai-lucc019.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/conf/vmcai/LuCC019">DBLP</a></p><h2>Abstract</h2><p>Our aim is to statically verify that in a given reactive program, the length of collection variables does not grow beyond a given bound. We propose a scalable type-based technique that checks that each collection variable has a given refinement type that specifies constraints about its length. A novel feature of our refinement types is that the refinements can refer to AST counters that track how many times an AST node has been executed. This feature enables type refinements to track limited flow-sensitive information. We generate verification conditions that ensure that the AST counters are used consistently, and that the types imply the given bound. The verification conditions are discharged by an off-the-shelf SMT solver. Experimental results demonstrate that our technique is scalable, and effective at verifying reactive programs with respect to requirements on length of collections.</p>
+<p class="resources"><a href="https://arxiv.org/abs/1810.10443">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monotonicity as an Architectural Bias for Robust Language Models | Ashutosh Trivedi</title>
+<meta name="description" content="Monotonicity as an Architectural Bias for Robust Language Models. Patrick Cooper, Alireza Nadali, Ashutosh Trivedi, Alvaro Velasquez. Preprint (arXiv), 2026.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2602-02686/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Monotonicity as an Architectural Bias for Robust Language Models | Ashutosh Trivedi">
+<meta property="og:description" content="Monotonicity as an Architectural Bias for Robust Language Models. Patrick Cooper, Alireza Nadali, Ashutosh Trivedi, Alvaro Velasquez. Preprint (arXiv), 2026.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2602-02686/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2602-02686/#page","url":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2602-02686/","name":"Monotonicity as an Architectural Bias for Robust Language Models | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="Monotonicity as an Architectural Bias for Robust Language Models"><meta name="citation_author" content="Patrick Cooper"><meta name="citation_author" content="Alireza Nadali"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_author" content="Alvaro Velasquez"><meta name="citation_publication_date" content="2026"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/dblp-journals-corr-abs-2602-02686.pdf"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Monotonicity as an Architectural Bias for Robust Language Models","author":[{"@type":"Person","name":"Patrick Cooper"},{"@type":"Person","name":"Alireza Nadali"},{"@type":"Person","name":"Ashutosh Trivedi"},{"@type":"Person","name":"Alvaro Velasquez"}],"datePublished":"2026","url":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2602-02686/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>Monotonicity as an Architectural Bias for Robust Language Models</h1><p>Patrick Cooper, Alireza Nadali, Ashutosh Trivedi, Alvaro Velasquez.</p><p><em>Preprint (arXiv), 2026</em></p><p class="resources"><a href="/assets/papers/dblp-journals-corr-abs-2602-02686.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="https://arxiv.org/abs/2602.02686">arXiv</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-journals-corr-abs-2602-02686.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/journals/corr/abs-2602-02686">DBLP</a></p><h2>Abstract</h2><p>Large language models (LLMs) are known to exhibit brittle behavior under adversarial prompts and jailbreak attacks, even after extensive alignment and fine-tuning. This fragility reflects a broader challenge of modern neural language models: small, carefully structured perturbations in high-dimensional input spaces can induce large and unpredictable changes in internal semantic representations and output. We investigate monotonicity as an architectural inductive bias for improving the robustness of Transformer-based language models. Monotonicity constrains semantic transformations so that strengthening information, evidence, or constraints cannot lead to regressions in the corresponding internal representations. Such order-preserving behavior has long been exploited in control and safety-critical systems to simplify reasoning and improve robustness, but has traditionally been viewed as incompatible with the expressivity required by neural language models. We show that this trade-off is not inherent. By enforcing monotonicity selectively in the feed-forward sublayers of sequence-to-sequence Transformers – while leaving attention mechanisms unconstrained – we obtain monotone language models that preserve the performance of their pretrained counterparts. This architectural separation allows negation, contradiction, and contextual interactions to be introduced explicitly through attention, while ensuring that subsequent semantic refinement is order-preserving. Empirically, monotonicity substantially improves robustness: adversarial attack success rates drop from approximately 69% to 19%, while standard summarization performance degrades only marginally.</p>
+<p class="resources"><a href="https://arxiv.org/abs/2602.02686">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

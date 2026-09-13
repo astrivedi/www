@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis | Ashutosh Trivedi</title>
+<meta name="description" content="Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis. Richard Roberson, Gowtham Kaki, Ashutosh Trivedi. Preprint (arXiv), 2024.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2401-12379/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis | Ashutosh Trivedi">
+<meta property="og:description" content="Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis. Richard Roberson, Gowtham Kaki, Ashutosh Trivedi. Preprint (arXiv), 2024.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2401-12379/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2401-12379/#page","url":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2401-12379/","name":"Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<meta name="citation_title" content="Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis"><meta name="citation_author" content="Richard Roberson"><meta name="citation_author" content="Gowtham Kaki"><meta name="citation_author" content="Ashutosh Trivedi"><meta name="citation_publication_date" content="2024"><meta name="citation_pdf_url" content="https://ashutoshtrivedi.com/assets/papers/dblp-journals-corr-abs-2401-12379.pdf"><script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis","author":[{"@type":"Person","name":"Richard Roberson"},{"@type":"Person","name":"Gowtham Kaki"},{"@type":"Person","name":"Ashutosh Trivedi"}],"datePublished":"2024","url":"https://ashutoshtrivedi.com/papers/dblp-journals-corr-abs-2401-12379/"}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><p class="back"><a href="/publications/">Publications</a></p><h1>Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis</h1><p>Richard Roberson, Gowtham Kaki, Ashutosh Trivedi.</p><p><em>Preprint (arXiv), 2024</em></p><p class="resources"><a href="/assets/papers/dblp-journals-corr-abs-2401-12379.pdf">Paper (PDF)</a> <span aria-hidden="true">·</span> <a href="https://arxiv.org/abs/2401.12379">arXiv</a> <span aria-hidden="true">·</span> <a href="/assets/papers/dblp-journals-corr-abs-2401-12379.bib">BibTeX</a> <span aria-hidden="true">·</span> <a href="https://dblp.org/rec/journals/corr/abs-2401-12379">DBLP</a></p><h2>Abstract</h2><p>This study investigates various approaches to using Large Language Models (LLMs) for Text-to-SQL program synthesis, focusing on the outcomes and insights derived. Employing the popular Text-to-SQL dataset, spider, the goal was to input a natural language question along with the database schema and output the correct SQL SELECT query. The initial approach was to fine-tune a local and open-source model to generate the SELECT query. After QLoRa fine-tuning WizardLM’s WizardCoder-15B model on the spider dataset, the execution accuracy for generated queries rose to a high of 61%. With the second approach, using the fine-tuned gpt-3.5-turbo-16k (Few-shot) + gpt-4-turbo (Zero-shot error correction), the execution accuracy reached a high of 82.1%. Of all the incorrect queries, most can be categorized into a seven different categories of what went wrong: selecting the wrong columns or wrong order of columns, grouping by the wrong column, predicting the wrong values in conditionals, using different aggregates than the ground truth, extra or too few JOIN clauses, inconsistencies in the Spider dataset, and lastly completely incorrect query structure. Most if not all of the queries fall into these categories and it is insightful to understanding where the faults still lie with LLM program synthesis and where they can be improved.</p>
+<p class="resources"><a href="https://arxiv.org/abs/2401.12379">Abstract source</a></p></main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>
