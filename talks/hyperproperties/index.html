@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyperproperties for Privacy, Fairness, and Legal Requirements | Ashutosh Trivedi</title>
+<meta name="description" content="An interactive article by Ashutosh Trivedi on hyperproperties, noninterference, opacity, fairness, and relational software testing.">
+<link rel="canonical" href="https://ashutoshtrivedi.com/talks/hyperproperties/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hyperproperties for Privacy, Fairness, and Legal Requirements | Ashutosh Trivedi">
+<meta property="og:description" content="An interactive article by Ashutosh Trivedi on hyperproperties, noninterference, opacity, fairness, and relational software testing.">
+<meta property="og:url" content="https://ashutoshtrivedi.com/talks/hyperproperties/">
+<meta property="og:site_name" content="Ashutosh Trivedi">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","@id":"https://ashutoshtrivedi.com/talks/hyperproperties/#page","url":"https://ashutoshtrivedi.com/talks/hyperproperties/","name":"Hyperproperties for Privacy, Fairness, and Legal Requirements | Ashutosh Trivedi","mainEntity":{"@type":"Person","@id":"https://ashutoshtrivedi.com/#person","name":"Ashutosh Trivedi","url":"https://ashutoshtrivedi.com/","image":"https://ashutoshtrivedi.com/images/ashutosh-trivedi.jpg","jobTitle":"Associate Professor of Computer Science","affiliation":{"@type":"CollegeOrUniversity","name":"University of Colorado Boulder","url":"https://www.colorado.edu/"},"email":"mailto:ashutosh.trivedi@colorado.edu","sameAs":["https://scholar.google.com/citations?user=9WDXyy4AAAAJ","https://dblp.org/pid/06/5756.html"],"knowsAbout":["Formal Methods","Reinforcement Learning","Trustworthy AI","Medical and Cyber-Physical Systems"]}}</script>
+<link rel="stylesheet" href="/assets/talks/hyperproperties.css"><script type="module" src="/assets/talks/hyperproperties.mjs"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav aria-label="Main navigation"><a href="/">Home</a>
+<a href="/research/">Research</a>
+<a href="/publications/">Publications</a>
+<a href="/students/">People</a>
+<a href="/teaching/">Teaching</a>
+<a href="/talks/">Talks</a>
+<a href="/cv/">CV</a></nav></header>
+<main id="main"><article class="interactive-talk">
+<p class="talk-kicker"><a href="/talks/">Talks</a> / Interactive article</p>
+<h1>Hyperproperties for Privacy, Fairness, and Legal Requirements</h1>
+<p class="talk-lead">Some requirements cannot be checked by looking at one execution. They ask how different executions relate to one another.</p>
+<p>Keeping a secret means that changing it should not change what an observer can see. A fairness requirement may ask whether two otherwise comparable people receive the same decision. A test of legal-critical software may compare the outcomes of related cases, even when the correct outcome of either case is difficult to compute.</p>
+<p>These are the starting points of this talk. The common idea is to specify relationships between behaviors, then develop methods for testing or proving those relationships.</p>
+<p class="talk-note">Adapted from my talk. The small models below are teaching examples created for this article; they are not the paper’s experimental results. <a href="/assets/talks/hyperproperties.pdf">Download the original slides (PDF, 57 MB)</a>.</p>
+<nav class="talk-contents" aria-label="Article contents"><a href="#properties">Properties and hyperproperties</a> · <a href="#privacy">Privacy</a> · <a href="#opacity">Opacity</a> · <a href="#certificates">Certificates</a> · <a href="#fairness">Fairness</a> · <a href="#relational-testing">Relational testing</a></nav>
+<noscript><p>The explanations and worked examples are available below. Enable JavaScript to change the examples’ inputs.</p></noscript>
+
+<section id="properties"><h2>Properties and hyperproperties</h2>
+<p>A trace records one possible execution of a system. A trace property specifies which individual traces are allowed. For example, a safety property can require that no execution enters an unsafe state.</p>
+<p>A hyperproperty specifies which <em>sets of traces</em> are allowed. If two systems each produce individually acceptable executions but reveal different information when their executions are compared, a trace property may miss the distinction.</p>
+<p class="talk-equation">Trace property: P ⊆ Σ<sup>ω</sup><br>Hyperproperty: H ⊆ 𝒫(Σ<sup>ω</sup>)</p>
+<p>Here Σ is an alphabet of observations, Σ<sup>ω</sup> is the set of infinite traces, and 𝒫 denotes the power set. A system satisfies P when all its traces belong to P; it satisfies H when its set of traces belongs to H.</p>
+<details><summary>Why compare more than one execution?</summary><p>Observing a single output does not establish that it is independent of a secret. Independence asks what would happen for other secret inputs with the same public input. The specification quantifies over those alternatives.</p></details>
+</section>
+
+<section id="privacy"><h2>Privacy as noninterference</h2>
+<figure class="talk-photo talk-photo-side"><img src="/assets/talks/privacy-surveillance.jpg" width="640" height="426" alt="Two people standing beside a wall covered with surveillance cameras." loading="lazy" decoding="async"><figcaption>Photo by <a href="https://unsplash.com/@matthewhenry">Matthew Henry</a> on <a href="https://unsplash.com/photos/fPxOowbR6ls">Unsplash</a>.</figcaption></figure>
+
+<p>In the deterministic setting used here, let O(s, p) be the observable output for secret input s and public input p. Noninterference requires:</p>
+<p class="talk-equation">For every s₁, s₂, and p: O(s₁, p) = O(s₂, p).</p>
+<p>The secret may affect internal computation. It must not affect the chosen observation. That choice matters: an output-only model says nothing about timing unless timing is included in the observations.</p>
+<div class="talk-example" data-example="privacy"><h3>Change the secret; hold the public input fixed</h3>
+<p>Our finite model has a secret bit s ∈ {0, 1} and public input p ∈ {0, 1, 2, 3}. Compare O = p with a leaking implementation O = p + s.</p>
+<div class="talk-controls" hidden><label>Public input p <select name="public"><option>0</option><option>1</option><option selected>2</option><option>3</option></select></label><label><input type="checkbox" name="leak"> Let the secret affect the output</label></div>
+<table><caption>Two executions with the same public input</caption><thead><tr><th scope="col">Secret</th><th scope="col">Public input</th><th scope="col">Observed output</th></tr></thead><tbody data-rows><tr><td>0</td><td>2</td><td>2</td></tr><tr><td>1</td><td>2</td><td>2</td></tr></tbody></table>
+<p class="talk-result" data-result role="status">Both outputs are 2. With O = p, all four public-input cases satisfy noninterference in this finite model.</p>
+</div>
+</section>
+
+<section id="opacity"><h2>Opacity: another explanation for what we observe</h2>
+<p>The talk’s cyber-physical example combines a recurring mission—visiting Parking and Quay infinitely often—with an information-flow objective: the observer must not infer that the vehicle started in a secret location.</p>
+<p>Initial-state opacity asks for an alternative explanation. For every execution starting in a secret state, there must be an execution starting in a nonsecret state with the same observations. This is a <strong>for every … there exists …</strong> requirement.</p>
+<div class="talk-example" data-example="opacity"><h3>Find an observationally equivalent route</h3>
+<p>In this finite illustration, both routes may produce the observation sequence P → Q → P. Their starting locations are hidden. Change what the sensor reports to see whether the secret route still has a nonsecret explanation.</p>
+<div class="talk-controls" hidden><label>Sensor observations <select name="sensor"><option value="coarse">P, Q, P for either route</option><option value="distinguish">Distinguish the second observation</option></select></label><label><input type="checkbox" name="alternative" checked> Include a nonsecret alternative</label></div>
+<table><caption>Observable traces of the illustrated routes</caption><thead><tr><th scope="col">Start</th><th scope="col">Observation sequence</th></tr></thead><tbody data-rows><tr><td>Secret</td><td>P → Q → P</td></tr><tr><td>Nonsecret</td><td>P → Q → P</td></tr></tbody></table>
+<p class="talk-result" data-result role="status">A matching nonsecret route exists for the illustrated secret route.</p>
+<p class="talk-note">Matching this finite prefix does not establish opacity for an infinite system, or prove that the recurring mission is satisfied.</p>
+</div>
+</section>
+
+<section id="certificates"><h2>Certificates for relationships between executions</h2>
+<p>Testing examples is useful, but a proof must cover the behaviors required by the specification. For dynamical systems, the talk develops this through functional certificates.</p>
+<h3>Barrier certificates</h3><p>A barrier certificate B separates initial states from unsafe states and is preserved by the dynamics. For a deterministic discrete-time system x′ = f(x), sufficient conditions are:</p>
+<ul><li>B(x) ≤ 0 for initial states.</li><li>B(x) &gt; 0 for unsafe states.</li><li>B(f(x)) ≤ B(x) for safe states.</li></ul>
+<details><summary>Why these conditions imply safety</summary><p>Start with an initial state, where B is nonpositive. As long as the state is safe, a transition cannot increase B. A first transition into an unsafe state would therefore reach a state where B is both nonpositive and strictly positive—a contradiction.</p></details>
+<h3>Augmented barrier certificates</h3><p>For a relational requirement, reason about pairs of states (x, y) in a self-composition of the system. A certificate over that product space can keep paired executions inside a region with matching observations.</p>
+<p>For an opacity-style requirement, an existential player tries to match the universally chosen execution. A suitable certificate establishes that the matching player can respond while preserving the relation.</p>
+<details><summary>Why the order of choices matters</summary><p>A strategy that chooses a matching move after each observed move gives a sufficient way to satisfy the corresponding trace requirement. It is not always necessary: a matching trace may exist only if choices depend on future behavior. The talk explains this incompleteness of the step-by-step certificate approach and motivates reasoning about longer-term connectivity.</p></details>
+<h3>Closure certificates</h3><p>Closure certificates describe relationships between states connected by transitions, rather than just a region of individual states. Inductive transition invariants include one-step transitions and extend along paths. Additional decrease conditions can establish properties such as finitely many visits to a designated set.</p>
+<p>The talk explores how transition-based reasoning may help with the lookahead needed for hyperproperties. Its questions about arbitrary and infinite lookahead are research directions, not a claim of a general complete verification procedure.</p>
+<p>Read the papers: <a href="/papers/dblp-journals-tac-anandmtz24/">Verification of Hyperproperties for Dynamical Systems via Barrier Certificates</a> · <a href="/papers/2024-hscc-closure-certificates/">Closure Certificates</a>.</p>
+</section>
+
+<section id="fairness"><h2>Fairness depends on the relation we specify</h2>
+<figure class="talk-photo talk-photo-wide"><img src="/assets/talks/human-machine-ai.jpg" width="1040" height="585" alt="An abstract illustration of hands reaching toward a fragmented human form." loading="lazy" decoding="async"><figcaption>Illustration by Aurora Mititelu for <a href="https://unsplash.com/@googledeepmind">Google DeepMind</a>, Visualising AI. Via <a href="https://unsplash.com/photos/a-group-of-hands-reaching-up-into-a-pile-of-food-XEfyYsUMdR4">Unsplash</a>.</figcaption></figure>
+
+<p>The talk introduces a requirement that otherwise identical individuals receive the same outcome when only a protected feature changes. This is one precise comparison to test; it is not a complete definition of fairness.</p>
+<div class="talk-example" data-example="fairness"><h3>Compare otherwise identical applicants</h3>
+<p>Consider a toy decision rule with a qualification score from 0 to 100. The baseline accepts either applicant at 60 or above. A second rule raises the threshold to 70 for protected group B.</p>
+<div class="talk-controls" hidden><label>Qualification score <input name="score" type="range" min="0" max="100" value="65"> <output data-score>65</output></label><label><input type="checkbox" name="biased" checked> Use a different threshold for group B</label></div>
+<table><caption>Same qualification score, different group label</caption><thead><tr><th scope="col">Group</th><th scope="col">Score</th><th scope="col">Decision</th></tr></thead><tbody data-rows><tr><td>A</td><td>65</td><td>Accept</td></tr><tr><td>B</td><td>65</td><td>Reject</td></tr></tbody></table>
+<p class="talk-result" data-result role="status">The outcomes differ at score 65. Scores 60–69 violate the specified equality relation in this finite model.</p>
+</div>
+<p>A test can expose a counterexample to the chosen relation. Agreement on one pair cannot establish that a model is fair. Even agreement on all these toy inputs says nothing about omitted features or an unsuitable definition of similarity.</p>
+<p>The talk also considers similarity-based individual fairness, causal formulations, and group criteria such as statistical parity and equal opportunity. Removing a protected attribute does not necessarily remove its influence through correlated features. Choosing the relation is part of the specification problem.</p>
+<p>Related work: <a href="/papers/2025-icse-fairness-evt/">Fairness Testing through Extreme Value Theory</a> · <a href="/papers/2025-ase-discrimination-clusters/">Uncovering Discrimination Clusters</a>.</p>
+</section>
+
+<section id="relational-testing"><h2>Testing without a complete output oracle</h2>
+<figure class="talk-photo talk-photo-portrait"><img src="/assets/talks/lady-justice.jpg" width="480" height="720" alt="Lady Justice holding a balance and a sword." loading="lazy" decoding="async"><figcaption>Photo by <a href="https://unsplash.com/@tingeyinjurylawfirm">Tingey Injury Law Firm</a> on <a href="https://unsplash.com/photos/L4YGuSg0fxs">Unsplash</a>.</figcaption></figure>
+
+<p>For complex software, we may not know the correct output for every input. Metamorphic testing instead checks a relation between related inputs and outputs. A simple mathematical example from the talk is sin(x) = sin(π − x).</p>
+<p>For legal-critical software, the challenge is to derive justified relations from requirements and identify the assumptions under which they apply. The talk uses age-related benefits in tax preparation as an example of this reasoning.</p>
+<div class="talk-example" data-example="benefits"><h3>A monotonicity requirement</h3>
+<p>This fictional benefit system awards 10 units, plus 2 units when an eligibility condition holds. Its stated requirement is that gaining eligibility must not reduce the benefit, with everything else fixed. These units and rules are invented for the demonstration.</p>
+<div class="talk-controls" hidden><label><input type="checkbox" name="bug"> Introduce a subtraction bug</label></div>
+<table><caption>A pair of related inputs</caption><thead><tr><th scope="col">Input</th><th scope="col">Benefit units</th></tr></thead><tbody data-rows><tr><td>Not eligible</td><td>10</td></tr><tr><td>Eligible</td><td>12</td></tr></tbody></table>
+<p class="talk-result" data-result role="status">12 ≥ 10: the eligibility change respects the stated relation.</p>
+</div>
+<p>A violation identifies a failure of the relation, even without an oracle for every output. Passing does not establish complete correctness: an implementation that always returns zero would satisfy this monotonicity check while violating the stated benefit amounts.</p>
+<p>Read <a href="/papers/2023-icse-seis-tax-prep/">Metamorphic Testing and Debugging of Tax Preparation Software</a> for the actual software-testing study.</p>
+</section>
+<section><h2>What a relational specification makes explicit</h2>
+<p>Each example requires a choice: what is observable, which inputs are comparable, and which outcomes should agree or be ordered. Once those choices are explicit, testing can search for counterexamples and verification can establish guarantees under stated assumptions.</p>
+<p>The difficult questions remain mathematical and contextual: which relation captures the intended requirement, and which proof or testing method can handle the system’s behaviors?</p>
+<p><a href="/assets/talks/hyperproperties.pdf">Original talk slides</a> · <a href="/publications/">All publications</a> · <a href="/research/">Research themes</a></p>
+</section>
+</article>
+</main>
+<footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.interactive-talk .talk-kicker{font-size:.875rem;color:var(--muted)}
+.interactive-talk h1{max-width:24ch;font-size:2rem}
+.interactive-talk .talk-lead{font-size:1.25rem;line-height:1.55;margin:24px 0}
+.interactive-talk section{margin-top:48px;scroll-margin-top:24px}
+.interactive-talk h3{font-weight:400;font-size:1.15rem}
+.interactive-talk .talk-contents{display:block;font-family:inherit;font-size:.9375rem;margin:24px 0;line-height:2}
+.interactive-talk .talk-note{color:var(--muted);font-size:.875rem}
+.interactive-talk .talk-equation{padding:12px 0 12px 20px;border-left:2px solid #ccd5db;line-height:1.8}
+.interactive-talk .talk-example{margin:28px 0;padding:6px 0 14px;border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.interactive-talk .talk-controls{display:flex;flex-direction:column;gap:14px;margin:22px 0;font: .9375rem/1.6 system-ui,sans-serif}
+.interactive-talk [hidden]{display:none}
+.interactive-talk label{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.interactive-talk input,.interactive-talk select{font:inherit;accent-color:var(--link);max-width:100%}
+.interactive-talk select{padding:5px 8px;color:var(--ink);background:#fff;border:1px solid #888;border-radius:2px}
+.interactive-talk input[type=checkbox]{width:18px;height:18px}
+.interactive-talk input[type=range]{width:180px}
+.interactive-talk :is(input,select,summary):focus-visible{outline:2px solid var(--link);outline-offset:4px}
+.interactive-talk table{width:100%;border-collapse:collapse;table-layout:fixed;margin:20px 0;font-size:.9375rem}
+.interactive-talk caption{text-align:left;font-size:.8125rem;color:var(--muted);margin-bottom:9px}
+.interactive-talk th,.interactive-talk td{text-align:left;padding:9px 7px;border-bottom:1px solid #ddd;overflow-wrap:anywhere}
+.interactive-talk th{font-weight:600}
+.interactive-talk .talk-result{margin:16px 0 0;min-height:3.3em}
+.interactive-talk details{margin:20px 0}
+.interactive-talk summary{cursor:pointer;color:var(--link);text-decoration:underline;text-underline-offset:3px}
+.interactive-talk details p{margin:14px 0}
+@media(max-width:480px){.interactive-talk h1{font-size:1.7rem}.interactive-talk .talk-lead{font-size:1.125rem}.interactive-talk th,.interactive-talk td{padding:8px 3px}}
+@media print{.interactive-talk .talk-controls,.interactive-talk .talk-contents{display:none}.interactive-talk .talk-example{break-inside:avoid}}
+
+/* Photographs from the original slides retain their full compositions. */
+.interactive-talk section{display:flow-root}
+.interactive-talk .talk-photo{margin:24px 0}
+.interactive-talk .talk-photo img{display:block;width:100%;height:auto}
+.interactive-talk .talk-photo figcaption{margin-top:8px;color:var(--muted);font-size:.8125rem;line-height:1.5}
+.interactive-talk .talk-photo-wide{max-width:520px;margin:24px auto 28px}
+.interactive-talk .talk-photo-side{float:right;width:230px;margin:6px 0 22px 28px}
+.interactive-talk .talk-photo-portrait{float:right;width:160px;margin:6px 0 22px 28px}
+.interactive-talk .talk-example{clear:both}
+@media(max-width:600px){.interactive-talk .talk-photo-side,.interactive-talk .talk-photo-portrait{float:none;margin:24px auto;width:min(100%,320px)}.interactive-talk .talk-photo-portrait{max-width:180px}}
