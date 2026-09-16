@@ -137,7 +137,7 @@ home = <<~HTML
 </ul></section>
 <section aria-labelledby="selected"><h2 id="selected">Selected Contributions</h2><ol class="home-contributions" role="list">#{selected.map{|slug, summary| contribution(PAPERS.find{|p| p['slug']==slug}, summary)}.join}</ol><p class="more"><a href="/publications/">All publications</a></p></section>
 <section aria-labelledby="news"><h2 id="news">Recent News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(4), compact: true)}<p class="more"><a href="/news/">All news</a></p></section>
-<section aria-labelledby="students"><h2 id="students">Students</h2><p>I work with students and postdoctoral researchers in the <a href="https://plv.colorado.edu/">Programming Languages and Verification (CUPLV)</a> group.</p><p><a href="/students/">Current students, collaborators, and alumni</a> · <a href="/students/#group-dinners">Group dinners through the years</a></p></section>
+<section aria-labelledby="students"><h2 id="students">Students</h2><p>I work with students and postdoctoral researchers in the <a href="https://plv.colorado.edu/">Programming Languages and Verification (CUPLV)</a> group.</p><p><a href="/students/">Current students, collaborators, and alumni</a> · <a href="/students/#group-life">Group life through the years</a></p></section>
 <section aria-labelledby="teaching"><h2 id="teaching">Teaching</h2><p>I teach theoretical computer science, reinforcement learning, and cyber-physical systems.</p><p><a href="/teaching/">Courses and teaching history</a></p></section>
 HTML
 page('/','Home','Ashutosh Trivedi, Associate Professor of Computer Science at CU Boulder. Research in formal methods, reinforcement learning, trustworthy AI, and cyber-physical systems.',home)

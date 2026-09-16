@@ -96,3 +96,5 @@ main{overflow-wrap:break-word}
 .publication-filters :focus-visible{outline:2px solid var(--link);outline-offset:3px}
 #publication-count{flex-basis:100%;margin:0;color:var(--muted)}
 @media print{.publication-filters{display:none}}
+
+.group-gallery .portrait-photo{max-width:480px;margin-left:auto;margin-right:auto}

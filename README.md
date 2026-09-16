@@ -11,7 +11,7 @@ Static HTML and CSS for https://ashutoshtrivedi.com. The root directory is the c
 - `site/source/_papers/*.md`: publication metadata and abstracts.
 - `site/source/assets/`: manuscripts, citations, CV, and original photographs.
 - `site/publications.mjs`: progressive publication search and topic filtering. Topic rules are defined in `site/build.rb`.
-- `site/source/assets/img/group/`: optimized group-dinner photographs; captions are in `site/source/group.md`.
+- `site/source/assets/img/group/`: optimized group photographs; captions are in `site/source/group.md`.
 - `site/site.css`: the authored stylesheet. It is copied to `assets/site.css` during generation.
 
 With Ruby and Kramdown installed, run from the repository root:
