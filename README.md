@@ -7,9 +7,11 @@ Static HTML and CSS for https://ashutoshtrivedi.com. The root directory is the c
 - `site/build.rb`: shared layout, homepage, Research, publication rendering, news selection, and supporting pages.
 - `site/source/group.md`: People page.
 - `site/source/teaching.md`: Teaching page.
-- `site/source/_data/news.yml`: news; `featured: true` selects homepage highlights (up to four). Optional `datetime` supports approximate dates.
+- `site/source/_data/news.yml`: news; `featured: true` selects homepage highlights (up to four). Optional `datetime` supports approximate dates; `summary` supplies shorter homepage wording.
 - `site/source/_papers/*.md`: publication metadata and abstracts.
 - `site/source/assets/`: manuscripts, citations, CV, and original photographs.
+- `site/publications.mjs`: progressive publication search and topic filtering. Topic rules are defined in `site/build.rb`.
+- `site/source/assets/img/group/`: optimized group-dinner photographs; captions are in `site/source/group.md`.
 - `site/site.css`: the authored stylesheet. It is copied to `assets/site.css` during generation.
 
 With Ruby and Kramdown installed, run from the repository root:
@@ -20,7 +22,7 @@ python3 site/validate.py
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-For a clean Ruby environment, run `bundle install` inside `site`, then `bundle exec ruby build.rb`. Commit both source and generated files. Hosting itself needs no Ruby, build service, JavaScript, external fonts, or framework. Edit source files rather than generated HTML.
+For a clean Ruby environment, run `bundle install` inside `site`, then `bundle exec ruby build.rb`. Commit both source and generated files. Hosting itself needs no Ruby, build service, external fonts, or framework. Publication search and topic filters use a small JavaScript module; the complete bibliography remains available without JavaScript. Edit source files rather than generated HTML.
 
 Legacy Jekyll source is retained under `site/source` for reference; its layouts are no longer used. Old generated `_site` output is excluded. Git history retains prior versions.
 

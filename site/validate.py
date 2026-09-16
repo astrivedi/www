@@ -7,9 +7,9 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
 class Document(HTMLParser):
-    def __init__(self, text, allow_talk_script=False):
+    def __init__(self, text, allowed_script=None):
         super().__init__(convert_charrefs=True)
-        self.allow_talk_script=allow_talk_script
+        self.allowed_script=allowed_script
         self.tags=[]; self.refs=[]; self.ids=[]; self.scripts=[]; self.script=None
         self.feed(text)
     def handle_starttag(self,tag,attrs):
@@ -21,7 +21,7 @@ class Document(HTMLParser):
             if a.get('type')=='application/ld+json':
                 self.script=''
             else:
-                assert self.allow_talk_script and a.get('type')=='module' and a.get('src')=='/assets/talks/hyperproperties.mjs', 'Unexpected executable JavaScript'
+                assert self.allowed_script and a.get('type')=='module' and a.get('src')==self.allowed_script, 'Unexpected executable JavaScript'
         if tag=='img': assert a.get('alt') and a.get('width') and a.get('height')
     def handle_data(self,data):
         if self.script is not None: self.script+=data
@@ -29,7 +29,7 @@ class Document(HTMLParser):
         if tag=='script' and self.script is not None:
             self.scripts.append(json.loads(self.script)); self.script=None
 
-docs={p:Document(p.read_text(), p.relative_to(ROOT).as_posix()=="talks/hyperproperties/index.html") for p in ROOT.rglob('*.html') if 'site' not in p.relative_to(ROOT).parts and '.git' not in p.relative_to(ROOT).parts}
+docs={p:Document(p.read_text(), {"talks/hyperproperties/index.html":"/assets/talks/hyperproperties.mjs", "publications/index.html":"/assets/publications.mjs"}.get(p.relative_to(ROOT).as_posix())) for p in ROOT.rglob('*.html') if 'site' not in p.relative_to(ROOT).parts and '.git' not in p.relative_to(ROOT).parts}
 errors=[]
 for p,d in docs.items():
     def count(tag): return sum(t==tag for t,a in d.tags)
@@ -66,5 +66,5 @@ for p in imported:
     if p.get('abstract'):
         assert p.get('abstract_source'), p['slug']
 if errors: raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(docs)} pages; internal links and anchors; metadata; JSON-LD; one H1 per page; JavaScript limited to the interactive talk; sitemap; nonempty linked assets.')
+print(f'PASS: {len(docs)} pages; internal links and anchors; metadata; JSON-LD; one H1 per page; JavaScript limited to publication search and the interactive talk; sitemap; nonempty linked assets.')
 print(f'Homepage: {(ROOT/"index.html").stat().st_size:,} bytes; CSS: {(ROOT/"assets/site.css").stat().st_size:,} bytes.')

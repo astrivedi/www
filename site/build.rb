@@ -55,6 +55,8 @@ end
 
 FileUtils.mkdir_p(File.join(OUT,'assets/img'))
 FileUtils.cp_r(File.join(SRC,'assets/img/research'), File.join(OUT,'assets/img'))
+FileUtils.cp_r(File.join(SRC,'assets/img/group'), File.join(OUT,'assets/img'))
+FileUtils.cp(File.join(ROOT,'publications.mjs'), File.join(OUT,'assets/publications.mjs'))
 FileUtils.cp(File.join(ROOT, 'site.css'), File.join(OUT, 'assets/site.css'))
 FileUtils.mkdir_p(File.join(OUT, 'images'))
 FileUtils.cp(File.join(SRC,'assets/img/ashutosh.jpeg'), File.join(OUT,'images/ashutosh-trivedi.jpg'))
@@ -90,27 +92,52 @@ def venue(p)
   return 'IJCAI, 2025' if p['slug'].include?('2025-ijcai')
   v.include?(p['year'].to_s) ? v : "#{v}, #{p['year']}"
 end
+TOPICS = {
+  'rl' => ['Reinforcement learning', /reinforcement|reward machine|decision process|discount|time preference/i],
+  'control' => ['Verification and control', /certificate|control|dynamical|pacemaker|cardiac|cyber.physical|hybrid|timed|simulation relation|neural network verification/i],
+  'accountability' => ['AI accountability', /fairness|fair ml|discriminat|accountab|tax prep|tax-prep|legal|metamorphic/i],
+  'reasoning' => ['Languages and reasoning', /language|automata|automaton|llm|reasoning|explain|puzzle|hitori|sudoku|text.to.sql|kv.cache/i],
+  'games' => ['Games and theoretical foundations', /game|bisimulat|reachability|logic|pushdown|recursive|recursion|parity/i]
+}
+def publication_topics(p)
+  TOPICS.map { |key, (_, pattern)| key if p['title'].match?(pattern) }.compact
+end
+
 def entry(p)
   title_url = "/papers/#{p['slug']}/"
-  "<li class=\"publication\" id=\"#{p['slug']}\"><article><h3><a href=\"#{esc(title_url)}\">#{esc(p['title'])}</a></h3><p>#{p['authors'].map{|a| a == 'Ashutosh Trivedi' ? '<strong>Ashutosh Trivedi</strong>' : esc(a)}.join(', ')}.</p><p><em>#{esc(venue(p))}</em>#{p['award'] ? '<br><span class="award">'+esc(p['award'])+'</span>' : ''}</p><p class=\"resources\">#{resources(p)}</p></article></li>"
+  "<li class=\"publication\" id=\"#{p['slug']}\" data-topics=\"#{publication_topics(p).join(' ')}\"><article><h3><a href=\"#{esc(title_url)}\">#{esc(p['title'])}</a></h3><p>#{p['authors'].map{|a| a == 'Ashutosh Trivedi' ? '<strong>Ashutosh Trivedi</strong>' : esc(a)}.join(', ')}.</p><p><em>#{esc(venue(p))}</em>#{p['award'] ? '<br><span class="award">'+esc(p['award'])+'</span>' : ''}</p><p class=\"resources\">#{resources(p)}</p></article></li>"
 end
 NEWS = YAML.load_file(File.join(SRC,'_data/news.yml')).reject { |item| item['draft'] }
-def news_rows(items)
-  '<ul class="news">'+items.map{|n| '<li><time datetime="'+(n['datetime'] || Date.strptime(n['date'],'%b %Y').strftime('%Y-%m'))+'">'+esc(n['date'])+'</time><div>'+n['text']+'</div></li>'}.join+'</ul>'
+def news_rows(items, compact: false)
+  '<ul class="news">'+items.map{|n| '<li><time datetime="'+(n['datetime'] || Date.strptime(n['date'],'%b %Y').strftime('%Y-%m'))+'">'+esc(n['date'])+'</time><div>'+(compact ? (n['summary'] || n['text']) : n['text'])+'</div></li>'}.join+'</ul>'
 end
-selected = ['2026-concur-asymmetric-discounting','2026-ijcai-social-welfare','2025-cdc-objective-improvement','2026-arxiv-kv-fold','2024-cav-regular-rl','2025-neus-stochastic-neural-simulation','2022-neurips-rrl']
+selected = {
+  '2024-cav-regular-rl' => 'A symbolic approach to reinforcement learning that represents sets of states with regular languages and transitions with rational transductions.',
+  '2022-neurips-rrl' => 'Foundations for learning in recursive decision processes with an unbounded call structure.',
+  '2024-hscc-closure-certificates' => 'Transition-based certificates that extend safety reasoning to richer temporal properties of dynamical systems.',
+  '2025-neus-stochastic-neural-simulation' => 'Neural simulation relations for transferring controllers between stochastic systems with probabilistic guarantees.',
+  '2025-icse-fairness-evt' => 'Extreme value theory for measuring and mitigating worst-case discrimination in machine-learning software.'
+}
+def contribution(p, summary)
+  "<li><h3><a href=\"/papers/#{p['slug']}/\">#{esc(p['title'])}</a></h3><p>#{esc(summary)}</p><p class=\"contribution-venue\">#{esc(venue(p))}#{p['award'] ? ' · '+esc(p['award']) : ''}</p><p class=\"resources\">#{resources(p)}</p></li>"
+end
 home = <<~HTML
 <section class="intro" aria-labelledby="name">
 <div><h1 id="name">Ashutosh Trivedi</h1><p class="affiliation">Associate Professor of Computer Science<br>University of Colorado Boulder</p>
 <p>I work on formal methods for reinforcement learning, trustworthy AI, and safety-critical software and cyber-physical systems.</p>
 <p>My research combines verification, learning, and symbolic reasoning to make intelligent systems safer, fairer, and easier to explain.</p>
-<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="https://www.mathgenealogy.org/id.php?id=136067">Mathematics Genealogy</a></p></div>
+<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="https://www.mathgenealogy.org/id.php?id=136067">Mathematics Genealogy</a></p><p class="profile-links prospective"><a href="/students/#join-the-group">Prospective students</a> · <a href="mailto:ashutosh.trivedi@colorado.edu">Email</a></p></div>
 <img src="/images/ashutosh-trivedi.jpg" width="220" height="220" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 </section>
-<section aria-labelledby="news"><h2 id="news">News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(8))}<p class="more"><a href="/news/">All news</a></p></section>
-<section aria-labelledby="research"><h2 id="research">Research</h2><ul class="research-index"><li><a href="/research/#formal-methods">Formal Methods</a></li><li><a href="/research/#reinforcement-learning">Reinforcement Learning</a></li><li><a href="/research/#trustworthy-ai">Trustworthy AI</a></li><li><a href="/research/#medical-and-cyber-physical-systems">Medical and Cyber-Physical Systems</a></li></ul></section>
-<section aria-labelledby="selected"><h2 id="selected">Selected Publications</h2><ol class="publications">#{selected.map{|slug| entry(PAPERS.find{|p| p['slug']==slug})}.join}</ol><p class="more"><a href="/publications/">All publications</a></p></section>
-<section aria-labelledby="students"><h2 id="students">Students</h2><p>I work with students and postdoctoral researchers in the <a href="https://plv.colorado.edu/">Programming Languages and Verification (CUPLV)</a> group.</p><p><a href="/students/">Current students, collaborators, and alumni</a></p></section>
+<section aria-labelledby="research"><h2 id="research">Research</h2>
+<ul class="research-themes" role="list">
+<li><h3><a href="/research/#formal-foundations">Formal Foundations of Reinforcement Learning</a></h3><p>How can agents learn with rich temporal objectives, recursive structure, and continuous-time environments?</p></li>
+<li><h3><a href="/research/#verified-learning-control">Verified Learning and Control</a></h3><p>How can we provide formal guarantees for learned controllers operating under uncertainty?</p></li>
+<li><h3><a href="/research/#auditable-ai-software">Auditable AI and Software</a></h3><p>How can we detect failures, explain decisions, and assess fairness in consequential software?</p></li>
+</ul></section>
+<section aria-labelledby="selected"><h2 id="selected">Selected Contributions</h2><ol class="home-contributions" role="list">#{selected.map{|slug, summary| contribution(PAPERS.find{|p| p['slug']==slug}, summary)}.join}</ol><p class="more"><a href="/publications/">All publications</a></p></section>
+<section aria-labelledby="news"><h2 id="news">Recent News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(4), compact: true)}<p class="more"><a href="/news/">All news</a></p></section>
+<section aria-labelledby="students"><h2 id="students">Students</h2><p>I work with students and postdoctoral researchers in the <a href="https://plv.colorado.edu/">Programming Languages and Verification (CUPLV)</a> group.</p><p><a href="/students/">Current students, collaborators, and alumni</a> · <a href="/students/#group-dinners">Group dinners through the years</a></p></section>
 <section aria-labelledby="teaching"><h2 id="teaching">Teaching</h2><p>I teach theoretical computer science, reinforcement learning, and cyber-physical systems.</p><p><a href="/teaching/">Courses and teaching history</a></p></section>
 HTML
 page('/','Home','Ashutosh Trivedi, Associate Professor of Computer Science at CU Boulder. Research in formal methods, reinforcement learning, trustworthy AI, and cyber-physical systems.',home)
@@ -119,7 +146,7 @@ def source_body(file)
   s=File.read(File.join(SRC,file)).split(/^---\s*$\n?/,3).last
   s.gsub!(/<h1>.*?<\/h1>/m,'')
   LINKS.each{|k,v| s.gsub!("{{ site.links.#{k} }}",v)}
-  s.gsub!('/group/','/students/')
+  s.gsub!(%r{(?<=["(])/group/},'/students/')
   md(s)
 end
 
@@ -222,9 +249,10 @@ page('/research/','Research','Ashutosh Trivedi’s research on formal methods fo
 all_publications = (PAPERS + JSON.parse(File.read(File.join(SRC, '_data/dblp-publications.json')))).sort_by { |p| [-p['year'], p['title']] }
 years=all_publications.map{|p|p['year']}.uniq
 pubs='<h1>Publications</h1><p>Papers and preprints, with bibliographic records from DBLP and links to available manuscripts. Preprints are labeled; matching preprint and published records are listed once. See also <a href="'+LINKS['scholar']+'">Google Scholar</a>, <a href="'+LINKS['dblp']+'">DBLP</a>, and my <a href="/cv/">CV</a>.</p>'
+pubs+='<form id="publication-filters" class="publication-filters" role="search" hidden><div><label for="paper-search">Search publications</label><input id="paper-search" type="search" placeholder="Title, author, or keyword" autocomplete="off"></div><div><label for="paper-topic">Topic</label><select id="paper-topic"><option value="">All topics</option>'+TOPICS.map{|key,(label,_)| '<option value="'+key+'">'+label+'</option>'}.join+'</select></div><button type="reset">Clear filters</button><p id="publication-count" role="status" aria-live="polite" aria-atomic="true"></p></form><p id="publication-empty" hidden>No publications match these filters. Try another term or clear the filters.</p>'
 pubs+='<nav class="year-nav" aria-label="Publication years">'+years.map{|y|"<a href=\"#year-#{y}\">#{y}</a>"}.join+'</nav>'
-years.each{|y|pubs+="<section aria-labelledby=\"year-#{y}\"><h2 id=\"year-#{y}\">#{y}</h2><ol class=\"publications\">"+all_publications.select{|p|p['year']==y}.map{|p|entry(p)}.join+'</ol></section>'}
-page('/publications/','Publications','Publications by Ashutosh Trivedi and collaborators, with authors, venues, paper PDFs, arXiv, and BibTeX citations.',pubs)
+years.each{|y|pubs+="<section class=\"publication-year\" aria-labelledby=\"year-#{y}\"><h2 id=\"year-#{y}\">#{y}</h2><ol class=\"publications\">"+all_publications.select{|p|p['year']==y}.map{|p|entry(p)}.join+'</ol></section>'}
+page('/publications/','Publications','Publications by Ashutosh Trivedi and collaborators, with authors, venues, paper PDFs, arXiv, and BibTeX citations.',pubs, '<script type="module" src="/assets/publications.mjs"></script>')
 all_publications.each do |p|
   pdf_url = p['pdf'].to_s.strip
   pdf_url = ORIGIN + '/' + pdf_url.sub(/^\//,'') unless pdf_url.empty? || pdf_url.start_with?('https://','http://')
