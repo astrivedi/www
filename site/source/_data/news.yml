@@ -1,9 +1,11 @@
 - date: "Sep 2026"
   featured: true
+  summary: '<a href="https://doi.org/10.1145/3744916.3773175">On the Robustness of Fairness Practices</a> appeared in ICSE 2026.'
   text: 'Our paper <a href="https://doi.org/10.1145/3744916.3773175">On the Robustness of Fairness Practices: A Causal Framework for Systematic Evaluation</a> appeared in the proceedings of ICSE 2026. Authors: Verya Monjezi, Ashish Kumar, Ashutosh Trivedi, Gang Tan, and Saeid Tizpaz-Niari.'
 
 - date: "Sep 2026"
   featured: true
+  summary: '<a href="https://doi.org/10.1145/3744916.3764575">An LLM Agentic Approach for Legal-Critical Software</a> appeared in ICSE 2026.'
   text: 'Our paper <a href="https://doi.org/10.1145/3744916.3764575">An LLM Agentic Approach for Legal-Critical Software: A Case Study for Tax Prep Software</a> appeared in the proceedings of ICSE 2026. Authors: Sina Gogani Khiabani, Ashutosh Trivedi, Diptikalyan Saha, and Saeid Tizpaz-Niari.'
 
 - date: "Sep 2026"

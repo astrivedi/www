@@ -71,3 +71,30 @@ main{overflow-wrap:break-word}
 .research-page .research-figure img{display:block;width:100%;height:auto}
 .research-page .research-figure figcaption{margin-top:10px;color:var(--muted);font-size:.8125rem;line-height:1.5}
 @media(max-width:640px){.research-page .research-figure{float:none;width:min(100%,300px);margin:22px auto 26px}}
+
+/* Homepage editorial hierarchy and group photographs. */
+[hidden]{display:none!important}
+.prospective{margin-top:8px}
+.research-themes,.home-contributions{list-style:none;padding:0;margin:0}
+.research-themes li{margin:0 0 20px}
+.research-themes h3,.home-contributions h3{margin:0 0 5px;font-size:1.06rem}
+.research-themes p{margin:0}
+.home-contributions li{margin:0 0 26px}
+.home-contributions p{margin:0 0 5px}
+.contribution-venue{font-family:system-ui,sans-serif;font-size:.875rem;color:var(--muted)}
+.group-gallery{margin:24px 0 36px}
+.group-gallery figure{margin:0 0 28px}
+.group-gallery img{display:block;width:100%;height:auto}
+.group-gallery figcaption{font-family:system-ui,sans-serif;font-size:.875rem;color:var(--muted);margin-top:8px}
+.publication-filters{display:flex;flex-wrap:wrap;align-items:end;gap:14px;margin:26px 0 18px;font-family:system-ui,sans-serif;font-size:.875rem}
+.publication-filters>div{flex:1 1 220px;min-width:0}
+.publication-filters label{display:block;margin-bottom:6px}
+.publication-filters input,.publication-filters select,.publication-filters button{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid #9a9a9a;border-radius:3px;padding:9px 10px;min-height:44px}
+.publication-filters input,.publication-filters select{width:100%;max-width:100%}
+.publication-filters button{cursor:pointer}
+.publication-filters button:hover{background:#f2f5f7}
+.publication-filters :focus-visible{outline:2px solid var(--link);outline-offset:3px}
+#publication-count{flex-basis:100%;margin:0;color:var(--muted)}
+@media print{.publication-filters{display:none}}
+
+.group-gallery .portrait-photo{max-width:480px;margin-left:auto;margin-right:auto}
