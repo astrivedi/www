@@ -131,9 +131,9 @@ home = <<~HTML
 </section>
 <section aria-labelledby="research"><h2 id="research">Research</h2>
 <ul class="research-themes" role="list">
-<li><h3><a href="/research/#formal-foundations">Formal Foundations of Reinforcement Learning</a></h3><p>How can agents learn with rich temporal objectives, recursive structure, and continuous-time environments?</p></li>
-<li><h3><a href="/research/#verified-learning-control">Verified Learning and Control</a></h3><p>How can we provide formal guarantees for learned controllers operating under uncertainty?</p></li>
-<li><h3><a href="/research/#auditable-ai-software">Auditable AI and Software</a></h3><p>How can we detect failures, explain decisions, and assess fairness in consequential software?</p></li>
+<li><h3><a href="/research/#formal-foundations">Foundations of Learning and Decision-Making</a></h3><p>How can formal methods advance reinforcement learning and decision-making with rich objectives, structured environments, and differing time preferences?</p></li>
+<li><h3><a href="/research/#verified-learning-control">Verification for Learning and Control</a></h3><p>How can we provide formal guarantees for learned controllers operating under uncertainty?</p></li>
+<li><h3><a href="/research/#auditable-ai-software">Accountable AI and Software</a></h3><p>How can we detect failures, explain decisions, and assess fairness in consequential software?</p></li>
 </ul></section>
 <section aria-labelledby="selected"><h2 id="selected">Selected Contributions</h2><ol class="home-contributions" role="list">#{selected.map{|slug, summary| contribution(PAPERS.find{|p| p['slug']==slug}, summary)}.join}</ol><p class="more"><a href="/publications/">All publications</a></p></section>
 <section aria-labelledby="news"><h2 id="news">Recent News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(4), compact: true)}<p class="more"><a href="/news/">All news</a></p></section>
@@ -180,9 +180,9 @@ research = <<~HTML
 
 <section class="research-program" aria-labelledby="formal-foundations">
 <span id="formal-methods" aria-hidden="true"></span><span id="reinforcement-learning" aria-hidden="true"></span>
-<h2 id="formal-foundations">Formal Foundations of Reinforcement Learning</h2>
+<h2 id="formal-foundations">Foundations of Learning and Decision-Making</h2>
 <figure class="research-figure"><a href="/papers/2024-cav-regular-rl/"><img src="/assets/img/research/regular-rl-tangram.png" width="976" height="450" alt="Tangram tiles before and after arranging them to cover a cross-shaped target." loading="lazy" decoding="async"></a><figcaption>A tangram task represented using regular languages. <a href="/papers/2024-cav-regular-rl/">Regular Reinforcement Learning</a>.</figcaption></figure>
-<p>Classical reinforcement learning often assumes finite-state environments, simple reward objectives, and episodic interaction. I develop foundations and algorithms for settings in which agents must satisfy richer temporal requirements, operate in structured or recursive environments, or interact with continuous-time physical systems.</p>
+<p>I use formal methods to develop foundations for reinforcement learning and sequential decision-making, including stochastic games and agents with differing time preferences. This work extends beyond finite-state, episodic settings to richer temporal objectives, recursive environments, and continuous-time physical systems.</p>
 <ul class="research-directions">
 <li>Reinforcement learning with temporal and omega-regular objectives</li>
 <li>Regular languages, automata, and reward machines</li>
@@ -195,7 +195,7 @@ research = <<~HTML
 
 <section class="research-program" aria-labelledby="verified-learning-control">
 <span id="medical-and-cyber-physical-systems" aria-hidden="true"></span>
-<h2 id="verified-learning-control">Verified Learning and Control</h2>
+<h2 id="verified-learning-control">Verification for Learning and Control</h2>
 <figure class="research-figure"><a href="/papers/2024-hscc-closure-certificates/"><img src="/assets/img/research/closure-certificates.png" width="380" height="235" alt="A six-state transition system with green initial states and red unsafe states." loading="lazy" decoding="async"></a><figcaption>A simple system illustrating closure certificates. <a href="/papers/2024-hscc-closure-certificates/">Closure Certificates</a>.</figcaption></figure>
 <p>Learning-enabled controllers must operate safely even when their environments are uncertain and their learned models are imperfect. I develop certificates, abstractions, and runtime mechanisms that connect formal verification with learning and control.</p>
 <ul class="research-directions">
@@ -211,7 +211,7 @@ research = <<~HTML
 
 <section class="research-program" aria-labelledby="auditable-ai-software">
 <span id="trustworthy-ai" aria-hidden="true"></span>
-<h2 id="auditable-ai-software">Auditable AI and Software</h2>
+<h2 id="auditable-ai-software">Accountable AI and Software</h2>
 <figure class="research-figure"><a href="/papers/2025-arxiv-hitori/"><img src="/assets/img/research/hitori-explanation.png" width="454" height="200" alt="A five-by-five Hitori puzzle beside its solution, with excluded cells shaded blue." loading="lazy" decoding="async"></a><figcaption>From a puzzle to a solution with proof-guided explanations. <a href="/papers/2025-arxiv-hitori/">Explaining Hitori Puzzles</a>.</figcaption></figure>
 <p>When software affects legal, financial, medical, or social outcomes, failures must be detectable and decisions must be open to scrutiny. I develop formal and data-driven methods for testing, explaining, and improving AI-driven software when complete specifications are unavailable.</p>
 <p>This program also studies how learning and large language models can be combined with logic, automata, program analysis, and symbolic solvers to produce reasoning that is structured and auditable rather than merely plausible.</p>
@@ -245,7 +245,7 @@ research = <<~HTML
 <p class="research-all"><a href="/publications/">View all publications <span aria-hidden="true">→</span></a></p>
 </div>
 HTML
-page('/research/','Research','Ashutosh Trivedi’s research on formal methods for reinforcement learning, verified learning and control, trustworthy AI, and auditable software.',research)
+page('/research/','Research','Ashutosh Trivedi’s research on foundations of learning and decision-making, verification for learning and control, and accountable AI and software.',research)
 all_publications = (PAPERS + JSON.parse(File.read(File.join(SRC, '_data/dblp-publications.json')))).sort_by { |p| [-p['year'], p['title']] }
 years=all_publications.map{|p|p['year']}.uniq
 pubs='<h1>Publications</h1><p>Papers and preprints, with bibliographic records from DBLP and links to available manuscripts. Preprints are labeled; matching preprint and published records are listed once. See also <a href="'+LINKS['scholar']+'">Google Scholar</a>, <a href="'+LINKS['dblp']+'">DBLP</a>, and my <a href="/cv/">CV</a>.</p>'
