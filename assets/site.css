@@ -65,7 +65,7 @@ main{overflow-wrap:break-word}
 @media(max-width:360px){.intro{grid-template-columns:1fr}.intro img{grid-column:1;grid-row:3}.intro h1{font-size:1.7rem}}
 @media print{header,.skip-link{display:none}body{max-width:none;color:#000;padding:0}a{color:#000}footer{margin-top:24px}.publication{break-inside:avoid}}
 
-/* Figures from the papers, kept beside the prose on wide screens. */
+/* Theme photographs beside the prose on wide screens. */
 .research-page .research-program{display:flow-root}
 .research-page .research-figure{float:right;width:240px;margin:5px 0 22px 28px}
 .research-page .research-figure img{display:block;width:100%;height:auto}
@@ -98,3 +98,10 @@ main{overflow-wrap:break-word}
 @media print{.publication-filters{display:none}}
 
 .group-gallery .portrait-photo{max-width:480px;margin-left:auto;margin-right:auto}
+
+.research-page .theme-photo{width:280px}
+.research-page .theme-photo img{aspect-ratio:3/2;object-fit:cover}
+.research-page .theme-bridge img{object-position:50% 65%}
+.research-page .theme-prism img{object-position:50% 30%}
+.research-page .theme-photo figcaption{font-size:.875rem}
+@media(max-width:640px){.research-page .theme-photo{width:min(100%,360px)}}
