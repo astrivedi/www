@@ -79,8 +79,8 @@ If you are interested in joining the group, please [send me a concise email](mai
 - Capstone Team “Love Bugs” (ECEE self-driving-car project; co-advised with Fabio Somenzi): Mohammed Al Hasani, George Matthew Helmick, Rodolfo Gonzalez Hill V, Myungshin Im, Michael Shea Oliver, and Mateo Perez
 - Aniruddha Phatak (MS/PhD, 2019–2020; co-advised with Pavol Cerny)
 - Aniket Lata (MS, 2015–2016; co-advised with Evan Chang) — Qualcomm
+- Ram Das Diwakaran (MS, 2016–2017; co-advised with Sriram Sankaranarayanan) — Generac
 
 ## Academic genealogy
 
 [Explore my academic ancestry](/genealogy/) — a complete graph of the advisor relationships recorded in the Mathematics Genealogy Project, with searchable names, highlighted paths, and a downloadable poster.
-- Ram Das Diwakaran (MS, 2016–2017; co-advised with Sriram Sankaranarayanan) — Generac
