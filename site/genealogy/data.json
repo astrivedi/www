@@ -1,0 +1,1892 @@
+{
+  "root": "136067",
+  "source": "Mathematics Genealogy Project",
+  "complete": true,
+  "nodes": [
+    {
+      "id": "136067",
+      "name": "Ashutosh Trivedi",
+      "degree": "Ph.D. University of Warwick 2009",
+      "thesis": "Competitive Optimisation on Timed Automata",
+      "advisors": [
+        "124774"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=136067",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "124774",
+      "name": "Marcin Jurdzinski",
+      "degree": "Ph.D. Aarhus University 2000",
+      "thesis": "Games for Verification: Algorithmic Issues",
+      "advisors": [
+        "124709"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=124774",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "124709",
+      "name": "Mogens Nielsen",
+      "degree": "Ph.D. Aarhus University 1976",
+      "thesis": "Some Results on Context-Free Lindenmayer Systems",
+      "advisors": [
+        "20493"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=124709",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "20493",
+      "name": "Arto K. Salomaa",
+      "degree": "Ph.D. Turun yliopisto 1960",
+      "thesis": "On the Composition of Functions of Several Variables Ranging Over a Finite Set",
+      "advisors": [
+        "20538"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=20493",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "20538",
+      "name": "Kustaa Inkeri",
+      "degree": "Ph.D. Turun yliopisto 1946",
+      "thesis": "Untersuchungen über die Fermatsche Vermutung",
+      "advisors": [
+        "19460"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=20538",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "19460",
+      "name": "Kalle Väisälä",
+      "degree": "Ph.D. Helsingin yliopisto 1916",
+      "thesis": "Ueber die algebraisch auflösbbaren Gleichungen fuenften Grades",
+      "advisors": [
+        "782"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=19460",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "782",
+      "name": "Ernst Leonard Lindelöf",
+      "degree": "Ph.D. Helsingin yliopisto 1893",
+      "thesis": "Sur les systèmes complets et le calcul des invariants différentiels des groupes continus finis",
+      "advisors": [
+        "143865"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=782",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "143865",
+      "name": "Robert Hjalmar Mellin",
+      "degree": "Ph.D. Helsingin yliopisto 1882",
+      "thesis": "De algebraiska funktionerna af en oberoende variabel",
+      "advisors": [
+        "19770"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=143865",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "19770",
+      "name": "Gösta Magnus Mittag-Leffler",
+      "degree": "Ph.D. Uppsala universitet 1872",
+      "thesis": "Om skiljandet af rötterna till en synektisk funktion af en variabel",
+      "advisors": [
+        "24894"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=19770",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "24894",
+      "name": "Göran Dillner",
+      "degree": "Ph.D. Uppsala universitet 1863",
+      "thesis": "Geometrisk kalkyl eller geometriska qvantiteters räknelagar",
+      "advisors": [
+        "167682"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=24894",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "167682",
+      "name": "Carl Johan Malmsten",
+      "degree": "Filosofie Magister Uppsala universitet 1839",
+      "thesis": "Principia motuum analytice exposita",
+      "advisors": [
+        "20543"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=167682",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "20543",
+      "name": "Jöns Svanberg",
+      "degree": "Ph.D. Uppsala universitet 1796",
+      "thesis": "nodatio enumerationis linearum tertii ordinis Newtonianæ",
+      "advisors": [
+        "183360"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=20543",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "183360",
+      "name": "Frederick Mallet",
+      "degree": "Filosofie Magiser Uppsala universitet 1752",
+      "thesis": "Dissertatio gradualis de Mercurii theoria",
+      "advisors": [
+        "145119"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=183360",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "145119",
+      "name": "Mårten Strömer",
+      "degree": "Filosofie Magister Uppsala universitet 1731",
+      "thesis": "Specimen historiæ literariæ de arte conjectandi",
+      "advisors": [
+        "145118"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=145119",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "145118",
+      "name": "Samuel Klingenstierna",
+      "degree": "LLB Uppsala universitet 1717",
+      "thesis": "",
+      "advisors": [
+        "145120",
+        "47793"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=145118",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "145120",
+      "name": "Anders Gabriel Duhre",
+      "degree": "Uppsala universitet 1711",
+      "thesis": "",
+      "advisors": [
+        "145121"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=145120",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "47793",
+      "name": "Christian M. von Wolff",
+      "degree": "Dr. phil. Universität Leipzig 1703",
+      "thesis": "Philosophia practica universalis, methodo mathematica conscripta",
+      "advisors": [
+        "113719",
+        "60985",
+        "157308"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=47793",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "145121",
+      "name": "Petrus (the Elder) Elvius",
+      "degree": "M.A. Uppsala universitet 1688",
+      "thesis": "",
+      "advisors": [
+        "145122"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=145121",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "113719",
+      "name": "Ehrenfried Walter von Tschirnhaus",
+      "degree": "Magister philosophiae, Medicinae Doctor Universiteit Leiden 1669, 1674",
+      "thesis": "",
+      "advisors": [
+        "119293",
+        "101860",
+        "132725"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=113719",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "60985",
+      "name": "Gottfried Wilhelm Leibniz",
+      "degree": "Dr. phil. Universität Leipzig 1666",
+      "thesis": "Disputatio arithmetica de complexionibus",
+      "advisors": [
+        "137705",
+        "60984",
+        "143859",
+        "125561"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=60985",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "157308",
+      "name": "Christoph Pfautz",
+      "degree": "Dr. phil. Universität Leipzig 1663",
+      "thesis": "De Diis Romanorum Tutelaribus",
+      "advisors": [
+        "157307"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=157308",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "145122",
+      "name": "Petrus Hoffvenius",
+      "degree": "M.D. Universiteit Leiden 1660",
+      "thesis": "",
+      "advisors": [
+        "145123"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=145122",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "119293",
+      "name": "Arnold Geulincx",
+      "degree": "Philosophiae Doctor Université Catholique de Louvain 1646",
+      "thesis": "Quæstiones Quod-libeticæ",
+      "advisors": [
+        "119272"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=119293",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "101860",
+      "name": "Franciscus de le Boë Sylvius",
+      "degree": "Medicinae Dr. Universiteit Leiden and Universität Basel 1634, 1637",
+      "thesis": "Positiones Variae Medicae ; De animali motu, ejusque laesionibus [English: On Animal Movement and its Disorders]",
+      "advisors": [
+        "125023",
+        "125125"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=101860",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "132725",
+      "name": "Pieter van Schooten",
+      "degree": "Artium Liberalium Magister Universiteit Leiden 1655",
+      "thesis": "",
+      "advisors": [
+        "125450"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=132725",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "137705",
+      "name": "Jakob Thomasius",
+      "degree": "Magister der Philosophie Universität Leipzig 1643",
+      "thesis": "",
+      "advisors": [
+        "143630"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=137705",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "60984",
+      "name": "Erhard Weigel",
+      "degree": "Ph.D. Universität Leipzig 1650",
+      "thesis": "De ascensionibus et descensionibus astronomicis dissertatio",
+      "advisors": [
+        "144221"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=60984",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "143859",
+      "name": "Bartholomäus Leonhard Schwendendörffer",
+      "degree": "Dr. jur. Universität Leipzig 1656",
+      "thesis": "Disputatio Juridica De Permutatione",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=143859",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125561",
+      "name": "Christiaan Huygens",
+      "degree": "Artium Liberalium Magister Universiteit Leiden 1647",
+      "thesis": "",
+      "advisors": [
+        "125450",
+        "125416"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125561",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "157307",
+      "name": "Erhard Pfautz",
+      "degree": "Dr. phil. Universität Augsburg 1659",
+      "thesis": "De qualitate quam, quo sine nil altum mens inchoat",
+      "advisors": [
+        "230794"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=157307",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "145123",
+      "name": "Johannes Antonides van der Linden",
+      "degree": "M.D. Universiteit Franeker 1630",
+      "thesis": "",
+      "advisors": [
+        "127165"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=145123",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "119272",
+      "name": "Erycius (Henrick van den Putte) Puteanus",
+      "degree": "Artium Liberalium Magister, Juris utriusque Doctor Universität zu Köln and Université Catholique de Louvain 1595",
+      "thesis": "",
+      "advisors": [
+        "119254"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=119272",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125023",
+      "name": "Adolph Vorstius",
+      "degree": "Philosophiae Dr. Universiteit Leiden 1619",
+      "thesis": "De motu",
+      "advisors": [
+        "114992",
+        "125006"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125023",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125125",
+      "name": "Emmanuel Stupanus",
+      "degree": "Medicinae Dr. Universität Basel 1613",
+      "thesis": "De omnis pleuritidis theoria et generali therapia themata medica",
+      "advisors": [
+        "130248"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125125",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125450",
+      "name": "Frans van Schooten, Jr.",
+      "degree": "Artium Liberalium Magister Universiteit Leiden 1635",
+      "thesis": "",
+      "advisors": [
+        "125408",
+        "125434"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125450",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "143630",
+      "name": "Friedrich Leibniz",
+      "degree": "Magister der Philosophie Universität Leipzig 1622",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=143630",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "144221",
+      "name": "Philipp Müller",
+      "degree": "Magister artium Universität Leipzig 1604",
+      "thesis": "",
+      "advisors": [
+        "144220"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=144221",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125416",
+      "name": "Jan Jansz Stampioen, Jr.",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=125416",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "230794",
+      "name": "Johann Daniel Arcularius",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=230794",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127165",
+      "name": "Menelaus Winsemius",
+      "degree": "Medicinae Dr. Universiteit Leiden 1613",
+      "thesis": "",
+      "advisors": [
+        "125390"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127165",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "119254",
+      "name": "Justus (Joost Lips) Lipsius",
+      "degree": "Magister Philosophiae Université Catholique de Louvain 1569",
+      "thesis": "Variarum Lectionum Libri IV",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=119254",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "114992",
+      "name": "Gilbert Jacchaeus",
+      "degree": "Phil. Dr University of St. Andrews 1601",
+      "thesis": "De libero arbitrio;",
+      "advisors": [
+        "128122",
+        "126489"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=114992",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125006",
+      "name": "Adriaan van den Spieghel",
+      "degree": "Medicinae Dr. Università degli Studi di Padova and Université Catholique de Louvain 1603",
+      "thesis": "",
+      "advisors": [
+        "125109"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125006",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "130248",
+      "name": "Petrus Ryff",
+      "degree": "Medicinae Dr. Universität Basel 1584",
+      "thesis": "De Affectibus cordis",
+      "advisors": [
+        "182090"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=130248",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125408",
+      "name": "Jacobus Golius",
+      "degree": "Artium Liberalium Magister, Philosophiae Doctor Universiteit Leiden 1612, 1621",
+      "thesis": "",
+      "advisors": [
+        "125302",
+        "125378"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125408",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125434",
+      "name": "Marin Mersenne",
+      "degree": "Magister artium Philosophae Université de Paris 1611",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=125434",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "144220",
+      "name": "Christoph Meurer",
+      "degree": "Magister artium Universität Leipzig 1582",
+      "thesis": "De Iride seu Arcu coelesti",
+      "advisors": [
+        "127790"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=144220",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125390",
+      "name": "Pieter (Petrus Pavius) Pauw",
+      "degree": "Medicinae Dr. Universiteit Leiden and Universität Rostock 1585",
+      "thesis": "Tractatus de Exercitiis, Lacticiniis, et Bellariis; Notae in Galenum, de cibis boni et mali succi",
+      "advisors": [
+        "125124",
+        "125373"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125390",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "128122",
+      "name": "Duncan Liddel",
+      "degree": "Magister artium Europa-Universität Viadrina Frankfurt an der Oder and Universität Breslau 1582",
+      "thesis": "Themata De Melancholia",
+      "advisors": [
+        "128305",
+        "128348"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=128122",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126489",
+      "name": "Jacobus (Jacob Harmensz.) Arminius",
+      "degree": "Theol. Dr. Philipps-Universität Marburg and Universiteit Leiden 1582",
+      "thesis": "",
+      "advisors": [
+        "125181"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126489",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125109",
+      "name": "Hieronymus (Girolamo Fabrici d'Acquapendente) Fabricius",
+      "degree": "Medicinae Dr. Università degli Studi di Padova 1559",
+      "thesis": "",
+      "advisors": [
+        "125142"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125109",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "182090",
+      "name": "Felix Plater",
+      "degree": "Medicinae Doctor Université de Montpellier 1557",
+      "thesis": "",
+      "advisors": [
+        "158329"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=182090",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125302",
+      "name": "Willebrord (Snel van Royen) Snellius",
+      "degree": "Artium Liberalium Magister Universiteit Leiden 1607",
+      "thesis": "",
+      "advisors": [
+        "125232",
+        "125181"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125302",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125378",
+      "name": "Thomas Erpenius",
+      "degree": "Artium Liberalium Magister Universiteit Leiden 1608",
+      "thesis": "",
+      "advisors": [
+        "131577"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125378",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127790",
+      "name": "Moritz Valentin Steinmetz",
+      "degree": "Magister artium, Medicinae Dr. Universität Leipzig 1550, 1567",
+      "thesis": "De Peste Capita Disputationis Ordinariae",
+      "advisors": [
+        "126827",
+        "184935"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127790",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125124",
+      "name": "Johannes (Johan van Heurne) Heurnius",
+      "degree": "Philosophiae magister Collège de France 1566",
+      "thesis": "",
+      "advisors": [
+        "125047",
+        "125109"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125124",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125373",
+      "name": "Henricus Brucaeus",
+      "degree": "Artium liberalium Magister Collège de France 1554",
+      "thesis": "",
+      "advisors": [
+        "125047"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125373",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "128305",
+      "name": "John Craig",
+      "degree": "Medicinae Dr. Universität Basel 1580",
+      "thesis": "Diexodus medica de hepatis dispositionibus",
+      "advisors": [
+        "125148"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=128305",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "128348",
+      "name": "Paul Wittich",
+      "degree": "Magister artium Martin-Luther-Universität Halle-Wittenberg and Universität Leipzig 1566",
+      "thesis": "",
+      "advisors": [
+        "127092"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=128348",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125181",
+      "name": "Rudolph (Snel van Royen) Snellius",
+      "degree": "Artium Liberalium Magister Ruprecht-Karls-Universität Heidelberg and Universität zu Köln 1572",
+      "thesis": "",
+      "advisors": [
+        "125160",
+        "125159"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125181",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125142",
+      "name": "Gabriele Falloppio",
+      "degree": "Medicinae Dr. Università degli Studi di Padova and Università degli Studi di Ferrara 1547",
+      "thesis": "",
+      "advisors": [
+        "127245",
+        "125303"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125142",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "158329",
+      "name": "Guillaume Rondelet",
+      "degree": "Université de Paris 1529",
+      "thesis": "",
+      "advisors": [
+        "119159"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=158329",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125232",
+      "name": "Ludolph van Ceulen",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=125232",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131577",
+      "name": "Joseph Justus Scaliger",
+      "degree": "Magister artium Collège de France 1563",
+      "thesis": "",
+      "advisors": [
+        "131606"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131577",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126827",
+      "name": "Georg Joachim von Leuchen Rheticus",
+      "degree": "Magister artium Martin-Luther-Universität Halle-Wittenberg 1535",
+      "thesis": "",
+      "advisors": [
+        "126730",
+        "126177"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126827",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "184935",
+      "name": "Johann Hoffmann",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=184935",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125047",
+      "name": "Petrus (Pierre de La Ramée) Ramus",
+      "degree": "Artium Liberalium Magister Collège de Navarre 1536",
+      "thesis": "Quaecumque ab Aristotele dicta essent, commentitia esse",
+      "advisors": [
+        "125665",
+        "131546"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125047",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125148",
+      "name": "Theodor Zwinger",
+      "degree": "Magister artium Collège de France 1553",
+      "thesis": "",
+      "advisors": [
+        "125047",
+        "152906",
+        "152905"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125148",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127092",
+      "name": "Valentin Thau",
+      "degree": "Magister artium Universität Leipzig 1555",
+      "thesis": "",
+      "advisors": [
+        "127011"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127092",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125160",
+      "name": "Valentine Naibod",
+      "degree": "Magister artium Martin-Luther-Universität Halle-Wittenberg and Universität Erfurt",
+      "thesis": "",
+      "advisors": [
+        "126736"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125160",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125159",
+      "name": "Immanuel Tremellius",
+      "degree": "Dr. theol. University of Cambridge 1549",
+      "thesis": "",
+      "advisors": [
+        "141571"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125159",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127245",
+      "name": "Antonio Musa Brasavola",
+      "degree": "Medicinae Dr. Università degli Studi di Ferrara 1520",
+      "thesis": "",
+      "advisors": [
+        "127166"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127245",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125303",
+      "name": "Matteo Realdo (Renaldus Columbus) Colombo",
+      "degree": "Medicinae Dr. Università degli Studi di Padova 1544",
+      "thesis": "",
+      "advisors": [
+        "119178"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125303",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "119159",
+      "name": "Johannes Winter von Andernach",
+      "degree": "Magister artium Université Catholique de Louvain 1527",
+      "thesis": "",
+      "advisors": [
+        "126571",
+        "125422"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=119159",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131606",
+      "name": "Adrien Turnèbe",
+      "degree": "Magister artium Collège de France 1532",
+      "thesis": "",
+      "advisors": [
+        "131546"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131606",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126730",
+      "name": "Johannes Volmar",
+      "degree": "Magister artium Martin-Luther-Universität Halle-Wittenberg 1515",
+      "thesis": "",
+      "advisors": [
+        "126724"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126730",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126177",
+      "name": "Nicolaus (Mikołaj Kopernik) Copernicus",
+      "degree": "Juris utriusque Doctor Università di Bologna and Università degli Studi di Padova and Uniwersytet Jagielloński and Università degli Studi di Ferrara 1499",
+      "thesis": "",
+      "advisors": [
+        "126113",
+        "126112"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126177",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125665",
+      "name": "Johannes (Johann Sturm) Sturmius",
+      "degree": "Magister artium Université Catholique de Louvain 1527",
+      "thesis": "",
+      "advisors": [
+        "125658",
+        "119159"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125665",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131546",
+      "name": "Jacques Toussain",
+      "degree": "Magister artium Université de Paris 1521",
+      "thesis": "",
+      "advisors": [
+        "131517"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131546",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "152906",
+      "name": "Bassiano Landi",
+      "degree": "Medicinae Dr. Università degli Studi di Padova 1542",
+      "thesis": "",
+      "advisors": [
+        "152904",
+        "152905"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=152906",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "152905",
+      "name": "Vittore Trincavelli",
+      "degree": "Magister artium, Medicinae Dr. Università degli Studi di Padova",
+      "thesis": "",
+      "advisors": [
+        "152903"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=152905",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127011",
+      "name": "Johannes Hommel",
+      "degree": "Magister artium Martin-Luther-Universität Halle-Wittenberg 1543",
+      "thesis": "",
+      "advisors": [
+        "126736",
+        "126956"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127011",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126736",
+      "name": "Erasmus Reinhold",
+      "degree": "Magister artium Martin-Luther-Universität Halle-Wittenberg 1535",
+      "thesis": "",
+      "advisors": [
+        "126667"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126736",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "141571",
+      "name": "Thomas Cranmer",
+      "degree": "Master of Arts University of Cambridge 1515",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=141571",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127166",
+      "name": "Niccolò Leoniceno",
+      "degree": "B.A. Scuola Pubblica di Vicenza 1446",
+      "thesis": "",
+      "advisors": [
+        "149192",
+        "127144",
+        "136726"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127166",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "119178",
+      "name": "Andreas (Andries van Wesel) Vesalius",
+      "degree": "Medicinae Doctor Università degli Studi di Padova and Université Catholique de Louvain 1537",
+      "thesis": "Paraphrasis in nonum librum Rhazae medici arabis clariss ad regem Almansorum de affectum singularum corporis partium curatione",
+      "advisors": [
+        "119159",
+        "119097",
+        "152904"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=119178",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126571",
+      "name": "Rutger Rescius",
+      "degree": "Artium Baccalaureus Université de Paris 1513",
+      "thesis": "",
+      "advisors": [
+        "127181"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126571",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125422",
+      "name": "Jacobus (Jacques Dubois) Sylvius",
+      "degree": "M.B. Université de Paris 1529",
+      "thesis": "",
+      "advisors": [
+        "128987",
+        "128921"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125422",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126724",
+      "name": "Bonifazius Erasmi",
+      "degree": "Magister artium Martin-Luther-Universität Halle-Wittenberg 1509",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=126724",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126113",
+      "name": "Leonhard (Leonard Vitreatoris z Dobczyc) von Dobschütz",
+      "degree": "Magister artium Uniwersytet Jagielloński 1489",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=126113",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126112",
+      "name": "Domenico Maria Novara da Ferrara",
+      "degree": "Università degli Studi di Firenze 1483",
+      "thesis": "",
+      "advisors": [
+        "126109",
+        "126888"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126112",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125658",
+      "name": "Nicolas (Nicolaes Cleynaerts) Clénard",
+      "degree": "Magister artium, Theol. Dr. Université Catholique de Louvain 1515, 1521",
+      "thesis": "",
+      "advisors": [
+        "125681",
+        "125682"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125658",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131517",
+      "name": "Guillaume Budé",
+      "degree": "Magister artium Université d'Orléans and Université de Paris 1486, 1491",
+      "thesis": "",
+      "advisors": [
+        "131443",
+        "131541"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131517",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "152904",
+      "name": "Giovanni Battista della Monte",
+      "degree": "Medicinae Dr. Università degli Studi di Ferrara",
+      "thesis": "",
+      "advisors": [
+        "127166",
+        "152901",
+        "152903"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=152904",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "152903",
+      "name": "Pietro Pomponazzi",
+      "degree": "Magister artium Università degli Studi di Padova 1487",
+      "thesis": "",
+      "advisors": [
+        "152902",
+        "136726"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=152903",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126956",
+      "name": "Philipp Melanchthon",
+      "degree": "Baccalaureus artium Ruprecht-Karls-Universität Heidelberg 1511",
+      "thesis": "",
+      "advisors": [
+        "127107",
+        "125760"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126956",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126667",
+      "name": "Jakob Milich",
+      "degree": "Liberalium Artium Magister Albert-Ludwigs-Universität Freiburg im Breisgau 1520",
+      "thesis": "",
+      "advisors": [
+        "125938",
+        "126659"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126667",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "149192",
+      "name": "Ognibene (Omnibonus Leonicenus) Bonisoli da Lonigo",
+      "degree": "Università di Mantova 1433",
+      "thesis": "",
+      "advisors": [
+        "134873"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=149192",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127144",
+      "name": "Pelope",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=127144",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "136726",
+      "name": "Pietro Roccabonella",
+      "degree": "M.D. Università degli Studi di Padova 1459",
+      "thesis": "",
+      "advisors": [
+        "148882",
+        "164338"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=136726",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "119097",
+      "name": "Gemma (Jemme Reinerszoon) Frisius",
+      "degree": "Magister Philosophiae, Medicinae Doctor Université Catholique de Louvain 1529, 1536",
+      "thesis": "",
+      "advisors": [
+        "125892"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=119097",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127181",
+      "name": "Girolamo (Hieronymus Aleander) Aleandro",
+      "degree": "Magister artium, Theol. Dr. Università degli Studi di Padova 1499, 1508",
+      "thesis": "",
+      "advisors": [
+        "131446",
+        "131447"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127181",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "128987",
+      "name": "François Dubois",
+      "degree": "Magister artium Université de Paris 1516",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=128987",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "128921",
+      "name": "Jean Tagault",
+      "degree": "dr. med. Sorbonne Université 1524",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=128921",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126109",
+      "name": "Johannes Müller Regiomontanus",
+      "degree": "Magister artium Universität Leipzig and Universität Wien 1457",
+      "thesis": "",
+      "advisors": [
+        "126087",
+        "131561"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126109",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126888",
+      "name": "Luca Pacioli",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=126888",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125681",
+      "name": "Jacobus (Jacques Masson) Latomus",
+      "degree": "Magister artium Collège de Montaigu 1502",
+      "thesis": "",
+      "advisors": [
+        "125888"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125681",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125682",
+      "name": "Jan (Johannes Campensis) van Campen",
+      "degree": "Theol. Dr. Universität Ingolstadt",
+      "thesis": "",
+      "advisors": [
+        "125760",
+        "125794"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125682",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131443",
+      "name": "Georgius Hermonymus",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=131443",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131541",
+      "name": "Janus Lascaris",
+      "degree": "Magister artium Università degli Studi di Padova 1472",
+      "thesis": "",
+      "advisors": [
+        "131561",
+        "131576"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131541",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "152901",
+      "name": "Marco Musuro",
+      "degree": "Magister artium Università degli Studi di Firenze 1486",
+      "thesis": "",
+      "advisors": [
+        "131541"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=152901",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "152902",
+      "name": "Nicoletto Vernia",
+      "degree": "Magister artium Università degli Studi di Padova 1458",
+      "thesis": "",
+      "advisors": [
+        "148882",
+        "232228"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=152902",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127107",
+      "name": "Johannes Stöffler",
+      "degree": "Magister artium Universität Ingolstadt 1476",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=127107",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125760",
+      "name": "Johann (Johannes Kapnion) Reuchlin",
+      "degree": "Magister artium Universität Basel 1477",
+      "thesis": "",
+      "advisors": [
+        "131444",
+        "125755"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125760",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125938",
+      "name": "Desiderius Erasmus",
+      "degree": "Theologiae Baccalaureus Collège de Montaigu 1497 /1506",
+      "thesis": "",
+      "advisors": [
+        "125888",
+        "125898"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125938",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126659",
+      "name": "Ulrich Zasius",
+      "degree": "Doctor legum Albert-Ludwigs-Universität Freiburg im Breisgau 1501",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=126659",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "134873",
+      "name": "Vittorino da Feltre",
+      "degree": "Università degli Studi di Padova 1416",
+      "thesis": "",
+      "advisors": [
+        "298290",
+        "298304",
+        "134931"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=134873",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "148882",
+      "name": "Gaetano da Thiene",
+      "degree": "Università degli Studi di Padova",
+      "thesis": "",
+      "advisors": [
+        "232227"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=148882",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "164338",
+      "name": "Sigismondo Polcastro",
+      "degree": "B.A. Università degli Studi di Padova 1412",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=164338",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125892",
+      "name": "Petrus (Pieter de Corte) Curtius",
+      "degree": "Magister artium, Theol. Dr. Université Catholique de Louvain 1513, 1530",
+      "thesis": "",
+      "advisors": [
+        "125894"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125892",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131446",
+      "name": "Moses Perez",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=131446",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131447",
+      "name": "Scipione Fortiguerra",
+      "degree": "Magister artium Università degli Studi di Firenze 1493",
+      "thesis": "",
+      "advisors": [
+        "131535"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131447",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126087",
+      "name": "Georg von Peuerbach",
+      "degree": "Magister artium Universität Wien 1440",
+      "thesis": "",
+      "advisors": [
+        "126887"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126087",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131561",
+      "name": "Basilios Bessarion",
+      "degree": "Mystras 1436",
+      "thesis": "",
+      "advisors": [
+        "131575"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131561",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125888",
+      "name": "Jan Standonck",
+      "degree": "Magister artium Collège Sainte-Barbe 1474",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=125888",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125794",
+      "name": "Matthaeus Adrianus",
+      "degree": "dr. med.",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=125794",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131576",
+      "name": "Demetrios Chalcocondyles",
+      "degree": "Magister artium Mystras and Accademia Romana 1452",
+      "thesis": "",
+      "advisors": [
+        "131584"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131576",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "232228",
+      "name": "Paolo da Pergola",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "232227"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=232228",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131444",
+      "name": "Johannes Argyropoulos",
+      "degree": "Theol. Dr. Università degli Studi di Padova 1444",
+      "thesis": "",
+      "advisors": [
+        "131561"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131444",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125755",
+      "name": "Jacob ben Jehiel Loans",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=125755",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125898",
+      "name": "Alexander Hegius",
+      "degree": "M.A. Universität Rostock 1463",
+      "thesis": "",
+      "advisors": [
+        "128012",
+        "140181"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125898",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "298290",
+      "name": "Gasparino da Barzizza",
+      "degree": "Università degli Studi di Padova 1413",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=298290",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "298304",
+      "name": "Giovanni Conversini",
+      "degree": "Università di Bologna 1363",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=298304",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "134931",
+      "name": "Guarino da Verona",
+      "degree": "Imperial University of Constantinople 1408",
+      "thesis": "",
+      "advisors": [
+        "135185",
+        "298304"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=134931",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "232227",
+      "name": "Paolo (Nicoletti) da Venezia",
+      "degree": "Università degli Studi di Padova 1405",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=232227",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125894",
+      "name": "Maarten (Martinus Dorpius) van Dorp",
+      "degree": "Magister artium, Theol. Dr. Université Catholique de Louvain 1504, 1515",
+      "thesis": "",
+      "advisors": [
+        "125897"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=125894",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131535",
+      "name": "Angelo Poliziano",
+      "degree": "Magister artium Università degli Studi di Firenze 1477",
+      "thesis": "",
+      "advisors": [
+        "131539",
+        "131540"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131535",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "126887",
+      "name": "Johannes von Gmunden",
+      "degree": "Magister artium Universität Wien 1406",
+      "thesis": "",
+      "advisors": [
+        "127264"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=126887",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131575",
+      "name": "Georgios Plethon Gemistos",
+      "degree": "1380, 1393",
+      "thesis": "Nómoi (Book of Laws)",
+      "advisors": [
+        "134780",
+        "134781"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131575",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131584",
+      "name": "Theodoros Gazes",
+      "degree": "Magister artium Università di Mantova and Imperial University of Constantinople 1433",
+      "thesis": "",
+      "advisors": [
+        "134873"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131584",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "128012",
+      "name": "Rudolf Agricola",
+      "degree": "Magister artium Università degli Studi di Ferrara 1478",
+      "thesis": "",
+      "advisors": [
+        "131584"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=128012",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "140181",
+      "name": "Thomas von Kempen à Kempis",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "179836",
+        "179837"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=140181",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "135185",
+      "name": "Manuel Chrysoloras",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "134780"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=135185",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "125897",
+      "name": "Leo Outers",
+      "degree": "Magister artium, Theol. Dr. Université Catholique de Louvain 1485",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=125897",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131539",
+      "name": "Marsilio Ficino",
+      "degree": "Magister artium Università degli Studi di Firenze 1462",
+      "thesis": "",
+      "advisors": [
+        "131444"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131539",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "131540",
+      "name": "Cristoforo Landino",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "298288"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=131540",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "127264",
+      "name": "Heinrich von Langenstein",
+      "degree": "Magister artium Université de Paris 1363",
+      "thesis": "",
+      "advisors": [
+        "199357"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=127264",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "134780",
+      "name": "Demetrios Kydones",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "146365"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=134780",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "134781",
+      "name": "Elissaeus Judaeus",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=134781",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "179836",
+      "name": "Geert (Gerardus Magnus) Groote",
+      "degree": "Magister artium Université de Paris 1358",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=179836",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "179837",
+      "name": "Florens (Florentius Radwyn) Radewyns",
+      "degree": "M.A. Charles University 1378",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=179837",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "298288",
+      "name": "George of Trebizond",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "134873"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=298288",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "199357",
+      "name": "Nicole Oresme",
+      "degree": "Université de Paris 1356",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=199357",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "146365",
+      "name": "Nilos Kabasilas",
+      "degree": "1363",
+      "thesis": "",
+      "advisors": [
+        "176844"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=146365",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "176844",
+      "name": "Gregory Palamas",
+      "degree": "Imperial University of Constantinople 1316",
+      "thesis": "",
+      "advisors": [
+        "184631"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=176844",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "184631",
+      "name": "Theodore Metochites",
+      "degree": "Imperial University of Constantinople 1315",
+      "thesis": "",
+      "advisors": [
+        "184632"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=184631",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "184632",
+      "name": "Manuel Bryennios",
+      "degree": "Imperial University of Constantinople 1300",
+      "thesis": "",
+      "advisors": [
+        "201288"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=184632",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "201288",
+      "name": "Gregory Chioniadis",
+      "degree": "Ilkhans Court at Tabriz 1296",
+      "thesis": "",
+      "advisors": [
+        "204293"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=201288",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "204293",
+      "name": "Shams al‐Dīn al‐Bukhārī",
+      "degree": "Maragheh Observatory",
+      "thesis": "",
+      "advisors": [
+        "217509"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=204293",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "217509",
+      "name": "Nasir al-Dīn al-Ṭūsī",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "223724",
+        "287480"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=217509",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "223724",
+      "name": "Kamāl al-Dīn Ibn Yūnus",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "230926",
+        "287466"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=223724",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "287480",
+      "name": "Athīr al-Dīn al-Mufaḍḍal al-Abharī",
+      "degree": "1264",
+      "thesis": "",
+      "advisors": [
+        "223724",
+        "287479"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=287480",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "230926",
+      "name": "Sharaf al-Dīn al-Ṭūsī",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=230926",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "287466",
+      "name": "Saraf al-Dīn Muhammad al-Masʿūdī al-Marwazī",
+      "degree": "Polymath",
+      "thesis": "",
+      "advisors": [
+        "295739"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=287466",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "287479",
+      "name": "Qutb al-Dīn Ibrāhīm al-Mīṣrī",
+      "degree": "1222",
+      "thesis": "",
+      "advisors": [
+        "287478"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=287479",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "295739",
+      "name": "Ghiyāth al-Dīn Abū al-Fatḥ ʿUmar ibn Ibrāhīm al-Khayyām al-Nīsābūrī",
+      "degree": "1068",
+      "thesis": "",
+      "advisors": [
+        "287468"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=295739",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "287478",
+      "name": "Fakhr al-Dīn Muhammad al-Rēzī",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "287466"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=287478",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "287468",
+      "name": "Bahmanyār ibn al-Marzubān",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "298616"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=287468",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "298616",
+      "name": "Abu ʿAli al-Husayn (Avicenna) ibn Sina",
+      "degree": "",
+      "thesis": "",
+      "advisors": [
+        "316872",
+        "310782",
+        "316873"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=298616",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "316872",
+      "name": "Abu Abdallah Al-Husayn ibn Ibrahim al-Natili",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=316872",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "310782",
+      "name": "Abu Sahl 'Isa ibn Yahya al-Masihi",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=310782",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "316873",
+      "name": "Abu Mansur al-Hasan ibn Nuh al-Qumri",
+      "degree": "",
+      "thesis": "",
+      "advisors": [],
+      "url": "https://www.mathgenealogy.org/id.php?id=316873",
+      "retrieved": "2026-09-17"
+    }
+  ]
+}

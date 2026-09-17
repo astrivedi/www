@@ -1,5 +1,6 @@
 .DS_Store
 __MACOSX/
 __pycache__/
+site/cache/
 site/source/_site/
 site/source/tags/_site/

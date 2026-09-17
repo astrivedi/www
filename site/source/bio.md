@@ -36,4 +36,5 @@ systems, and is an editor of <em>Information Processing Letters</em> (Elsevier).
 
 <p>
 <a class="link" href="{{ site.links.cv }}">Curriculum Vitae</a>
+ · <a href="/genealogy/">Academic genealogy</a>
 </p>

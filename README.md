@@ -26,6 +26,18 @@ For a clean Ruby environment, run `bundle install` inside `site`, then `bundle e
 
 Legacy Jekyll source is retained under `site/source` for reference; its layouts are no longer used. Old generated `_site` output is excluded. Git history retains prior versions.
 
+## Academic genealogy
+
+`/genealogy/` displays the full cached MGP advisor ancestry of record 136067. Shared ancestors appear once and every listed advisor is retained. Graduated students remain on the People page, so the ancestry does not conflate MGP records with local alumni additions.
+
+- Refresh public records explicitly: `python3 site/genealogy-fetch.py --refresh`. Fetches are sequential, delayed, retried, and cached under ignored `site/cache/genealogy/`. Without `--refresh`, existing cached records are reused. A failed fetch or a cycle prevents replacement of the complete snapshot.
+- `site/genealogy/data.json` is the versioned snapshot, with per-record retrieval dates and source URLs. No network requests are made by the webpage or normal build.
+- `site/genealogy-render.py` uses Graphviz `dot` (required for builds) to generate SVG/PDF exports and the accessible page markup. The regular Ruby build invokes it. Python 3 requires no extra packages.
+- `site/genealogy.mjs` provides pan, pinch/modified-wheel zoom, keyboard navigation, search, overview, and highlighting of all paths to the focal person. `site/genealogy.css` styles the view. The static graph, text table, and downloads work without JavaScript.
+- Verify: `node --test site/tests/genealogy.test.mjs`, then `python3 site/validate.py`.
+
+The ancestor closure is complete relative to MGP's recorded links, not the historical record; terminal nodes mean no advisor was recorded. Historical mentorship is not relabeled as a modern doctorate. Rebuild and commit the source snapshot together with generated pages and assets.
+
 ## Routes and metadata
 
 Main routes: `/`, `/research/`, `/publications/`, `/students/`, `/teaching/`, `/talks/`, `/cv/`. People uses `/students/` to retain permanent links. Existing paper, news, biography, contact, tag, and CV URLs remain available. `/group/` points to `/students/` with the latter as canonical; an HTTP redirect can be configured if the host supports one.
