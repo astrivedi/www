@@ -1,0 +1,42 @@
+.genealogy-meta,.genealogy-help,.genealogy-downloads,#genealogy-selection{font-family:system-ui,sans-serif;font-size:.875rem;color:var(--muted)}
+.genealogy-controls{display:flex;flex-wrap:wrap;align-items:end;gap:16px;margin:24px 0 12px;font-family:system-ui,sans-serif;font-size:.875rem}
+.genealogy-controls[hidden],.genealogy-overview[hidden],.interactive-help[hidden]{display:none}
+#genealogy-search{flex:1;min-width:200px}
+#genealogy-search label{display:block;margin-bottom:5px}
+.genealogy-search-row{display:flex;gap:6px}
+#ancestor-search{width:100%;min-width:0;font:inherit;font-size:16px;padding:9px;border:1px solid #b6c0c8;border-radius:4px;background:#fff;color:var(--ink)}
+.genealogy-buttons{display:flex;flex-wrap:wrap;gap:6px}
+.genealogy-controls button{font:inherit;min-height:42px;padding:8px 12px;color:var(--link);background:#f5f7f8;border:1px solid #c5d0d8;border-radius:4px;cursor:pointer}
+.genealogy-controls button:hover{background:#e6eff5}
+.genealogy-controls :focus-visible{outline:2px solid var(--link);outline-offset:3px}
+.genealogy-stage{position:relative;border:1px solid #d9e0e4;background:#fff;overflow:hidden}
+#ancestry-graph{display:block;width:100%;height:auto;min-height:450px}
+.is-interactive #ancestry-graph{height:620px;max-height:75vh;touch-action:none;cursor:grab}
+#ancestry-graph:active{cursor:grabbing}
+#ancestry-graph:focus-visible{outline:2px solid var(--link);outline-offset:-3px}
+#ancestry-graph .node{cursor:pointer}
+#ancestry-graph .node path{vector-effect:non-scaling-stroke;stroke-width:.8;fill:#e8eef2}
+#ancestry-graph .edge path{vector-effect:non-scaling-stroke;stroke-width:.8}
+#ancestry-overview .edge path{vector-effect:non-scaling-stroke;stroke-width:.5}
+#ancestry-graph .node:focus-visible{outline:none}
+#ancestry-graph .node:focus-visible path,#ancestry-graph .node.selected path{stroke:#245a80;stroke-width:3;fill:#dcebf5}
+#ancestry-graph .dimmed{opacity:.16}
+#ancestry-graph .edge.highlighted path{stroke:#245a80;stroke-width:2}
+#ancestry-graph .edge.highlighted polygon{fill:#245a80;stroke:#245a80}
+#ancestry-graph.hide-labels .node:not(.selected) text{visibility:hidden}
+#genealogy-selection{display:none;color:var(--ink);min-height:3.5em;margin:12px 0}
+.is-interactive #genealogy-selection{display:block}
+.genealogy-overview{position:absolute;top:10px;right:10px;width:110px;pointer-events:none;border:1px solid #c5d0d8;background:#fffffff0;font:11px system-ui,sans-serif;color:var(--muted);padding:4px}
+#ancestry-overview{display:block;width:100%;height:150px}
+.overview-viewport{fill:#245a801a;stroke:#245a80;stroke-width:2;vector-effect:non-scaling-stroke}
+.genealogy-table{overflow-x:auto;margin-top:16px}
+.genealogy-table table{border-collapse:collapse;width:100%;font-size:.875rem}
+.genealogy-table th,.genealogy-table td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid #ddd;min-width:150px}
+.genealogy-table th{font-weight:400}
+.genealogy-table thead th{font-weight:600}
+.genealogy-table tr:target{background:#e6eff5}
+#genealogy:fullscreen{background:#fff;padding:24px;overflow:auto;display:flex;flex-direction:column}
+#genealogy:fullscreen .genealogy-stage{flex:1;min-height:200px}
+#genealogy:fullscreen #ancestry-graph{height:100%;max-height:none}
+@media(max-width:600px){.genealogy-overview{width:70px}#ancestry-overview{height:100px}.is-interactive #ancestry-graph{height:520px}.genealogy-controls button{min-height:44px}#genealogy:fullscreen{padding:12px}}
+@media print{.genealogy-controls,.genealogy-overview,.genealogy-help,#genealogy-selection{display:none!important}.genealogy-stage{border:0}#ancestry-graph{height:auto!important;max-height:none!important}#ancestry-graph .dimmed{opacity:1}#ancestry-graph.hide-labels .node text{visibility:visible}}

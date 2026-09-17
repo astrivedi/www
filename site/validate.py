@@ -18,7 +18,7 @@ class Document(HTMLParser):
         for k in ('href','src'):
             if k in a: self.refs.append(a[k])
         if tag=='script':
-            if a.get('type')=='application/ld+json':
+            if a.get('type')=='application/ld+json' or (a.get('type')=='application/json' and a.get('id')=='genealogy-data' and self.allowed_script=='/assets/genealogy.mjs'):
                 self.script=''
             else:
                 assert self.allowed_script and a.get('type')=='module' and a.get('src')==self.allowed_script, 'Unexpected executable JavaScript'
@@ -29,7 +29,7 @@ class Document(HTMLParser):
         if tag=='script' and self.script is not None:
             self.scripts.append(json.loads(self.script)); self.script=None
 
-docs={p:Document(p.read_text(), {"talks/hyperproperties/index.html":"/assets/talks/hyperproperties.mjs", "publications/index.html":"/assets/publications.mjs"}.get(p.relative_to(ROOT).as_posix())) for p in ROOT.rglob('*.html') if 'site' not in p.relative_to(ROOT).parts and '.git' not in p.relative_to(ROOT).parts}
+docs={p:Document(p.read_text(), {"genealogy/index.html":"/assets/genealogy.mjs", "talks/hyperproperties/index.html":"/assets/talks/hyperproperties.mjs", "publications/index.html":"/assets/publications.mjs"}.get(p.relative_to(ROOT).as_posix())) for p in ROOT.rglob('*.html') if 'site' not in p.relative_to(ROOT).parts and '.git' not in p.relative_to(ROOT).parts}
 errors=[]
 for p,d in docs.items():
     def count(tag): return sum(t==tag for t,a in d.tags)
@@ -66,5 +66,5 @@ for p in imported:
     if p.get('abstract'):
         assert p.get('abstract_source'), p['slug']
 if errors: raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(docs)} pages; internal links and anchors; metadata; JSON-LD; one H1 per page; JavaScript limited to publication search and the interactive talk; sitemap; nonempty linked assets.')
+print(f'PASS: {len(docs)} pages; internal links and anchors; metadata; JSON-LD; one H1 per page; JavaScript limited to approved page modules; sitemap; nonempty linked assets.')
 print(f'Homepage: {(ROOT/"index.html").stat().st_size:,} bytes; CSS: {(ROOT/"assets/site.css").stat().st_size:,} bytes.')

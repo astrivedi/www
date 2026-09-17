@@ -58,6 +58,9 @@ FileUtils.cp_r(File.join(SRC,'assets/img/research'), File.join(OUT,'assets/img')
 FileUtils.cp_r(File.join(SRC,'assets/img/group'), File.join(OUT,'assets/img'))
 FileUtils.cp(File.join(ROOT,'publications.mjs'), File.join(OUT,'assets/publications.mjs'))
 FileUtils.cp(File.join(ROOT, 'site.css'), File.join(OUT, 'assets/site.css'))
+%w[genealogy.css genealogy.mjs].each { |f| FileUtils.cp(File.join(ROOT, f), File.join(OUT, 'assets', f)) }
+# Rebuild the cached genealogy offline. Network refresh is a separate explicit command.
+abort 'Genealogy rendering failed' unless system('python3', File.join(ROOT, 'genealogy-render.py'))
 FileUtils.mkdir_p(File.join(OUT, 'images'))
 FileUtils.cp(File.join(SRC,'assets/img/ashutosh.jpeg'), File.join(OUT,'images/ashutosh-trivedi.jpg'))
 FileUtils.cp(File.join(SRC,'assets/AshutoshTrivedi_CV.pdf'), File.join(OUT,'assets/AshutoshTrivedi_CV.pdf'))
@@ -126,7 +129,7 @@ home = <<~HTML
 <div><h1 id="name">Ashutosh Trivedi</h1><p class="affiliation">Associate Professor of Computer Science<br>University of Colorado Boulder</p>
 <p>I work on formal methods for reinforcement learning, trustworthy AI, and safety-critical software and cyber-physical systems.</p>
 <p>My research combines verification, learning, and symbolic reasoning to make intelligent systems safer, fairer, and easier to explain.</p>
-<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="https://www.mathgenealogy.org/id.php?id=136067">Mathematics Genealogy</a></p><p class="profile-links prospective"><a href="/students/#join-the-group">Prospective students</a> · <a href="mailto:ashutosh.trivedi@colorado.edu">Email</a></p></div>
+<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="/genealogy/">Academic genealogy</a></p><p class="profile-links prospective"><a href="/students/#join-the-group">Prospective students</a> · <a href="mailto:ashutosh.trivedi@colorado.edu">Email</a></p></div>
 <img src="/images/ashutosh-trivedi.jpg" width="220" height="220" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 </section>
 <section aria-labelledby="research"><h2 id="research">Research</h2>
@@ -275,6 +278,7 @@ all_publications.each do |p|
   page('/papers/'+p['slug']+'/',p['title'],p['title']+'. '+p['authors'].join(', ')+'. '+venue(p)+'.',body,extra)
 end
 students=source_body('group.md')
+page('/genealogy/','Academic genealogy','Explore the complete recorded academic ancestry of Ashutosh Trivedi, with advisor paths, searchable names, and a downloadable genealogy poster.',File.read(File.join(ROOT, 'genealogy/page.html')), '<link rel="stylesheet" href="/assets/genealogy.css"><script type="module" src="/assets/genealogy.mjs"></script>')
 page('/students/','People','Students, postdoctoral researchers, and alumni working with Ashutosh Trivedi in the CUPLV group at CU Boulder.','<h1>People</h1>'+students)
 teaching=source_body('teaching.md')
 page('/teaching/','Teaching','Courses taught by Ashutosh Trivedi at CU Boulder and IIT Bombay, including theory of computation, reinforcement learning, and cyber-physical systems.','<h1>Teaching</h1>'+teaching)
