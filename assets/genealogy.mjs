@@ -88,7 +88,8 @@ function init() {
     update();
   }
   function highlight(id) {
-    const path = id && id !== data.root ? pathsToRoot(data.nodes, data.root, id) : null;
+    const path = !id || id === data.root ? null : nodes.get(id).kind === 'graduate'
+      ? pathsToRoot(data.nodes, id, data.root) : pathsToRoot(data.nodes, data.root, id);
     nodeElements.forEach(el => {
       const ident = el.id.replace('person-', '');
       el.classList.toggle('dimmed', !!path && !path.people.has(ident));
@@ -108,15 +109,30 @@ function init() {
     const name = document.createElement('strong'); name.textContent = record.name;
     detail.append(name, ` · ${record.degree || 'Degree not recorded'}. `);
     if (record.thesis) detail.append(`Dissertation: ${record.thesis}. `);
-    const link = document.createElement('a'); link.href = record.url; link.textContent = 'MGP record';
+    if (record.other_advisors?.length) {
+      detail.append('Co-advised with ');
+      record.other_advisors.forEach((advisor, i) => {
+        if (i) detail.append(', ');
+        const a = document.createElement('a'); a.href = advisor.url; a.textContent = advisor.name;
+        detail.append(a);
+      });
+      detail.append('. ');
+    }
+    const link = document.createElement('a'); link.href = record.url; link.textContent = record.source_label || 'MGP record';
     detail.append(link);
+    if (record.wikipedia) {
+      const wiki = document.createElement('a'); wiki.href = record.wikipedia; wiki.textContent = 'Wikipedia';
+      wiki.target = '_blank'; wiki.rel = 'noopener noreferrer';
+      detail.append(' · ', wiki);
+    }
     if (navigate) center(id);
   }
   nodeElements.forEach(el => {
     const id = el.id.replace('person-', '');
+    el.classList.toggle('graduate', nodes.get(id).kind === 'graduate');
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
-    el.setAttribute('aria-label', `${nodes.get(id).name}. ${nodes.get(id).degree}. Highlight paths to Ashutosh Trivedi.`);
+    el.setAttribute('aria-label', `${nodes.get(id).name}. ${nodes.get(id).degree}. Show connections${nodes.get(id).wikipedia ? ' and Wikipedia link' : ''}.`);
     el.addEventListener('click', () => { if (!moved) select(id); });
     el.addEventListener('keydown', event => {
       if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.stopPropagation(); select(id, true); }
@@ -126,6 +142,20 @@ function init() {
     el.addEventListener('pointerenter', event => { if (event.pointerType === 'mouse') highlight(id); });
     el.addEventListener('pointerleave', () => highlight(selected));
   });
+  document.querySelectorAll('.genealogy-graduates [data-person]').forEach(link => {
+    link.addEventListener('click', event => {
+      event.preventDefault();
+      svg.focus({preventScroll: true});
+      select(link.dataset.person, true);
+      stage.scrollIntoView({block: 'center'});
+    });
+  });
+  // Open the text alternative for fragment links, including no-script navigation.
+  function revealRecord() {
+    if (location.hash.startsWith('#record-')) document.getElementById('genealogy-text-view').open = true;
+  }
+  window.addEventListener('hashchange', revealRecord);
+  revealRecord();
   document.getElementById('genealogy-search').addEventListener('submit', event => {
     event.preventDefault();
     const query = normalizeName(document.getElementById('ancestor-search').value.trim());

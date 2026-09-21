@@ -1,0 +1,523 @@
+{
+  "source": "https://query.wikidata.org/",
+  "match": "Wikidata P549 (Mathematics Genealogy Project ID) and English Wikipedia sitelink",
+  "retrieved": "2026-09-17",
+  "links": {
+    "126177": {
+      "url": "https://en.wikipedia.org/wiki/Nicolaus_Copernicus",
+      "wikidata": "https://www.wikidata.org/entity/Q619"
+    },
+    "125561": {
+      "url": "https://en.wikipedia.org/wiki/Christiaan_Huygens",
+      "wikidata": "https://www.wikidata.org/entity/Q39599"
+    },
+    "298616": {
+      "url": "https://en.wikipedia.org/wiki/Avicenna",
+      "wikidata": "https://www.wikidata.org/entity/Q8011"
+    },
+    "60985": {
+      "url": "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz",
+      "wikidata": "https://www.wikidata.org/entity/Q9047"
+    },
+    "126667": {
+      "url": "https://en.wikipedia.org/wiki/Jacob_Milich",
+      "wikidata": "https://www.wikidata.org/entity/Q77962"
+    },
+    "127011": {
+      "url": "https://en.wikipedia.org/wiki/Johann_Hommel",
+      "wikidata": "https://www.wikidata.org/entity/Q78090"
+    },
+    "126887": {
+      "url": "https://en.wikipedia.org/wiki/Johannes_von_Gmunden",
+      "wikidata": "https://www.wikidata.org/entity/Q78955"
+    },
+    "126087": {
+      "url": "https://en.wikipedia.org/wiki/Georg_von_Peuerbach",
+      "wikidata": "https://www.wikidata.org/entity/Q84289"
+    },
+    "126888": {
+      "url": "https://en.wikipedia.org/wiki/Luca_Pacioli",
+      "wikidata": "https://www.wikidata.org/entity/Q87620"
+    },
+    "128348": {
+      "url": "https://en.wikipedia.org/wiki/Paul_Wittich",
+      "wikidata": "https://www.wikidata.org/entity/Q88089"
+    },
+    "126827": {
+      "url": "https://en.wikipedia.org/wiki/Georg_Joachim_Rheticus",
+      "wikidata": "https://www.wikidata.org/entity/Q93588"
+    },
+    "137705": {
+      "url": "https://en.wikipedia.org/wiki/Jakob_Thomasius",
+      "wikidata": "https://www.wikidata.org/entity/Q67323"
+    },
+    "127107": {
+      "url": "https://en.wikipedia.org/wiki/Johannes_St%C3%B6ffler",
+      "wikidata": "https://www.wikidata.org/entity/Q71302"
+    },
+    "127264": {
+      "url": "https://en.wikipedia.org/wiki/Henry_of_Langenstein",
+      "wikidata": "https://www.wikidata.org/entity/Q71997"
+    },
+    "60984": {
+      "url": "https://en.wikipedia.org/wiki/Erhard_Weigel",
+      "wikidata": "https://www.wikidata.org/entity/Q73014"
+    },
+    "143630": {
+      "url": "https://en.wikipedia.org/wiki/Friedrich_Leibniz",
+      "wikidata": "https://www.wikidata.org/entity/Q75925"
+    },
+    "126109": {
+      "url": "https://en.wikipedia.org/wiki/Regiomontanus",
+      "wikidata": "https://www.wikidata.org/entity/Q76365"
+    },
+    "126956": {
+      "url": "https://en.wikipedia.org/wiki/Philipp_Melanchthon",
+      "wikidata": "https://www.wikidata.org/entity/Q76325"
+    },
+    "47793": {
+      "url": "https://en.wikipedia.org/wiki/Christian_Wolff_(philosopher)",
+      "wikidata": "https://www.wikidata.org/entity/Q76510"
+    },
+    "113719": {
+      "url": "https://en.wikipedia.org/wiki/Ehrenfried_Walther_von_Tschirnhaus",
+      "wikidata": "https://www.wikidata.org/entity/Q77288"
+    },
+    "217509": {
+      "url": "https://en.wikipedia.org/wiki/Nasir_al-Din_al-Tusi",
+      "wikidata": "https://www.wikidata.org/entity/Q302835"
+    },
+    "167682": {
+      "url": "https://en.wikipedia.org/wiki/Carl_Johan_Malmsten",
+      "wikidata": "https://www.wikidata.org/entity/Q1039038"
+    },
+    "298290": {
+      "url": "https://en.wikipedia.org/wiki/Gasparino_Barzizza",
+      "wikidata": "https://www.wikidata.org/entity/Q1236187"
+    },
+    "128122": {
+      "url": "https://en.wikipedia.org/wiki/Duncan_Liddel",
+      "wikidata": "https://www.wikidata.org/entity/Q1265422"
+    },
+    "782": {
+      "url": "https://en.wikipedia.org/wiki/Ernst_Leonard_Lindel%C3%B6f",
+      "wikidata": "https://www.wikidata.org/entity/Q924443"
+    },
+    "131576": {
+      "url": "https://en.wikipedia.org/wiki/Demetrios_Chalkokondyles",
+      "wikidata": "https://www.wikidata.org/entity/Q983661"
+    },
+    "134780": {
+      "url": "https://en.wikipedia.org/wiki/Demetrios_Kydones",
+      "wikidata": "https://www.wikidata.org/entity/Q983688"
+    },
+    "199357": {
+      "url": "https://en.wikipedia.org/wiki/Nicole_Oresme",
+      "wikidata": "https://www.wikidata.org/entity/Q310777"
+    },
+    "126489": {
+      "url": "https://en.wikipedia.org/wiki/Jacobus_Arminius",
+      "wikidata": "https://www.wikidata.org/entity/Q313070"
+    },
+    "152903": {
+      "url": "https://en.wikipedia.org/wiki/Pietro_Pomponazzi",
+      "wikidata": "https://www.wikidata.org/entity/Q318787"
+    },
+    "125159": {
+      "url": "https://en.wikipedia.org/wiki/Immanuel_Tremellius",
+      "wikidata": "https://www.wikidata.org/entity/Q323341"
+    },
+    "298304": {
+      "url": "https://en.wikipedia.org/wiki/Giovanni_Conversini",
+      "wikidata": "https://www.wikidata.org/entity/Q328150"
+    },
+    "125047": {
+      "url": "https://en.wikipedia.org/wiki/Petrus_Ramus",
+      "wikidata": "https://www.wikidata.org/entity/Q376124"
+    },
+    "179836": {
+      "url": "https://en.wikipedia.org/wiki/Geert_Groote",
+      "wikidata": "https://www.wikidata.org/entity/Q467242"
+    },
+    "184632": {
+      "url": "https://en.wikipedia.org/wiki/Manuel_Bryennios",
+      "wikidata": "https://www.wikidata.org/entity/Q12880655"
+    },
+    "152904": {
+      "url": "https://en.wikipedia.org/wiki/Johannes_Baptista_Montanus",
+      "wikidata": "https://www.wikidata.org/entity/Q1697209"
+    },
+    "125124": {
+      "url": "https://en.wikipedia.org/wiki/Johannes_Heurnius",
+      "wikidata": "https://www.wikidata.org/entity/Q1697683"
+    },
+    "125894": {
+      "url": "https://en.wikipedia.org/wiki/Martinus_Dorpius",
+      "wikidata": "https://www.wikidata.org/entity/Q2050711"
+    },
+    "232228": {
+      "url": "https://en.wikipedia.org/wiki/Paolo_della_Pergola",
+      "wikidata": "https://www.wikidata.org/entity/Q2050459"
+    },
+    "230926": {
+      "url": "https://en.wikipedia.org/wiki/Sharaf_al-Din_al-Tusi",
+      "wikidata": "https://www.wikidata.org/entity/Q2342579"
+    },
+    "146365": {
+      "url": "https://en.wikipedia.org/wiki/Neilos_Kabasilas",
+      "wikidata": "https://www.wikidata.org/entity/Q3041512"
+    },
+    "148882": {
+      "url": "https://en.wikipedia.org/wiki/Gaetano_da_Thiene_(philosopher)",
+      "wikidata": "https://www.wikidata.org/entity/Q3099938"
+    },
+    "152902": {
+      "url": "https://en.wikipedia.org/wiki/Nicoletto_Vernia",
+      "wikidata": "https://www.wikidata.org/entity/Q3876500"
+    },
+    "130248": {
+      "url": "https://en.wikipedia.org/wiki/Petrus_Ryff",
+      "wikidata": "https://www.wikidata.org/entity/Q7179222"
+    },
+    "128921": {
+      "url": "https://en.wikipedia.org/wiki/Jean_Tagault",
+      "wikidata": "https://www.wikidata.org/entity/Q100550117"
+    },
+    "223724": {
+      "url": "https://en.wikipedia.org/wiki/Kamal_al-Din_ibn_Yunus",
+      "wikidata": "https://www.wikidata.org/entity/Q26215542"
+    },
+    "114992": {
+      "url": "https://en.wikipedia.org/wiki/Gilbert_Jack",
+      "wikidata": "https://www.wikidata.org/entity/Q5561001"
+    },
+    "24894": {
+      "url": "https://en.wikipedia.org/wiki/G%C3%B6ran_Dillner",
+      "wikidata": "https://www.wikidata.org/entity/Q20095476"
+    },
+    "164338": {
+      "url": "https://en.wikipedia.org/wiki/Sigismondo_Polcastro",
+      "wikidata": "https://www.wikidata.org/entity/Q26763925"
+    },
+    "125681": {
+      "url": "https://en.wikipedia.org/wiki/Jacobus_Latomus",
+      "wikidata": "https://www.wikidata.org/entity/Q3159274"
+    },
+    "152905": {
+      "url": "https://en.wikipedia.org/wiki/Vittore_Trincavelli",
+      "wikidata": "https://www.wikidata.org/entity/Q3561345"
+    },
+    "316873": {
+      "url": "https://en.wikipedia.org/wiki/Qumri",
+      "wikidata": "https://www.wikidata.org/entity/Q4116613"
+    },
+    "20543": {
+      "url": "https://en.wikipedia.org/wiki/J%C3%B6ns_Svanberg",
+      "wikidata": "https://www.wikidata.org/entity/Q4409938"
+    },
+    "128305": {
+      "url": "https://en.wikipedia.org/wiki/John_Craig_(physician)",
+      "wikidata": "https://www.wikidata.org/entity/Q6227473"
+    },
+    "125682": {
+      "url": "https://en.wikipedia.org/wiki/Johannes_Campensis",
+      "wikidata": "https://www.wikidata.org/entity/Q6265913"
+    },
+    "125160": {
+      "url": "https://en.wikipedia.org/wiki/Valentin_Naboth",
+      "wikidata": "https://www.wikidata.org/entity/Q7910793"
+    },
+    "131541": {
+      "url": "https://en.wikipedia.org/wiki/Janus_Lascaris",
+      "wikidata": "https://www.wikidata.org/entity/Q498547"
+    },
+    "125181": {
+      "url": "https://en.wikipedia.org/wiki/Rudolph_Snellius",
+      "wikidata": "https://www.wikidata.org/entity/Q505004"
+    },
+    "125390": {
+      "url": "https://en.wikipedia.org/wiki/Pieter_Pauw",
+      "wikidata": "https://www.wikidata.org/entity/Q531788"
+    },
+    "298288": {
+      "url": "https://en.wikipedia.org/wiki/George_of_Trebizond",
+      "wikidata": "https://www.wikidata.org/entity/Q533514"
+    },
+    "134931": {
+      "url": "https://en.wikipedia.org/wiki/Guarino_da_Verona",
+      "wikidata": "https://www.wikidata.org/entity/Q539577"
+    },
+    "126736": {
+      "url": "https://en.wikipedia.org/wiki/Erasmus_Reinhold",
+      "wikidata": "https://www.wikidata.org/entity/Q544169"
+    },
+    "125378": {
+      "url": "https://en.wikipedia.org/wiki/Thomas_van_Erpe",
+      "wikidata": "https://www.wikidata.org/entity/Q549214"
+    },
+    "125658": {
+      "url": "https://en.wikipedia.org/wiki/Nicolas_Cleynaerts",
+      "wikidata": "https://www.wikidata.org/entity/Q549782"
+    },
+    "182090": {
+      "url": "https://en.wikipedia.org/wiki/Felix_Platter",
+      "wikidata": "https://www.wikidata.org/entity/Q667732"
+    },
+    "125898": {
+      "url": "https://en.wikipedia.org/wiki/Alexander_Hegius_von_Heek",
+      "wikidata": "https://www.wikidata.org/entity/Q706796"
+    },
+    "127181": {
+      "url": "https://en.wikipedia.org/wiki/Girolamo_Aleandro",
+      "wikidata": "https://www.wikidata.org/entity/Q918330"
+    },
+    "158329": {
+      "url": "https://en.wikipedia.org/wiki/Guillaume_Rondelet",
+      "wikidata": "https://www.wikidata.org/entity/Q960658"
+    },
+    "125755": {
+      "url": "https://en.wikipedia.org/wiki/Jacob_ben_Jehiel_Loans",
+      "wikidata": "https://www.wikidata.org/entity/Q1643182"
+    },
+    "125422": {
+      "url": "https://en.wikipedia.org/wiki/Jacques_Dubois",
+      "wikidata": "https://www.wikidata.org/entity/Q1677782"
+    },
+    "145123": {
+      "url": "https://en.wikipedia.org/wiki/Joannes_Antonides_van_der_Linden",
+      "wikidata": "https://www.wikidata.org/entity/Q1697169"
+    },
+    "232227": {
+      "url": "https://en.wikipedia.org/wiki/Paul_of_Venice",
+      "wikidata": "https://www.wikidata.org/entity/Q2064265"
+    },
+    "125416": {
+      "url": "https://en.wikipedia.org/wiki/Jan_Jansz_de_Jonge_Stampioen",
+      "wikidata": "https://www.wikidata.org/entity/Q2353318"
+    },
+    "119272": {
+      "url": "https://en.wikipedia.org/wiki/Erycius_Puteanus",
+      "wikidata": "https://www.wikidata.org/entity/Q2791618"
+    },
+    "310782": {
+      "url": "https://en.wikipedia.org/wiki/Abu_Sahl_%27Isa_ibn_Yahya_al-Masihi",
+      "wikidata": "https://www.wikidata.org/entity/Q2822092"
+    },
+    "131443": {
+      "url": "https://en.wikipedia.org/wiki/George_Hermonymus",
+      "wikidata": "https://www.wikidata.org/entity/Q3077328"
+    },
+    "201288": {
+      "url": "https://en.wikipedia.org/wiki/Gregory_Chioniades",
+      "wikidata": "https://www.wikidata.org/entity/Q3118446"
+    },
+    "287468": {
+      "url": "https://en.wikipedia.org/wiki/Bahmanyar",
+      "wikidata": "https://www.wikidata.org/entity/Q1151481"
+    },
+    "152901": {
+      "url": "https://en.wikipedia.org/wiki/Marcus_Musurus",
+      "wikidata": "https://www.wikidata.org/entity/Q1242157"
+    },
+    "125408": {
+      "url": "https://en.wikipedia.org/wiki/Jacobus_Golius",
+      "wikidata": "https://www.wikidata.org/entity/Q1368345"
+    },
+    "125006": {
+      "url": "https://en.wikipedia.org/wiki/Adriaan_van_den_Spiegel",
+      "wikidata": "https://www.wikidata.org/entity/Q1378086"
+    },
+    "126112": {
+      "url": "https://en.wikipedia.org/wiki/Domenico_Maria_Novara_da_Ferrara",
+      "wikidata": "https://www.wikidata.org/entity/Q969370"
+    },
+    "145118": {
+      "url": "https://en.wikipedia.org/wiki/Samuel_Klingenstierna",
+      "wikidata": "https://www.wikidata.org/entity/Q980778"
+    },
+    "131444": {
+      "url": "https://en.wikipedia.org/wiki/John_Argyropoulos",
+      "wikidata": "https://www.wikidata.org/entity/Q26648"
+    },
+    "295739": {
+      "url": "https://en.wikipedia.org/wiki/Omar_Khayyam",
+      "wikidata": "https://www.wikidata.org/entity/Q35900"
+    },
+    "119159": {
+      "url": "https://en.wikipedia.org/wiki/Johann_Winter_von_Andernach",
+      "wikidata": "https://www.wikidata.org/entity/Q101736"
+    },
+    "125373": {
+      "url": "https://en.wikipedia.org/wiki/Henricus_Brucaeus",
+      "wikidata": "https://www.wikidata.org/entity/Q109090"
+    },
+    "125148": {
+      "url": "https://en.wikipedia.org/wiki/Theodor_Zwinger",
+      "wikidata": "https://www.wikidata.org/entity/Q116094"
+    },
+    "125125": {
+      "url": "https://en.wikipedia.org/wiki/Emmanuel_Stupanus",
+      "wikidata": "https://www.wikidata.org/entity/Q122732"
+    },
+    "143865": {
+      "url": "https://en.wikipedia.org/wiki/Hjalmar_Mellin",
+      "wikidata": "https://www.wikidata.org/entity/Q155381"
+    },
+    "119178": {
+      "url": "https://en.wikipedia.org/wiki/Andreas_Vesalius",
+      "wikidata": "https://www.wikidata.org/entity/Q170267"
+    },
+    "125938": {
+      "url": "https://en.wikipedia.org/wiki/Erasmus",
+      "wikidata": "https://www.wikidata.org/entity/Q43499"
+    },
+    "125760": {
+      "url": "https://en.wikipedia.org/wiki/Johann_Reuchlin",
+      "wikidata": "https://www.wikidata.org/entity/Q61067"
+    },
+    "125142": {
+      "url": "https://en.wikipedia.org/wiki/Gabriele_Falloppio",
+      "wikidata": "https://www.wikidata.org/entity/Q177869"
+    },
+    "131584": {
+      "url": "https://en.wikipedia.org/wiki/Theodorus_Gaza",
+      "wikidata": "https://www.wikidata.org/entity/Q287485"
+    },
+    "125434": {
+      "url": "https://en.wikipedia.org/wiki/Marin_Mersenne",
+      "wikidata": "https://www.wikidata.org/entity/Q188663"
+    },
+    "125665": {
+      "url": "https://en.wikipedia.org/wiki/Johannes_Sturm",
+      "wikidata": "https://www.wikidata.org/entity/Q66382"
+    },
+    "126659": {
+      "url": "https://en.wikipedia.org/wiki/Ulrich_Zasius",
+      "wikidata": "https://www.wikidata.org/entity/Q69024"
+    },
+    "131561": {
+      "url": "https://en.wikipedia.org/wiki/Bessarion",
+      "wikidata": "https://www.wikidata.org/entity/Q299446"
+    },
+    "125232": {
+      "url": "https://en.wikipedia.org/wiki/Ludolph_van_Ceulen",
+      "wikidata": "https://www.wikidata.org/entity/Q310771"
+    },
+    "131577": {
+      "url": "https://en.wikipedia.org/wiki/Joseph_Justus_Scaliger",
+      "wikidata": "https://www.wikidata.org/entity/Q315163"
+    },
+    "119254": {
+      "url": "https://en.wikipedia.org/wiki/Justus_Lipsius",
+      "wikidata": "https://www.wikidata.org/entity/Q315871"
+    },
+    "119293": {
+      "url": "https://en.wikipedia.org/wiki/Arnold_Geulincx",
+      "wikidata": "https://www.wikidata.org/entity/Q316559"
+    },
+    "131539": {
+      "url": "https://en.wikipedia.org/wiki/Marsilio_Ficino",
+      "wikidata": "https://www.wikidata.org/entity/Q192374"
+    },
+    "141571": {
+      "url": "https://en.wikipedia.org/wiki/Thomas_Cranmer",
+      "wikidata": "https://www.wikidata.org/entity/Q199894"
+    },
+    "101860": {
+      "url": "https://en.wikipedia.org/wiki/Franciscus_Sylvius",
+      "wikidata": "https://www.wikidata.org/entity/Q316996"
+    },
+    "127245": {
+      "url": "https://en.wikipedia.org/wiki/Antonio_Musa_Brassavola",
+      "wikidata": "https://www.wikidata.org/entity/Q338661"
+    },
+    "131517": {
+      "url": "https://en.wikipedia.org/wiki/Guillaume_Bud%C3%A9",
+      "wikidata": "https://www.wikidata.org/entity/Q353668"
+    },
+    "19770": {
+      "url": "https://en.wikipedia.org/wiki/G%C3%B6sta_Mittag-Leffler",
+      "wikidata": "https://www.wikidata.org/entity/Q357154"
+    },
+    "128012": {
+      "url": "https://en.wikipedia.org/wiki/Rodolphus_Agricola",
+      "wikidata": "https://www.wikidata.org/entity/Q365557"
+    },
+    "125023": {
+      "url": "https://en.wikipedia.org/wiki/Adolphus_Vorstius",
+      "wikidata": "https://www.wikidata.org/entity/Q366020"
+    },
+    "125303": {
+      "url": "https://en.wikipedia.org/wiki/Realdo_Colombo",
+      "wikidata": "https://www.wikidata.org/entity/Q367016"
+    },
+    "131606": {
+      "url": "https://en.wikipedia.org/wiki/Adrianus_Turnebus",
+      "wikidata": "https://www.wikidata.org/entity/Q376210"
+    },
+    "135185": {
+      "url": "https://en.wikipedia.org/wiki/Manuel_Chrysoloras",
+      "wikidata": "https://www.wikidata.org/entity/Q434356"
+    },
+    "131575": {
+      "url": "https://en.wikipedia.org/wiki/Gemistos_Plethon",
+      "wikidata": "https://www.wikidata.org/entity/Q220313"
+    },
+    "140181": {
+      "url": "https://en.wikipedia.org/wiki/Thomas_%C3%A0_Kempis",
+      "wikidata": "https://www.wikidata.org/entity/Q220976"
+    },
+    "125109": {
+      "url": "https://en.wikipedia.org/wiki/Hieronymus_Fabricius",
+      "wikidata": "https://www.wikidata.org/entity/Q435296"
+    },
+    "119097": {
+      "url": "https://en.wikipedia.org/wiki/Gemma_Frisius",
+      "wikidata": "https://www.wikidata.org/entity/Q455406"
+    },
+    "179837": {
+      "url": "https://en.wikipedia.org/wiki/Florens_Radewyns",
+      "wikidata": "https://www.wikidata.org/entity/Q545343"
+    },
+    "20493": {
+      "url": "https://en.wikipedia.org/wiki/Arto_Salomaa",
+      "wikidata": "https://www.wikidata.org/entity/Q578300"
+    },
+    "184631": {
+      "url": "https://en.wikipedia.org/wiki/Theodore_Metochites",
+      "wikidata": "https://www.wikidata.org/entity/Q221657"
+    },
+    "176844": {
+      "url": "https://en.wikipedia.org/wiki/Gregory_Palamas",
+      "wikidata": "https://www.wikidata.org/entity/Q243787"
+    },
+    "127166": {
+      "url": "https://en.wikipedia.org/wiki/Niccol%C3%B2_Leoniceno",
+      "wikidata": "https://www.wikidata.org/entity/Q711573"
+    },
+    "131540": {
+      "url": "https://en.wikipedia.org/wiki/Cristoforo_Landino",
+      "wikidata": "https://www.wikidata.org/entity/Q711964"
+    },
+    "125888": {
+      "url": "https://en.wikipedia.org/wiki/Jan_Standonck",
+      "wikidata": "https://www.wikidata.org/entity/Q716415"
+    },
+    "134873": {
+      "url": "https://en.wikipedia.org/wiki/Vittorino_da_Feltre",
+      "wikidata": "https://www.wikidata.org/entity/Q725843"
+    },
+    "125450": {
+      "url": "https://en.wikipedia.org/wiki/Frans_van_Schooten",
+      "wikidata": "https://www.wikidata.org/entity/Q767210"
+    },
+    "125302": {
+      "url": "https://en.wikipedia.org/wiki/Willebrord_Snellius",
+      "wikidata": "https://www.wikidata.org/entity/Q244152"
+    },
+    "131535": {
+      "url": "https://en.wikipedia.org/wiki/Poliziano",
+      "wikidata": "https://www.wikidata.org/entity/Q250414"
+    }
+  }
+}

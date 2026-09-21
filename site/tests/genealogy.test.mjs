@@ -20,8 +20,15 @@ test('name search handles accents and case', () => {
   assert.equal(normalizeName('VÄISÄLÄ'), normalizeName('Vaisala'));
 });
 
-test('snapshot is complete, unique, acyclic, connected, and fully represented in SVG', () => {
-  const data = JSON.parse(readFileSync(new URL('../genealogy/data.json', import.meta.url)));
+test('graduate selection traces supervision in the correct direction', () => {
+  const nodes = [{id:'advisor',advisors:[]},{id:'me',advisors:['advisor']},{id:'graduate',advisors:['me']}];
+  const path = pathsToRoot(nodes, 'graduate', 'me');
+  assert.deepEqual([...path.people].sort(), ['graduate','me']);
+  assert.deepEqual([...path.edges], ['edge-me-graduate']);
+});
+
+test('snapshot includes ancestors and graduates once, is acyclic, and matches the SVG', () => {
+  const data = JSON.parse(readFileSync(new URL('../../assets/genealogy/data.json', import.meta.url)));
   const svg = readFileSync(new URL('../../assets/genealogy/ancestry.svg', import.meta.url), 'utf8').replaceAll('&#45;', '-');
   const page = readFileSync(new URL('../../genealogy/index.html', import.meta.url), 'utf8');
   assert.match(page, /<svg\s+id="ancestry-graph"/);
@@ -44,6 +51,22 @@ test('snapshot is complete, unique, acyclic, connected, and fully represented in
     visiting.delete(id); seen.add(id);
   }
   visit(data.root);
+  const graduates = data.nodes.filter(n => n.kind === 'graduate');
+  assert.equal(graduates.length, 8);
+  for (const graduate of graduates) {
+    assert.deepEqual(graduate.advisors, [data.root]);
+    visit(graduate.id);
+  }
   assert.equal(seen.size, nodes.size);
   assert.ok(data.nodes.some(n => n.advisors.length > 1));
+  for (const n of data.nodes) {
+    if (n.wikipedia) {
+      assert.ok(n.wikipedia.startsWith('https://en.wikipedia.org/wiki/'));
+      assert.ok(n.wikidata.startsWith('https://www.wikidata.org/entity/Q'));
+      assert.ok(page.includes(n.wikipedia));
+    }
+    if (n.id.startsWith('local-')) assert.match(n.source_label, /local alumni record/);
+  }
+  assert.equal(nodes.get('60985').wikipedia, 'https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz');
+  assert.ok(graduates.some(n => n.other_advisors.length > 0));
 });

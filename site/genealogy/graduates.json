@@ -1,0 +1,137 @@
+{
+  "source": "https://ashutoshtrivedi.com/students/#phd-alumni",
+  "nodes": [
+    {
+      "id": "264087",
+      "name": "Saeid Tizpaz-Niari",
+      "degree": "Ph.D. University of Colorado at Boulder 2020",
+      "thesis": "Differential Performance Debugging and its application to side-channel analysis",
+      "advisors": [
+        "136067"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=264087",
+      "other_advisors": [
+        {
+          "name": "Pavol Cerny",
+          "url": "https://www.mathgenealogy.org/id.php?id=159632"
+        }
+      ],
+      "kind": "graduate",
+      "source_label": "MGP record",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "266409",
+      "name": "Devendra Bhave",
+      "degree": "Ph.D. Indian Institute of Technology, Mumbai 2020",
+      "thesis": "Perfect Subclasses of Real-time Recursive Systems",
+      "advisors": [
+        "136067"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=266409",
+      "other_advisors": [
+        {
+          "name": "Krishna Shankara Narayanan",
+          "url": "https://www.mathgenealogy.org/id.php?id=266410"
+        }
+      ],
+      "kind": "graduate",
+      "source_label": "MGP record",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "298560",
+      "name": "Tianhan Lu",
+      "degree": "Ph.D. University of Colorado at Boulder 2023",
+      "thesis": "Selectively-Amortized Resource Bounding",
+      "advisors": [
+        "136067"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=298560",
+      "other_advisors": [
+        {
+          "name": "Bor-Yuh Evan Chang",
+          "url": "https://www.mathgenealogy.org/id.php?id=131902"
+        }
+      ],
+      "kind": "graduate",
+      "source_label": "MGP record",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "316247",
+      "name": "Taylor Dohmen",
+      "degree": "Ph.D. University of Colorado at Boulder 2024",
+      "thesis": "Regular Transformations in Sequential Optimization & Reinforcement Learning",
+      "advisors": [
+        "136067"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=316247",
+      "other_advisors": [],
+      "kind": "graduate",
+      "source_label": "MGP record",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "330800",
+      "name": "John Komp",
+      "degree": "Ph.D. University of Colorado at Boulder 2024",
+      "thesis": "From Text to Life: Optimized Pacemaker Therapy Through Formal Methods and Safe Reinforcement Learning",
+      "advisors": [
+        "136067"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=330800",
+      "other_advisors": [],
+      "kind": "graduate",
+      "source_label": "MGP record",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "324050",
+      "name": "Vishnu Murali",
+      "degree": "Ph.D. University of Colorado at Boulder 2024",
+      "thesis": "Inductive Functional Proofs Beyond Barrier Certificates",
+      "advisors": [
+        "136067"
+      ],
+      "url": "https://www.mathgenealogy.org/id.php?id=324050",
+      "other_advisors": [
+        {
+          "name": "Majid Zamani",
+          "url": "https://www.mathgenealogy.org/id.php?id=263619"
+        }
+      ],
+      "kind": "graduate",
+      "source_label": "MGP record",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "local-mateo-perez",
+      "name": "Mateo Perez",
+      "degree": "Ph.D. 2025",
+      "thesis": "",
+      "advisors": [
+        "136067"
+      ],
+      "other_advisors": [],
+      "kind": "graduate",
+      "url": "https://ashutoshtrivedi.com/students/#phd-alumni",
+      "source_label": "People page (local alumni record)",
+      "retrieved": "2026-09-17"
+    },
+    {
+      "id": "local-shadi-tasdighi-kalat",
+      "name": "Shadi Tasdighi-Kalat",
+      "degree": "Ph.D. 2025",
+      "thesis": "",
+      "advisors": [
+        "136067"
+      ],
+      "other_advisors": [],
+      "kind": "graduate",
+      "url": "https://ashutoshtrivedi.com/students/#phd-alumni",
+      "source_label": "People page (local alumni record)",
+      "retrieved": "2026-09-17"
+    }
+  ]
+}
