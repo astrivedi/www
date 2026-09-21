@@ -28,13 +28,15 @@ Legacy Jekyll source is retained under `site/source` for reference; its layouts 
 
 ## Academic genealogy
 
-`/genealogy/` displays the full cached MGP advisor ancestry of record 136067. Shared ancestors appear once and every listed advisor is retained. Graduated students remain on the People page, so the ancestry does not conflate MGP records with local alumni additions.
+`/genealogy/` displays the full cached MGP advisor ancestry of record 136067 and his eight PhD graduates. Shared ancestors appear once and every listed ancestral advisor is retained. Graduate branches show his supervision; other MGP-listed advisors are named in details, without adding their ancestries. Local alumni additions are labeled separately from MGP records.
 
 - Refresh public records explicitly: `python3 site/genealogy-fetch.py --refresh`. Fetches are sequential, delayed, retried, and cached under ignored `site/cache/genealogy/`. Without `--refresh`, existing cached records are reused. A failed fetch or a cycle prevents replacement of the complete snapshot.
 - `site/genealogy/data.json` is the versioned snapshot, with per-record retrieval dates and source URLs. No network requests are made by the webpage or normal build.
+- `site/genealogy/graduates.json` maintains the graduated PhD students, source labels, and co-advisor metadata. The ancestry refresh does not overwrite this file. Mateo Perez and Shadi Tasdighi-Kalat are locally sourced from the People page.
+- Refresh English Wikipedia links with `python3 site/genealogy-wikipedia.py`. This matches exact MGP IDs through Wikidata P549, rejects ambiguous matches, and stores results in `site/genealogy/wikipedia.json`. Links appear in selected-person details and the text table; exported PDF/SVG nodes link to Wikipedia where available, otherwise to their source record.
 - `site/genealogy-render.py` uses Graphviz `dot` (required for builds) to generate SVG/PDF exports and the accessible page markup. The regular Ruby build invokes it. Python 3 requires no extra packages.
 - `site/genealogy.mjs` provides pan, pinch/modified-wheel zoom, keyboard navigation, search, overview, and highlighting of all paths to the focal person. `site/genealogy.css` styles the view. The static graph, text table, and downloads work without JavaScript.
-- Verify: `node --test site/tests/genealogy.test.mjs`, then `python3 site/validate.py`.
+- Verify: `node --test site/tests/genealogy.test.mjs`, `python3 site/tests/genealogy_fetch_test.py`, then `python3 site/validate.py`.
 
 The ancestor closure is complete relative to MGP's recorded links, not the historical record; terminal nodes mean no advisor was recorded. Historical mentorship is not relabeled as a modern doctorate. Rebuild and commit the source snapshot together with generated pages and assets.
 
