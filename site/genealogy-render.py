@@ -87,7 +87,7 @@ def main():
 <form id="genealogy-search"><label for="ancestor-search">Find a person</label><div class="genealogy-search-row"><input id="ancestor-search" list="ancestor-names" type="search" autocomplete="off" placeholder="Name"/><datalist id="ancestor-names">{''.join(options)}</datalist><button type="submit">Find</button></div></form>
 <div class="genealogy-buttons"><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-out" aria-label="Zoom out">−</button><button type="button" id="fit-graph">Whole graph</button><button type="button" id="focus-root">Start with me</button><button type="button" id="clear-path">Clear highlight</button><button type="button" id="expand-graph">Full screen</button></div>
 </div>
-<p class="genealogy-help">Ancestors above me; PhD graduates below, shaded green. Arrows point from advisor to student. <span class="interactive-help" hidden>Drag to pan; use +/− or pinch to zoom. Select a person for their connections and Wikipedia link, when available. Arrow keys pan the focused graph.</span></p>
+<p class="genealogy-help">Ancestors above me; PhD graduates below, shaded green. Arrows point from advisor to student. <span class="interactive-help" hidden>Drag to pan; use +/− or pinch to zoom. Click a person to highlight their connections and open Wikipedia in a new tab, when available. Arrow keys pan the focused graph.</span></p>
 <div class="genealogy-stage">{svg}<div class="genealogy-overview" hidden><span>Overview</span><svg id="ancestry-overview" aria-label="Ancestry overview"></svg></div></div>
 <p id="genealogy-selection" aria-live="polite">Select a name to explore its connections.</p>
 </section>

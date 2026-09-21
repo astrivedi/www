@@ -127,15 +127,20 @@ function init() {
     }
     if (navigate) center(id);
   }
+  function activate(id, navigate = false) {
+    select(id, navigate);
+    const wikipedia = nodes.get(id).wikipedia;
+    if (wikipedia) window.open(wikipedia, '_blank', 'noopener,noreferrer');
+  }
   nodeElements.forEach(el => {
     const id = el.id.replace('person-', '');
     el.classList.toggle('graduate', nodes.get(id).kind === 'graduate');
     el.setAttribute('role', 'button');
     el.setAttribute('tabindex', '0');
-    el.setAttribute('aria-label', `${nodes.get(id).name}. ${nodes.get(id).degree}. Show connections${nodes.get(id).wikipedia ? ' and Wikipedia link' : ''}.`);
-    el.addEventListener('click', () => { if (!moved) select(id); });
+    el.setAttribute('aria-label', `${nodes.get(id).name}. ${nodes.get(id).degree}. Show connections${nodes.get(id).wikipedia ? ' and open Wikipedia in a new tab' : ''}.`);
+    el.addEventListener('click', () => { if (!moved) activate(id); });
     el.addEventListener('keydown', event => {
-      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.stopPropagation(); select(id, true); }
+      if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); event.stopPropagation(); activate(id, true); }
     });
     el.addEventListener('focus', () => { if (el.matches(':focus-visible')) center(id); highlight(id); });
     el.addEventListener('blur', () => highlight(selected));
