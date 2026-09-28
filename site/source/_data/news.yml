@@ -1,3 +1,9 @@
+- date: "Sep 14, 2026"
+  datetime: "2026-09-14"
+  featured: true
+  summary: 'Gave <a href="https://calendar.colorado.edu/event/beyond-the-bytes-ashutosh-trivedi-on-how-do-we-know-an-algorithm-is-treating-us-fairly">How do we know an algorithm is treating us fairly?</a> in CU Boulder’s Beyond the Bytes faculty speaker series. <a href="/assets/talks/beyond-the-bytes-2026-09-14.pdf">Slides (PDF)</a>.'
+  text: 'Gave <a href="https://calendar.colorado.edu/event/beyond-the-bytes-ashutosh-trivedi-on-how-do-we-know-an-algorithm-is-treating-us-fairly">How do we know an algorithm is treating us fairly?</a> in CU Boulder’s Beyond the Bytes faculty speaker series, introducing hyperproperties through fairness, privacy, and legal-compliance examples. <a href="/assets/talks/beyond-the-bytes-2026-09-14.pdf">Download the slides with references (PDF, 23 MB)</a>.'
+
 - date: "Sep 2026"
   featured: true
   summary: '<a href="https://doi.org/10.1145/3744916.3773175">On the Robustness of Fairness Practices</a> appeared in ICSE 2026.'
