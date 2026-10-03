@@ -114,33 +114,23 @@ NEWS = YAML.load_file(File.join(SRC,'_data/news.yml')).reject { |item| item['dra
 def news_rows(items, compact: false)
   '<ul class="news">'+items.map{|n| '<li><time datetime="'+(n['datetime'] || Date.strptime(n['date'],'%b %Y').strftime('%Y-%m'))+'">'+esc(n['date'])+'</time><div>'+(compact ? (n['summary'] || n['text']) : n['text'])+'</div></li>'}.join+'</ul>'
 end
-selected = {
-  '2024-cav-regular-rl' => 'A symbolic approach to reinforcement learning that represents sets of states with regular languages and transitions with rational transductions.',
-  '2022-neurips-rrl' => 'Foundations for learning in recursive decision processes with an unbounded call structure.',
-  '2024-hscc-closure-certificates' => 'Transition-based certificates that extend safety reasoning to richer temporal properties of dynamical systems.',
-  '2025-neus-stochastic-neural-simulation' => 'Neural simulation relations for transferring controllers between stochastic systems with probabilistic guarantees.',
-  '2025-icse-fairness-evt' => 'Extreme value theory for measuring and mitigating worst-case discrimination in machine-learning software.'
-}
-def contribution(p, summary)
-  "<li><h3><a href=\"/papers/#{p['slug']}/\">#{esc(p['title'])}</a></h3><p>#{esc(summary)}</p><p class=\"contribution-venue\">#{esc(venue(p))}#{p['award'] ? ' · '+esc(p['award']) : ''}</p><p class=\"resources\">#{resources(p)}</p></li>"
+selected = %w[2024-cav-regular-rl 2024-hscc-closure-certificates 2025-icse-fairness-evt]
+def contribution(p)
+  award = p['award'] ? '<span class="contribution-award">'+esc(p['award'])+'</span>' : ''
+  %(<li><p class="contribution-theme">#{esc(p['research_question'])}</p><h3><a href="/papers/#{p['slug']}/">#{esc(p['title'])}</a></h3><p>#{esc(p['plain_summary'])}</p><p class="contribution-venue">#{esc(venue(p))}#{award}</p><p class="resources">#{resources(p)}</p></li>)
 end
 home = <<~HTML
 <section class="intro" aria-labelledby="name">
 <div><h1 id="name">Ashutosh Trivedi</h1><p class="affiliation">Associate Professor of Computer Science<br>University of Colorado Boulder</p>
-<p>I work on formal methods for reinforcement learning, trustworthy AI, and safety-critical software and cyber-physical systems.</p>
-<p>My research combines verification, learning, and symbolic reasoning to make intelligent systems safer, fairer, and easier to explain.</p>
-<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="/genealogy/">Academic genealogy</a></p><p class="profile-links prospective"><a href="/students/#join-the-group">Prospective students</a> · <a href="mailto:ashutosh.trivedi@colorado.edu">Email</a></p></div>
+<p class="research-lead">I develop mathematical foundations and tools for trustworthy AI systems that learn and make decisions under uncertainty while satisfying formal guarantees.</p>
+<p>My research brings together reinforcement learning, formal verification, and symbolic reasoning, with applications to safety-critical control and accountable software.</p>
+<p class="profile-links intro-actions"><a href="/research/">Explore research</a> · <a href="/students/#join-the-group">Prospective students</a></p>
+<p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="/genealogy/">Academic genealogy</a> · <a href="mailto:ashutosh.trivedi@colorado.edu">Email</a></p></div>
 <img src="/images/ashutosh-trivedi.jpg" width="220" height="220" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 </section>
-<section aria-labelledby="research"><h2 id="research">Research</h2>
-<ul class="research-themes" role="list">
-<li><h3><a href="/research/#formal-foundations">Foundations of Learning and Decision-Making</a></h3><p>How can formal methods advance reinforcement learning and decision-making with rich objectives, structured environments, and differing time preferences?</p></li>
-<li><h3><a href="/research/#verified-learning-control">Verification for Learning and Control</a></h3><p>How can we provide formal guarantees for learned controllers operating under uncertainty?</p></li>
-<li><h3><a href="/research/#auditable-ai-software">Accountable AI and Software</a></h3><p>How can we detect failures, explain decisions, and assess fairness in consequential software?</p></li>
-</ul></section>
-<section aria-labelledby="selected"><h2 id="selected">Selected Contributions</h2><ol class="home-contributions" role="list">#{selected.map{|slug, summary| contribution(PAPERS.find{|p| p['slug']==slug}, summary)}.join}</ol><p class="more"><a href="/publications/">All publications</a></p></section>
 <section aria-labelledby="news"><h2 id="news">Recent News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(4), compact: true)}<p class="more"><a href="/news/">All news</a></p></section>
-<section aria-labelledby="students"><h2 id="students">Students</h2><p>I work with students and postdoctoral researchers in the <a href="https://plv.colorado.edu/">Programming Languages and Verification (CUPLV)</a> group.</p><p><a href="/students/">Current students, collaborators, and alumni</a> · <a href="/students/#group-life">Group life through the years</a></p></section>
+<section aria-labelledby="selected"><h2 id="selected">Selected Contributions</h2><ol class="home-contributions" role="list">#{selected.map{|slug| contribution(PAPERS.find{|p| p['slug']==slug})}.join}</ol><p class="more"><a href="/research/#selected-contributions">More research contributions</a> · <a href="/publications/">All publications</a></p></section>
+<section aria-labelledby="students"><h2 id="students">Students and Group</h2><p>I work with students and postdoctoral researchers in the <a href="https://plv.colorado.edu/">Programming Languages and Verification (CUPLV)</a> group.</p><p><a href="/students/">People</a> · <a href="/students/#join-the-group">Join the group</a> · <a href="/students/#group-life">Group life through the years</a></p></section>
 <section aria-labelledby="teaching"><h2 id="teaching">Teaching</h2><p>I teach theoretical computer science, reinforcement learning, and cyber-physical systems.</p><p><a href="/teaching/">Courses and teaching history</a></p></section>
 HTML
 page('/','Home','Ashutosh Trivedi, Associate Professor of Computer Science at CU Boulder. Research in formal methods, reinforcement learning, trustworthy AI, and cyber-physical systems.',home)
@@ -251,7 +241,7 @@ HTML
 page('/research/','Research','Ashutosh Trivedi’s research on foundations of learning and decision-making, verification for learning and control, and accountable AI and software.',research)
 all_publications = (PAPERS + JSON.parse(File.read(File.join(SRC, '_data/dblp-publications.json')))).sort_by { |p| [-p['year'], p['title']] }
 years=all_publications.map{|p|p['year']}.uniq
-pubs='<h1>Publications</h1><p>Papers and preprints, with bibliographic records from DBLP and links to available manuscripts. Preprints are labeled; matching preprint and published records are listed once. See also <a href="'+LINKS['scholar']+'">Google Scholar</a>, <a href="'+LINKS['dblp']+'">DBLP</a>, and my <a href="/cv/">CV</a>.</p>'
+pubs='<h1>Publications</h1><p>Browse papers and preprints by topic, title, or author. See also <a href="'+LINKS['scholar']+'">Google Scholar</a>, <a href="'+LINKS['dblp']+'">DBLP</a>, and my <a href="/cv/">CV</a>.</p>'
 pubs+='<form id="publication-filters" class="publication-filters" role="search" hidden><div><label for="paper-search">Search publications</label><input id="paper-search" type="search" placeholder="Title, author, or keyword" autocomplete="off"></div><div><label for="paper-topic">Topic</label><select id="paper-topic"><option value="">All topics</option>'+TOPICS.map{|key,(label,_)| '<option value="'+key+'">'+label+'</option>'}.join+'</select></div><button type="reset">Clear filters</button><p id="publication-count" role="status" aria-live="polite" aria-atomic="true"></p></form><p id="publication-empty" hidden>No publications match these filters. Try another term or clear the filters.</p>'
 pubs+='<nav class="year-nav" aria-label="Publication years">'+years.map{|y|"<a href=\"#year-#{y}\">#{y}</a>"}.join+'</nav>'
 years.each{|y|pubs+="<section class=\"publication-year\" aria-labelledby=\"year-#{y}\"><h2 id=\"year-#{y}\">#{y}</h2><ol class=\"publications\">"+all_publications.select{|p|p['year']==y}.map{|p|entry(p)}.join+'</ol></section>'}
@@ -269,6 +259,7 @@ all_publications.each do |p|
   body='<p class="back"><a href="/publications/">Publications</a></p><h1>'+esc(p['title'])+'</h1><p>'+esc(p['authors'].join(', '))+'.</p><p><em>'+esc(venue(p))+'</em></p>'
   body+='<p>'+esc(p['award'])+'</p>' if p['award']
   body+='<p class="resources">'+resources(p)+'</p>'
+  body+='<section class="paper-overview" aria-labelledby="overview"><h2 id="overview">The idea in brief</h2><p>'+esc(p['plain_summary'])+'</p></section>' if p['plain_summary']
   if p['abstract'].to_s.strip.empty?
     body+='<p>The abstract is not available here yet. Please see the linked publication record.</p>'
   else
@@ -284,7 +275,7 @@ teaching=source_body('teaching.md')
 page('/teaching/','Teaching','Courses taught by Ashutosh Trivedi at CU Boulder and IIT Bombay, including theory of computation, reinforcement learning, and cyber-physical systems.','<h1>Teaching</h1>'+teaching)
 page('/talks/hyperproperties/','Hyperproperties for Privacy, Fairness, and Legal Requirements','An interactive article by Ashutosh Trivedi on hyperproperties, noninterference, opacity, fairness, and relational software testing.',File.read(File.join(SRC,'talks/hyperproperties.html')), '<link rel="stylesheet" href="/assets/talks/hyperproperties.css"><script type="module" src="/assets/talks/hyperproperties.mjs"></script>')
 page('/talks/','Talks','Talks and available presentation materials from Ashutosh Trivedi’s research.','<h1>Talks</h1><h2>Seminars</h2><article id="beyond-the-bytes-2026"><h3><a href="https://calendar.colorado.edu/event/beyond-the-bytes-ashutosh-trivedi-on-how-do-we-know-an-algorithm-is-treating-us-fairly">How do we know an algorithm is treating us fairly?</a></h3><p>Beyond the Bytes faculty speaker series, University of Colorado Boulder<br><time datetime="2026-09-14">Monday, September 14, 2026</time></p><p>Hyperproperties for fairness, privacy, and legal compliance, with examples from machine learning, autonomous systems, and tax-preparation software.</p><p><a href="/assets/talks/beyond-the-bytes-2026-09-14.pdf">Slides with references (PDF, 23 MB)</a> · <a href="https://calendar.colorado.edu/event/beyond-the-bytes-ashutosh-trivedi-on-how-do-we-know-an-algorithm-is-treating-us-fairly">Event details</a></p></article><article><h3><a href="/talks/hyperproperties/">Hyperproperties</a></h3><p><a href="/talks/hyperproperties/">Read the interactive article</a> · <a href="/assets/talks/hyperproperties.pdf">Slides (PDF)</a></p><p>DIMAP seminar, University of Warwick<br><time datetime="2025-06">June 2025</time></p></article><h2>Presentation materials</h2><article><h3>Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations</h3><p>ASE 2025</p><p><a href="/assets/papers/2025-ase-discrimination-clusters.pptx">Slides (PowerPoint)</a> · <a href="/papers/2025-ase-discrimination-clusters/">Paper and authors</a></p></article>')
-page('/cv/','Curriculum Vitae','Curriculum vitae and academic background of Ashutosh Trivedi, Associate Professor of Computer Science at CU Boulder.','<h1>Curriculum Vitae</h1><p><a href="/assets/AshutoshTrivedi_CV.pdf">Download CV (PDF)</a></p><h2>Academic background</h2><p>I received my Ph.D. in Computer Science from the University of Warwick, specializing in game theory and quantitative verification. Before joining CU Boulder, I held academic positions at IIT Bombay, the University of Pennsylvania, and the University of Oxford.</p><h2>Recognition</h2><ul><li>NSF CAREER Award, 2022</li><li>Royal Society Wolfson Visiting Fellowship, 2024</li><li>Distinguished Paper Award, CAV 2024, for <a href="/papers/2024-cav-regular-rl/">Regular Reinforcement Learning</a></li></ul><p>See my <a href="/publications/">publications</a>, <a href="/teaching/">teaching</a>, and <a href="/students/">students and alumni</a> for further details.</p>')
+page('/cv/','Curriculum Vitae','Selected curriculum vitae of Ashutosh Trivedi, Associate Professor of Computer Science at CU Boulder. Updated October 2026.','<h1>Curriculum Vitae</h1>'+source_body('cv.md'))
 page('/news/','News','Dated research, teaching, student, and award announcements from Ashutosh Trivedi.','<h1>News</h1>'+news_rows(NEWS))
 page('/bio/','Biography','Academic biography of Ashutosh Trivedi.','<h1>Biography</h1>'+source_body('bio.md'))
 page('/contact/','Contact','Contact Ashutosh Trivedi at the University of Colorado Boulder.','<h1>Contact</h1>'+source_body('contact.md'))

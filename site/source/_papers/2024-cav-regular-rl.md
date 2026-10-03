@@ -27,6 +27,8 @@
   "code": null,
   "award": "CAV Distinguished Paper Award",
   "abstract": "In reinforcement learning, an agent incrementally refines a behavioral policy through a series of episodic interactions with its environment. This process can be characterized as explicit reinforcement learning, as it deals with explicit states and concrete transitions. Building upon the concept of symbolic model checking, we propose a symbolic variant of reinforcement learning, in which sets of states are represented through predicates and transitions are represented by predicate transformers. Drawing inspiration from regular model checking, we choose regular languages over the states as our predicates, and rational transductions as predicate transformations. We refer to this framework as regular reinforcement learning , and study its utility as a symbolic approach to reinforcement learning. Theoretically, we establish results around decidability, approximability, and efficient learnability in the context of regular reinforcement learning. Towards practical applications, we develop a deep regular reinforcement learning algorithm, enabled by the use of graph neural networks. We showcase the applicability and effectiveness of (deep) regular reinforcement learning through empirical evaluation on a diverse set of case studies.",
-  "abstract_source": "https://doi.org/10.1007/978-3-031-65633-0_9"
+  "abstract_source": "https://doi.org/10.1007/978-3-031-65633-0_9",
+  "research_question": "Learning with symbolic structure",
+  "plain_summary": "How can reinforcement learning work with sets of states, rather than individual states alone? We use regular languages to represent these sets and symbolic transformations to describe transitions, connecting reinforcement learning with ideas from model checking."
 }
 ---

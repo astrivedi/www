@@ -1,0 +1,157 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[left=32bp,right=32bp,top=28bp,bottom=28bp,footskip=13bp]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{microtype}
+
+\definecolor{ink}{HTML}{161616}
+\definecolor{linkblue}{HTML}{263F67}
+\definecolor{muted}{HTML}{555555}
+\definecolor{themeblue}{HTML}{2F5D8A}
+\definecolor{awardgreen}{HTML}{2E6B4F}
+
+\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,
+  pdftitle={Ashutosh Trivedi | Selected Curriculum Vitae},pdfauthor={Ashutosh Trivedi}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\columnsep}{16bp}
+\setlist[itemize]{leftmargin=12bp,itemsep=2.4bp,topsep=3.2bp,parsep=0pt}
+\pagestyle{fancy}\fancyhf{}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0.3pt}
+\fancyfoot[L]{\fontsize{7.5}{8.6}\selectfont\color{muted}Selected curriculum vitae}
+\fancyfoot[R]{\fontsize{7.5}{8.6}\selectfont\color{muted}October 2026}
+
+\newcommand{\cvsection}[1]{%
+  \par\vspace{7bp}\hrule height .4pt\vspace{5.2bp}%
+  {\fontsize{11.5}{13.2}\selectfont\bfseries #1\par}\vspace{3bp}}
+\newcommand{\cvrow}[2]{\noindent #1\hfill\textit{#2}\par}
+\newcommand{\pubaward}[1]{{\color{awardgreen}\bfseries\itshape #1}}
+\newcommand{\smallgap}{\par\vspace{6.4bp}}
+
+\begin{document}
+\color{ink}\fontsize{10.2}{12.35}\selectfont\raggedright
+
+{\fontsize{22}{24}\selectfont\bfseries Ashutosh Trivedi\par}
+\vspace{2bp}
+{\fontsize{10}{11.8}\selectfont Associate Professor of Computer Science · University of Colorado Boulder\par}
+\vspace{1.5bp}
+\href{mailto:ashutosh.trivedi@colorado.edu}{ashutosh.trivedi@colorado.edu}
+\quad·\quad \href{https://ashutoshtrivedi.com}{ashutoshtrivedi.com}
+\quad·\quad \href{https://orcid.org/0000-0001-9346-0126}{ORCID}
+\quad·\quad \href{https://tinyurl.com/9WDXyy4AAAAJ}{Google Scholar}
+
+\cvsection{Research Profile}
+I develop mathematical foundations and tools for \textbf{trustworthy AI systems that learn and make decisions under uncertainty while satisfying formal guarantees}. My research brings together reinforcement learning, formal verification, and symbolic reasoning, with applications to safety-critical control and accountable software.
+
+\vspace{2bp}
+{\fontsize{9.2}{11.1}\selectfont
+\textbf{Research themes:} reinforcement learning and sequential decision-making; logic, automata, and formal verification; stochastic systems and control; fairness and accountability; learning-enabled cyber-physical and medical systems.\par}
+
+\noindent\begin{minipage}[t]{0.445\textwidth}
+\vspace{0pt}
+
+\cvsection{Appointments \& Education}
+\cvrow{\textbf{CU Boulder} · Associate Professor}{2023--present}
+{\fontsize{9.0}{10.7}\selectfont Assistant Professor, 2017--2023; Research faculty, 2015--2017.\par}
+\cvrow{\textbf{IIT Bombay} · Assistant Professor}{2012--2015}
+\cvrow{\textbf{University of Pennsylvania} · Postdoc}{2011--2012}
+\cvrow{\textbf{University of Oxford} · Postdoc}{2009--2010}
+\cvrow{\textbf{University of Warwick} · Ph.D., CS}{2009}
+
+\cvsection{Selected Recognition}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{DARPA NeuS Disruptive Idea Award} & 2025\\
+\textbf{Royal Society Wolfson Visiting Fellow} & 2024--26\\
+\textbf{CAV Distinguished Paper Award} & 2024\\
+\textbf{NSF CAREER Award} & 2022\\
+\textbf{ACM Senior Member} & 2024\\
+\textbf{IEEE Senior Member} & 2025\\
+\textbf{HSCC Best Paper Award} & 2012\\
+\end{tabularx}
+
+\cvsection{Selected Research Support}
+\begin{itemize}
+  \item \textbf{NSF CAREER} (2022--27): reinforcement learning for recursive MDPs and beyond.
+  \item \textbf{NSF DASS} (2023--26): accountability of tax-preparation software.
+  \item \textbf{DARPA / NeuS} (2025--26): control transfer via neural simulation functions.
+  \item \textbf{AB Nexus} (2024--26): AI-optimized cardiac pacing with CU Anschutz.
+  \item \textbf{NSF CCF} (2020--23): omega-regular objectives for model-free reinforcement learning.
+  \item \textbf{NSF EPCN} (2020--23): secure-by-construction controller synthesis for cyber-physical systems.
+\end{itemize}
+
+\cvsection{Selected Professional Service}
+\begin{itemize}
+  \item \textbf{Action Editor}, Transactions on Machine Learning Research.
+  \item \textbf{Editorial Board}, Information Processing Letters.
+  \item \textbf{General Co-Chair}, VMCAI 2025.
+  \item \textbf{Co-Chair}, SNR 2022 and 2026.
+  \item Senior reviewing and program-committee service across \textbf{CAV, ICALP, AAAI, NeurIPS, and ICLR}.
+\end{itemize}
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.525\textwidth}
+\vspace{0pt}
+\cvsection{Selected Publications}
+
+\textbf{Regular Reinforcement Learning.} T. Dohmen, M. Perez, F. Somenzi, A. Trivedi. \textit{CAV}, 2024. \pubaward{Distinguished Paper Award.}
+\smallgap
+
+\textbf{Omega-Regular Decision Processes.} E. M. Hahn, M. Perez, S. Schewe, F. Somenzi, A. Trivedi, D. Wojtczak. \textit{AAAI}, 2024.
+\smallgap
+
+\textbf{Recursive Reinforcement Learning.} E. M. Hahn, M. Perez, S. Schewe, F. Somenzi, A. Trivedi, D. Wojtczak. \textit{NeurIPS}, 2022.
+\smallgap
+
+\textbf{Correct-by-Construction Reinforcement Learning of Cardiac Pacemakers from Duration Calculus Requirements.} K. Dole, A. Gupta, J. Komp, S. N. Krishna, A. Trivedi. \textit{AAAI}, 2023.
+\smallgap
+
+\textbf{Stochastic Neural Simulation Relations for Transferring Control under Uncertainty.} A. Nadali, A. Trivedi, M. Zamani. \textit{NeuS}, 2025. \pubaward{Disruptive Idea Award.}
+\smallgap
+
+\textbf{On the Robustness of Fairness Practices: A Causal Framework for Systematic Evaluation.} V. Monjezi, A. Kumar, A. Trivedi, G. Tan, S. Tizpaz-Niari. \textit{ICSE}, 2026.
+\smallgap
+
+\textbf{Information-Theoretic Testing and Debugging of Fairness.} V. Monjezi, A. Trivedi, G. Tan, S. Tizpaz-Niari. \textit{ICSE}, 2023.
+\smallgap
+
+\textbf{Regular Transformations of Infinite Strings.} R. Alur, E. Filiot, A. Trivedi. \textit{LICS}, 2012.
+\smallgap
+
+\textbf{Optimal Scheduling for Constant-Rate Multi-Mode Systems.} R. Alur, A. Trivedi, D. Wojtczak. \textit{HSCC}, 2012. \pubaward{Best Paper Award.}
+\smallgap
+
+\textbf{Assume-Guarantee Reinforcement Learning.} M. Kazemi, M. Perez, F. Somenzi, S. Soudjani, A. Trivedi, A. Velasquez. \textit{AAAI}, 2024.
+\smallgap
+
+\textbf{A PAC Learning Algorithm for LTL and Omega-Regular Objectives in MDPs.} M. Perez, F. Somenzi, A. Trivedi. \textit{AAAI}, 2024.
+\smallgap
+
+\textbf{Neural Closure Certificates.} A. Nadali, V. Murali, A. Trivedi, M. Zamani. \textit{AAAI}, 2024.
+\smallgap
+
+\textbf{An LLM Agentic Approach for Legal-Critical Software: A Case Study for Tax Preparation Software.} S. Gogani-Khiabani, A. Trivedi, D. Saha, S. Tizpaz-Niari. \textit{ICSE}, 2026.
+\smallgap
+
+\textbf{Metamorphic Testing and Debugging of Tax Preparation Software.} S. Tizpaz-Niari, M. Wagner, S. Darian, K. Reed, A. Trivedi. \textit{ICSE-SEIS}, 2023.
+\end{minipage}
+\end{document}
