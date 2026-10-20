@@ -285,7 +285,7 @@ group=File.join(OUT,'group/index.html')
 File.write(group,File.read(group).sub('<link rel="canonical" href="'+ORIGIN+'/group/">','<link rel="canonical" href="'+ORIGIN+'/students/">'))
 FileUtils.cp(File.join(OUT,'assets/AshutoshTrivedi_CV.pdf'),File.join(OUT,'AshutoshTrivedi_CV.pdf'))
 announcement=File.read(File.join(SRC,'open-positions/cardiac-digital-twin-rl-2026.html'))[/<body>(.*?)<\/body>/m,1].sub(/<h1>.*?<\/h1>/m,'')
-page('/open-positions/cardiac-digital-twin-rl-2026.html','Spring 2026 research positions','Archived Spring 2026 student research announcement for cardiac digital twins and reinforcement learning.','<h1>Spring 2026 research positions</h1><p><strong>Archived announcement.</strong> This position announcement was posted in February 2026 for Spring 2026.</p>'+announcement)
+page('/open-positions/cardiac-digital-twin-rl-2026.html','Two student research assistant positions — medical device research','Two student research assistant positions at CU Boulder in medical device research, cardiac digital twins, and reinforcement learning.','<h1>Student Research Assistant (2 Positions)</h1><p><strong>Medical device research · Posted October 20, 2026</strong></p>'+announcement)
 Dir[File.join(SRC,'tags/*.md')].each do |f|
   data=YAML.load(File.read(f).split(/^---\s*$\n?/)[1])
   slug=File.basename(f,'.md'); tag=slug.downcase
