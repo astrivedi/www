@@ -121,12 +121,12 @@ def contribution(p)
 end
 home = <<~HTML
 <section class="intro" aria-labelledby="name">
+<img src="/images/ashutosh-trivedi.jpg" width="280" height="280" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 <div><h1 id="name">Ashutosh Trivedi</h1><p class="affiliation">Associate Professor of Computer Science<br>University of Colorado Boulder</p>
 <p class="research-lead">I develop mathematical foundations and tools for trustworthy AI systems that learn and make decisions under uncertainty while satisfying formal guarantees.</p>
 <p>My research brings together reinforcement learning, formal verification, and symbolic reasoning, with applications to safety-critical control and accountable software.</p>
 <p class="profile-links intro-actions"><a href="/research/">Explore research</a> · <a href="/students/#join-the-group">Prospective students</a></p>
 <p class="profile-links"><a href="/cv/">CV</a> · <a href="#{LINKS['scholar']}">Google Scholar</a> · <a href="#{LINKS['github']}" aria-label="GitHub — CUPLV research group">GitHub</a> · <a href="https://www.colorado.edu/cs/">CU Boulder</a> · <a href="/genealogy/">Academic genealogy</a> · <a href="mailto:ashutosh.trivedi@colorado.edu">Email</a></p></div>
-<img src="/images/ashutosh-trivedi.jpg" width="220" height="220" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 </section>
 <section aria-labelledby="news"><h2 id="news">Recent News</h2>#{news_rows(NEWS.select { |item| item['featured'] }.first(4), compact: true)}<p class="more"><a href="/news/">All news</a></p></section>
 <section aria-labelledby="selected"><h2 id="selected">Selected Contributions</h2><ol class="home-contributions" role="list">#{selected.map{|slug| contribution(PAPERS.find{|p| p['slug']==slug})}.join}</ol><p class="more"><a href="/research/#selected-contributions">More research contributions</a> · <a href="/publications/">All publications</a></p></section>

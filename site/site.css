@@ -113,3 +113,15 @@ main{overflow-wrap:break-word}
 .research-page .theme-prism img{object-position:50% 30%}
 .research-page .theme-photo figcaption{font-size:.875rem}
 @media(max-width:640px){.research-page .theme-photo{width:min(100%,360px)}}
+
+/* Give the homepage portrait more presence and let text use the space below it. */
+body:has(.intro) header{padding-bottom:26px}
+@media(min-width:601px){
+  .intro{display:flow-root}
+  .intro>div{display:contents}
+  .intro img{float:right;width:280px;height:280px;margin:4px 0 16px 28px}
+  .intro .affiliation{margin-bottom:16px}
+  .intro .profile-links{clear:both}
+  .intro-actions{padding-top:0}
+  .intro+section h2{margin-top:26px}
+}
