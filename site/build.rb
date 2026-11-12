@@ -126,7 +126,7 @@ def contribution(p)
 end
 home = <<~HTML
 <section class="intro" aria-labelledby="name">
-<img src="/images/ashutosh-trivedi.jpg" width="280" height="280" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
+<img src="/images/ashutosh-trivedi.jpg?v=#{Digest::SHA256.file(File.join(SRC, 'assets/img/ashutosh.jpeg')).hexdigest[0, 12]}" width="280" height="280" alt="Portrait of Ashutosh Trivedi" fetchpriority="high">
 <div><h1 id="name">Ashutosh Trivedi</h1><p class="affiliation">Associate Professor of Computer Science<br>University of Colorado Boulder</p>
 <p class="research-lead">I develop mathematical foundations and tools for trustworthy AI systems that learn and make decisions under uncertainty while satisfying formal guarantees.</p>
 <p>My research brings together reinforcement learning, formal verification, and symbolic reasoning, with applications to safety-critical control and accountable software.</p>
