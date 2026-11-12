@@ -3,6 +3,7 @@ require 'date'
 require 'json'
 require 'cgi'
 require 'fileutils'
+require 'digest'
 require 'kramdown'
 
 ROOT = File.expand_path(__dir__)
@@ -13,6 +14,9 @@ LINKS = YAML.load_file(File.join(SRC, '_config.yml'))['links']
 NAV = [['Home','/'],['Research','/research/'],['Publications','/publications/'],['People','/students/'],['Teaching','/teaching/'],['Talks','/talks/'],['CV','/cv/']]
 $routes = []
 def esc(s); CGI.escapeHTML(s.to_s); end
+def versioned_asset(name)
+  "/assets/#{name}?v=#{Digest::SHA256.file(File.join(ROOT, name)).hexdigest[0, 12]}"
+end
 def md(s)
   Kramdown::Document.new(s.to_s.gsub(/:contentReference\[.*?\]\{.*?\}/, '')).to_html
 end
@@ -35,8 +39,8 @@ def page(path, title, description, body, extra = '')
   <meta property="og:description" content="#{esc(description)}">
   <meta property="og:url" content="#{url}">
   <meta property="og:site_name" content="Ashutosh Trivedi">
-  <script src="/assets/theme.js"></script>
-  <link rel="stylesheet" href="/assets/site.css">
+  <script src="#{versioned_asset('theme.js')}"></script>
+  <link rel="stylesheet" href="#{versioned_asset('site.css')}">
   <script type="application/ld+json">#{JSON.generate(person).gsub('<','\\u003c')}</script>
   #{extra}
   </head>
