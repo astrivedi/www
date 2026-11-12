@@ -4,12 +4,12 @@
 #genealogy-search{flex:1;min-width:200px}
 #genealogy-search label{display:block;margin-bottom:5px}
 .genealogy-search-row{display:flex;gap:6px}
-#ancestor-search{width:100%;min-width:0;font:inherit;font-size:16px;padding:9px;border:1px solid #b6c0c8;border-radius:4px;background:#fff;color:var(--ink)}
+#ancestor-search{width:100%;min-width:0;font:inherit;font-size:16px;padding:9px;border:1px solid #b6c0c8;border-radius:4px;background:var(--bg);color:var(--ink)}
 .genealogy-buttons{display:flex;flex-wrap:wrap;gap:6px}
-.genealogy-controls button{font:inherit;min-height:42px;padding:8px 12px;color:var(--link);background:#f5f7f8;border:1px solid #c5d0d8;border-radius:4px;cursor:pointer}
-.genealogy-controls button:hover{background:#e6eff5}
+.genealogy-controls button{font:inherit;min-height:42px;padding:8px 12px;color:var(--link);background:var(--surface);border:1px solid #c5d0d8;border-radius:4px;cursor:pointer}
+.genealogy-controls button:hover{background:var(--surface)}
 .genealogy-controls :focus-visible{outline:2px solid var(--link);outline-offset:3px}
-.genealogy-stage{position:relative;border:1px solid #d9e0e4;background:#fff;overflow:hidden}
+.genealogy-stage{position:relative;border:1px solid var(--line);background:#fff;overflow:hidden}
 #ancestry-graph{display:block;width:100%;height:auto;min-height:450px}
 .is-interactive #ancestry-graph{height:620px;max-height:75vh;touch-action:none;cursor:grab}
 #ancestry-graph:active{cursor:grabbing}
@@ -27,20 +27,20 @@
 #ancestry-graph.hide-labels .node:not(.selected) text{visibility:hidden}
 #genealogy-selection{display:none;color:var(--ink);min-height:3.5em;margin:12px 0}
 .is-interactive #genealogy-selection{display:block}
-.genealogy-overview{position:absolute;top:10px;right:10px;width:110px;pointer-events:none;border:1px solid #c5d0d8;background:#fffffff0;font:11px system-ui,sans-serif;color:var(--muted);padding:4px}
+.genealogy-overview{position:absolute;top:10px;right:10px;width:110px;pointer-events:none;border:1px solid #c5d0d8;background:#fffffff0;font:11px system-ui,sans-serif;color:#646464;padding:4px}
 #ancestry-overview{display:block;width:100%;height:150px}
 .overview-viewport{fill:#245a801a;stroke:#245a80;stroke-width:2;vector-effect:non-scaling-stroke}
 .genealogy-table{overflow-x:auto;margin-top:16px}
 .genealogy-table table{border-collapse:collapse;width:100%;font-size:.875rem}
-.genealogy-table th,.genealogy-table td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid #ddd;min-width:150px}
+.genealogy-table th,.genealogy-table td{text-align:left;vertical-align:top;padding:10px 8px;border-bottom:1px solid var(--line);min-width:150px}
 .genealogy-table th{font-weight:400}
 .genealogy-table thead th{font-weight:600}
-.genealogy-table tr:target{background:#e6eff5}
+.genealogy-table tr:target{background:var(--surface)}
 .genealogy-graduates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;list-style:none;padding:0;margin:18px 0 28px}
 .genealogy-graduates li{margin:0}
 .genealogy-graduates span{display:block;font: .875rem/1.5 system-ui,sans-serif;color:var(--muted)}
 @media(max-width:500px){.genealogy-graduates{grid-template-columns:1fr}}
-#genealogy:fullscreen{background:#fff;padding:24px;overflow:auto;display:flex;flex-direction:column}
+#genealogy:fullscreen{background:var(--bg);padding:24px;overflow:auto;display:flex;flex-direction:column}
 #genealogy:fullscreen .genealogy-stage{flex:1;min-height:200px}
 #genealogy:fullscreen #ancestry-graph{height:100%;max-height:none}
 @media(max-width:600px){.genealogy-overview{width:70px}#ancestry-overview{height:100px}.is-interactive #ancestry-graph{height:520px}.genealogy-controls button{min-height:44px}#genealogy:fullscreen{padding:12px}}

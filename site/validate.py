@@ -21,7 +21,7 @@ class Document(HTMLParser):
             if a.get('type')=='application/ld+json' or (a.get('type')=='application/json' and a.get('id')=='genealogy-data' and self.allowed_script=='/assets/genealogy.mjs'):
                 self.script=''
             else:
-                assert self.allowed_script and a.get('type')=='module' and a.get('src')==self.allowed_script, 'Unexpected executable JavaScript'
+                assert (a.get('src')=='/assets/theme.js' and not a.get('type')) or (self.allowed_script and a.get('type')=='module' and a.get('src')==self.allowed_script), 'Unexpected executable JavaScript'
         if tag=='img': assert a.get('alt') and a.get('width') and a.get('height')
     def handle_data(self,data):
         if self.script is not None: self.script+=data

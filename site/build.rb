@@ -35,13 +35,14 @@ def page(path, title, description, body, extra = '')
   <meta property="og:description" content="#{esc(description)}">
   <meta property="og:url" content="#{url}">
   <meta property="og:site_name" content="Ashutosh Trivedi">
+  <script src="/assets/theme.js"></script>
   <link rel="stylesheet" href="/assets/site.css">
   <script type="application/ld+json">#{JSON.generate(person).gsub('<','\\u003c')}</script>
   #{extra}
   </head>
   <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header><nav aria-label="Main navigation">#{nav}</nav></header>
+  <header><nav aria-label="Main navigation">#{nav}</nav><button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Switch to dark mode" hidden><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor"/></svg></button></header>
   <main id="main">#{body}</main>
   <footer><p>Ashutosh Trivedi · University of Colorado Boulder<br><a href="mailto:ashutosh.trivedi@colorado.edu">ashutosh.trivedi@colorado.edu</a></p></footer>
   </body>
@@ -58,7 +59,7 @@ FileUtils.cp_r(File.join(SRC,'assets/img/research'), File.join(OUT,'assets/img')
 FileUtils.cp_r(File.join(SRC,'assets/img/group'), File.join(OUT,'assets/img'))
 FileUtils.cp(File.join(ROOT,'publications.mjs'), File.join(OUT,'assets/publications.mjs'))
 FileUtils.cp(File.join(ROOT, 'site.css'), File.join(OUT, 'assets/site.css'))
-%w[genealogy.css genealogy.mjs].each { |f| FileUtils.cp(File.join(ROOT, f), File.join(OUT, 'assets', f)) }
+%w[genealogy.css genealogy.mjs theme.js].each { |f| FileUtils.cp(File.join(ROOT, f), File.join(OUT, 'assets', f)) }
 # Rebuild the cached genealogy offline. Network refresh is a separate explicit command.
 abort 'Genealogy rendering failed' unless system('python3', File.join(ROOT, 'genealogy-render.py'))
 FileUtils.mkdir_p(File.join(OUT, 'images'))
